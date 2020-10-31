@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Target">
+      <UniqueIdentifier>{2c7f56e8-ac49-4a5f-8587-d5ab236e4586}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagnosticsTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapMemoryTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFileTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="NamedPipeTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDogTimerTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsLibraryTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualMemoryTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtilityTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionFileTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMemoryTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBufferTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

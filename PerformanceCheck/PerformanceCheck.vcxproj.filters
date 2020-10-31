@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Target">
+      <UniqueIdentifier>{e366f7c7-6888-4572-a60d-9edf32318e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Target">
+      <UniqueIdentifier>{079425ed-e85d-4902-83cb-1fb1b48e682e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PerformanceCheck.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsolePerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="StdFilePerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDocTimerPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceCheck.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectHolder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsolePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="StdFilePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchDocTimerPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zenkoku.csv">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="41saga.csv">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="PerformanceCheck.ini">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>
