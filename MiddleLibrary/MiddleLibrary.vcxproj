@@ -183,8 +183,6 @@
     <ClInclude Include="IFactoryMethod.h" />
     <ClInclude Include="MiddleLibrary.h" />
     <ClInclude Include="PipelineFactoryMethod.h" />
-    <ClInclude Include="TaskDrive.h" />
-    <ClInclude Include="TaskTemplate.hpp" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="WorkerTemplate.hpp" />
@@ -199,7 +197,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="PipelineFactoryMethod.cpp" />
-    <ClCompile Include="TaskDrive.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WindowsLibrary\WindowsLibrary.vcxproj">

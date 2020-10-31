@@ -22,7 +22,7 @@ namespace alt
 		QueryPerformance()
 		{
 			_startTick.QuadPart = 0;
-			_finishTick.QuadPart = 0;
+			_stopTick.QuadPart = 0;
 			::QueryPerformanceFrequency(&_frequency);
 		};
 
@@ -30,22 +30,22 @@ namespace alt
 		VOID Start() { ::QueryPerformanceCounter(&_startTick); };
 
 		//! @brief 計測を終了します。
-		VOID Finish() { ::QueryPerformanceCounter(&_finishTick); };
+		VOID Stop() { ::QueryPerformanceCounter(&_stopTick); };
 
 		//! @brief	計測開始～計測終了までの時間を出力します。
 		//! @note	単位はミリ秒で出力されます。
 		//! @note	有効値は小数点第４位まで
 		double PastTime()
 		{
-			return (_finishTick.QuadPart - _startTick.QuadPart) * 1000.0 \
+			return (_stopTick.QuadPart - _startTick.QuadPart) * 1000.0 \
 				/ (double)_frequency.QuadPart;
 		}
 
 		//! @brief Start()時のカウンター値を取得します。
 		LARGE_INTEGER GetStartTick() { return _startTick; };
 
-		//! @brief Finish()時のカウンター値を取得します。
-		LARGE_INTEGER GetFinishTick() { return _finishTick; };
+		//! @brief Stop()時のカウンター値を取得します。
+		LARGE_INTEGER GetStopTick() { return _stopTick; };
 
 		//! @brief 現在のタイマー分解能を取得します。
 		LARGE_INTEGER GetFrequency() { return _frequency; };
@@ -55,7 +55,7 @@ namespace alt
 		LARGE_INTEGER _startTick;
 
 		//! @brief 終了時タイマー値
-		LARGE_INTEGER _finishTick;
+		LARGE_INTEGER _stopTick;
 
 		//! @brief 現在のタイマー分解能
 		LARGE_INTEGER _frequency;

@@ -97,7 +97,7 @@ BOOL FilePerformanceCheck::Core1(const int param1)
 
 	delete[] byDummy;
 
-	Q.Finish();
+	Q.Stop();
 
 	double writePerformance = ((writeSize / 1024 / 1024) / (Q.PastTime() / 1000));
 
@@ -132,7 +132,7 @@ BOOL FilePerformanceCheck::Core2(const int param1)
 
 	delete[] byDummy;
 
-	Q.Finish();
+	Q.Stop();
 
 	double readPerformance = ((readSize / 1024 / 1024) / (Q.PastTime() / 1000));
 

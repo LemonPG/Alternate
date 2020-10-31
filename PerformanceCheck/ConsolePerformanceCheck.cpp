@@ -75,7 +75,7 @@ BOOL ConsolePerformanceCheck::Core(const int param1)
 			this->Write(_T("Ÿ ¡Ÿ ¡Ÿ\n"));
 		}
 	}
-	Q.Finish();
+	Q.Stop();
 
 	int msec = static_cast<int>(Q.PastTime());
 	if (param1 == 0) response0 = msec;

@@ -61,7 +61,7 @@ namespace alt
 			virtual bool Init(IConfig* config) = 0;
 			virtual bool Start() = 0;
 			virtual IData* Process(IData* data) = 0;
-			virtual bool Finish() = 0;
+			virtual bool Stop() = 0;
 			virtual bool Exit() = 0;
 
 			virtual void Update(IMessage* message) = 0;
@@ -112,7 +112,7 @@ namespace alt
 
 			virtual bool Init(IConfig* config) = 0;
 			virtual bool Start() = 0;
-			virtual bool Finish() = 0;
+			virtual bool Stop() = 0;
 			virtual bool Exit() = 0;
 
 			virtual void Update(IMessage* message) = 0;

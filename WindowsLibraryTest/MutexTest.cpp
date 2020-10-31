@@ -65,7 +65,7 @@ namespace WindowsLibraryTest
 					Sleep(100);
 				}
 
-				msg.Format(_T("Thread %s Finished.\n"), lpctszWord);
+				msg.Format(_T("Thread %s stopped.\n"), lpctszWord);
 				Logger::WriteMessage(msg.Ctr());
 
 				return 0;

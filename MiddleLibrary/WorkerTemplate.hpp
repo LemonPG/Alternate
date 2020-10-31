@@ -18,8 +18,8 @@ namespace alt
 		Executed,
 		BeforeProcess,
 		Processed,
-		BeforeFinish,
-		Finished,
+		BeforeStop,
+		Stopped,
 		BeforeExit,
 		Exited
 	};
@@ -162,13 +162,13 @@ namespace alt
 
 		//! èIóπèàóù
 		template <typename Function>
-		bool Finish(Function function)
+		bool Stop(Function function)
 		{
-			_workerStatus = WorkerStatus::BeforeFinish;
+			_workerStatus = WorkerStatus::BeforeStop;
 
 			bool ret = this->CriticalAction(function);
 
-			_workerStatus = WorkerStatus::Finished;
+			_workerStatus = WorkerStatus::Stopped;
 
 			return ret;
 		}

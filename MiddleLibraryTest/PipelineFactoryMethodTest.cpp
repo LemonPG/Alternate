@@ -56,14 +56,14 @@ namespace MiddleLibraryTest
 
 				Sleep(30000); // 30•b
 
-				manager->Finish();
+				manager->Stop();
 			}
 
 			manager->Exit();
 
 			Sleep(10000); // 10•b
 
-			Logger::WriteMessage("PipelineFactoryMethodTest1 Finished.\n");
+			Logger::WriteMessage("PipelineFactoryMethodTest1 Stopped.\n");
 		}
 	};
 }

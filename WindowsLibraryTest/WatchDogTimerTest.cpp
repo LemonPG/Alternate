@@ -46,7 +46,7 @@ namespace WindowsLibraryTest
 			{
 				Q.Start();
 				Sleep(dwTime);
-				Q.Finish();
+				Q.Stop();
 				dArray[i] = Q.PastTime();
 			}
 
@@ -134,7 +134,7 @@ namespace WindowsLibraryTest
 			{
 				Q.Start();
 				DWORD dwRet = T->WaitTimer();
-				Q.Finish();
+				Q.Stop();
 
 				if (dwRet == WAIT_OBJECT_0)
 				{
@@ -185,7 +185,7 @@ namespace WindowsLibraryTest
 
 			}
 
-			Logger::WriteMessage("Timer Finished.\n");
+			Logger::WriteMessage("Timer Stopped.\n");
 		}
 
 		TEST_METHOD(WatchDogTimer2)
@@ -214,7 +214,7 @@ namespace WindowsLibraryTest
 			{
 				Q.Start();
 				DWORD dwRet = T->WaitTimer();
-				Q.Finish();
+				Q.Stop();
 
 				if (dwRet == WAIT_OBJECT_0)
 				{
@@ -263,7 +263,7 @@ namespace WindowsLibraryTest
 
 			}
 
-			Logger::WriteMessage("Timer Finished.\n");
+			Logger::WriteMessage("Timer Stopped.\n");
 		}
 	};
 }

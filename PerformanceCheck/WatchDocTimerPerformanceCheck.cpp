@@ -67,12 +67,12 @@ BOOL WatchDocTimerPerformanceCheck::Core()
 	{
 		Q.Start();
 		timer->WaitTimer();
-		Q.Finish();
+		Q.Stop();
 
 		data[i].Tick = interval;
 		data[i].Elapsed = Q.PastTime();
 		data[i].StartTick = Q.GetStartTick();
-		data[i].FinishTick = Q.GetFinishTick();
+		data[i].StopTick = Q.GetStopTick();
 		data[i].Frequency = Q.GetFrequency();
 		GetLocalTime(&data[i].SystemTime);
 	}

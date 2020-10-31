@@ -54,7 +54,7 @@ BOOL TStringPerformanceCheck::Core(const int param1)
 			break;
 	}
 
-	Q.Finish();
+	Q.Stop();
 
 	DWORD pastTime = static_cast<DWORD>(Q.PastTime() * 1000);
 
@@ -104,7 +104,7 @@ BOOL TStringPerformanceCheck::Core2()
 	alt::QueryPerformance Q;
 
 	Q.Start();
-	Q.Finish();
+	Q.Stop();
 	DWORD pastTime = static_cast<DWORD>(Q.PastTime() * 1000);
 
 	return TRUE;

@@ -56,7 +56,7 @@ BOOL ArrayPerformanceCheck::Core()
 
 	arrayCopy.Clear(true);
 
-	Q.Finish();
+	Q.Stop();
 
 	int msec = static_cast<int>(Q.PastTime());
 

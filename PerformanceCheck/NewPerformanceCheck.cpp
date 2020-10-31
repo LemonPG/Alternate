@@ -56,7 +56,7 @@ BOOL NewPerformanceCheck::Core(const int param1)
 			delete[] lpvMem;
 
 		} while (--loop);
-		OutputDebugString(_T("Thread action is finished.\n"));
+		OutputDebugString(_T("Thread action is stopped.\n"));
 
 		return 0;
 	};
@@ -89,7 +89,7 @@ BOOL NewPerformanceCheck::Core(const int param1)
 	event.Set();
 	WaitForMultipleObjects(numOfThreads, threadHandles, TRUE, INFINITE);
 
-	Q.Finish();
+	Q.Stop();
 	Write(_T("åvë™èIóπ\n"));
 
 	int msec = static_cast<int>(Q.PastTime());

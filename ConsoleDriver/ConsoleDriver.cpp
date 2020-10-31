@@ -157,7 +157,7 @@ void DrivePipelineFactory()
 
 		Sleep(30000); // 30•b
 
-		manager->Finish();
+		manager->Stop();
 
 		Sleep(3000); // 3•b
 	}

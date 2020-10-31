@@ -24,12 +24,6 @@
     <ClCompile Include="WorkerTemplateTest.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="TaskTemplateTest.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="TaskDriveTest.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="PipelineFactoryMethodTest.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>

@@ -56,7 +56,7 @@ BOOL VectorPerformanceCheck::Core(const int param1)
 
 	arrayCopy.clear();
 
-	Q.Finish();
+	Q.Stop();
 
 	int msec = static_cast<int>(Q.PastTime());
 

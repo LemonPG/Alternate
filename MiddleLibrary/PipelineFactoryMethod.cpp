@@ -152,15 +152,15 @@ void ClockElement::Start(DWORD dwInterval)
 	OutputDebugString(_T("ClockElement::Start() OUT.\n"));
 }
 
-void ClockElement::Finish()
+void ClockElement::Stop()
 {
-	_logFile.LogInfo(_T("ClockElement::Finish()"));
-	OutputDebugString(_T("ClockElement::Finish() IN.\n"));
+	_logFile.LogInfo(_T("ClockElement::Stop()"));
+	OutputDebugString(_T("ClockElement::Stop() IN.\n"));
 
 	_watchdog->StopTimer();
 	_stop = true;
 
-	OutputDebugString(_T("ClockElement::Finish() OUT.\n"));
+	OutputDebugString(_T("ClockElement::Stop() OUT.\n"));
 }
 
 DWORD ClockElement::Invoke(LPVOID lpvParam)
@@ -187,7 +187,7 @@ DWORD ClockElement::Invoke(LPVOID lpvParam)
 			GetLocalTime(&localTime);
 			Notify(byteData);
 
-			Q.Finish();
+			Q.Stop();
 			dPastTick = Q.PastTime() * 1000;
 
 			TString msg(MAX_PATH); // TODO:Žb’è‚ÅMAX_PATH
@@ -386,15 +386,15 @@ IData* DummyProduct::Process(IData* data)
 		this->Notify(&message);
 	}
 
-	Q.Finish();
+	Q.Stop();
 	container->ProcessTick[_id] = Q.PastTime();
 	container->ProcessStartTick[_id] = Q.GetStartTick().LowPart;
 	return data;
 }
 
-bool DummyProduct::Finish()
+bool DummyProduct::Stop()
 {
-	TString msg = _T("DummyProduct::Finish(");
+	TString msg = _T("DummyProduct::Stop(");
 	msg += _productName;
 	msg += _T(")\n");
 	OutputDebugString(msg.Ctr());
@@ -527,14 +527,14 @@ bool ProductManager::Start()
 	return true;
 }
 
-bool ProductManager::Finish()
+bool ProductManager::Stop()
 {
 	ClockElement* clockElement = dynamic_cast<ClockElement*>(this->GetElement(_T("Clock")));
-	clockElement->Finish();
+	clockElement->Stop();
 
 	for (auto product : _products)
 	{
-		product.second->Finish();
+		product.second->Stop();
 	}
 
 	return true;

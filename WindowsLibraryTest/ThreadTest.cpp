@@ -20,7 +20,7 @@ namespace WindowsLibraryTest
 				Sleep(20);
 			}
 
-			Logger::WriteMessage(_T("Invoke() finished.\n"));
+			Logger::WriteMessage(_T("Invoke() stopped.\n"));
 			return 0;
 		}
 	};
@@ -39,7 +39,7 @@ namespace WindowsLibraryTest
 				Sleep(20);
 			}
 
-			Logger::WriteMessage(_T("Invoke() finished.\n"));
+			Logger::WriteMessage(_T("Invoke() stopped.\n"));
 			return 0;
 		}
 
@@ -85,7 +85,7 @@ namespace WindowsLibraryTest
 				Sleep(30);
 			}
 
-			Logger::WriteMessage(_T("ThreadTest1() finished.\n"));
+			Logger::WriteMessage(_T("ThreadTest1() stopped.\n"));
 
 			DWORD dwReason = pThread->Wait();
 			Assert::AreEqual(WAIT_OBJECT_0, dwReason);
@@ -108,7 +108,7 @@ namespace WindowsLibraryTest
 				Sleep(30);
 			}
 
-			Logger::WriteMessage(_T("ThreadTest2() finished.\n"));
+			Logger::WriteMessage(_T("ThreadTest2() stopped.\n"));
 
 			DWORD dwReason = pWorker->Wait();
 			Assert::AreEqual(WAIT_OBJECT_0, dwReason);
@@ -132,7 +132,7 @@ namespace WindowsLibraryTest
 					Sleep(*waitTime);
 				}
 
-				Logger::WriteMessage(_T("ThreadTest3() finished.\n"));
+				Logger::WriteMessage(_T("ThreadTest3() stopped.\n"));
 
 				return true;
 			};
@@ -165,7 +165,7 @@ namespace WindowsLibraryTest
 					Sleep(10);
 				}
 
-				Logger::WriteMessage(_T("ThreadTest4() finished.\n"));
+				Logger::WriteMessage(_T("ThreadTest4() stopped.\n"));
 
 				return *index;
 			};
@@ -215,7 +215,7 @@ namespace WindowsLibraryTest
 
 			WaitForMultipleObjects(20, hThreads, TRUE, INFINITE);
 
-			Logger::WriteMessage(_T("\nThreadTest4() Finished.\n"));
+			Logger::WriteMessage(_T("\nThreadTest4() stopped.\n"));
 
 			for (int i = 0; i < 20; i++)
 			{

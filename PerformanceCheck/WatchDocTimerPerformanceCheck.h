@@ -24,7 +24,7 @@ namespace PerfCheck
 		double Elapsed;
 		SYSTEMTIME SystemTime;
 		LARGE_INTEGER StartTick;
-		LARGE_INTEGER FinishTick;
+		LARGE_INTEGER StopTick;
 		LARGE_INTEGER Frequency;
 	} WatchDogData;
 
