@@ -59,7 +59,7 @@ namespace WindowsLibraryTest
 
 					msg.Format(_T("Thread %s %d.\n"), lpctszWord, i);
 					Logger::WriteMessage(msg.Ctr());
-					
+
 					ret = mutex.Release();
 					Assert::IsTrue(ret);
 					Sleep(100);

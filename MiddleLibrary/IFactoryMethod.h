@@ -119,7 +119,8 @@ namespace alt
 
 		};
 
-		class DLL_DECLSPEC IFactoryMethod {
+		class DLL_DECLSPEC IFactoryMethod
+		{
 		public:
 			IFactoryMethod();
 			virtual ~IFactoryMethod();

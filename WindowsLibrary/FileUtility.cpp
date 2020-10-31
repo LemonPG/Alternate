@@ -121,7 +121,7 @@ BOOL FileUtility::DirectoryWatch(LPCTSTR watchDirectory)
 			&dwResponse,
 			nullptr,
 			nullptr
-			);
+		);
 
 		if (ret == FALSE)
 		{
@@ -129,32 +129,32 @@ BOOL FileUtility::DirectoryWatch(LPCTSTR watchDirectory)
 		}
 
 		PFILE_NOTIFY_INFORMATION currentPFNI = (PFILE_NOTIFY_INFORMATION)buffer;
-		for(int i = 0; ;)
+		for (int i = 0; ;)
 		{
 			switch (currentPFNI->Action)
 			{
-			case FILE_ACTION_ADDED:
-				_tprintf(TEXT("FILE_ACTION_ADDED FileName=%s\n"), currentPFNI->FileName);
-				break;
+				case FILE_ACTION_ADDED:
+					_tprintf(TEXT("FILE_ACTION_ADDED FileName=%s\n"), currentPFNI->FileName);
+					break;
 
-			case FILE_ACTION_MODIFIED:
-				_tprintf(TEXT("FILE_ACTION_MODIFIED FileName=%s\n"), currentPFNI->FileName);
-				break;
+				case FILE_ACTION_MODIFIED:
+					_tprintf(TEXT("FILE_ACTION_MODIFIED FileName=%s\n"), currentPFNI->FileName);
+					break;
 
-			case FILE_ACTION_REMOVED:
-				_tprintf(TEXT("FILE_ACTION_REMOVED FileName=%s\n"), currentPFNI->FileName);
-				break;
+				case FILE_ACTION_REMOVED:
+					_tprintf(TEXT("FILE_ACTION_REMOVED FileName=%s\n"), currentPFNI->FileName);
+					break;
 
-			case FILE_ACTION_RENAMED_NEW_NAME:
-				_tprintf(TEXT("FILE_ACTION_RENAMED_NEW_NAME FileName=%s\n"), currentPFNI->FileName);
-				break;
+				case FILE_ACTION_RENAMED_NEW_NAME:
+					_tprintf(TEXT("FILE_ACTION_RENAMED_NEW_NAME FileName=%s\n"), currentPFNI->FileName);
+					break;
 
-			case FILE_ACTION_RENAMED_OLD_NAME:
-				_tprintf(TEXT("FILE_ACTION_RENAMED_OLD_NAME FileName=%s\n"), currentPFNI->FileName);
-				break;
+				case FILE_ACTION_RENAMED_OLD_NAME:
+					_tprintf(TEXT("FILE_ACTION_RENAMED_OLD_NAME FileName=%s\n"), currentPFNI->FileName);
+					break;
 
-			default:
-				break;
+				default:
+					break;
 			}
 
 			currentPFNI += currentPFNI->NextEntryOffset;

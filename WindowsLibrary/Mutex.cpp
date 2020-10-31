@@ -11,19 +11,19 @@ using namespace alt;
 
 BOOL Mutex::Create(LPCTSTR lpctszName)
 {
-    _hObject = ::CreateMutex(nullptr, FALSE, lpctszName);
-    
-    return _hObject == INVALID_HANDLE_VALUE ? FALSE : TRUE;
+	_hObject = ::CreateMutex(nullptr, FALSE, lpctszName);
+
+	return _hObject == INVALID_HANDLE_VALUE ? FALSE : TRUE;
 }
 
 BOOL Mutex::Open(LPCTSTR lpctszName)
 {
-    _hObject = ::OpenMutex(MUTEX_ALL_ACCESS, FALSE, lpctszName);
+	_hObject = ::OpenMutex(MUTEX_ALL_ACCESS, FALSE, lpctszName);
 
-    return _hObject == INVALID_HANDLE_VALUE ? FALSE : TRUE;
+	return _hObject == INVALID_HANDLE_VALUE ? FALSE : TRUE;
 }
 
 BOOL Mutex::Release()
 {
-    return ::ReleaseMutex(_hObject);
+	return ::ReleaseMutex(_hObject);
 }

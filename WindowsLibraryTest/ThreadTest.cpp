@@ -188,27 +188,27 @@ namespace WindowsLibraryTest
 				int divide = i % 7;
 				switch (divide)
 				{
-				case 0:
-					thread[i].SetPriority(alt::ThreadPriority::Critical);
-					break;
-				case 1:
-					thread[i].SetPriority(alt::ThreadPriority::Highest);
-					break;
-				case 2:
-					thread[i].SetPriority(alt::ThreadPriority::AboveNormal);
-					break;
-				case 3:
-					thread[i].SetPriority(alt::ThreadPriority::Normal);
-					break;
-				case 4:
-					thread[i].SetPriority(alt::ThreadPriority::BelowNormal);
-					break;
-				case 5:
-					thread[i].SetPriority(alt::ThreadPriority::Lowest);
-					break;
-				case 6:
-					thread[i].SetPriority(alt::ThreadPriority::Idle);
-					break;
+					case 0:
+						thread[i].SetPriority(alt::ThreadPriority::Critical);
+						break;
+					case 1:
+						thread[i].SetPriority(alt::ThreadPriority::Highest);
+						break;
+					case 2:
+						thread[i].SetPriority(alt::ThreadPriority::AboveNormal);
+						break;
+					case 3:
+						thread[i].SetPriority(alt::ThreadPriority::Normal);
+						break;
+					case 4:
+						thread[i].SetPriority(alt::ThreadPriority::BelowNormal);
+						break;
+					case 5:
+						thread[i].SetPriority(alt::ThreadPriority::Lowest);
+						break;
+					case 6:
+						thread[i].SetPriority(alt::ThreadPriority::Idle);
+						break;
 				}
 				thread[i].Resume();
 			}

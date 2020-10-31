@@ -37,19 +37,19 @@ void DriveUdpController2();
 
 namespace PerfCheck
 {
-    /**
-     @class	UDPPerformanceCheck
-     @brief	UDPクラス性能測定用
-    */
-    class UDPPerformanceCheck : public PerformanceCheck
-    {
-    public:
-        UDPPerformanceCheck();
-        virtual ~UDPPerformanceCheck();
+	/**
+	 @class	UDPPerformanceCheck
+	 @brief	UDPクラス性能測定用
+	*/
+	class UDPPerformanceCheck : public PerformanceCheck
+	{
+	public:
+		UDPPerformanceCheck();
+		virtual ~UDPPerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
-    };
+		virtual BOOL Init(alt::Console& console);
+		virtual BOOL DoAction();
+	};
 
 	/**
 	 @class	UdpController

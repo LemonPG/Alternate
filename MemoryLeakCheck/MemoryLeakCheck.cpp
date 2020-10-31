@@ -10,15 +10,15 @@
 
 int _tmain(int argc, TCHAR* argv[])
 {
-    CRT_SET_DEBUG_FLAG;
+	CRT_SET_DEBUG_FLAG;
 
-    LeakCheck::ArrayMemoryLeakCheck* check1 = new LeakCheck::ArrayMemoryLeakCheck();
-    check1->Init();
-    check1->DoAction();
-    delete check1;
+	LeakCheck::ArrayMemoryLeakCheck* check1 = new LeakCheck::ArrayMemoryLeakCheck();
+	check1->Init();
+	check1->DoAction();
+	delete check1;
 
-    LeakCheck::TStringMemoryLeakCheck* check2 = new LeakCheck::TStringMemoryLeakCheck();
-    check2->Init();
-    check2->DoAction();
-    delete check2;
+	LeakCheck::TStringMemoryLeakCheck* check2 = new LeakCheck::TStringMemoryLeakCheck();
+	check2->Init();
+	check2->DoAction();
+	delete check2;
 }

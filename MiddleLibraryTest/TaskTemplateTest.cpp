@@ -111,7 +111,7 @@ namespace MiddleLibraryTest
 			};
 
 			TaskTemplate taskTemplate;
-			auto exceptionTest = [&] {taskTemplate.DoAction(functions); };
+			auto exceptionTest = [&] { taskTemplate.DoAction(functions); };
 			Assert::ExpectException<LPTSTR>(exceptionTest, _T("PTSTRó·äOÇ™ê≥ÇµÇ≠î≠ê∂ÇµÇ‹ÇπÇÒÇ≈ÇµÇΩÅB"));
 			Assert::IsTrue(TaskStatus::doProcess == taskTemplate.GetStatus());
 		}

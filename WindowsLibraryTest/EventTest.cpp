@@ -188,7 +188,7 @@ namespace WindowsLibraryTest
 		TEST_METHOD(EventTest1)
 		{
 			Logger::WriteMessage("EventTest1 Start.\n");
-			
+
 			WindowsLibraryTest::EventTest1 eventTestSender(TRUE);
 			WindowsLibraryTest::EventTest1 eventTestReceiver1(FALSE);
 			WindowsLibraryTest::EventTest1 eventTestReceiver2(FALSE);

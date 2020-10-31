@@ -52,7 +52,7 @@ namespace WindowsLibraryTest
 
 				LPVOID lpvMem = shmem.Mapped();
 				Assert::IsNotNull(lpvMem);
-				
+
 				for (int i = 0; i < 1000; i++)
 				{
 					mutex.Wait();

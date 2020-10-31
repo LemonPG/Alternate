@@ -43,7 +43,7 @@ namespace MiddleLibraryTest
 			PipelineFactoryMethod* factory = new PipelineFactoryMethod();
 
 			ProductManager* manager = (ProductManager*)factory->Buildup();
-			
+
 			Config* config = new Config();
 			bool ret = config->Load(_T(".\\Config.ini"));
 			Assert::IsTrue(ret, _T("Configファイルの読み込みに失敗しました。"));

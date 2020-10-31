@@ -24,21 +24,21 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpvRese
 {
 	switch (ul_reason_for_call)
 	{
-	case DLL_PROCESS_ATTACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_ATTACH.\n"));
-		break;
+		case DLL_PROCESS_ATTACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_ATTACH.\n"));
+			break;
 
-	case DLL_THREAD_ATTACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_ATTACH.\n"));
-		break;
+		case DLL_THREAD_ATTACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_ATTACH.\n"));
+			break;
 
-	case DLL_THREAD_DETACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_DETACH.\n"));
-		break;
+		case DLL_THREAD_DETACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_DETACH.\n"));
+			break;
 
-	case DLL_PROCESS_DETACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_DETACH.\n"));
-		break;
+		case DLL_PROCESS_DETACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_DETACH.\n"));
+			break;
 	}
 
 	return TRUE;
@@ -165,9 +165,9 @@ BOOL SocketLibrary::SetKeepAliveValue(ULONG onoff, ULONG time, ULONG interval)
 }
 
 int SocketLibrary::WSAIoctl(DWORD dwIoControlCode, LPVOID lpvInBuffer, DWORD dwInBuffer,
-	LPVOID lpvOutBuffer, DWORD dwOutBuffer, LPDWORD lpdwBytesReturned,
-	LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine)
+							LPVOID lpvOutBuffer, DWORD dwOutBuffer, LPDWORD lpdwBytesReturned,
+							LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine)
 {
 	return ::WSAIoctl(_socket, dwIoControlCode, lpvInBuffer, dwInBuffer, lpvOutBuffer,
-		dwOutBuffer, lpdwBytesReturned, lpOverlapped, lpCompletionRoutine);
+					  dwOutBuffer, lpdwBytesReturned, lpOverlapped, lpCompletionRoutine);
 }

@@ -28,14 +28,14 @@ namespace alt
 		static BOOL IsExist(LPCTSTR name);
 		static skeleton::Array<TString> Find(LPCTSTR name);
 		static BOOL DirectoryWatch(LPCTSTR watchDirectory);
-		
+
 		//! @brief SymbolicLinkはdirコマンドで'SYMLINK'、'SYMLINKD'と
 		//         表示される。またエクスプローラではショートカットの
 		//         矢印がアイコンに表示される。ただし、管理者権限が作成
 		//         に必要となる。
 		//         コマンドは、mklink ～またはmklink /d ～で作成する
 		static BOOL MakeSymbolicLink(LPCTSTR source, LPCTSTR link, BOOL isFile = TRUE);
-		
+
 		//! @brief HardLinkはdirコマンドで区別がつかない。アイコンにも
 		//         変化が現れない。こちらは管理者権限が不要である。
 		//         コマンドは、mklink /h ～で作成する。削除はdel。

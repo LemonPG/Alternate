@@ -48,7 +48,7 @@ namespace WindowsLibraryTest
 			DWORD  ul_reason_for_call = 0;
 			LPVOID lpvReserved = NULL;
 			BOOL ret;
-			
+
 			ret = DllMain(hModule, ul_reason_for_call, lpvReserved);
 		}
 	};

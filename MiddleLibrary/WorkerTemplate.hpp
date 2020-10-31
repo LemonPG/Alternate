@@ -7,7 +7,8 @@
 
 namespace alt
 {
-	enum class WorkerStatus {
+	enum class WorkerStatus
+	{
 		Created,
 		BeforeInitialize,
 		Initialized,

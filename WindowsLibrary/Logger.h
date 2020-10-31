@@ -11,11 +11,11 @@
 
 namespace alt
 {
-    /**
-     @class		Logger
-     @brief		ログに関するクラス
-     */
-    class DLL_DECLSPEC Logger : public WindowsLibrary
+	/**
+	 @class		Logger
+	 @brief		ログに関するクラス
+	 */
+	class DLL_DECLSPEC Logger : public WindowsLibrary
 	{
 	public:
 		Logger();

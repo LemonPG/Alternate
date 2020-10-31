@@ -47,7 +47,7 @@ BOOL NewPerformanceCheck::Core(const int param1)
 		{
 			int index = rand() % 10;
 			TCHAR tsz[10];
-			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(),index);
+			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(), index);
 			OutputDebugString(tsz);
 
 			LPVOID lpvMem = new BYTE[me->_allocSize[index]];
@@ -88,7 +88,7 @@ BOOL NewPerformanceCheck::Core(const int param1)
 
 	event.Set();
 	WaitForMultipleObjects(numOfThreads, threadHandles, TRUE, INFINITE);
-	
+
 	Q.Finish();
 	Write(_T("åvë™èIóπ\n"));
 

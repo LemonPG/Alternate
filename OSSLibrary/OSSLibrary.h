@@ -11,10 +11,10 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpvRese
 
 namespace oss
 {
-    class DLL_DECLSPEC OSSLibrary
-    {
-    public:
-        OSSLibrary();
-        virtual ~OSSLibrary();
-    };
+	class DLL_DECLSPEC OSSLibrary
+	{
+	public:
+		OSSLibrary();
+		virtual ~OSSLibrary();
+	};
 }

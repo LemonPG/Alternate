@@ -105,7 +105,7 @@ BOOL StdFilePerformanceCheck::Core1(const int param1)
 
 	TCHAR tszMsg[128];
 	_stprintf_s(tszMsg, _T("%10dbytes単位の書き込み 書き込み量:%10lld 書き込み時間：%10.4fmsec 結果:%9.4fMBytes/sec\n"),
-		param1, writeSize, Q.PastTime(), writePerformance);
+				param1, writeSize, Q.PastTime(), writePerformance);
 	this->Write(tszMsg);
 
 	return TRUE;
@@ -140,7 +140,7 @@ BOOL StdFilePerformanceCheck::Core2(const int param1)
 
 	TCHAR tszMsg[128];
 	_stprintf_s(tszMsg, _T("%10dbytes単位の読み込み 読み込み量:%10lld 読み込み時間：%10.4fmsec 結果:%9.4fMBytes/sec\n"),
-		param1, readSize, Q.PastTime(), readPerformance);
+				param1, readSize, Q.PastTime(), readPerformance);
 	this->Write(tszMsg);
 
 	return TRUE;

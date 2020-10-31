@@ -13,24 +13,24 @@
 
 namespace PerfCheck
 {
-    /**
-     @class	FilePerformanceCheck
-     @brief	Fileクラス性能測定用
-    */
-    class FilePerformanceCheck : public PerformanceCheck
-    {
-    public:
-        FilePerformanceCheck();
-        virtual ~FilePerformanceCheck();
+	/**
+	 @class	FilePerformanceCheck
+	 @brief	Fileクラス性能測定用
+	*/
+	class FilePerformanceCheck : public PerformanceCheck
+	{
+	public:
+		FilePerformanceCheck();
+		virtual ~FilePerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
+		virtual BOOL Init(alt::Console& console);
+		virtual BOOL DoAction();
 
-    protected:
-        virtual BOOL Core(const int param1);
-        virtual BOOL Core1(const int param1);
-        virtual BOOL Core2(const int param1);
+	protected:
+		virtual BOOL Core(const int param1);
+		virtual BOOL Core1(const int param1);
+		virtual BOOL Core2(const int param1);
 
-        size_t _maxFileSize;
-    };
+		size_t _maxFileSize;
+	};
 }

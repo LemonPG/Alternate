@@ -56,7 +56,7 @@ namespace alt
 		LogFile();
 		LogFile(LogLevel logLevel, LPCTSTR fileName, SHORT sRotation, DWORD dwFileSize);
 		~LogFile();
-		
+
 		BOOL Init(LogLevel logLevel, LPCTSTR fileName, SHORT sRotation, DWORD dwFileSize);
 
 		VOID LogFatal(LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId());
@@ -89,7 +89,7 @@ namespace alt
 		DWORD _dwFileSize;			//! ログファイルサイズ
 		CriticalSection _lock;		//! 書き込み時ロック
 		LPCTSTR _format = _T("%04d/%02d/%02d %02d:%02d:%02d.%03d %5d %5s %s\r\n");
-		
+
 		LPCTSTR _lpctszExtension = _T(".log");
 		LPCTSTR _lpctszLogFileName = _T("%s.log");
 		LPCTSTR _lpctszSearchKeyword = _T("??.log");

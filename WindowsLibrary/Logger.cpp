@@ -10,7 +10,7 @@
 using namespace alt;
 
 Logger::Logger()
-    :WindowsLibrary()
+	:WindowsLibrary()
 {
 }
 

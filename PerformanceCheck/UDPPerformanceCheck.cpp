@@ -23,17 +23,17 @@ BOOL DriveUdpController1ConsoleHandler(DWORD dwType)
 
 	switch (dwType)
 	{
-	case 0: // Ctrl + C
-	case 1: // Ctrl + Break
-		__udpController1->Stop();
-		ret = TRUE; // 終了させません。
-		break;
+		case 0: // Ctrl + C
+		case 1: // Ctrl + Break
+			__udpController1->Stop();
+			ret = TRUE; // 終了させません。
+			break;
 
-	case 2: // Console Close
-	case 3: // Log off
-	case 4: // Shut down
-		ret = FALSE; // 次に委ねます。
-		break;
+		case 2: // Console Close
+		case 3: // Log off
+		case 4: // Shut down
+			ret = FALSE; // 次に委ねます。
+			break;
 	}
 
 	_tprintf(_T("DriveUdpController1ConsoleHandler(%d) OUT.\n"), dwType);
@@ -101,17 +101,17 @@ BOOL DriveUdpController2ConsoleHandler(DWORD dwType)
 
 	switch (dwType)
 	{
-	case 0: // Ctrl + C
-	case 1: // Ctrl + Break
-		__udpController2->Stop();
-		ret = TRUE; // 終了させません。
-		break;
+		case 0: // Ctrl + C
+		case 1: // Ctrl + Break
+			__udpController2->Stop();
+			ret = TRUE; // 終了させません。
+			break;
 
-	case 2: // Console Close
-	case 3: // Log off
-	case 4: // Shut down
-		ret = FALSE; // 次に委ねます。
-		break;
+		case 2: // Console Close
+		case 3: // Log off
+		case 4: // Shut down
+			ret = FALSE; // 次に委ねます。
+			break;
 	}
 
 	_tprintf(_T("DriveUdpController2ConsoleHandler(%d) OUT.\n"), dwType);
@@ -292,7 +292,7 @@ DWORD UdpController::Invoke(LPVOID lpvParam)
 		{
 			_tprintf(_T("UdpController::Invoke(LPVOID)\n"));
 			_tprintf(_T(" recvSize=%d Socket disconnected. reason:%d\n"),
-				recvSize, WSAGetLastError());
+					 recvSize, WSAGetLastError());
 			return -1;
 		}
 #ifdef _DUMP_DATA
@@ -307,7 +307,7 @@ DWORD UdpController::Invoke(LPVOID lpvParam)
 		{
 			_tprintf(_T("UdpController::Invoke(LPVOID)\n"));
 			_tprintf(_T(" send=%d sended=%d Invalid send size. reason:%d\n"),
-				dataLen, sendSize, WSAGetLastError());
+					 dataLen, sendSize, WSAGetLastError());
 			return -2;
 		}
 	}

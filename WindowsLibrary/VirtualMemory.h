@@ -22,7 +22,7 @@ namespace alt
 
 		LPVOID Alloc(SIZE_T size);
 		BOOL Free();
-		
+
 		BOOL Reserve(SIZE_T size);
 		LPVOID Commit();
 		BOOL Decommit();

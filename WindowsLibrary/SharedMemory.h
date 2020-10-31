@@ -11,25 +11,25 @@
 
 namespace alt
 {
-    /**
-     @class	SharedMemory
-     @brief	共有メモリに関するWindowsAPIを集約したクラス
-    */
-    class DLL_DECLSPEC SharedMemory : public HandleLibrary
-    {
-    public:
-        SharedMemory();
-        virtual ~SharedMemory();
+	/**
+	 @class	SharedMemory
+	 @brief	共有メモリに関するWindowsAPIを集約したクラス
+	*/
+	class DLL_DECLSPEC SharedMemory : public HandleLibrary
+	{
+	public:
+		SharedMemory();
+		virtual ~SharedMemory();
 
-        BOOL Create(LPCTSTR lpctszName, DWORD dwSize);
-        BOOL Open(LPCTSTR lpctszName);
+		BOOL Create(LPCTSTR lpctszName, DWORD dwSize);
+		BOOL Open(LPCTSTR lpctszName);
 
-        LPVOID Mapped();
-        BOOL Unmapped();
+		LPVOID Mapped();
+		BOOL Unmapped();
 
-    private:
-        LPVOID _lpvMapped;
-    };
+	private:
+		LPVOID _lpvMapped;
+	};
 
 }
 

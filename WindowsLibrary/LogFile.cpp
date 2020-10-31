@@ -89,32 +89,32 @@ LPCTSTR LogFile::GetLogLevelString(LogLevel logLevel)
 
 	switch (logLevel)
 	{
-	case LogLevel::Fatal:
-		ret = _lpctszLogLevelFatal;
-		break;
+		case LogLevel::Fatal:
+			ret = _lpctszLogLevelFatal;
+			break;
 
-	case LogLevel::Error:
-		ret = _lpctszLogLevelError;
-		break;
+		case LogLevel::Error:
+			ret = _lpctszLogLevelError;
+			break;
 
-	case LogLevel::Warn:
-		ret = _lpctszLogLevelWarn;
-		break;
+		case LogLevel::Warn:
+			ret = _lpctszLogLevelWarn;
+			break;
 
-	case LogLevel::Info:
-		ret = _lpctszLogLevelInfo;
-		break;
+		case LogLevel::Info:
+			ret = _lpctszLogLevelInfo;
+			break;
 
-	case LogLevel::Debug:
-		ret = _lpctszLoglevelDebug;
-		break;
+		case LogLevel::Debug:
+			ret = _lpctszLoglevelDebug;
+			break;
 
-	case LogLevel::Trace:
-		ret = _lpctszLogLevelTrace;
-		break;
+		case LogLevel::Trace:
+			ret = _lpctszLogLevelTrace;
+			break;
 
-	default:
-		break;
+		default:
+			break;
 	}
 
 	return ret;
@@ -126,16 +126,16 @@ VOID LogFile::LogWrite(LogLevel logLevel, LPCTSTR lpctszMessage, DWORD dwThreadI
 
 	GetLocalTime(&_localTime);
 	int length = lstrlen(lpctszMessage) + 40; // ヘッダー部(余裕あり)
-	
+
 	LPTSTR buffer = new TCHAR[length];
 	wsprintf(buffer, _format,
-		_localTime.wYear, _localTime.wMonth, _localTime.wDay,
-		_localTime.wHour, _localTime.wMinute, _localTime.wSecond,
-		_localTime.wMilliseconds, dwThreadID, this->GetLogLevelString(logLevel), lpctszMessage);
+			 _localTime.wYear, _localTime.wMonth, _localTime.wDay,
+			 _localTime.wHour, _localTime.wMinute, _localTime.wSecond,
+			 _localTime.wMilliseconds, dwThreadID, this->GetLogLevelString(logLevel), lpctszMessage);
 	DWORD dwWriteSize = lstrlen(buffer) * sizeof(TCHAR);
 	_file.Write(buffer, dwWriteSize);
 	delete[] buffer;
-	
+
 	_dwCurrentWriteSize += (int)dwWriteSize;
 	if (_dwCurrentWriteSize >= _dwFileSize)
 	{
@@ -145,7 +145,7 @@ VOID LogFile::LogWrite(LogLevel logLevel, LPCTSTR lpctszMessage, DWORD dwThreadI
 		this->CreateLog();		// 新ファイルを作成
 		_dwCurrentWriteSize = 0;
 	}
-	
+
 	_lock.Leave();
 }
 
@@ -160,7 +160,7 @@ VOID LogFile::RotateLogFile()
 {
 	TString previous(MAX_PATH);
 	TString current(MAX_PATH);
-	
+
 	if (_sFileCount == _sRotation + 1)
 	{
 		wsprintf(current.Ptr(), _lpctszRotationFileName, _baseFileName.Ctr(), _sRotation);

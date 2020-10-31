@@ -29,33 +29,33 @@ BOOL SocketBuilder::Startup()
 	int result = WSAStartup(MAKEWORD(2, 0), &_wsaData);
 	switch (result)
 	{
-	case 0:
-		ret = TRUE;
-		//LogInfo(_T("WSAStartup() 成功"));
-		break;
+		case 0:
+			ret = TRUE;
+			//LogInfo(_T("WSAStartup() 成功"));
+			break;
 
-	case WSASYSNOTREADY:
-		//LogInfo(_T("ネットワークサブシステムがネットワークへの接続を準備できていない"));
-		break;
+		case WSASYSNOTREADY:
+			//LogInfo(_T("ネットワークサブシステムがネットワークへの接続を準備できていない"));
+			break;
 
-	case WSAVERNOTSUPPORTED:
-		//LogInfo(_T("要求されたwinsockのバージョンがサポートされていない"));
-		break;
+		case WSAVERNOTSUPPORTED:
+			//LogInfo(_T("要求されたwinsockのバージョンがサポートされていない"));
+			break;
 
-	case WSAEINPROGRESS:
-		//LogInfo(_T("ブロッキング操作の実行中であるか、 またはサービスプロバイダがコールバック関数を処理している"));
-		break;
+		case WSAEINPROGRESS:
+			//LogInfo(_T("ブロッキング操作の実行中であるか、 またはサービスプロバイダがコールバック関数を処理している"));
+			break;
 
-	case WSAEPROCLIM:
-		//LogInfo(_T("winsockが処理できる最大プロセス数に達した"));
-		break;
+		case WSAEPROCLIM:
+			//LogInfo(_T("winsockが処理できる最大プロセス数に達した"));
+			break;
 
-	case WSAEFAULT:
-		//LogInfo(_T("第二引数であるlpWSAData は有効なポインタではない"));
-		break;
+		case WSAEFAULT:
+			//LogInfo(_T("第二引数であるlpWSAData は有効なポインタではない"));
+			break;
 
-	default:
-		break;
+		default:
+			break;
 	}
 
 	if (ret != TRUE)
@@ -93,7 +93,7 @@ BOOL SocketBuilder::SetSockAddr(ADDRESS_FAMILY family, u_short portNo, LPCTSTR l
 			response = FALSE;
 		}
 	}
-	
+
 	return response;
 }
 
@@ -133,7 +133,7 @@ BOOL SocketBuilder::Bind()
 	{
 		response = FALSE;
 	}
-	
+
 	return response;
 }
 
@@ -161,7 +161,7 @@ BOOL SocketBuilder::Ioctl(long cmd, u_long arg)
 	{
 		response = FALSE;
 	}
-	
+
 	return response;
 }
 
@@ -256,7 +256,8 @@ BOOL SocketBuilder::Prepare(u_short portNo, LPCTSTR lpctszIpAddr)
 {
 	BOOL response = FALSE;
 
-	do {
+	do
+	{
 		response = this->Socket(AF_INET, SOCK_STREAM, 0);
 		if (response == FALSE)
 		{

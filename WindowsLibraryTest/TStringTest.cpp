@@ -123,7 +123,7 @@ namespace WindowsLibraryTest
 		TEST_METHOD(OperatorTest3)
 		{
 			alt::TString string1;
-			
+
 			string1 << _T("123") << _T("ABC");
 			Assert::AreEqual(_T("123ABC"), string1.Ctr());
 
@@ -259,7 +259,7 @@ namespace WindowsLibraryTest
 
 			//                        01234567890123456789012345
 			alt::TString string = _T("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-			
+
 			alt::TString str1 = string.Substring(0, 3);
 			Assert::IsTrue(_T("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), string.Ptr());
 			Assert::IsTrue(alt::TString(_T("ABC")) == str1, str1.Ctr());
@@ -271,7 +271,7 @@ namespace WindowsLibraryTest
 			alt::TString str3 = string.Substring(23, 3);
 			Assert::IsTrue(_T("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), string.Ptr());
 			Assert::IsTrue(alt::TString(_T("XYZ")) == str3, str3.Ctr());
-			
+
 			alt::TString str4 = string.Substring(24, 3);
 			Assert::IsTrue(_T("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), string.Ptr());
 			Assert::IsTrue(alt::TString() == str4, str4.Ctr());
@@ -382,10 +382,10 @@ namespace WindowsLibraryTest
 			Logger::WriteMessage("ReplaceTest1\n");
 
 			alt::TString baseString(_T("This text is sample."));
-			
+
 			alt::TString replaceBefore(_T("text"));
 			alt::TString replaceAfter(_T("contents"));
-			
+
 			alt::TString replaced = baseString.Replace(replaceBefore, replaceAfter);
 
 			Assert::AreEqual(_T("This contents is sample."), replaced.Ctr());

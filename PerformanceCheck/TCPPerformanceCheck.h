@@ -47,19 +47,19 @@ BOOL DriveTcpClientConsoleHandler(DWORD dwType);
 
 namespace PerfCheck
 {
-    /**
-     @class	TCPPerformanceCheck
-     @brief	TCPクラス性能測定用
-    */
-    class TCPPerformanceCheck : public PerformanceCheck
-    {
-    public:
-        TCPPerformanceCheck();
-        virtual ~TCPPerformanceCheck();
+	/**
+	 @class	TCPPerformanceCheck
+	 @brief	TCPクラス性能測定用
+	*/
+	class TCPPerformanceCheck : public PerformanceCheck
+	{
+	public:
+		TCPPerformanceCheck();
+		virtual ~TCPPerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
-    };
+		virtual BOOL Init(alt::Console& console);
+		virtual BOOL DoAction();
+	};
 
 	/**
 	 @class	ServerWorker

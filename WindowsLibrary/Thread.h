@@ -45,7 +45,7 @@ namespace alt
 		 @retval	FALSE(失敗)
 		 */
 		BOOL Create(PTHREAD_START_ROUTINE function = nullptr, LPVOID lpvParam = nullptr, DWORD dwCreationFlag = 0);
-		
+
 		/**
 		 @brief		スレッドを一時停止します。
 		 @return	DWORD
@@ -73,7 +73,7 @@ namespace alt
 
 	protected:
 
-		skeleton::ICallback*	_callback;
+		skeleton::ICallback* _callback;
 		DWORD					_threadID;
 	};
 }

@@ -14,20 +14,20 @@
 
 namespace PerfCheck
 {
-    /**
-     @class	ArrayPerformanceCheck
-     @brief	Arrayクラス性能測定用
-    */
-    class ArrayPerformanceCheck : public PerformanceCheck
-    {
-    public:
-        ArrayPerformanceCheck();
-        virtual ~ArrayPerformanceCheck();
+	/**
+	 @class	ArrayPerformanceCheck
+	 @brief	Arrayクラス性能測定用
+	*/
+	class ArrayPerformanceCheck : public PerformanceCheck
+	{
+	public:
+		ArrayPerformanceCheck();
+		virtual ~ArrayPerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
+		virtual BOOL Init(alt::Console& console);
+		virtual BOOL DoAction();
 
-    protected:
-        virtual BOOL Core();
-    };
+	protected:
+		virtual BOOL Core();
+	};
 }

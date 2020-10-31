@@ -31,7 +31,7 @@ namespace WindowsLibraryTest
 		{
 			Logger::WriteMessage("method cleanup.\n");
 		}
-		
+
 		TEST_METHOD(ConsoleProcessTest1)
 		{
 			Logger::WriteMessage("ConsoleProcessTest1\n");
@@ -41,7 +41,7 @@ namespace WindowsLibraryTest
 			TCHAR tszCmdline[MAX_PATH]{ _T("PING 192.168.2.1") };
 			BOOL ret = testProcess.Create(nullptr, tszCmdline);
 			Assert::IsTrue(ret);
-			
+
 			CHAR szBuf[1024];
 			DWORD dwSize;
 
@@ -54,9 +54,9 @@ namespace WindowsLibraryTest
 					dwSize = testProcess.Read(szBuf, sizeof(szBuf));
 					Logger::WriteMessage(szBuf);
 				}
-				
+
 				if (testProcess.GetErrNo() != ERROR_SUCCESS) break;
-				
+
 				DWORD dwRet = WaitForSingleObject(testProcess.GetProcessHandle(), 20);
 				if (dwRet == WAIT_TIMEOUT) continue;
 				if (dwRet == WAIT_OBJECT_0) break;

@@ -140,9 +140,9 @@ namespace DBLibraryTest
 			{
 				TCHAR tszMsg[128];
 				wsprintf(tszMsg, _T("%d %s %s\n"),
-					col,
-					statement2.GetColumnName(col),
-					statement2.GetColumnType(col));
+						 col,
+						 statement2.GetColumnName(col),
+						 statement2.GetColumnType(col));
 				Logger::WriteMessage(tszMsg);
 			}
 

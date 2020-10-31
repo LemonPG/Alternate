@@ -14,34 +14,34 @@
 
 namespace PerfCheck
 {
-    /**
-     @struct	WatchDogData
-     @brief     WatchDocTimerデータ保存用
-    */
-    typedef struct _WatchDogData
-    {
-        DWORD Tick;
-        double Elapsed;
-        SYSTEMTIME SystemTime;
-        LARGE_INTEGER StartTick;
-        LARGE_INTEGER FinishTick;
-        LARGE_INTEGER Frequency;
-    } WatchDogData;
+	/**
+	 @struct	WatchDogData
+	 @brief     WatchDocTimerデータ保存用
+	*/
+	typedef struct _WatchDogData
+	{
+		DWORD Tick;
+		double Elapsed;
+		SYSTEMTIME SystemTime;
+		LARGE_INTEGER StartTick;
+		LARGE_INTEGER FinishTick;
+		LARGE_INTEGER Frequency;
+	} WatchDogData;
 
-    /**
-     @class	WatchDocTimerPerformanceCheck
-     @brief	WatchDocTimerクラス性能測定用
-    */
-    class WatchDocTimerPerformanceCheck : public PerformanceCheck
-    {
-    public:
-        WatchDocTimerPerformanceCheck();
-        virtual ~WatchDocTimerPerformanceCheck();
+	/**
+	 @class	WatchDocTimerPerformanceCheck
+	 @brief	WatchDocTimerクラス性能測定用
+	*/
+	class WatchDocTimerPerformanceCheck : public PerformanceCheck
+	{
+	public:
+		WatchDocTimerPerformanceCheck();
+		virtual ~WatchDocTimerPerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
+		virtual BOOL Init(alt::Console& console);
+		virtual BOOL DoAction();
 
-    protected:
-        virtual BOOL Core();
-    };
+	protected:
+		virtual BOOL Core();
+	};
 }

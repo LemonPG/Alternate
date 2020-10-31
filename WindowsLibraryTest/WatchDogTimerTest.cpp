@@ -63,7 +63,7 @@ namespace WindowsLibraryTest
 				if (maxValue < dArray[i]) maxValue = dArray[i];
 			}
 			average = sum / count;
-			
+
 			for (int i = 0; i < count; i++)
 			{
 				sd += pow(average - dArray[i], 2);
@@ -232,7 +232,7 @@ namespace WindowsLibraryTest
 			double sum = 0;
 			double average = 0;
 			double sd = 0;
-			
+
 			for (int i = 0; i < count; i++)
 			{
 				if (dArray[i] < minValue) minValue = dArray[i];
@@ -240,7 +240,7 @@ namespace WindowsLibraryTest
 				sum += dArray[i];
 			}
 			average = sum / count;
-			
+
 			for (int i = 0; i < count; i++)
 			{
 				sd += pow(average - dArray[i], 2);

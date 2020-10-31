@@ -11,7 +11,7 @@
 using namespace PerfCheck;
 
 ArrayPerformanceCheck::ArrayPerformanceCheck()
-    :PerformanceCheck()
+	:PerformanceCheck()
 {
 }
 
@@ -21,48 +21,48 @@ ArrayPerformanceCheck::~ArrayPerformanceCheck()
 
 BOOL ArrayPerformanceCheck::Init(alt::Console& console)
 {
-    return PerformanceCheck::Init(console);
+	return PerformanceCheck::Init(console);
 }
 
 BOOL ArrayPerformanceCheck::DoAction()
 {
-    return this->Core();
+	return this->Core();
 }
 
 BOOL ArrayPerformanceCheck::Core()
 {
-    alt::QueryPerformance Q;
-    alt::skeleton::Array<ObjectHolder<int>> array;
+	alt::QueryPerformance Q;
+	alt::skeleton::Array<ObjectHolder<int>> array;
 
-    Q.Start();
+	Q.Start();
 
-    for (int i = 0; i < 10000; i++)
-    {
-        ObjectHolder<int> value(i);
-        array.Add(&value);
-    }
+	for (int i = 0; i < 10000; i++)
+	{
+		ObjectHolder<int> value(i);
+		array.Add(&value);
+	}
 
-    alt::skeleton::Array<ObjectHolder<int>> arrayCopy = array;
-    array.Clear(true);
+	alt::skeleton::Array<ObjectHolder<int>> arrayCopy = array;
+	array.Clear(true);
 
-    for (int i = 0; i < arrayCopy.Size(); i++)
-    {
-        ObjectHolder<int>* value = arrayCopy.Get(i);
-        if (i != value->Get())
-        {
-            throw "Test failed.";
-        }
-    }
+	for (int i = 0; i < arrayCopy.Size(); i++)
+	{
+		ObjectHolder<int>* value = arrayCopy.Get(i);
+		if (i != value->Get())
+		{
+			throw "Test failed.";
+		}
+	}
 
-    arrayCopy.Clear(true);
+	arrayCopy.Clear(true);
 
-    Q.Finish();
+	Q.Finish();
 
-    int msec = static_cast<int>(Q.PastTime());
+	int msec = static_cast<int>(Q.PastTime());
 
-    TCHAR tszMsg[128];
-    wsprintf(tszMsg, _T("It takes %dmsec.\n"), msec);
-    this->Write(tszMsg);
+	TCHAR tszMsg[128];
+	wsprintf(tszMsg, _T("It takes %dmsec.\n"), msec);
+	this->Write(tszMsg);
 
-    return TRUE;
+	return TRUE;
 }

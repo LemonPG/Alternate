@@ -52,7 +52,7 @@ BOOL HeapPerformanceCheck::Core(const int param1)
 		{
 			int index = rand() % 10;
 			TCHAR tsz[10];
-			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(),index);
+			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(), index);
 			OutputDebugString(tsz);
 
 			LPVOID lpvMem = heap.Allocate(me->_allocSize[index]);
@@ -93,7 +93,7 @@ BOOL HeapPerformanceCheck::Core(const int param1)
 
 	event.Set();
 	WaitForMultipleObjects(numOfThreads, threadHandles, TRUE, INFINITE);
-	
+
 	Q.Finish();
 	Write(_T("åvë™èIóπ\n"));
 

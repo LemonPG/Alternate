@@ -105,15 +105,15 @@ namespace WindowsLibraryTest
 		TEST_METHOD(LogFileTest1)
 		{
 			Logger::WriteMessage("LogFileTest1\n");
-			
+
 			alt::LogFile logFile(alt::LogLevel::Trace, _T(".\\TestLog1"), 10, 1024 * 1024);
 
 			for (int i = 0; i < 900; i++)
 			{
 				logFile.LogDebug(_T("DebugLog -------------------------------------------"));
 				logFile.LogTrace(_T("TraceLog -------------------------------------------"));
-				logFile.LogInfo (_T("InfoLog --------------------------------------------"));
-				logFile.LogWarn (_T("WarnLog --------------------------------------------"));
+				logFile.LogInfo(_T("InfoLog --------------------------------------------"));
+				logFile.LogWarn(_T("WarnLog --------------------------------------------"));
 				logFile.LogError(_T("ErrorLog -------------------------------------------"));
 				logFile.LogFatal(_T("FatalLog -------------------------------------------"));
 			}

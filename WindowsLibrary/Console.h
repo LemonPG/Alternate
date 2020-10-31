@@ -102,13 +102,13 @@ namespace alt
 
 		//! @brief コンソール出力ウィンドウを作成します。
 		BOOL Create();
-		
+
 		//! @brief Consoleクラスを初期化します。
 		BOOL Init();
 
 		//! @brief 文字色、背景色を設定します。
 		BOOL SetColor(ForeColor foreColor, BackColor backColor);
-		
+
 		//! @brief コンソールに文字を出力します。
 		DWORD Write(LPCTSTR lpctszString);
 
