@@ -114,7 +114,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)$(PlatformTarget)\$(Configuration);$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>COPY $(ProjectDir)test.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
+      <Command>COPY $(ProjectDir)*.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>テストファイルをコピーします。</Message>
@@ -135,7 +135,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)$(PlatformTarget)\$(Configuration);$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>COPY $(ProjectDir)test.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
+      <Command>COPY $(ProjectDir)*.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>テストファイルをコピーします。</Message>
@@ -160,7 +160,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)$(PlatformTarget)\$(Configuration);$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>COPY $(ProjectDir)test.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
+      <Command>COPY $(ProjectDir)*.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>テストファイルをコピーします。</Message>
@@ -185,7 +185,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)$(PlatformTarget)\$(Configuration);$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>COPY $(ProjectDir)test.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
+      <Command>COPY $(ProjectDir)*.json $(SolutionDir)$(PlatformTarget)\$(Configuration)\</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>テストファイルをコピーします。</Message>
@@ -211,6 +211,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="FlowSettings.json" />
     <None Include="test.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

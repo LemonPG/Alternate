@@ -32,12 +32,18 @@ namespace OSSLibraryTest
 			Logger::WriteMessage("method cleanup.\n");
 		}
 
+        void ShowValue(std::string key, std::string value)
+        {
+            std::string response = key + ":" + value + "\n";
+            Logger::WriteMessage(response.c_str());
+        }
+
 		TEST_METHOD(PicoJsonTest1)
 		{
 			Logger::WriteMessage("PicoJsonTest1.\n");
 
             std::ifstream ifs;
-            ifs.open("test.json");
+            ifs.open("test.json"); // CAUTION:ビルドパッチで実行環境にコピーしています。
             if (ifs.fail())
             {
                 std::cerr << "fail to read test.json" << std::endl;
@@ -72,58 +78,120 @@ namespace OSSLibraryTest
                 picojson::object Root = val.get<picojson::object>();
 
                 int Numeric = (int)Root["Numeric"].get<double>();
-                std::cout << "Numeric:" << Numeric << std::endl;
+                ShowValue("Numeric", std::to_string(Numeric));
 
                 auto String = Root["String"].get<std::string>();
-                std::cout << "String:" << String << std::endl;
+                ShowValue("String", String);
 
                 bool Boolean = Root["Boolean"].get<bool>();
-                std::cout << "Boolean:" << std::boolalpha << Boolean << std::endl;
+                ShowValue("Boolean", std::to_string(Boolean));
 
-                std::cout << "Object:" << std::endl;
+                ShowValue("Object", ">>");
                 picojson::object Object = Root["Object"].get<picojson::object>();
 
                 double _Numeric = Object["numeric"].get<double>();
-                std::cout << "  numeric:" << _Numeric << std::endl;
+                ShowValue(">numeric", std::to_string(_Numeric));
 
                 auto _String = Object["string"].get<std::string>();
-                std::cout << "  string:" << _String << std::endl;
+                ShowValue(">string", _String);
 
                 bool _Boolean = Object["boolean"].get<bool>();
-                std::cout << "  boolean:" << std::boolalpha << _Boolean << std::endl;
+                ShowValue(">boolean", std::to_string(_Boolean));
 
                 auto _Array1 = Object["Array1"].get<picojson::array>();
-                std::cout << "  Array1:";
+                ShowValue(">Array1", ">>");
                 for (auto item : _Array1)
                 {
-                    std::cout << item.get<double>() << ",";
+                    ShowValue(">>Array1Value", std::to_string(item.get<double>()));
                 }
-                std::cout << std::endl;
 
                 auto _Array2 = Object["Array2"].get<picojson::array>();
-                std::cout << "  Array2:";
+                ShowValue(">Array2", ">>");
                 for (auto item : _Array2)
                 {
-                    std::cout << item.get<std::string>() << ",";
+                    ShowValue(">>Array2Value", item.get<std::string>());
                 }
-                std::cout << std::endl;
 
                 auto Array1 = Root["Array1"].get<picojson::array>();
-                std::cout << "Array1:";
+                ShowValue("Array1Value", ">>");
                 for (auto item : Array1)
                 {
-                    std::cout << item.get<double>() << ",";
+                    ShowValue(">Array1Value", std::to_string(item.get<double>()));
                 }
-                std::cout << std::endl;
 
                 auto Array2 = Root["Array2"].get<picojson::array>();
-                std::cout << "Array2:";
+                ShowValue("Array2", ">>");
                 for (auto item : Array2)
                 {
-                    std::cout << item.get<std::string>() << ",";
+                    ShowValue(">Array2Value", item.get<std::string>());
 
                 }
-                std::cout << std::endl;
+            }
+            catch (...)
+            {
+                Logger::WriteMessage("catched anything.\n");
+                Assert::Fail(_T("JSON分析中に例外が発生しました。"));
+            }
+        }
+
+        TEST_METHOD(FlowSettingsTest1)
+        {
+            Logger::WriteMessage("FlowSettingsTest1.\n");
+
+            std::ifstream ifs;
+            ifs.open("FlowSettings.json"); // CAUTION:ビルドパッチで実行環境にコピーしています。
+            if (ifs.fail())
+            {
+                std::cerr << "fail to read FlowSettings.json" << std::endl;
+                Assert::Fail(_T("FlowSettings.jsonのオープンに失敗しました。"));
+            }
+
+            const std::string json(
+                (std::istreambuf_iterator<char>(ifs)),
+                std::istreambuf_iterator<char>());
+            ifs.close();
+
+            picojson::value val;
+            const std::string error = picojson::parse(val, json);
+            if (!error.empty())
+            {
+                std::cerr << error << std::endl;
+                Assert::Fail(_T("picojson::parse()に失敗しました。"));
+            }
+
+            try
+            {
+                picojson::object Root = val.get<picojson::object>();
+
+                for (const auto& item : Root)
+                {
+                    ShowValue("Key:", item.first);
+
+                    picojson::object Element = Root[item.first].get<picojson::object>();
+                    auto id = Element["id"].get<std::string>();
+                    ShowValue(" id", id);
+                    auto name = Element["name"].get<std::string>();
+                    ShowValue(" name", name);
+                    auto object = Element["object"].get<std::string>();
+                    ShowValue(" object", object);
+                    auto product = Element["product"].get<std::string>();
+                    ShowValue(" product", product);
+                   
+                    if (Element["next"].is<picojson::array>())
+                    {
+                        auto nextElements = Element["next"].get<picojson::array>();
+                        for (const auto& next : nextElements)
+                        {
+                            ShowValue(" >next", next.get<std::string>());
+                        }
+                    }
+                    else
+                    {
+                        auto next = Element["next"].get<std::string>();
+                        ShowValue(" next", next);
+                    }
+
+                }
             }
             catch (...)
             {
@@ -131,5 +199,5 @@ namespace OSSLibraryTest
                 Assert::Fail(_T("JSON分析中に例外が発生しました。"));
             }
         }
-	};
+    };
 }

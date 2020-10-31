@@ -15,4 +15,5 @@
 #include "CppUnitTest.h"
 #include <iostream>
 #include <fstream>
+#include <map>
 #include "picojson.h"
