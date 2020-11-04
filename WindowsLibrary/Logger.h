@@ -8,6 +8,9 @@
 
 #include "framework.h"
 #include "WindowsLibrary.h"
+#include "TString.h"
+#include "Console.h"
+#include "LogFile.h"
 
 namespace alt
 {
@@ -18,10 +21,25 @@ namespace alt
 	class DLL_DECLSPEC Logger : public WindowsLibrary
 	{
 	public:
+		void Log(LPCTSTR lpctszMessage);
+
+		static void init();
+
+		static void error(TString& message);
+		static void warn(TString& message);
+		static void info(TString& message);
+		static void debug(TString& message);
+		static void trace(TString& message);
+
+	private:
 		Logger();
+		Logger(const Logger&);
+		Logger& operator = (const Logger&);
 		virtual ~Logger();
 
-		void Log(LPCTSTR lpctszMessage);
+		static Logger* _instance;
+		static Console* _console;
+		static LogFile* _log;
 	};
 }
 

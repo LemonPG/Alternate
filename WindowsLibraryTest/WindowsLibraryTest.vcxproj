@@ -180,6 +180,7 @@
     <ClCompile Include="FileUtilityTest.cpp" />
     <ClCompile Include="HeapMemoryTest.cpp" />
     <ClCompile Include="LogFileTest.cpp" />
+    <ClCompile Include="LoggerTest.cpp" />
     <ClCompile Include="MutexTest.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
