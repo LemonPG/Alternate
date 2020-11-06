@@ -21,7 +21,6 @@ namespace PerfCheck
 		StdFilePerformanceCheck();
 		virtual ~StdFilePerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 
 	protected:

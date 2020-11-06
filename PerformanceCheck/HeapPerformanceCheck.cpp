@@ -19,11 +19,6 @@ HeapPerformanceCheck::~HeapPerformanceCheck()
 {
 }
 
-BOOL HeapPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL HeapPerformanceCheck::DoAction()
 {
 	return this->Core(0);

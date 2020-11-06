@@ -7,18 +7,38 @@
 
 #include "pch.h"
 #include "MemoryLeakCheck.h"
+#include "ArrayMemoryLeakCheck.h"
+#include "TStringMemoryLeakCheck.h"
 
 int _tmain(int argc, TCHAR* argv[])
 {
 	CRT_SET_DEBUG_FLAG;
 
-	LeakCheck::ArrayMemoryLeakCheck* check1 = new LeakCheck::ArrayMemoryLeakCheck();
-	check1->Init();
-	check1->DoAction();
-	delete check1;
+	int action = ::GetPrivateProfileInt(
+		_T("Target"),
+		_T("Action"),
+		-1,
+		CONFIG_FILE);
 
-	LeakCheck::TStringMemoryLeakCheck* check2 = new LeakCheck::TStringMemoryLeakCheck();
-	check2->Init();
-	check2->DoAction();
-	delete check2;
+	if (action == -1)
+	{
+		_tprintf(_T("Action‚ÌÝ’è’l‚ªˆÙí(%d)‚Å‚·B\n"), action);
+		return -1;
+	}
+
+	if (action == 1)
+	{
+		LeakCheck::ArrayMemoryLeakCheck* check1 = new LeakCheck::ArrayMemoryLeakCheck();
+		check1->Init();
+		check1->DoAction();
+		delete check1;
+	}
+
+	if (action == 2)
+	{
+		LeakCheck::TStringMemoryLeakCheck* check2 = new LeakCheck::TStringMemoryLeakCheck();
+		check2->Init();
+		check2->DoAction();
+		delete check2;
+	}
 }

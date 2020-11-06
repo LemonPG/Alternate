@@ -34,7 +34,7 @@ TString::TString(int length)
 
 TString::~TString()
 {
-	if (!_lptszString) delete[] _lptszString;
+	if (_lptszString) delete[] _lptszString;
 }
 
 BOOL TString::operator == (LPCTSTR lpctszString)
@@ -211,9 +211,9 @@ TString TString::Substring(int startPos, int length)
 	int targetLen = startPos + length;
 	if (targetLen > len || targetLen == 0) return response1;
 
-	TString response2(length + sizeof(TCHAR));
-	if (length) LPTSTR p = lstrcpyn(response2.Ptr(), &_lptszString[startPos], length + 1);
-	else LPTSTR p = lstrcpyn(response2.Ptr(), &_lptszString[startPos], len - startPos + 1);
+	int cutSize = length > 0 ? length + 1 : len - startPos + 1;
+	TString response2(cutSize + sizeof(TCHAR));
+	LPTSTR p = lstrcpyn(response2.Ptr(), &_lptszString[startPos], cutSize);
 
 	return response2;
 }
@@ -293,7 +293,10 @@ TString& TString::Format(LPCTSTR format, ...)
 	va_start(args, format);
 
 	len = (_vsctprintf(format, args) + 1) * sizeof(TCHAR);
+
+	if (_lptszString) delete[] _lptszString;
 	_lptszString = new TCHAR[len];
+
 
 	if (_lptszString != nullptr)
 	{
@@ -332,10 +335,7 @@ VOID TString::Copy(LPCTSTR lpctszString)
 	if (lpctszString)
 	{
 		DWORD dwLen = lstrlen(lpctszString);
-		if (_lptszString)
-		{
-			delete _lptszString;
-		}
+		if (_lptszString) delete[] _lptszString;
 		_lptszString = new TCHAR[dwLen + sizeof(TCHAR)];
 		lstrcpy(_lptszString, lpctszString);
 	}

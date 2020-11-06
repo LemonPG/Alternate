@@ -180,11 +180,6 @@ UDPPerformanceCheck::~UDPPerformanceCheck()
 {
 }
 
-BOOL UDPPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL UDPPerformanceCheck::DoAction()
 {
 	alt::Thread threadServer;

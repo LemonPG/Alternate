@@ -20,11 +20,6 @@ FilePerformanceCheck::~FilePerformanceCheck()
 {
 }
 
-BOOL FilePerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL FilePerformanceCheck::DoAction()
 {
 	_maxFileSize = 16 * 1000;

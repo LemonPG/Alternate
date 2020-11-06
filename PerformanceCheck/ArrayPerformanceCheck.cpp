@@ -19,11 +19,6 @@ ArrayPerformanceCheck::~ArrayPerformanceCheck()
 {
 }
 
-BOOL ArrayPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL ArrayPerformanceCheck::DoAction()
 {
 	return this->Core();

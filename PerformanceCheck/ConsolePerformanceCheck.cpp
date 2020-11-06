@@ -22,11 +22,6 @@ ConsolePerformanceCheck::~ConsolePerformanceCheck()
 
 }
 
-BOOL ConsolePerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL ConsolePerformanceCheck::DoAction()
 {
 	this->Core(0);
@@ -43,7 +38,7 @@ BOOL ConsolePerformanceCheck::DoAction()
 
 BOOL ConsolePerformanceCheck::Core(const int param1)
 {
-	const int count = 1000;
+	const int count = 10000;
 	alt::QueryPerformance Q;
 
 	Q.Start();

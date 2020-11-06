@@ -57,7 +57,6 @@ namespace PerfCheck
 		TCPPerformanceCheck();
 		virtual ~TCPPerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 	};
 

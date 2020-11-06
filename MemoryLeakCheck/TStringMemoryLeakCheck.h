@@ -17,5 +17,6 @@ namespace LeakCheck
 		BOOL DoAction1();
 		BOOL DoAction2();
 		BOOL DoAction3();
+		BOOL DoAction4();
 	};
 }

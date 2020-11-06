@@ -60,6 +60,9 @@
     <ClCompile Include="UDPPerformanceCheck.cpp">
       <Filter>ソース ファイル\Target</Filter>
     </ClCompile>
+    <ClCompile Include="LoggerPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -102,6 +105,9 @@
       <Filter>ヘッダー ファイル\Target</Filter>
     </ClInclude>
     <ClInclude Include="UDPPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerPerformanceCheck.h">
       <Filter>ヘッダー ファイル\Target</Filter>
     </ClInclude>
   </ItemGroup>

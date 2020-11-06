@@ -47,7 +47,6 @@ namespace PerfCheck
 		UDPPerformanceCheck();
 		virtual ~UDPPerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 	};
 

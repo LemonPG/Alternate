@@ -20,11 +20,6 @@ StdFilePerformanceCheck::~StdFilePerformanceCheck()
 
 }
 
-BOOL StdFilePerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL StdFilePerformanceCheck::DoAction()
 {
 	_maxFileSize = 16 * 1000;

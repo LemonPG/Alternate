@@ -19,16 +19,11 @@ TStringPerformanceCheck::~TStringPerformanceCheck()
 {
 }
 
-BOOL TStringPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL TStringPerformanceCheck::DoAction()
 {
 	this->Core(1);
-	this->Core(2);
-	this->Core(3);
+	//this->Core(2);
+	//this->Core(3);
 
 	return TRUE;
 }
@@ -80,15 +75,16 @@ BOOL TStringPerformanceCheck::Core1()
 
 	alt::TString delimiter(_T("\r\n"));
 	auto response = csvData.Split(delimiter);
+	alt::TString message;
 
 	for (size_t i = 0; i < response.Size(); i++)
 	{
 		auto response2 = response[i]->Split(alt::TString(_T(",")));
 		for (size_t j = 0; j < response2.Size(); j++)
 		{
-			alt::TString message;
 			message.Format(_T("%s\t"), response2[j]->Ctr());
 			this->Write(message.Ctr());
+			Sleep(1); // 診断ツール：プロセスメモリの増加状況確認用
 		}
 		this->Write(_T("\n"));
 	}
@@ -104,6 +100,16 @@ BOOL TStringPerformanceCheck::Core2()
 	alt::QueryPerformance Q;
 
 	Q.Start();
+
+	alt::TString formatMessage;
+	
+	for (int i = 0; i < 10000; i++)
+	{
+		formatMessage.Format(_T("This is a sample test No.%5d."), i);
+		this->Write(formatMessage.Ctr());
+		//Sleep(2); // 診断ツール：プロセスメモリの増加状況確認用
+	}
+
 	Q.Stop();
 	DWORD pastTime = static_cast<DWORD>(Q.PastTime() * 1000);
 

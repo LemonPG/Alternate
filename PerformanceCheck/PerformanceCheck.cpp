@@ -18,6 +18,7 @@
 #include "WatchDocTimerPerformanceCheck.h"
 #include "TCPPerformanceCheck.h"
 #include "UDPPerformanceCheck.h"
+#include "LoggerPerformanceCheck.h"
 
 using namespace PerfCheck;
 
@@ -30,10 +31,9 @@ PerformanceCheck::~PerformanceCheck()
 {
 }
 
-BOOL PerformanceCheck::Init(alt::Console& console)
+VOID PerformanceCheck::Init(alt::Console& console)
 {
 	_con = &console;
-	return _con->Init();
 }
 
 void PerformanceCheck::Write(LPCTSTR message)
@@ -63,11 +63,12 @@ void PerformanceCheck::Clear()
 
 int _tmain(int argc, TCHAR* argv[])
 {
-	wchar_t* locale = _tsetlocale(LC_ALL, _T("Japanese"));
-	_tprintf(_T("Now locale is %s\n"), locale);
-
 	alt::Console console;
+	console.Init();
 
+	wchar_t* locale = _tsetlocale(LC_ALL, _T("Japanese"));
+	console.Format(_T("Now locale is %s\n"), locale);
+	
 	int action = ::GetPrivateProfileInt(
 		_T("Target"),
 		_T("Action"),
@@ -76,7 +77,7 @@ int _tmain(int argc, TCHAR* argv[])
 
 	if (action == -1)
 	{
-		_tprintf(_T("Actionの設定値が異常(%d)です。\n"), action);
+		console.Format(_T("Actionの設定値が異常(%d)です。\n"), action);
 		return -1;
 	}
 
@@ -163,6 +164,14 @@ int _tmain(int argc, TCHAR* argv[])
 	if (action == 11)
 	{
 		auto t = new PerfCheck::UDPPerformanceCheck();
+		t->Init(console);
+		t->DoAction();
+		delete t;
+	}
+
+	if (action == 12)
+	{
+		auto t = new PerfCheck::LoggerPerformanceCheck();
 		t->Init(console);
 		t->DoAction();
 		delete t;

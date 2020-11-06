@@ -19,11 +19,6 @@ VectorPerformanceCheck::~VectorPerformanceCheck()
 {
 }
 
-BOOL VectorPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL VectorPerformanceCheck::DoAction()
 {
 	return this->Core(10000);

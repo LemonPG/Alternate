@@ -29,11 +29,9 @@ namespace PerfCheck
 		/**
 		 @brief     初期化処理
 		 @param[in] console Consoleオブジェクト
-		 @return    コンソール作成成否
-		 @retval    TRUE:成功
-		 @retval    FALSE:失敗
+		 @note		Consoleは初期化しておくこと。
 		 */
-		virtual BOOL Init(alt::Console& console);
+		virtual VOID Init(alt::Console& console);
 
 		/**
 		 @brief     処理開始

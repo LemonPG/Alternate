@@ -171,6 +171,7 @@ DWORD ClockElement::Invoke(LPVOID lpvParam)
 	pContainer container = new Container;
 	QueryPerformance Q;
 	double dPastTick = 0;
+	TString msg;
 
 	_watchdog->StartTimer(_dwInterval);
 
@@ -190,10 +191,11 @@ DWORD ClockElement::Invoke(LPVOID lpvParam)
 			Q.Stop();
 			dPastTick = Q.PastTime() * 1000;
 
-			TString msg(MAX_PATH); // TODO:Žb’è‚ÅMAX_PATH
-			wsprintf(msg.Ptr(), _T("ClockTime %3u Past=%5u Diff=%7d %02d:%02d:%02d.%03d"),
-					 byteData->GetSeqNo(), static_cast<UINT>(dPastTick), static_cast<INT>(dPastTick - (double)_dwInterval * 1000),
-					 localTime.wHour, localTime.wMinute, localTime.wSecond, localTime.wMilliseconds);
+			msg.Format(_T("ClockTime %3u Past=%5u Diff=%7d %02d:%02d:%02d.%03d"),
+					   byteData->GetSeqNo(), static_cast<UINT>(dPastTick),
+					   static_cast<INT>(dPastTick - (double)_dwInterval * 1000),
+					   localTime.wHour, localTime.wMinute, localTime.wSecond,
+					   localTime.wMilliseconds);
 			OutputDebugString(msg.Ctr());
 			_logFile.LogInfo(msg.Ctr());
 		}
@@ -309,15 +311,16 @@ void TerminateElement::Update(IData* data)
 	ByteData* byteData = dynamic_cast<ByteData*>(data);
 	pContainer container = (pContainer)(byteData->GetChunk());
 
+	TString message;
+
 	for (int i = 0; i < MAX_PRODUCT; i++)
 	{
-		TCHAR tszMsg[MAX_PATH]; // TODO:MAX_PATH‚ÍŽb’è
-		wsprintf(tszMsg, _T("Product(%u) Seq(%02u) Start(%u) ProcessTick(%u)"),
-				 i, byteData->GetSeqNo(), container->ProcessStartTick[i],
-				 static_cast<UINT>(container->ProcessTick[i]));
+		message.Format(_T("Product(%u) Seq(%02u) Start(%u) ProcessTick(%u)"),
+					   i, byteData->GetSeqNo(), container->ProcessStartTick[i],
+					   static_cast<UINT>(container->ProcessTick[i]));
 
-		OutputDebugString(tszMsg);
-		_logFile.LogInfo(tszMsg);
+		OutputDebugString(message.Ctr());
+		_logFile.LogInfo(message.Ctr());
 	}
 
 	delete data;
@@ -419,9 +422,9 @@ void DummyProduct::Update(IMessage* message)
 	msg += _T(")\n");
 	OutputDebugString(msg.Ctr());
 
-	TString msgString(MAX_PATH); // TODO:Žb’è‘[’u
-	wsprintf(msgString.Ptr(), _T("Response From(%d) To(%d) Command(%d)\n"),
-			 message->GetFrom(), message->GetTo(), message->GetCommand());
+	TString msgString;
+	msgString.Format(_T("Response From(%d) To(%d) Command(%d)\n"),
+					 message->GetFrom(), message->GetTo(), message->GetCommand());
 	OutputDebugString(msgString.Ctr());
 }
 
@@ -552,9 +555,9 @@ bool ProductManager::Exit()
 
 void ProductManager::Update(IMessage* message)
 {
-	TString msgString(MAX_PATH); // TODO:Žb’è‘[’u
-	wsprintf(msgString.Ptr(), _T("Response From(%d) To(%d) Command(%d)\n"),
-			 message->GetFrom(), message->GetTo(), message->GetCommand());
+	TString msgString;
+	msgString.Format(_T("Response From(%d) To(%d) Command(%d)\n"),
+					 message->GetFrom(), message->GetTo(), message->GetCommand());
 	OutputDebugString(msgString.Ctr());
 }
 

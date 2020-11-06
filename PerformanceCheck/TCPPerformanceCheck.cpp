@@ -25,11 +25,6 @@ TCPPerformanceCheck::~TCPPerformanceCheck()
 {
 }
 
-BOOL TCPPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL TCPPerformanceCheck::DoAction()
 {
 	alt::Thread threadServer;

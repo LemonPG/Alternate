@@ -22,7 +22,6 @@ namespace PerfCheck
 		ConsolePerformanceCheck();
 		virtual ~ConsolePerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 
 	protected:

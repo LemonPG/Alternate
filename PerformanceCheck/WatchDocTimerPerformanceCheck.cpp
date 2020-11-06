@@ -21,11 +21,6 @@ WatchDocTimerPerformanceCheck::~WatchDocTimerPerformanceCheck()
 	timeEndPeriod(1);
 }
 
-BOOL WatchDocTimerPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL WatchDocTimerPerformanceCheck::DoAction()
 {
 	return this->Core();

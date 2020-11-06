@@ -110,6 +110,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>COPY $(ProjectDir)MemoryLeakCheck.ini $(SolutionDir)$(PlatformTarget)\$(Configuration)</Command>
+      <Message>環境設定ファイル"MemoryLeakCheck.ini"を実行環境にコピーします。</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -169,6 +173,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>COPY $(ProjectDir)MemoryLeakCheck.ini $(SolutionDir)$(PlatformTarget)\$(Configuration)</Command>
+      <Message>環境設定ファイル"MemoryLeakCheck.ini"を実行環境にコピーします。</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArrayMemoryLeakCheck.cpp" />
@@ -192,6 +200,9 @@
     <ClInclude Include="ObjectHolder.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="TStringMemoryLeakCheck.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MemoryLeakCheck.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

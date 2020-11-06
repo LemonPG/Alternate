@@ -24,7 +24,6 @@ namespace PerfCheck
 		HeapPerformanceCheck();
 		virtual ~HeapPerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 
 		int _allocSize[10] = { 128,256,512,1024,2048,4096,8192,16384,32768,65536 };

@@ -23,13 +23,14 @@ BOOL TStringMemoryLeakCheck::DoAction()
 	this->DoAction1();
 	this->DoAction2();
 	this->DoAction3();
+	this->DoAction4();
 
 	return TRUE;
 }
 
 BOOL TStringMemoryLeakCheck::DoAction1()
 {
-	_tprintf(_T("TStringMemoryLeakCheck::DoAction1()\n"));
+	OutputDebugString(_T("TStringMemoryLeakCheck::DoAction1()\n"));
 	CRT_SET_DEBUG_FLAG;
 
 	alt::TString string1;
@@ -42,7 +43,7 @@ BOOL TStringMemoryLeakCheck::DoAction1()
 
 BOOL TStringMemoryLeakCheck::DoAction2()
 {
-	_tprintf(_T("TStringMemoryLeakCheck::DoAction2()\n"));
+	OutputDebugString(_T("TStringMemoryLeakCheck::DoAction2()\n"));
 	CRT_SET_DEBUG_FLAG;
 
 	alt::TString* string1 = new alt::TString();
@@ -60,7 +61,7 @@ BOOL TStringMemoryLeakCheck::DoAction2()
 
 BOOL TStringMemoryLeakCheck::DoAction3()
 {
-	_tprintf(_T("TStringMemoryLeakCheck::DoAction3()\n"));
+	OutputDebugString(_T("TStringMemoryLeakCheck::DoAction3()\n"));
 	CRT_SET_DEBUG_FLAG;
 
 	alt::TString string1;
@@ -74,6 +75,38 @@ BOOL TStringMemoryLeakCheck::DoAction3()
 
 	ASSERT(string3 == _T("string3"));
 	ASSERT(string3 != string4);
+
+	return TRUE;
+}
+
+BOOL TStringMemoryLeakCheck::DoAction4()
+{
+	OutputDebugString(_T("TStringMemoryLeakCheck::DoAction4()\n"));
+	CRT_SET_DEBUG_FLAG;
+
+	for (int i = 0; i < 100; i++)
+	{
+		alt::TString message1;
+		message1.Format(_T("TEST %d\n"), i);
+	}
+
+	alt::TString before = _T("TEST");
+	alt::TString after = _T("SAMPLE");
+
+	for (int i = 0; i < 100; i++)
+	{
+		alt::TString message2;
+		message2.Format(_T("TEST %d"), i);
+		message2.Replace(before, after);
+	}
+
+	for (int i = 0; i < 100; i++)
+	{
+		alt::TString message2;
+		message2.Format(_T("TEST TEST TEST TEST TEST %d"), i);
+		message2.ReplaceAll(before, after);
+	}
+
 
 	return TRUE;
 }

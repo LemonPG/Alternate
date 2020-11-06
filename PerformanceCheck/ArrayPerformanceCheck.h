@@ -24,7 +24,6 @@ namespace PerfCheck
 		ArrayPerformanceCheck();
 		virtual ~ArrayPerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 
 	protected:

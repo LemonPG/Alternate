@@ -371,15 +371,19 @@ namespace WindowsLibraryTest
 			Logger::WriteMessage("FormatTest\n");
 
 			alt::TString formatString;
+			TCHAR tszBuf[1024];
 
-			formatString.Format(_T(" TEST %d/%d "), 1, 2).Trim();
-
-			Assert::AreEqual(_T("TEST 1/2"), formatString.Ctr());
+			for (int i = 0; i < 100; i++)
+			{
+				formatString.Format(_T("FormatTest(%d)"), i);
+				wsprintf(tszBuf, _T("FormatTest(%d)"), i);
+				Assert::AreEqual(tszBuf, formatString.Ctr());
+			}
 		}
 
-		TEST_METHOD(ReplaceTest1)
+		TEST_METHOD(ReplaceTest1a)
 		{
-			Logger::WriteMessage("ReplaceTest1\n");
+			Logger::WriteMessage("ReplaceTest1a\n");
 
 			alt::TString baseString(_T("This text is sample."));
 
@@ -389,6 +393,20 @@ namespace WindowsLibraryTest
 			alt::TString replaced = baseString.Replace(replaceBefore, replaceAfter);
 
 			Assert::AreEqual(_T("This contents is sample."), replaced.Ctr());
+		}
+
+		TEST_METHOD(ReplaceTest1b)
+		{
+			Logger::WriteMessage("ReplaceTest1b\n");
+
+			alt::TString baseString(_T("This contents is sample."));
+
+			alt::TString replaceBefore(_T("contents"));
+			alt::TString replaceAfter(_T("text"));
+
+			alt::TString replaced = baseString.Replace(replaceBefore, replaceAfter);
+
+			Assert::AreEqual(_T("This text is sample."), replaced.Ctr());
 		}
 
 		TEST_METHOD(ReplaceTest2)

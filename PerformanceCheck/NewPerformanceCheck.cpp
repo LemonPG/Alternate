@@ -19,11 +19,6 @@ NewPerformanceCheck::~NewPerformanceCheck()
 {
 }
 
-BOOL NewPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL NewPerformanceCheck::DoAction()
 {
 	return this->Core(0);
