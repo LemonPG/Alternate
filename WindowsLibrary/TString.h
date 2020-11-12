@@ -108,7 +108,7 @@ namespace alt
 		TString& operator << (const int iValue);
 
 		//! @brief 文字列を追加します。
-		//! @param[in]	string 文字列
+		//! @param[in]	lpctszString 文字列
 		//! @return 追加された文字列の結果
 		TString operator + (LPCTSTR lpctszString);
 
@@ -117,13 +117,13 @@ namespace alt
 		//! @return 追加された文字列の結果
 		TString operator + (TString& string);
 
-		//! @brief 数値を代入します。
-		//! @param[in]	iValue 数値
+		//! @brief 文字列を追加します。
+		//! @param[in]	lpctszString 文字列
 		//! @return 代入された自分自身
 		TString& operator += (LPCTSTR lpctszString);
 
-		//! @brief 数値を代入します。
-		//! @param[in]	iValue 数値
+		//! @brief 文字列を追加します。
+		//! @param[in]	string 文字列
 		//! @return 代入された自分自身
 		TString& operator += (const TString& string);
 

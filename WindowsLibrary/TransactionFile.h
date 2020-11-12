@@ -41,9 +41,9 @@ namespace alt
 		/**
 		 @brief		ファイルを作成、オープンします。
 		 @param[in] hTransaction トランザクションハンドル
-		 @param[in]	pctszFilename (作成するファイル名)
+		 @param[in]	pctszFileName (作成するファイル名)
 		 @param[in] dwDesiredAccess {GENERIC_READ, GENERIC_WRITE, GENERIC_ALL}
-		 @param[in] dwShareMod {FILE_SHARE_READ, FILE_SHARE_WRITE}
+		 @param[in] dwShareMode {FILE_SHARE_READ, FILE_SHARE_WRITE}
 		 @param[in] dwCreationDisposition {CREATE_ALWAYS, OPEN_EXISTING}
 		 @return	BOOL
 		 @retval	TRUE(成功)

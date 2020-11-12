@@ -24,7 +24,7 @@ namespace alt
 		 @retval	DWORD 詳細はネットで。
 		 @sa		http://ir9.jp/prog/ayu/win32err.htm
 		 @sa		https://gallery-code.blogspot.com/2010/05/getlasterror.html
-		 @detail	GetLastError()を使用します。
+		 @details	GetLastError()を使用します。
 		 */
 		virtual DWORD GetErrNo();
 	};
@@ -60,7 +60,7 @@ namespace alt
 		 @brief		使用しなくなったハンドルはこれでクローズします。
 		 @return	クローズに成功したか否か。
 		 @retval	成功(TRUE) 失敗(FALSE)
-		 @detail	使用していない場合は、何もしません。
+		 @details	使用していない場合は、何もしません。
 					使用していた場合は、ハンドルをクローズし、初期化します。
 		 */
 		virtual BOOL Close();
@@ -89,8 +89,8 @@ namespace alt
 
 		/**
 		 @brief		HANDLEを使ってデータを書き込みます。
-		 @param[in]	lpcvpvBuffer	書き込むデータを保管するバッファ
-		 @param[in]	dwSize			書き込むデータを保管するバッファのサイズ
+		 @param[in]	lpcvBuffer	書き込むデータを保管するバッファ
+		 @param[in]	dwSize		書き込むデータを保管するバッファのサイズ
 		 @return	実際に書き込んだデータのサイズ
 					失敗した場合は(DWORD)-1 が返ります。
 		 @retval	データサイズはバイトサイズです。
