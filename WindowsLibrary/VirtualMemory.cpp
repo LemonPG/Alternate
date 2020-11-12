@@ -57,7 +57,7 @@ BOOL VirtualMemory::Release()
 	BOOL ret = ::VirtualFree(_lpvAddress, 0, MEM_RELEASE);
 	_lpvAddress = nullptr;
 	_size = 0;
-	
+
 	return ret;
 }
 

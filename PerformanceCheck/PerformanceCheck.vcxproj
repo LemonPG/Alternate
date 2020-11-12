@@ -199,6 +199,7 @@
     <ClCompile Include="ConsolePerformanceCheck.cpp" />
     <ClCompile Include="FilePerformanceCheck.cpp" />
     <ClCompile Include="HeapPerformanceCheck.cpp" />
+    <ClCompile Include="LoggerPerformanceCheck.cpp" />
     <ClCompile Include="NewPerformanceCheck.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -219,6 +220,7 @@
     <ClInclude Include="ConsolePerformanceCheck.h" />
     <ClInclude Include="FilePerformanceCheck.h" />
     <ClInclude Include="HeapPerformanceCheck.h" />
+    <ClInclude Include="LoggerPerformanceCheck.h" />
     <ClInclude Include="NewPerformanceCheck.h" />
     <ClInclude Include="ObjectHolder.h" />
     <ClInclude Include="pch.h" />

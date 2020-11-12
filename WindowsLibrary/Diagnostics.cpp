@@ -11,23 +11,23 @@ using namespace alt;
 
 Diagnostics::Diagnostics()
 {
-    _hObject = ::GetCurrentProcess();
+	_hObject = ::GetCurrentProcess();
 }
 
 BOOL Diagnostics::GetProcessMemory(PROCESS_MEMORY_COUNTERS& processMemoryCounters)
 {
-    return ::GetProcessMemoryInfo(_hObject, &processMemoryCounters, sizeof(processMemoryCounters));
+	return ::GetProcessMemoryInfo(_hObject, &processMemoryCounters, sizeof(processMemoryCounters));
 }
 
 BOOL Diagnostics::GetProcessIO(IO_COUNTERS& ioCounters)
 {
-    return ::GetProcessIoCounters(_hObject, &ioCounters);
+	return ::GetProcessIoCounters(_hObject, &ioCounters);
 }
 
 BOOL Diagnostics::GetIpStatistics(MIB_IPSTATS& mibIPStats)
 {
-    ULONG ret;
+	ULONG ret;
 
-    ret = ::GetIpStatistics(&mibIPStats);
-    return ret == NOERROR ? TRUE : FALSE;
+	ret = ::GetIpStatistics(&mibIPStats);
+	return ret == NOERROR ? TRUE : FALSE;
 }

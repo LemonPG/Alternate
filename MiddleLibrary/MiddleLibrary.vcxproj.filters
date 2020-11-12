@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル\FactoryMethod">
-      <UniqueIdentifier>{7edb4a39-283e-4aa2-8a93-bbf5174b49ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\FactoryMethod">
-      <UniqueIdentifier>{52b7dac7-50be-4ba6-b3e0-4da0bc1b0e33}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -33,19 +27,13 @@
     <ClInclude Include="WorkerTemplate.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="TaskTemplate.hpp">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="IFactoryMethod.h">
-      <Filter>ヘッダー ファイル\FactoryMethod</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="PipelineFactoryMethod.h">
-      <Filter>ヘッダー ファイル\FactoryMethod</Filter>
-    </ClInclude>
-    <ClInclude Include="MiddleLibrary.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="TaskDrive.h">
+    <ClInclude Include="MiddleLibrary.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,14 +44,11 @@
     <ClCompile Include="MiddleLibrary.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="TaskDrive.cpp">
+    <ClCompile Include="PipelineFactoryMethod.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="PipelineFactoryMethod.cpp">
-      <Filter>ソース ファイル\FactoryMethod</Filter>
-    </ClCompile>
     <ClCompile Include="IFactoryMethod.cpp">
-      <Filter>ソース ファイル\FactoryMethod</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

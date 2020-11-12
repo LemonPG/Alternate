@@ -200,7 +200,7 @@ namespace WindowsLibraryTest
 				{
 					wsprintf(tszBuffer, _T("SERVER SEND %03d"), i);
 					DWORD dwWrite = this->Write(tszBuffer, lstrlen(tszBuffer) * sizeof(TCHAR));
-					
+
 					DWORD dwRead = this->Read(tszBuffer, dwWrite);
 					wsprintf(tszFormat, _T("Client received:%s\n"), tszBuffer);
 					Logger::WriteMessage(tszFormat);

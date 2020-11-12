@@ -12,7 +12,7 @@ typedef struct _container
 	DWORD ProcessStartTick[MAX_PRODUCT];
 	double ProcessTick[MAX_PRODUCT];
 	BYTE byDummy[CONTAINER_WEIGHT];
-} Container, *pContainer;
+} Container, * pContainer;
 
 // -- ByteData ------------------------------------------------------
 
@@ -57,20 +57,20 @@ bool Config::Load(LPCTSTR lpctszConfigPath)
 	_configPath = lpctszConfigPath;
 
 	_interval = ::GetPrivateProfileInt(
-					SECTION_PIPELINE_FACTORY,
-					KEYWORD_INTERVAL,
-					-1,
-					_configPath.Ctr());
+		SECTION_PIPELINE_FACTORY,
+		KEYWORD_INTERVAL,
+		-1,
+		_configPath.Ctr());
 	if (_interval == -1)
 	{
 		return false;
 	}
 
 	_dummyProcessTime = ::GetPrivateProfileInt(
-					SECTION_PIPELINE_FACTORY,
-					KEYWORD_DUMMY_PROCESS_TIME,
-					-1,
-					_configPath.Ctr());
+		SECTION_PIPELINE_FACTORY,
+		KEYWORD_DUMMY_PROCESS_TIME,
+		-1,
+		_configPath.Ctr());
 	if (_dummyProcessTime == -1)
 	{
 		return false;
@@ -152,15 +152,15 @@ void ClockElement::Start(DWORD dwInterval)
 	OutputDebugString(_T("ClockElement::Start() OUT.\n"));
 }
 
-void ClockElement::Finish()
+void ClockElement::Stop()
 {
-	_logFile.LogInfo(_T("ClockElement::Finish()"));
-	OutputDebugString(_T("ClockElement::Finish() IN.\n"));
+	_logFile.LogInfo(_T("ClockElement::Stop()"));
+	OutputDebugString(_T("ClockElement::Stop() IN.\n"));
 
 	_watchdog->StopTimer();
 	_stop = true;
 
-	OutputDebugString(_T("ClockElement::Finish() OUT.\n"));
+	OutputDebugString(_T("ClockElement::Stop() OUT.\n"));
 }
 
 DWORD ClockElement::Invoke(LPVOID lpvParam)
@@ -171,6 +171,7 @@ DWORD ClockElement::Invoke(LPVOID lpvParam)
 	pContainer container = new Container;
 	QueryPerformance Q;
 	double dPastTick = 0;
+	TString msg;
 
 	_watchdog->StartTimer(_dwInterval);
 
@@ -178,7 +179,7 @@ DWORD ClockElement::Invoke(LPVOID lpvParam)
 	{
 		Q.Start();
 		DWORD dwReason = _watchdog->WaitTimer();
-		
+
 		if (dwReason == WAIT_OBJECT_0)
 		{
 			ByteData* byteData = new ByteData(_seqNo++, (LPBYTE)container, sizeof(Container));
@@ -187,13 +188,14 @@ DWORD ClockElement::Invoke(LPVOID lpvParam)
 			GetLocalTime(&localTime);
 			Notify(byteData);
 
-			Q.Finish();
+			Q.Stop();
 			dPastTick = Q.PastTime() * 1000;
 
-			TString msg(MAX_PATH); // TODO:Žb’è‚ÅMAX_PATH
-			wsprintf(msg.Ptr(), _T("ClockTime %3u Past=%5u Diff=%7d %02d:%02d:%02d.%03d"),
-				byteData->GetSeqNo(), static_cast<UINT>(dPastTick), static_cast<INT>(dPastTick - (double)_dwInterval * 1000),
-				localTime.wHour, localTime.wMinute, localTime.wSecond, localTime.wMilliseconds);
+			msg.Format(_T("ClockTime %3u Past=%5u Diff=%7d %02d:%02d:%02d.%03d"),
+					   byteData->GetSeqNo(), static_cast<UINT>(dPastTick),
+					   static_cast<INT>(dPastTick - (double)_dwInterval * 1000),
+					   localTime.wHour, localTime.wMinute, localTime.wSecond,
+					   localTime.wMilliseconds);
 			OutputDebugString(msg.Ctr());
 			_logFile.LogInfo(msg.Ctr());
 		}
@@ -305,19 +307,20 @@ TerminateElement::~TerminateElement()
 void TerminateElement::Update(IData* data)
 {
 	OutputDebugString(_T("TerminateElement::Update()"));
-	
+
 	ByteData* byteData = dynamic_cast<ByteData*>(data);
 	pContainer container = (pContainer)(byteData->GetChunk());
 
+	TString message;
+
 	for (int i = 0; i < MAX_PRODUCT; i++)
 	{
-		TCHAR tszMsg[MAX_PATH]; // TODO:MAX_PATH‚ÍŽb’è
-		wsprintf(tszMsg, _T("Product(%u) Seq(%02u) Start(%u) ProcessTick(%u)"),
-			i, byteData->GetSeqNo(), container->ProcessStartTick[i],
-			static_cast<UINT>(container->ProcessTick[i]));
+		message.Format(_T("Product(%u) Seq(%02u) Start(%u) ProcessTick(%u)"),
+					   i, byteData->GetSeqNo(), container->ProcessStartTick[i],
+					   static_cast<UINT>(container->ProcessTick[i]));
 
-		OutputDebugString(tszMsg);
-		_logFile.LogInfo(tszMsg);
+		OutputDebugString(message.Ctr());
+		_logFile.LogInfo(message.Ctr());
 	}
 
 	delete data;
@@ -386,15 +389,15 @@ IData* DummyProduct::Process(IData* data)
 		this->Notify(&message);
 	}
 
-	Q.Finish();
+	Q.Stop();
 	container->ProcessTick[_id] = Q.PastTime();
 	container->ProcessStartTick[_id] = Q.GetStartTick().LowPart;
 	return data;
 }
 
-bool DummyProduct::Finish()
+bool DummyProduct::Stop()
 {
-	TString msg = _T("DummyProduct::Finish(");
+	TString msg = _T("DummyProduct::Stop(");
 	msg += _productName;
 	msg += _T(")\n");
 	OutputDebugString(msg.Ctr());
@@ -419,9 +422,9 @@ void DummyProduct::Update(IMessage* message)
 	msg += _T(")\n");
 	OutputDebugString(msg.Ctr());
 
-	TString msgString(MAX_PATH); // TODO:Žb’è‘[’u
-	wsprintf(msgString.Ptr(), _T("Response From(%d) To(%d) Command(%d)\n"),
-		message->GetFrom(), message->GetTo(), message->GetCommand());
+	TString msgString;
+	msgString.Format(_T("Response From(%d) To(%d) Command(%d)\n"),
+					 message->GetFrom(), message->GetTo(), message->GetCommand());
 	OutputDebugString(msgString.Ctr());
 }
 
@@ -527,14 +530,14 @@ bool ProductManager::Start()
 	return true;
 }
 
-bool ProductManager::Finish()
+bool ProductManager::Stop()
 {
 	ClockElement* clockElement = dynamic_cast<ClockElement*>(this->GetElement(_T("Clock")));
-	clockElement->Finish();
+	clockElement->Stop();
 
 	for (auto product : _products)
 	{
-		product.second->Finish();
+		product.second->Stop();
 	}
 
 	return true;
@@ -552,9 +555,9 @@ bool ProductManager::Exit()
 
 void ProductManager::Update(IMessage* message)
 {
-	TString msgString(MAX_PATH); // TODO:Žb’è‘[’u
-	wsprintf(msgString.Ptr(), _T("Response From(%d) To(%d) Command(%d)\n"),
-		message->GetFrom(), message->GetTo(), message->GetCommand());
+	TString msgString;
+	msgString.Format(_T("Response From(%d) To(%d) Command(%d)\n"),
+					 message->GetFrom(), message->GetTo(), message->GetCommand());
 	OutputDebugString(msgString.Ctr());
 }
 

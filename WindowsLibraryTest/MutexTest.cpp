@@ -59,13 +59,13 @@ namespace WindowsLibraryTest
 
 					msg.Format(_T("Thread %s %d.\n"), lpctszWord, i);
 					Logger::WriteMessage(msg.Ctr());
-					
+
 					ret = mutex.Release();
 					Assert::IsTrue(ret);
 					Sleep(100);
 				}
 
-				msg.Format(_T("Thread %s Finished.\n"), lpctszWord);
+				msg.Format(_T("Thread %s stopped.\n"), lpctszWord);
 				Logger::WriteMessage(msg.Ctr());
 
 				return 0;

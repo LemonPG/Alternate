@@ -174,8 +174,6 @@
   <ItemGroup>
     <ClCompile Include="DesignPatternTest.cpp" />
     <ClCompile Include="PipelineFactoryMethodTest.cpp" />
-    <ClCompile Include="TaskDriveTest.cpp" />
-    <ClCompile Include="TaskTemplateTest.cpp" />
     <ClCompile Include="WorkerTemplateTest.cpp" />
     <ClCompile Include="MiddleLibraryTest.cpp" />
     <ClCompile Include="pch.cpp">

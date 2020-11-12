@@ -37,7 +37,7 @@ namespace WindowsLibraryTest
 			Logger::WriteMessage("VirtualMemoryTest1\n");
 
 			alt::VirtualMemory* memory = new alt::VirtualMemory();
-			
+
 			LPVOID lpvMem = memory->Alloc(1024 * 1024 * 10);
 			Assert::IsNotNull(lpvMem);
 

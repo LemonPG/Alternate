@@ -12,23 +12,22 @@
 
 namespace PerfCheck
 {
-    /**
-     @class	ConsolePerformanceCheck
-     @brief	Console性能測定用
-    */
-    class ConsolePerformanceCheck : public PerformanceCheck
-    {
-    public:
-        ConsolePerformanceCheck();
-        virtual ~ConsolePerformanceCheck();
+	/**
+	 @class	ConsolePerformanceCheck
+	 @brief	Console性能測定用
+	*/
+	class ConsolePerformanceCheck : public PerformanceCheck
+	{
+	public:
+		ConsolePerformanceCheck();
+		virtual ~ConsolePerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
+		virtual BOOL DoAction();
 
-    protected:
-        virtual BOOL Core(const int param1);
-        int response0;
-        int response1;
-        int response2;
-    };
+	protected:
+		virtual BOOL Core(const int param1);
+		int response0;
+		int response1;
+		int response2;
+	};
 }

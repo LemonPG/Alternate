@@ -87,6 +87,9 @@
     <ClCompile Include="PipeTest.cpp">
       <Filter>ソース ファイル\Target</Filter>
     </ClCompile>
+    <ClCompile Include="LoggerTest.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

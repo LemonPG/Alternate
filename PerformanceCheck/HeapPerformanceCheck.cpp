@@ -19,11 +19,6 @@ HeapPerformanceCheck::~HeapPerformanceCheck()
 {
 }
 
-BOOL HeapPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL HeapPerformanceCheck::DoAction()
 {
 	return this->Core(0);
@@ -52,7 +47,7 @@ BOOL HeapPerformanceCheck::Core(const int param1)
 		{
 			int index = rand() % 10;
 			TCHAR tsz[10];
-			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(),index);
+			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(), index);
 			OutputDebugString(tsz);
 
 			LPVOID lpvMem = heap.Allocate(me->_allocSize[index]);
@@ -61,7 +56,7 @@ BOOL HeapPerformanceCheck::Core(const int param1)
 			ret = heap.Free(lpvMem);
 
 		} while (--loop);
-		OutputDebugString(_T("Thread action is finished.\n"));
+		OutputDebugString(_T("Thread action is stopped.\n"));
 
 		return 0;
 	};
@@ -93,8 +88,8 @@ BOOL HeapPerformanceCheck::Core(const int param1)
 
 	event.Set();
 	WaitForMultipleObjects(numOfThreads, threadHandles, TRUE, INFINITE);
-	
-	Q.Finish();
+
+	Q.Stop();
 	Write(_T("åvë™èIóπ\n"));
 
 	int msec = static_cast<int>(Q.PastTime());

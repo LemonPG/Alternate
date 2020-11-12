@@ -8,68 +8,68 @@
 
 namespace LeakCheck
 {
-    /**
-     @class	ObjectHolder
-     @brief	MemoryLeakCheckソリューション用コンテナクラス
-    */
-    template<class T>
-    class ObjectHolder
-    {
-    public:
-        ObjectHolder<T>()
-        {
-            _value = nullptr;
-        };
+	/**
+	 @class	ObjectHolder
+	 @brief	MemoryLeakCheckソリューション用コンテナクラス
+	*/
+	template<class T>
+	class ObjectHolder
+	{
+	public:
+		ObjectHolder<T>()
+		{
+			_value = nullptr;
+		};
 
-        ObjectHolder<T>(T& t)
-        {
-            _value = new T();
-            *_value = t;
-        }
+		ObjectHolder<T>(T& t)
+		{
+			_value = new T();
+			*_value = t;
+		}
 
-        ObjectHolder<T>(T* pT)
-        {
-            _value = new T();
-            *_value = *pT;
-        }
+		ObjectHolder<T>(T* pT)
+		{
+			_value = new T();
+			*_value = *pT;
+		}
 
-        ObjectHolder<T>(const ObjectHolder<T>& base)
-            : ObjectHolder<T>()
-        {
-            if (_value == nullptr) _value = new T();
-            *_value = *base._value;
-        }
+		ObjectHolder<T>(const ObjectHolder<T>& base)
+			: ObjectHolder<T>()
+		{
+			if (_value == nullptr) _value = new T();
+			*_value = *base._value;
+		}
 
-        virtual ~ObjectHolder<T>()
-        {
-            delete _value;
-            _value = nullptr;
-        }
+		virtual ~ObjectHolder<T>()
+		{
+			delete _value;
+			_value = nullptr;
+		}
 
-        T Get()
-        {
-            return *_value;
-        }
+		T Get()
+		{
+			return *_value;
+		}
 
-        void Set(T& t)
-        {
-            if (_value == nullptr) _value = new T();
-            *_value = t;
-        }
+		void Set(T& t)
+		{
+			if (_value == nullptr) _value = new T();
+			*_value = t;
+		}
 
-        void Set(T* pT)
-        {
-            if (_value == nullptr) _value = new T();
-            *_value = *pT;
-        }
+		void Set(T* pT)
+		{
+			if (_value == nullptr) _value = new T();
+			*_value = *pT;
+		}
 
-        void operator = (const ObjectHolder<T>& base)
-        {
-            if (_value == nullptr) _value = new T();
-            *_value = *base._value;
-        }
+		void operator = (const ObjectHolder<T>& base)
+		{
+			if (_value == nullptr) _value = new T();
+			*_value = *base._value;
+		}
 
-    private:
-        T* _value;
-    };
+	private:
+		T* _value;
+	};
 }

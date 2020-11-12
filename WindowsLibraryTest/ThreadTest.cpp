@@ -20,7 +20,7 @@ namespace WindowsLibraryTest
 				Sleep(20);
 			}
 
-			Logger::WriteMessage(_T("Invoke() finished.\n"));
+			Logger::WriteMessage(_T("Invoke() stopped.\n"));
 			return 0;
 		}
 	};
@@ -39,7 +39,7 @@ namespace WindowsLibraryTest
 				Sleep(20);
 			}
 
-			Logger::WriteMessage(_T("Invoke() finished.\n"));
+			Logger::WriteMessage(_T("Invoke() stopped.\n"));
 			return 0;
 		}
 
@@ -85,7 +85,7 @@ namespace WindowsLibraryTest
 				Sleep(30);
 			}
 
-			Logger::WriteMessage(_T("ThreadTest1() finished.\n"));
+			Logger::WriteMessage(_T("ThreadTest1() stopped.\n"));
 
 			DWORD dwReason = pThread->Wait();
 			Assert::AreEqual(WAIT_OBJECT_0, dwReason);
@@ -108,7 +108,7 @@ namespace WindowsLibraryTest
 				Sleep(30);
 			}
 
-			Logger::WriteMessage(_T("ThreadTest2() finished.\n"));
+			Logger::WriteMessage(_T("ThreadTest2() stopped.\n"));
 
 			DWORD dwReason = pWorker->Wait();
 			Assert::AreEqual(WAIT_OBJECT_0, dwReason);
@@ -132,7 +132,7 @@ namespace WindowsLibraryTest
 					Sleep(*waitTime);
 				}
 
-				Logger::WriteMessage(_T("ThreadTest3() finished.\n"));
+				Logger::WriteMessage(_T("ThreadTest3() stopped.\n"));
 
 				return true;
 			};
@@ -165,7 +165,7 @@ namespace WindowsLibraryTest
 					Sleep(10);
 				}
 
-				Logger::WriteMessage(_T("ThreadTest4() finished.\n"));
+				Logger::WriteMessage(_T("ThreadTest4() stopped.\n"));
 
 				return *index;
 			};
@@ -188,34 +188,34 @@ namespace WindowsLibraryTest
 				int divide = i % 7;
 				switch (divide)
 				{
-				case 0:
-					thread[i].SetPriority(alt::ThreadPriority::Critical);
-					break;
-				case 1:
-					thread[i].SetPriority(alt::ThreadPriority::Highest);
-					break;
-				case 2:
-					thread[i].SetPriority(alt::ThreadPriority::AboveNormal);
-					break;
-				case 3:
-					thread[i].SetPriority(alt::ThreadPriority::Normal);
-					break;
-				case 4:
-					thread[i].SetPriority(alt::ThreadPriority::BelowNormal);
-					break;
-				case 5:
-					thread[i].SetPriority(alt::ThreadPriority::Lowest);
-					break;
-				case 6:
-					thread[i].SetPriority(alt::ThreadPriority::Idle);
-					break;
+					case 0:
+						thread[i].SetPriority(alt::ThreadPriority::Critical);
+						break;
+					case 1:
+						thread[i].SetPriority(alt::ThreadPriority::Highest);
+						break;
+					case 2:
+						thread[i].SetPriority(alt::ThreadPriority::AboveNormal);
+						break;
+					case 3:
+						thread[i].SetPriority(alt::ThreadPriority::Normal);
+						break;
+					case 4:
+						thread[i].SetPriority(alt::ThreadPriority::BelowNormal);
+						break;
+					case 5:
+						thread[i].SetPriority(alt::ThreadPriority::Lowest);
+						break;
+					case 6:
+						thread[i].SetPriority(alt::ThreadPriority::Idle);
+						break;
 				}
 				thread[i].Resume();
 			}
 
 			WaitForMultipleObjects(20, hThreads, TRUE, INFINITE);
 
-			Logger::WriteMessage(_T("\nThreadTest4() Finished.\n"));
+			Logger::WriteMessage(_T("\nThreadTest4() stopped.\n"));
 
 			for (int i = 0; i < 20; i++)
 			{

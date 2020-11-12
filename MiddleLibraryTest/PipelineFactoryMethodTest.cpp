@@ -43,7 +43,7 @@ namespace MiddleLibraryTest
 			PipelineFactoryMethod* factory = new PipelineFactoryMethod();
 
 			ProductManager* manager = (ProductManager*)factory->Buildup();
-			
+
 			Config* config = new Config();
 			bool ret = config->Load(_T(".\\Config.ini"));
 			Assert::IsTrue(ret, _T("Configƒtƒ@ƒCƒ‹‚Ì“Ç‚Ýž‚Ý‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"));
@@ -56,14 +56,14 @@ namespace MiddleLibraryTest
 
 				Sleep(30000); // 30•b
 
-				manager->Finish();
+				manager->Stop();
 			}
 
 			manager->Exit();
 
 			Sleep(10000); // 10•b
 
-			Logger::WriteMessage("PipelineFactoryMethodTest1 Finished.\n");
+			Logger::WriteMessage("PipelineFactoryMethodTest1 Stopped.\n");
 		}
 	};
 }

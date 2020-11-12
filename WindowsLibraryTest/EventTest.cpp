@@ -67,7 +67,7 @@ namespace WindowsLibraryTest
 				Assert::AreEqual(WAIT_OBJECT_0, dwRet);
 			}
 
-			Logger::WriteMessage("Thread::Invoke() finished.\n");
+			Logger::WriteMessage("Thread::Invoke() stopped.\n");
 			return 0;
 		};
 
@@ -152,7 +152,7 @@ namespace WindowsLibraryTest
 				Assert::IsTrue(ret);
 			}
 
-			Logger::WriteMessage("Thread::Invoke() finished.\n");
+			Logger::WriteMessage("Thread::Invoke() stopped.\n");
 			return 0;
 		};
 
@@ -188,7 +188,7 @@ namespace WindowsLibraryTest
 		TEST_METHOD(EventTest1)
 		{
 			Logger::WriteMessage("EventTest1 Start.\n");
-			
+
 			WindowsLibraryTest::EventTest1 eventTestSender(TRUE);
 			WindowsLibraryTest::EventTest1 eventTestReceiver1(FALSE);
 			WindowsLibraryTest::EventTest1 eventTestReceiver2(FALSE);
@@ -204,7 +204,7 @@ namespace WindowsLibraryTest
 
 			WaitForMultipleObjects(3, hThreads, TRUE, INFINITE);
 
-			Logger::WriteMessage("EventTest1 Finished.\n");
+			Logger::WriteMessage("EventTest1 stopped.\n");
 		}
 
 		TEST_METHOD(EventTest2)
@@ -226,7 +226,7 @@ namespace WindowsLibraryTest
 
 			WaitForMultipleObjects(3, hThreads, TRUE, INFINITE);
 
-			Logger::WriteMessage("EventTest2 Finished.\n");
+			Logger::WriteMessage("EventTest2 stopped.\n");
 		}
 	};
 }

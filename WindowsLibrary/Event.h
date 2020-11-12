@@ -10,11 +10,11 @@
 
 namespace alt
 {
-    /**
-     @class	Event
-     @brief	イベントに関するWindowsAPIを集約したクラス
-     */
-    class DLL_DECLSPEC Event : public WaitableHandleLibrary
+	/**
+	 @class	Event
+	 @brief	イベントに関するWindowsAPIを集約したクラス
+	 */
+	class DLL_DECLSPEC Event : public WaitableHandleLibrary
 	{
 	public:
 		/**

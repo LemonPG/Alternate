@@ -35,14 +35,14 @@ namespace WindowsLibraryTest
 		TEST_METHOD(PipeTest1)
 		{
 			alt::Pipe pipe;
-			
+
 			Assert::IsTrue(pipe.Create());
 
 			CHAR szBuf[256];
 			FillMemory(szBuf, sizeof(szBuf), 'A');
 
 			Assert::IsTrue(pipe.Write(szBuf, sizeof(szBuf)));
-			
+
 			ZeroMemory(szBuf, sizeof(szBuf));
 			Assert::AreEqual<DWORD>(sizeof(szBuf), pipe.Peek(szBuf, sizeof(szBuf)));
 			Assert::AreEqual<DWORD>(sizeof(szBuf), pipe.Read(szBuf, sizeof(szBuf)));

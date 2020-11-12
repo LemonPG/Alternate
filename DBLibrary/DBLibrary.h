@@ -11,14 +11,14 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 
 namespace alt
 {
-    /**
-     @class	DBLibrary
-     @brief	DB APIを集約するクラスの基底クラス
-    */
-    class DLL_DECLSPEC DBLibrary
-    {
-    public:
-        DBLibrary();
-        virtual ~DBLibrary();
-    };
+	/**
+	 @class	DBLibrary
+	 @brief	DB APIを集約するクラスの基底クラス
+	*/
+	class DLL_DECLSPEC DBLibrary
+	{
+	public:
+		DBLibrary();
+		virtual ~DBLibrary();
+	};
 }

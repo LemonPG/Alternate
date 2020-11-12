@@ -51,4 +51,9 @@
       <Filter>ヘッダー ファイル\Target</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="MemoryLeakCheck.ini">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
 </Project>

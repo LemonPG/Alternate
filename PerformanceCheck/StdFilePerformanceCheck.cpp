@@ -20,11 +20,6 @@ StdFilePerformanceCheck::~StdFilePerformanceCheck()
 
 }
 
-BOOL StdFilePerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL StdFilePerformanceCheck::DoAction()
 {
 	_maxFileSize = 16 * 1000;
@@ -99,13 +94,13 @@ BOOL StdFilePerformanceCheck::Core1(const int param1)
 
 	delete[] byDummy;
 
-	Q.Finish();
+	Q.Stop();
 
 	double writePerformance = ((writeSize / 1024 / 1024) / (Q.PastTime() / 1000));
 
 	TCHAR tszMsg[128];
 	_stprintf_s(tszMsg, _T("%10dbytes単位の書き込み 書き込み量:%10lld 書き込み時間：%10.4fmsec 結果:%9.4fMBytes/sec\n"),
-		param1, writeSize, Q.PastTime(), writePerformance);
+				param1, writeSize, Q.PastTime(), writePerformance);
 	this->Write(tszMsg);
 
 	return TRUE;
@@ -134,13 +129,13 @@ BOOL StdFilePerformanceCheck::Core2(const int param1)
 
 	delete[] byDummy;
 
-	Q.Finish();
+	Q.Stop();
 
 	double readPerformance = ((readSize / 1024 / 1024) / (Q.PastTime() / 1000));
 
 	TCHAR tszMsg[128];
 	_stprintf_s(tszMsg, _T("%10dbytes単位の読み込み 読み込み量:%10lld 読み込み時間：%10.4fmsec 結果:%9.4fMBytes/sec\n"),
-		param1, readSize, Q.PastTime(), readPerformance);
+				param1, readSize, Q.PastTime(), readPerformance);
 	this->Write(tszMsg);
 
 	return TRUE;

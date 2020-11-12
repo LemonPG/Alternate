@@ -82,7 +82,7 @@ int _tmain(int argc, TCHAR* argv[])
 	}
 	else
 	{
-		_tprintf(_T("Invalid Parameter %s\n"),_action.Ctr());
+		_tprintf(_T("Invalid Parameter %s\n"), _action.Ctr());
 		return 2;
 	}
 
@@ -114,17 +114,17 @@ BOOL DrivePipelineFactoryHandler(DWORD dwType)
 
 	switch (dwType)
 	{
-	case 0: // Ctrl + C
-	case 1: // Ctrl + Break
-		__loopKeep = false;
-		ret = TRUE; // 終了させません。
-		break;
+		case 0: // Ctrl + C
+		case 1: // Ctrl + Break
+			__loopKeep = false;
+			ret = TRUE; // 終了させません。
+			break;
 
-	case 2: // Console Close
-	case 3: // Log off
-	case 4: // Shut down
-		ret = FALSE; // 次に委ねます。
-		break;
+		case 2: // Console Close
+		case 3: // Log off
+		case 4: // Shut down
+			ret = FALSE; // 次に委ねます。
+			break;
 	}
 
 	_tprintf(_T("DrivePipelineFactoryHandler(%d) OUT.\n"), dwType);
@@ -151,13 +151,13 @@ void DrivePipelineFactory()
 
 	manager->Init(config);
 
-	while(__loopKeep)
+	while (__loopKeep)
 	{
 		manager->Start();
 
 		Sleep(30000); // 30秒
-		
-		manager->Finish();
+
+		manager->Stop();
 
 		Sleep(3000); // 3秒
 	}

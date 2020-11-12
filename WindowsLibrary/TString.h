@@ -47,7 +47,7 @@ namespace alt
 		//! @brief 内部で確保している文字列ポインタを取得します。
 		//! @return 保持している文字列のポインタ
 		LPCTSTR Ctr() const { return (LPCTSTR)_lptszString; };
-		
+
 		//! @brief 内部で確保している文字列数を取得します。
 		//! @return 文字列長
 		int Len() const { return lstrlen(_lptszString); };
@@ -91,7 +91,7 @@ namespace alt
 		//! @brief 文字列を代入します。
 		//! @param[in]	string 文字列
 		VOID operator = (const TString& string);
-		
+
 		//! @brief 文字列を代入します。
 		//! @param[in]	lpctszString 文字列
 		//! @return 代入された自分自身
@@ -108,22 +108,22 @@ namespace alt
 		TString& operator << (const int iValue);
 
 		//! @brief 文字列を追加します。
-		//! @param[in]	string 文字列
+		//! @param[in]	lpctszString 文字列
 		//! @return 追加された文字列の結果
 		TString operator + (LPCTSTR lpctszString);
-		
+
 		//! @brief 文字列を追加します。
 		//! @param[in]	string 文字列
 		//! @return 追加された文字列の結果
 		TString operator + (TString& string);
 
-		//! @brief 数値を代入します。
-		//! @param[in]	iValue 数値
+		//! @brief 文字列を追加します。
+		//! @param[in]	lpctszString 文字列
 		//! @return 代入された自分自身
 		TString& operator += (LPCTSTR lpctszString);
-		
-		//! @brief 数値を代入します。
-		//! @param[in]	iValue 数値
+
+		//! @brief 文字列を追加します。
+		//! @param[in]	string 文字列
 		//! @return 代入された自分自身
 		TString& operator += (const TString& string);
 
@@ -146,7 +146,7 @@ namespace alt
 		//! @brief 右側の余白を切り取ります。
 		//! @return 右側余白を切り取った自分自身
 		TString& TrimRight();
-		
+
 		//! @brief 左右の余白を切り取ります。
 		//! @return 左右の余白を切り取った自分自身
 		TString& Trim();
@@ -203,7 +203,7 @@ namespace alt
 		VOID Copy(LPCTSTR lpctszString);
 		VOID Add(LPCTSTR lpctszString);
 		int Compare(LPCTSTR lpctszString1, LPCTSTR lpctszString2, int size);
-		
+
 		LPTSTR _lptszString;
 	};
 }

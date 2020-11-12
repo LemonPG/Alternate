@@ -3,42 +3,14 @@
  Microsoft.VisualStudio.TestTools.CppUnitTestFramework API ƒŠƒtƒ@ƒŒƒ“ƒX
  */
 #include "pch.h"
-#include "TaskDrive.h"
+#include "Logger.h"
+#include "Thread.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace alt;
 
-namespace alt
+namespace WindowsLibraryTest
 {
-	class TestTask : public ITaskTemplate
-	{
-	public:
-		TestTask() {};
-		virtual ~TestTask() {};
-
-		bool PreProcess()
-		{
-			Logger::WriteMessage("TestTask::PreProcess()\n");
-			return true;
-		};
-
-		bool DoProcess()
-		{
-			Logger::WriteMessage("TestTask::DoProcess()\n");
-			return true;
-		};
-
-		bool PostProcess()
-		{
-			Logger::WriteMessage("TestTask::PostProcess()\n");
-			return true;
-		}
-	};
-}
-
-namespace MiddleLibraryTest
-{
-	TEST_CLASS(TaskDriveTest)
+	TEST_CLASS(LoggerTest)
 	{
 	public:
 		TEST_CLASS_INITIALIZE(ClassInitialize)
@@ -61,15 +33,19 @@ namespace MiddleLibraryTest
 			Logger::WriteMessage("method cleanup.\n");
 		}
 
-		TEST_METHOD(TaskDriveTest1)
+		TEST_METHOD(LoggerTest1)
 		{
-			Logger::WriteMessage("TaskTestDrive1\n");
+			Logger::WriteMessage("LoggerTest1\n");
 
-			TestTask testTask;
-			TaskDrive taskDrive(&testTask);
+			alt::Logger::init();
 
-			bool ret1 = taskDrive.Action();
-			Assert::IsTrue(ret1);
+			alt::TString message(_T("sample message"));
+
+			alt::Logger::error(message);
+			alt::Logger::warn(message);
+			alt::Logger::info(message);
+			alt::Logger::debug(message);
+			alt::Logger::trace(message);
 		}
 	};
 }

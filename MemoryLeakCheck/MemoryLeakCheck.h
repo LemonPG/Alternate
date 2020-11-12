@@ -6,5 +6,4 @@
  */
 #pragma once
 
-#include "ArrayMemoryLeakCheck.h"
-#include "TStringMemoryLeakCheck.h"
+#define CONFIG_FILE _T(".\\MemoryLeakCheck.ini")

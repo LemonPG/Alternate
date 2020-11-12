@@ -150,13 +150,13 @@ namespace WindowsLibraryTest
 
 			alt::File binFile;
 			BOOL ret;
-			
+
 			ret = binFile.Create(_T("C:\\Windows\\Notepad.exe"), GENERIC_READ, 0, OPEN_EXISTING);
 			Assert::IsTrue(ret);
 
 			DWORD dwSize = (DWORD)binFile.GetSize();
 			LPBYTE lpbyBinary = new BYTE[dwSize];
-			
+
 			DWORD dwReadSize = binFile.Read(lpbyBinary, dwSize);
 			Assert::AreEqual<DWORD>(dwReadSize, dwSize);
 
@@ -176,7 +176,7 @@ namespace WindowsLibraryTest
 			{
 				Assert::AreEqual<BYTE>(lpbyBinary[i], lpbyBuffer[i]);
 			}
-			
+
 			delete[] lpbyBuffer;
 			delete[] lpbyBinary;
 		}

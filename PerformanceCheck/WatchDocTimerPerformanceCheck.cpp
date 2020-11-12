@@ -11,7 +11,7 @@
 using namespace PerfCheck;
 
 WatchDocTimerPerformanceCheck::WatchDocTimerPerformanceCheck()
-    :PerformanceCheck()
+	:PerformanceCheck()
 {
 	timeBeginPeriod(1);
 }
@@ -21,14 +21,9 @@ WatchDocTimerPerformanceCheck::~WatchDocTimerPerformanceCheck()
 	timeEndPeriod(1);
 }
 
-BOOL WatchDocTimerPerformanceCheck::Init(alt::Console& console)
-{
-    return PerformanceCheck::Init(console);
-}
-
 BOOL WatchDocTimerPerformanceCheck::DoAction()
 {
-    return this->Core();
+	return this->Core();
 }
 
 BOOL WatchDocTimerPerformanceCheck::Core()
@@ -67,12 +62,12 @@ BOOL WatchDocTimerPerformanceCheck::Core()
 	{
 		Q.Start();
 		timer->WaitTimer();
-		Q.Finish();
+		Q.Stop();
 
 		data[i].Tick = interval;
 		data[i].Elapsed = Q.PastTime();
 		data[i].StartTick = Q.GetStartTick();
-		data[i].FinishTick = Q.GetFinishTick();
+		data[i].StopTick = Q.GetStopTick();
 		data[i].Frequency = Q.GetFrequency();
 		GetLocalTime(&data[i].SystemTime);
 	}
@@ -108,14 +103,14 @@ BOOL WatchDocTimerPerformanceCheck::Core()
 		{
 			double loopInterval = (data[i].StartTick.QuadPart - previousStartTick) * 1000.0 / (double)data[i].Frequency.QuadPart;
 			_tprintf(_T("Seq=%3d No.%3d interval=%.4f Elapsed=%.4f diff=%+.4f LocalTime=%02d:%02d:%02d.%03d\n"),
-				seq++, i + 1,
-				loopInterval,
-				data[i].Elapsed,
-				data[i].Elapsed - interval,
-				data[i].SystemTime.wHour,
-				data[i].SystemTime.wMinute,
-				data[i].SystemTime.wSecond,
-				data[i].SystemTime.wMilliseconds);
+					 seq++, i + 1,
+					 loopInterval,
+					 data[i].Elapsed,
+					 data[i].Elapsed - interval,
+					 data[i].SystemTime.wHour,
+					 data[i].SystemTime.wMinute,
+					 data[i].SystemTime.wSecond,
+					 data[i].SystemTime.wMilliseconds);
 		}
 
 		previousStartTick = data[i].StartTick.QuadPart;
@@ -127,6 +122,6 @@ BOOL WatchDocTimerPerformanceCheck::Core()
 	delete timer;
 
 	_tprintf(_T("DriveWatchDogTimerTest() OUT.\n"));
-	
+
 	return TRUE;
 }

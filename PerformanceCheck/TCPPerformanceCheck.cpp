@@ -25,11 +25,6 @@ TCPPerformanceCheck::~TCPPerformanceCheck()
 {
 }
 
-BOOL TCPPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL TCPPerformanceCheck::DoAction()
 {
 	alt::Thread threadServer;
@@ -178,17 +173,17 @@ BOOL DriveTcpServerConsoleHandler(DWORD dwType)
 
 	switch (dwType)
 	{
-	case 0: // Ctrl + C
-	case 1: // Ctrl + Break
-		__tcpServer->Stop();
-		ret = TRUE; // 終了させません。
-		break;
+		case 0: // Ctrl + C
+		case 1: // Ctrl + Break
+			__tcpServer->Stop();
+			ret = TRUE; // 終了させません。
+			break;
 
-	case 2: // Console Close
-	case 3: // Log off
-	case 4: // Shut down
-		ret = FALSE; // 次に委ねます。
-		break;
+		case 2: // Console Close
+		case 3: // Log off
+		case 4: // Shut down
+			ret = FALSE; // 次に委ねます。
+			break;
 	}
 
 	_tprintf(_T("DriveTcpServerConsoleHandler(%d) OUT.\n"), dwType);
@@ -203,17 +198,17 @@ BOOL DriveTcpProxyConsoleHandler(DWORD dwType)
 
 	switch (dwType)
 	{
-	case 0: // Ctrl + C
-	case 1: // Ctrl + Break
-		__tcpProxy->Stop();
-		ret = TRUE; // 終了させません。
-		break;
+		case 0: // Ctrl + C
+		case 1: // Ctrl + Break
+			__tcpProxy->Stop();
+			ret = TRUE; // 終了させません。
+			break;
 
-	case 2: // Console Close
-	case 3: // Log off
-	case 4: // Shut down
-		ret = FALSE; // 次に委ねます。
-		break;
+		case 2: // Console Close
+		case 3: // Log off
+		case 4: // Shut down
+			ret = FALSE; // 次に委ねます。
+			break;
 	}
 
 	_tprintf(_T("DriveTcpProxyConsoleHandler(%d) OUT.\n"), dwType);
@@ -228,17 +223,17 @@ BOOL DriveTcpClientConsoleHandler(DWORD dwType)
 
 	switch (dwType)
 	{
-	case 0: // Ctrl + C
-	case 1: // Ctrl + Break
-		__tcpClient->Stop();
-		ret = TRUE; // 終了させません。
-		break;
+		case 0: // Ctrl + C
+		case 1: // Ctrl + Break
+			__tcpClient->Stop();
+			ret = TRUE; // 終了させません。
+			break;
 
-	case 2: // Console Close
-	case 3: // Log off
-	case 4: // Shut down
-		ret = FALSE; // 次に委ねます。
-		break;
+		case 2: // Console Close
+		case 3: // Log off
+		case 4: // Shut down
+			ret = FALSE; // 次に委ねます。
+			break;
 	}
 
 	_tprintf(_T("DriveTcpClientConsoleHandler(%d) OUT.\n"), dwType);
@@ -254,9 +249,9 @@ int MakeData(BYTE byData[])
 	FillMemory(byData, sizeof(byData), 'X');
 	GetLocalTime(&t);
 	wsprintfA((LPSTR)byData, "%02d/%02d/%02d %02d:%02d:%02d.%03d_",
-		t.wYear, t.wMonth, t.wDay, t.wHour, t.wMinute,
-		t.wSecond, t.wMilliseconds);
-	
+			  t.wYear, t.wMonth, t.wDay, t.wHour, t.wMinute,
+			  t.wSecond, t.wMilliseconds);
+
 	return DATA_SIZE;
 }
 
@@ -348,7 +343,7 @@ DWORD ServerWorker::Invoke(LPVOID lpvParam)
 		{
 			_tprintf(_T("ServerWorker::Invoke()\n"));
 			_tprintf(_T("recvSize=%d recv() failed. reason:%d\n"),
-				recvSize, WSAGetLastError());
+					 recvSize, WSAGetLastError());
 			break;
 		}
 
@@ -363,7 +358,7 @@ DWORD ServerWorker::Invoke(LPVOID lpvParam)
 		{
 			_tprintf(_T("ServerWorker::Invoke()\n"));
 			_tprintf(_T("send=%d sended=%d send failed. reason:%d\n"),
-				recvSize, sendSize, WSAGetLastError());
+					 recvSize, sendSize, WSAGetLastError());
 			break;
 		}
 	}
@@ -523,7 +518,7 @@ bool TcpClient::Init()
 bool TcpClient::Start(LPCTSTR lpctszIP, USHORT wPort, int retryInterval, int retryCount, bool kickOff)
 {
 	_tprintf(_T("TcpClient::Start(IP:%s, Port:%d, RetryInterval:%d, RetryCount:%d) IN.\n"),
-		lpctszIP, wPort, retryInterval, retryCount);
+			 lpctszIP, wPort, retryInterval, retryCount);
 
 	_connector = _builder->CreateTcpConnector(lpctszIP, wPort, retryInterval, retryCount);
 	if (_connector)
@@ -548,7 +543,7 @@ bool TcpClient::Start(LPCTSTR lpctszIP, USHORT wPort, int retryInterval, int ret
 	}
 
 	_tprintf(_T("TcpClient::Start(IP:%s, Port:%d, RetryInterval:%d, RetryCount:%d) OUT.\n"),
-		lpctszIP, wPort, retryInterval, retryCount);
+			 lpctszIP, wPort, retryInterval, retryCount);
 	return true;
 }
 
@@ -573,7 +568,7 @@ DWORD TcpClient::Invoke(LPVOID lpvParam)
 		{
 			_tprintf(_T("TcpClient::Invoke(LPVOID)\n"));
 			_tprintf(_T(" recvSize=%d Socket disconnected. reason:%d\n"),
-				recvSize, WSAGetLastError());
+					 recvSize, WSAGetLastError());
 			return -1;
 		}
 #ifdef _DUMP_DATA
@@ -588,7 +583,7 @@ DWORD TcpClient::Invoke(LPVOID lpvParam)
 		{
 			_tprintf(_T("TcpClient::Invoke(LPVOID)\n"));
 			_tprintf(_T(" send=%d sended=%d Invalid send size. reason:%d\n"),
-				dataLen, sendSize, WSAGetLastError());
+					 dataLen, sendSize, WSAGetLastError());
 			return -2;
 		}
 	}
@@ -675,7 +670,7 @@ DWORD UpstreamDriver::Invoke(LPVOID lpvParam)
 		if (recvSize <= 0)
 		{
 			_tprintf(_T("Down:recvSize=%d Socket disconnected. reason:%d\n"),
-				recvSize, WSAGetLastError());
+					 recvSize, WSAGetLastError());
 			return -1;
 		}
 
@@ -689,7 +684,7 @@ DWORD UpstreamDriver::Invoke(LPVOID lpvParam)
 		if (sendSize != recvSize)
 		{
 			_tprintf(_T("Down:send=%d sended=%d Invalid send size. reason:%d\n"),
-				recvSize, sendSize, WSAGetLastError());
+					 recvSize, sendSize, WSAGetLastError());
 			return -2;
 		}
 	}
@@ -708,7 +703,7 @@ DWORD DownstreamDriver::Invoke(LPVOID lpvParam)
 		if (recvSize <= 0)
 		{
 			_tprintf(_T("Up  :recvSize=%d Socket disconnected. reason:%d\n"),
-				recvSize, WSAGetLastError());
+					 recvSize, WSAGetLastError());
 			return -1;
 		}
 
@@ -722,7 +717,7 @@ DWORD DownstreamDriver::Invoke(LPVOID lpvParam)
 		if (sendSize != recvSize)
 		{
 			_tprintf(_T("Up  :send=%d sended=%d Invalid send size. reason:%d\n"),
-				recvSize, sendSize, WSAGetLastError());
+					 recvSize, sendSize, WSAGetLastError());
 			return -2;
 		}
 	}

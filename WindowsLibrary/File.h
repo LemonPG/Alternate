@@ -39,7 +39,7 @@ namespace alt
 		 @retval	FALSE(失敗)
 		 */
 		BOOL SetPointer(DWORD dwMoveMethod, LARGE_INTEGER liDistanceToMove = { 0 });
-		
+
 		/**
 		 @brief		今のファイル読み込み位置でファイルを終端します。
 		 @return	BOOL

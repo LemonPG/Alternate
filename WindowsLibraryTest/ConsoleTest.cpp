@@ -38,7 +38,7 @@ namespace WindowsLibraryTest
 
 			alt::Console console;
 			BOOL ret;
-			
+
 			ret = console.Create();
 			//Assert::IsTrue(ret, _T("Console::Create() failed."));
 

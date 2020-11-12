@@ -8,23 +8,23 @@ using namespace alt;
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpvReserved)
 {
-    switch (ul_reason_for_call)
-    {
-	case DLL_PROCESS_ATTACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_ATTACH.\n"));
-		break;
-	case DLL_THREAD_ATTACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_ATTACH.\n"));
-		break;
-	case DLL_THREAD_DETACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_DETACH.\n"));
-		break;
-	case DLL_PROCESS_DETACH:
-		OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_DETACH.\n"));
-		break;
+	switch (ul_reason_for_call)
+	{
+		case DLL_PROCESS_ATTACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_ATTACH.\n"));
+			break;
+		case DLL_THREAD_ATTACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_ATTACH.\n"));
+			break;
+		case DLL_THREAD_DETACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_THREAD_DETACH.\n"));
+			break;
+		case DLL_PROCESS_DETACH:
+			OutputDebugString(_T("WindowsLibrary.dll DLL_PROCESS_DETACH.\n"));
+			break;
 	}
 
-    return TRUE;
+	return TRUE;
 }
 
 DWORD MiddleLibrary::GetErrNo()
@@ -41,9 +41,9 @@ VOID MiddleLibrary::debug(LPCTSTR lpctszMsg)
 	ZeroMemory(tszMsg, sizeof(tszMsg));
 
 	wsprintf(tszMsg, _T("%04d/%02d/%02d %02d:%02d:%02d.%03d %s\n"),
-		T.wYear, T.wMonth, T.wDay,
-		T.wHour, T.wMinute, T.wSecond, T.wMilliseconds, lpctszMsg);
-	
+			 T.wYear, T.wMonth, T.wDay,
+			 T.wHour, T.wMinute, T.wSecond, T.wMilliseconds, lpctszMsg);
+
 	OutputDebugString(tszMsg);
 }
 
@@ -53,13 +53,13 @@ TString MiddleLibrary::GetProfileStr(LPCTSTR lpctszSection, LPCTSTR lpctszKeywor
 	TString response;
 
 	DWORD dwRet = ::GetPrivateProfileString(lpctszSection, lpctszKeyword,
-		nullptr, tszResult, MAX_PATH, _profile.Ctr());
+											nullptr, tszResult, MAX_PATH, _profile.Ctr());
 
 	if (0 < dwRet)
 	{
 		response = tszResult;
 	}
-	
+
 	return response;
 }
 
@@ -85,9 +85,9 @@ TString MiddleLibrary::GetFormattedDateTime(SYSTEMTIME& systemTime)
 	TString dateTime(24);
 
 	wsprintf(dateTime.Ptr(), _T("%04d/%02d/%02d %02d:%02d:%02d.%03d"),
-		systemTime.wYear, systemTime.wMonth, systemTime.wDay,
-		systemTime.wHour, systemTime.wMinute, systemTime.wSecond,
-		systemTime.wMilliseconds);
-	
+			 systemTime.wYear, systemTime.wMonth, systemTime.wDay,
+			 systemTime.wHour, systemTime.wMinute, systemTime.wSecond,
+			 systemTime.wMilliseconds);
+
 	return dateTime;
 }

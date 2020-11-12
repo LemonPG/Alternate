@@ -27,7 +27,6 @@ namespace PerfCheck
 		TStringPerformanceCheck();
 		virtual ~TStringPerformanceCheck();
 
-		virtual BOOL Init(alt::Console& console);
 		virtual BOOL DoAction();
 
 	protected:

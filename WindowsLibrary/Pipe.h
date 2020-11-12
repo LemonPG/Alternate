@@ -11,27 +11,27 @@
 
 namespace alt
 {
-    /**
-     @class	Pipe
-     @brief	パイプに関するWindowsAPIを集約したクラス
-     */
-    class DLL_DECLSPEC Pipe : public WindowsLibrary
-    {
-    public:
-        Pipe();
-        virtual ~Pipe();
+	/**
+	 @class	Pipe
+	 @brief	パイプに関するWindowsAPIを集約したクラス
+	 */
+	class DLL_DECLSPEC Pipe : public WindowsLibrary
+	{
+	public:
+		Pipe();
+		virtual ~Pipe();
 
-        BOOL Create();
-        DWORD Peek(LPVOID lpvBuf, DWORD dwSize);
-        DWORD Read(LPVOID lpvBuf, DWORD dwSize);
-        BOOL Write(LPVOID lpvBuf, DWORD dwSize);
-        BOOL Close();
+		BOOL Create();
+		DWORD Peek(LPVOID lpvBuf, DWORD dwSize);
+		DWORD Read(LPVOID lpvBuf, DWORD dwSize);
+		BOOL Write(LPVOID lpvBuf, DWORD dwSize);
+		BOOL Close();
 
-        HANDLE GetReadHandle() { return _hRead; };
-        HANDLE GetWriteHandle() { return _hWrite; };
+		HANDLE GetReadHandle() { return _hRead; };
+		HANDLE GetWriteHandle() { return _hWrite; };
 
-    private:
-        HANDLE _hRead;
-        HANDLE _hWrite;
-    };
+	private:
+		HANDLE _hRead;
+		HANDLE _hWrite;
+	};
 }

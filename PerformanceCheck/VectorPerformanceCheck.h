@@ -13,20 +13,19 @@
 
 namespace PerfCheck
 {
-    /**
-     @class	VectorPerformanceCheck
-     @brief	std::vector<T>クラス性能測定用
-    */
-    class VectorPerformanceCheck : public PerformanceCheck
-    {
-    public:
-        VectorPerformanceCheck();
-        virtual ~VectorPerformanceCheck();
+	/**
+	 @class	VectorPerformanceCheck
+	 @brief	std::vector<T>クラス性能測定用
+	*/
+	class VectorPerformanceCheck : public PerformanceCheck
+	{
+	public:
+		VectorPerformanceCheck();
+		virtual ~VectorPerformanceCheck();
 
-        virtual BOOL Init(alt::Console& console);
-        virtual BOOL DoAction();
+		virtual BOOL DoAction();
 
-    protected:
-        virtual BOOL Core(const int param1);
-    };
+	protected:
+		virtual BOOL Core(const int param1);
+	};
 }

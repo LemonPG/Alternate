@@ -8,7 +8,7 @@
 
 #include "framework.h"
 
-#define CONFIG_FILE	_T(".\\Config.ini")
+#define CONFIG_FILE	                _T(".\\Config.ini")
 
 #define SECTION_GENERAL			    _T("General")
 #define KEYWORD_ACTION			    _T("Action")

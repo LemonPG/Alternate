@@ -24,7 +24,7 @@ namespace alt
 		 @retval	DWORD 詳細はネットで。
 		 @sa		http://ir9.jp/prog/ayu/win32err.htm
 		 @sa		https://gallery-code.blogspot.com/2010/05/getlasterror.html
-		 @detail	GetLastError()を使用します。
+		 @details	GetLastError()を使用します。
 		 */
 		virtual DWORD GetErrNo();
 	};
@@ -39,10 +39,10 @@ namespace alt
 		/**
 		 @brief	コンストラクタ
 		 @note	ここで _hObject を INVALID_HANDLE_VALUE で初期化します。
-		        継承先はこのコンストラクタを指定して初期化します。
+				継承先はこのコンストラクタを指定して初期化します。
 		 */
 		HandleLibrary();
-		
+
 		/**
 		 @brief	デストラクタ
 		 @note	_hObject をクローズしていない場合、ここで確実にクローズします。
@@ -60,8 +60,8 @@ namespace alt
 		 @brief		使用しなくなったハンドルはこれでクローズします。
 		 @return	クローズに成功したか否か。
 		 @retval	成功(TRUE) 失敗(FALSE)
-		 @detail	使用していない場合は、何もしません。
-		            使用していた場合は、ハンドルをクローズし、初期化します。
+		 @details	使用していない場合は、何もしません。
+					使用していた場合は、ハンドルをクローズし、初期化します。
 		 */
 		virtual BOOL Close();
 
@@ -82,15 +82,15 @@ namespace alt
 		 @param[in]	lpvBuffer	読み込んだデータを保管するバッファ
 		 @param[in]	dwSize		読み込んだデータを保管するバッファのサイズ
 		 @return	実際に読み込んだデータのサイズ。
-		            失敗した場合は(DWORD)-1 が返ります。
+					失敗した場合は(DWORD)-1 が返ります。
 		 @retval	データサイズはバイトサイズです。
 		 */
 		virtual DWORD Read(LPVOID lpvBuffer, DWORD dwSize);
 
 		/**
 		 @brief		HANDLEを使ってデータを書き込みます。
-		 @param[in]	lpcvpvBuffer	書き込むデータを保管するバッファ
-		 @param[in]	dwSize			書き込むデータを保管するバッファのサイズ
+		 @param[in]	lpcvBuffer	書き込むデータを保管するバッファ
+		 @param[in]	dwSize		書き込むデータを保管するバッファのサイズ
 		 @return	実際に書き込んだデータのサイズ
 					失敗した場合は(DWORD)-1 が返ります。
 		 @retval	データサイズはバイトサイズです。
@@ -116,7 +116,7 @@ namespace alt
 		 @brief		シグナル状態になるとブロックを解除します。
 		 @return	ブロック解除の理由
 		 @retval	ハンドルがシグナル状態(WAIT_OBJECT_O)
-		            ハンドルオブジェクトが終了(WAIT_ABANDONED)
+					ハンドルオブジェクトが終了(WAIT_ABANDONED)
 					タイムアウト(WAIT_TIMEOUT)
 					エラー発生(WAIT_FAILED)
 					SetWaitableTimer()の関数呼び出し完了(WAIT_IO_COMPLETION)
@@ -169,17 +169,17 @@ namespace alt
 		 @return	WinSock APIのエラー時のエラー番号
 		 @retval	DWORD 詳細はネットで。
 		 @details	SetSockOption()で設定されるKeepAlive送出設定はレジストリの
-		            設定値(既定値は２時間後)に従います。この関数により、KeepAlive
+					設定値(既定値は２時間後)に従います。この関数により、KeepAlive
 					の設定タイミングをセッション個別に設定することができます。
 		 */
 		virtual BOOL SetKeepAliveValue(ULONG onoff, ULONG time, ULONG interval);
 
 	protected:
 		int WSAIoctl(DWORD dwIoControlCode, LPVOID lpvInBuffer, DWORD dwInBuffer,
-			LPVOID lpvOutBuffer, DWORD dwOutBuffer, LPDWORD lpdwBytesReturned,
-			LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine);
+					 LPVOID lpvOutBuffer, DWORD dwOutBuffer, LPDWORD lpdwBytesReturned,
+					 LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine);
 
-		//! このクラスで管理するソケットオブジェクト
+				 //! このクラスで管理するソケットオブジェクト
 		SOCKET _socket;
 	};
 }

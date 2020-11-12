@@ -40,9 +40,9 @@ BOOL WatchDogTimer::StartTimer(DWORD dwTime)
 	LONG period = dwTime;
 
 	ret = ::SetWaitableTimer(
-			_hObject, &interval, period,
-			_timeup == nullptr ? nullptr : _timeup->TimeupCall,
-			_timeup, FALSE);
+		_hObject, &interval, period,
+		_timeup == nullptr ? nullptr : _timeup->TimeupCall,
+		_timeup, FALSE);
 	if (ret == FALSE)
 	{
 		return ret;

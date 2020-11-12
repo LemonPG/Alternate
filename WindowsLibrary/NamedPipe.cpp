@@ -49,7 +49,7 @@ BOOL NamedPipe::Open(LPCTSTR lpctszName)
 {
 	BOOL ret = TRUE;
 	TCHAR tszPipeName[MAX_PATH];
-	
+
 	wsprintf(tszPipeName, PIPE_NAME_FORMAT, lpctszName);
 
 	_hObject = ::CreateFile(tszPipeName, GENERIC_READ | GENERIC_WRITE, 0, nullptr, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
@@ -66,6 +66,6 @@ BOOL NamedPipe::Wait(LPCTSTR lpctszName, DWORD dwTimeout)
 	TCHAR tszPipeName[MAX_PATH];
 
 	wsprintf(tszPipeName, PIPE_NAME_FORMAT, lpctszName);
-	
+
 	return ::WaitNamedPipe(tszPipeName, dwTimeout);
 }

@@ -11,28 +11,28 @@
 
 namespace alt
 {
-    /**
-     @class	HeapMemory
-     @brief	ヒープメモリに関するAPIを集約したクラス
-    */
-    class DLL_DECLSPEC HeapMemory : public HandleLibrary
+	/**
+	 @class	HeapMemory
+	 @brief	ヒープメモリに関するAPIを集約したクラス
+	*/
+	class DLL_DECLSPEC HeapMemory : public HandleLibrary
 	{
-    public:
-        HeapMemory(int boundary = 8);
-        virtual ~HeapMemory();
+	public:
+		HeapMemory(int boundary = 8);
+		virtual ~HeapMemory();
 
-        BOOL Create(BOOL bUseSystemMemory = TRUE);
-        BOOL Destroy();
+		BOOL Create(BOOL bUseSystemMemory = TRUE);
+		BOOL Destroy();
 
-        LPVOID Allocate(SIZE_T bytes, DWORD dwFlags = HEAP_ZERO_MEMORY);
-        LPVOID Reallocate(LPVOID lpvBase, SIZE_T bytes, DWORD dwFlags = HEAP_ZERO_MEMORY);
-        BOOL Free(LPVOID lpvMem);
-        SIZE_T Compact();
+		LPVOID Allocate(SIZE_T bytes, DWORD dwFlags = HEAP_ZERO_MEMORY);
+		LPVOID Reallocate(LPVOID lpvBase, SIZE_T bytes, DWORD dwFlags = HEAP_ZERO_MEMORY);
+		BOOL Free(LPVOID lpvMem);
+		SIZE_T Compact();
 
-    private:
-        SIZE_T BoundarySize(SIZE_T bytes);
+	private:
+		SIZE_T BoundarySize(SIZE_T bytes);
 
-        bool _bCreateHeap;
-        int _boundary;
+		bool _bCreateHeap;
+		int _boundary;
 	};
 }

@@ -38,14 +38,15 @@ namespace alt
 
 		/**
 		 @brief		スレッドを作成します。
-		 @param[IN]	function スレッド起動する関数
-		 @param[IN]	dwCreationFlag CREATE_SUSPENDEDを指定すると起動と同時に停止します。
+		 @param[in]	function スレッド起動する関数
+		 @param[in] lpvParam スレッド機能する関数へのパラメータ
+		 @param[in]	dwCreationFlag CREATE_SUSPENDEDを指定すると起動と同時に停止します。
 		 @return	BOOL
 		 @retval	TRUE(成功)
 		 @retval	FALSE(失敗)
 		 */
 		BOOL Create(PTHREAD_START_ROUTINE function = nullptr, LPVOID lpvParam = nullptr, DWORD dwCreationFlag = 0);
-		
+
 		/**
 		 @brief		スレッドを一時停止します。
 		 @return	DWORD
@@ -73,7 +74,7 @@ namespace alt
 
 	protected:
 
-		skeleton::ICallback*	_callback;
+		skeleton::ICallback* _callback;
 		DWORD					_threadID;
 	};
 }

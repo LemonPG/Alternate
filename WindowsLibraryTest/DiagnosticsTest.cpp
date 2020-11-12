@@ -67,7 +67,7 @@ namespace WindowsLibraryTest
 		TEST_METHOD(MemoryDiagnosticsTest)
 		{
 			Logger::WriteMessage("MemoryDiagnosticsTest\n");
-			
+
 			alt::Diagnostics diag;
 			BOOL ret;
 
@@ -91,7 +91,7 @@ namespace WindowsLibraryTest
 			Assert::IsTrue(ret);
 			MemoryStatusPrint(pmc);
 		}
-		
+
 		TEST_METHOD(DiskDiagnosticsTest)
 		{
 			Logger::WriteMessage("DiskDiagnosticsTest\n");
@@ -126,7 +126,7 @@ namespace WindowsLibraryTest
 			pFile->Close();
 
 			delete pFile;
-			
+
 			alt::FileUtility::Delete(TEST_FILE);
 		}
 

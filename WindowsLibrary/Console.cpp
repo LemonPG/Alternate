@@ -58,7 +58,7 @@ DWORD Console::Write(LPCTSTR lpctszString)
 VOID Console::Format(LPCTSTR format, ...)
 {
 	va_list args;
-	int     len;
+	int len;
 	TCHAR* ptszString;
 
 	va_start(args, format);
@@ -72,6 +72,7 @@ VOID Console::Format(LPCTSTR format, ...)
 	}
 
 	this->Write(ptszString);
+	delete[] ptszString;
 
 	va_end(args);
 }

@@ -19,11 +19,6 @@ NewPerformanceCheck::~NewPerformanceCheck()
 {
 }
 
-BOOL NewPerformanceCheck::Init(alt::Console& console)
-{
-	return PerformanceCheck::Init(console);
-}
-
 BOOL NewPerformanceCheck::DoAction()
 {
 	return this->Core(0);
@@ -47,7 +42,7 @@ BOOL NewPerformanceCheck::Core(const int param1)
 		{
 			int index = rand() % 10;
 			TCHAR tsz[10];
-			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(),index);
+			wsprintf(tsz, _T("%d(%d),"), GetCurrentThreadId(), index);
 			OutputDebugString(tsz);
 
 			LPVOID lpvMem = new BYTE[me->_allocSize[index]];
@@ -56,7 +51,7 @@ BOOL NewPerformanceCheck::Core(const int param1)
 			delete[] lpvMem;
 
 		} while (--loop);
-		OutputDebugString(_T("Thread action is finished.\n"));
+		OutputDebugString(_T("Thread action is stopped.\n"));
 
 		return 0;
 	};
@@ -88,8 +83,8 @@ BOOL NewPerformanceCheck::Core(const int param1)
 
 	event.Set();
 	WaitForMultipleObjects(numOfThreads, threadHandles, TRUE, INFINITE);
-	
-	Q.Finish();
+
+	Q.Stop();
 	Write(_T("åvë™èIóπ\n"));
 
 	int msec = static_cast<int>(Q.PastTime());

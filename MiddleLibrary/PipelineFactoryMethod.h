@@ -67,7 +67,7 @@ namespace alt
 			virtual void Update(IData* data) {};
 			virtual void Init();
 			virtual void Start(DWORD dwInterval);
-			virtual void Finish();
+			virtual void Stop();
 			virtual DWORD Invoke(LPVOID lpvParam);
 
 		protected:
@@ -140,7 +140,7 @@ namespace alt
 			virtual bool Init(IConfig* config);
 			virtual bool Start();
 			virtual IData* Process(IData* data);
-			virtual bool Finish();
+			virtual bool Stop();
 			virtual bool Exit();
 
 			virtual void Update(IMessage* message);
@@ -172,7 +172,7 @@ namespace alt
 
 			virtual bool Init(IConfig* config);
 			virtual bool Start();
-			virtual bool Finish();
+			virtual bool Stop();
 			virtual bool Exit();
 
 			virtual void Update(IMessage* message);

@@ -54,7 +54,7 @@ namespace alt
 			return data;
 		};
 
-		std::function<bool()> finish = [&]()
+		std::function<bool()> stop = [&]()
 		{
 			return true;
 		};
@@ -140,7 +140,7 @@ namespace MiddleLibraryTest
 
 			[](WorkerTemplate& t, WorkerFunction& f)
 			{
-				bool ret = t.Finish(f.finish);
+				bool ret = t.Stop(f.stop);
 				Assert::AreEqual<bool>(true, ret);
 
 			}(workerTemplate, workerFunction);

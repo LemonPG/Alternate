@@ -11,11 +11,11 @@
 
 namespace alt
 {
-    /**
-     @class	TcpConnector
-     @brief	TCP通信に関するWindowsAPIを集約したクラス
-     */
-    class DLL_DECLSPEC TcpConnector : public SocketLibrary
+	/**
+	 @class	TcpConnector
+	 @brief	TCP通信に関するWindowsAPIを集約したクラス
+	 */
+	class DLL_DECLSPEC TcpConnector : public SocketLibrary
 	{
 	public:
 		TcpConnector(SOCKET socket) { _socket = socket; };
