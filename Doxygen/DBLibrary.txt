@@ -1,0 +1,15 @@
+/**
+
+@page DBLibrary DBLibraryプロジェクト
+
+現在はまだ、SqLite3ライブラリとの結合しかできていませんが、C++からデータベースを操作するためのロジック体として<strong>DBLibrary</strong>プロジェクトを作りました。また単体テスト用に<strong>DBLibraryTest</strong>プロジェクトがあります。
+
+@section プロジェクトの構成
+
+T.B.D.
+
+@section プロジェクトの方針
+
+T.B.D.
+
+*/
