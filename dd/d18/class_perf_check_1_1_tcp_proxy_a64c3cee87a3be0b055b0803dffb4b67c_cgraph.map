@@ -1,0 +1,5 @@
+<map id="PerfCheck::TcpProxy::~TcpProxy" name="PerfCheck::TcpProxy::~TcpProxy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,151,80"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="199,5,322,47"/>
+<area shape="rect" id="node3" href="$d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="199,71,323,112"/>
+</map>

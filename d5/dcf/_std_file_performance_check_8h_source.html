@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/PerformanceCheck/StdFilePerformanceCheck.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d5/dcf/_std_file_performance_check_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">StdFilePerformanceCheck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/dcf/_std_file_performance_check_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/da6/_performance_check_8h.html">PerformanceCheck.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd0/_watch_dog_timer_8h.html">WatchDogTimer.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html">StdFilePerformanceCheck</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html">PerformanceCheck</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a8eb96f3b6e29059d1d63a1fcc50bad3e">StdFilePerformanceCheck</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a0ef0f91be0584eab1f1a155d75dd12ae">~StdFilePerformanceCheck</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> BOOL <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a2587b7073b9f7f2836efc44f0ba8b45d">DoAction</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">virtual</span> BOOL <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a3bb880149b1edeb36711ed9dfd8cf444">Core</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> param1);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> BOOL <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a064a294a072b19907b45f255d8b6d26a">Core1</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> param1);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">virtual</span> BOOL <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a84d8772820bbb5ffd2cd6a46c44d217d">Core2</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> param1);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a1c8f286ac4c452b2110414a5c799a769">   31</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a1c8f286ac4c452b2110414a5c799a769">_maxFileSize</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a3bb880149b1edeb36711ed9dfd8cf444"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a3bb880149b1edeb36711ed9dfd8cf444">PerfCheck::StdFilePerformanceCheck::Core</a></div><div class="ttdeci">virtual BOOL Core(const int param1)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00064">StdFilePerformanceCheck.cpp:64</a></div></div>
+<div class="ttc" id="a_performance_check_8h_html"><div class="ttname"><a href="../../dd/da6/_performance_check_8h.html">PerformanceCheck.h</a></div><div class="ttdoc">性能測定用</div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a2587b7073b9f7f2836efc44f0ba8b45d"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a2587b7073b9f7f2836efc44f0ba8b45d">PerfCheck::StdFilePerformanceCheck::DoAction</a></div><div class="ttdeci">virtual BOOL DoAction()</div><div class="ttdoc">処理開始</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00023">StdFilePerformanceCheck.cpp:23</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html">PerfCheck::PerformanceCheck</a></div><div class="ttdoc">性能測定用</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da6/_performance_check_8h_source.html#l00020">PerformanceCheck.h:21</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html">PerfCheck::StdFilePerformanceCheck</a></div><div class="ttdoc">Fileクラスの比較用</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcf/_std_file_performance_check_8h_source.html#l00018">StdFilePerformanceCheck.h:19</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a84d8772820bbb5ffd2cd6a46c44d217d"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a84d8772820bbb5ffd2cd6a46c44d217d">PerfCheck::StdFilePerformanceCheck::Core2</a></div><div class="ttdeci">virtual BOOL Core2(const int param1)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00109">StdFilePerformanceCheck.cpp:109</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a0ef0f91be0584eab1f1a155d75dd12ae"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a0ef0f91be0584eab1f1a155d75dd12ae">PerfCheck::StdFilePerformanceCheck::~StdFilePerformanceCheck</a></div><div class="ttdeci">virtual ~StdFilePerformanceCheck()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00018">StdFilePerformanceCheck.cpp:18</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a1c8f286ac4c452b2110414a5c799a769"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a1c8f286ac4c452b2110414a5c799a769">PerfCheck::StdFilePerformanceCheck::_maxFileSize</a></div><div class="ttdeci">size_t _maxFileSize</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcf/_std_file_performance_check_8h_source.html#l00031">StdFilePerformanceCheck.h:31</a></div></div>
+<div class="ttc" id="a_watch_dog_timer_8h_html"><div class="ttname"><a href="../../dd/dd0/_watch_dog_timer_8h.html">WatchDogTimer.h</a></div><div class="ttdoc">タイマーに関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a064a294a072b19907b45f255d8b6d26a"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a064a294a072b19907b45f255d8b6d26a">PerfCheck::StdFilePerformanceCheck::Core1</a></div><div class="ttdeci">virtual BOOL Core1(const int param1)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00074">StdFilePerformanceCheck.cpp:74</a></div></div>
+<div class="ttc" id="anamespace_perf_check_html"><div class="ttname"><a href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dcf/_array_performance_check_8h_source.html#l00015">ArrayPerformanceCheck.h:16</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_std_file_performance_check_html_a8eb96f3b6e29059d1d63a1fcc50bad3e"><div class="ttname"><a href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a8eb96f3b6e29059d1d63a1fcc50bad3e">PerfCheck::StdFilePerformanceCheck::StdFilePerformanceCheck</a></div><div class="ttdeci">StdFilePerformanceCheck()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00012">StdFilePerformanceCheck.cpp:12</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_0646cd346598a23584b295256f406e84.html">PerformanceCheck</a></li><li class="navelem"><a class="el" href="../../d5/dcf/_std_file_performance_check_8h.html">StdFilePerformanceCheck.h</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

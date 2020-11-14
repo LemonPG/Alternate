@@ -1,0 +1,23 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,596,144,637"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="223,5,345,47"/>
+<area shape="rect" id="node3" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a5b992fb1838c9fcced8aac7fde98b87b" title=" " alt="" coords="201,71,367,112"/>
+<area shape="rect" id="node4" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a348f282f8de0ac1f19cec736be6ef1b1" title=" " alt="" coords="201,136,367,177"/>
+<area shape="rect" id="node5" href="$d3/d85/classalt_1_1_file_utility.html#aa47a6c19f7bba5d446ab729557bc01fb" title=" " alt="" coords="216,202,352,229"/>
+<area shape="rect" id="node6" href="$d4/d3b/classalt_1_1_transaction_file.html#ab9bc88862b4a4ab2726012bfb195921f" title="ファイルを作成、オープンします。" alt="" coords="218,253,350,295"/>
+<area shape="rect" id="node7" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a5d9a89f83d1c9dc8695a49c068b03f2b" title=" " alt="" coords="201,319,367,360"/>
+<area shape="rect" id="node8" href="$dc/d44/classalt_1_1_transaction_file_utility.html#aff327af071e137545929e81d988b5d29" title=" " alt="" coords="201,384,367,425"/>
+<area shape="rect" id="node9" href="$d3/d85/classalt_1_1_file_utility.html#ac0495fee8af7ea9f250f41d6bbc2e430" title=" " alt="" coords="213,450,355,477"/>
+<area shape="rect" id="node10" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#a954690880e4bb77115eae6311b9ddc62" title="まだデバイスに出力されていないデータを吐き出させます。" alt="" coords="192,501,376,543"/>
+<area shape="rect" id="node11" href="$d0/d99/classalt_1_1_handle_library.html#a07585b59c2d46bb6eb60e55d4b9b35c3" title="継承先はこの関数でハンドルを取得します。" alt="" coords="223,567,345,608"/>
+<area shape="rect" id="node12" href="$d1/dfc/classalt_1_1_file.html#aada4a338e4074581e5e59cf20f26f438" title="ファイルサイズを取得します。" alt="" coords="224,633,344,659"/>
+<area shape="rect" id="node13" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a850017f6bebf8b1ecde9a114b9717b32" title=" " alt="" coords="201,684,367,725"/>
+<area shape="rect" id="node14" href="$d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b" title=" " alt="" coords="211,750,357,777"/>
+<area shape="rect" id="node15" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a5a470a6e1d621d72728f93a79ff0110a" title=" " alt="" coords="201,801,367,843"/>
+<area shape="rect" id="node16" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a80a64441e0ea5f411bdf3b47a54e28dd" title=" " alt="" coords="201,867,367,908"/>
+<area shape="rect" id="node17" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ac8aa8c04ec7a27ade01f80bb4fe96b1d" title="HANDLEを使ってデータを読み込みます。" alt="" coords="192,932,376,973"/>
+<area shape="rect" id="node18" href="$d3/d85/classalt_1_1_file_utility.html#a180746231b8010cbe3029a755769c51b" title=" " alt="" coords="200,998,368,1025"/>
+<area shape="rect" id="node19" href="$dc/d44/classalt_1_1_transaction_file_utility.html#a6a807e54c864af7bd44c499663d176ac" title=" " alt="" coords="201,1049,367,1091"/>
+<area shape="rect" id="node20" href="$d1/dfc/classalt_1_1_file.html#ae6fad650e4b7f6eb74efc91e0728261e" title="ファイルポインタを移動します。" alt="" coords="217,1115,351,1142"/>
+<area shape="rect" id="node21" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ae4a52040d9f06b5766351c0f8cdd2302" title="HANDLEを使ってデータを書き込みます。" alt="" coords="192,1167,376,1208"/>
+</map>

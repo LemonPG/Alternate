@@ -1,0 +1,9 @@
+<map id="PerfCheck::WatchDocTimerPerformanceCheck::Core" name="PerfCheck::WatchDocTimerPerformanceCheck::Core">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,188,211"/>
+<area shape="rect" id="node2" href="$d4/d2d/classalt_1_1_query_performance.html#af8ace208fe6d949c83b4e1ebe0bf0aa4" title="現在のタイマー分解能を取得します。" alt="" coords="236,5,388,47"/>
+<area shape="rect" id="node3" href="$d4/d2d/classalt_1_1_query_performance.html#a2a5ed1317953462b79a04647bc00fb36" title="Start()時のカウンター値を取得します。" alt="" coords="236,71,388,112"/>
+<area shape="rect" id="node4" href="$d4/d2d/classalt_1_1_query_performance.html#ad28e4b7d9ec2c4e391a4398a799599c3" title="Stop()時のカウンター値を取得します。" alt="" coords="236,136,388,177"/>
+<area shape="rect" id="node5" href="$d4/d2d/classalt_1_1_query_performance.html#a6b2d5b74babd8060a1a5f513fcc379e4" title="計測開始〜計測終了までの時間を出力します。" alt="" coords="236,201,388,243"/>
+<area shape="rect" id="node6" href="$d4/d2d/classalt_1_1_query_performance.html#a2cbdc307b622603cd45ca84d73c5d523" title="計測を開始します。" alt="" coords="236,267,388,308"/>
+<area shape="rect" id="node7" href="$d4/d2d/classalt_1_1_query_performance.html#ae40ccc8512651f753a39e157afd1d9fc" title="計測を終了します。" alt="" coords="236,332,388,373"/>
+</map>

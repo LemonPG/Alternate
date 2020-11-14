@@ -1,0 +1,4 @@
+<map id="Init" name="Init">
+<area shape="rect" id="node1" title="ストラテジーの初期化を行います。" alt="" coords="115,5,153,32"/>
+<area shape="rect" id="node2" href="$db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f" title="エントリーポイント(メイン関数)です。" alt="" coords="5,5,67,32"/>
+</map>

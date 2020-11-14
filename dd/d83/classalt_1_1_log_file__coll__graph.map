@@ -1,0 +1,9 @@
+<map id="alt::LogFile" name="alt::LogFile">
+<area shape="rect" id="node1" title="Fileをベースとしたログに関する機能を集約したクラス" alt="" coords="51,376,138,403"/>
+<area shape="rect" id="node2" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="44,5,180,32"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="35,132,120,159"/>
+<area shape="rect" id="node6" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="117,81,240,108"/>
+<area shape="rect" id="node7" href="$d4/d33/classalt_1_1_critical_section.html" title="CriticalSectionに関するWindowsAPIを集約したクラス" alt="" coords="224,235,352,261"/>
+<area shape="rect" id="node4" href="$d1/dfc/classalt_1_1_file.html" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="115,287,181,313"/>
+<area shape="rect" id="node5" href="$d2/d8c/classalt_1_1_read_write_handle_library.html" title="HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス" alt="" coords="93,183,277,209"/>
+</map>

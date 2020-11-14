@@ -1,0 +1,5 @@
+<map id="alt::WaitableHandleLibrary" name="alt::WaitableHandleLibrary">
+<area shape="rect" id="node1" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="5,155,180,181"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="31,80,154,107"/>
+<area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="25,5,161,32"/>
+</map>

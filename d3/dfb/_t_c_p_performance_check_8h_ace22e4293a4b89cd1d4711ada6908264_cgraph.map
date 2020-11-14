@@ -1,0 +1,8 @@
+<map id="DriveTcpClient" name="DriveTcpClient">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="199,5,310,32"/>
+<area shape="rect" id="node3" href="$da/d1b/_t_c_p_performance_check_8cpp.html#a014844708ec340dd9a093a2e9fc8c246" title=" " alt="" coords="157,56,352,83"/>
+<area shape="rect" id="node6" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="199,107,310,133"/>
+<area shape="rect" id="node4" href="$d7/de9/class_perf_check_1_1_tcp_client.html#a443e967102416741ed8332c3bb65a90e" title=" " alt="" coords="400,49,544,90"/>
+<area shape="rect" id="node5" href="$d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="592,49,716,90"/>
+</map>

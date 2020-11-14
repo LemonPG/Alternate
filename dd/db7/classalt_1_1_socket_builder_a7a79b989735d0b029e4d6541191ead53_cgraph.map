@@ -1,0 +1,7 @@
+<map id="alt::SocketBuilder::CreateUdpConnector" name="alt::SocketBuilder::CreateUdpConnector">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,156,145"/>
+<area shape="rect" id="node2" href="$dd/db7/classalt_1_1_socket_builder.html#af270f7da25727ac3691ebcc7f9d68591" title=" " alt="" coords="204,5,329,47"/>
+<area shape="rect" id="node3" href="$d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="205,71,329,112"/>
+<area shape="rect" id="node4" href="$dd/db7/classalt_1_1_socket_builder.html#aab6534795679463917f2c8e4ee5dda02" title=" " alt="" coords="204,136,329,177"/>
+<area shape="rect" id="node5" href="$dd/db7/classalt_1_1_socket_builder.html#a225275628d36851cc1d8ced730d55296" title=" " alt="" coords="204,201,329,243"/>
+</map>

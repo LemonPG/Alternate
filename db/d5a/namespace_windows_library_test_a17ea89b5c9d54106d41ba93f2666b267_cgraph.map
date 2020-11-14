@@ -1,0 +1,12 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,216,144,257"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="234,5,357,47"/>
+<area shape="rect" id="node3" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="240,71,351,98"/>
+<area shape="rect" id="node4" href="$d3/d85/classalt_1_1_file_utility.html#ac0495fee8af7ea9f250f41d6bbc2e430" title=" " alt="" coords="224,122,367,149"/>
+<area shape="rect" id="node5" href="$d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782" title="ネットワークI/O情報を取得します。" alt="" coords="192,173,399,199"/>
+<area shape="rect" id="node6" href="$d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1" title="プロセスI/O情報を取得します。" alt="" coords="194,223,397,250"/>
+<area shape="rect" id="node7" href="$d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1" title="プロセスメモリ情報を取得します。" alt="" coords="201,275,390,316"/>
+<area shape="rect" id="node8" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ac8aa8c04ec7a27ade01f80bb4fe96b1d" title="HANDLEを使ってデータを読み込みます。" alt="" coords="203,340,387,381"/>
+<area shape="rect" id="node9" href="$d1/dfc/classalt_1_1_file.html#ae6fad650e4b7f6eb74efc91e0728261e" title="ファイルポインタを移動します。" alt="" coords="228,406,363,433"/>
+<area shape="rect" id="node10" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ae4a52040d9f06b5766351c0f8cdd2302" title="HANDLEを使ってデータを書き込みます。" alt="" coords="203,457,387,499"/>
+</map>

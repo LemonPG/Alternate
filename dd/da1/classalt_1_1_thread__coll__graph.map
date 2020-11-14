@@ -1,0 +1,7 @@
+<map id="alt::Thread" name="alt::Thread">
+<area shape="rect" id="node1" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="153,259,235,285"/>
+<area shape="rect" id="node2" href="$d1/d35/classalt_1_1_waitable_handle_library.html" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="5,183,180,209"/>
+<area shape="rect" id="node3" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="54,81,177,108"/>
+<area shape="rect" id="node4" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="115,5,251,32"/>
+<area shape="rect" id="node5" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="149,132,303,159"/>
+</map>

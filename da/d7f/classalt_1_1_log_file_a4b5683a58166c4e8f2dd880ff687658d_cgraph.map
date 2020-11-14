@@ -1,0 +1,5 @@
+<map id="alt::LogFile::CreateLog" name="alt::LogFile::CreateLog">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,159,57"/>
+<area shape="rect" id="node2" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="207,5,317,32"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="207,56,317,83"/>
+</map>

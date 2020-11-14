@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: PerfCheck::TcpClient クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d7/de9/class_perf_check_1_1_tcp_client.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d7/dc7/class_perf_check_1_1_tcp_client-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">PerfCheck::TcpClient クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCPクラス性能測定用  
+ <a href="../../d7/de9/class_perf_check_1_1_tcp_client.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a>&gt;</code></p>
+<div class="dynheader">
+PerfCheck::TcpClient の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d3d/class_perf_check_1_1_tcp_client__inherit__graph.png" border="0" usemap="#a_perf_check_1_1_tcp_client_inherit__map" alt="Inheritance graph"/></div>
+<map name="_perf_check_1_1_tcp_client_inherit__map" id="a_perf_check_1_1_tcp_client_inherit__map">
+<area shape="rect" title="TCPクラス性能測定用" alt="" coords="11,155,155,181"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="5,80,160,107"/>
+<area shape="rect" href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="15,5,151,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+PerfCheck::TcpClient 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dbb/class_perf_check_1_1_tcp_client__coll__graph.png" border="0" usemap="#a_perf_check_1_1_tcp_client_coll__map" alt="Collaboration graph"/></div>
+<map name="_perf_check_1_1_tcp_client_coll__map" id="a_perf_check_1_1_tcp_client_coll__map">
+<area shape="rect" title="TCPクラス性能測定用" alt="" coords="159,336,303,363"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="5,157,160,184"/>
+<area shape="rect" href="../../d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="127,247,209,273"/>
+<area shape="rect" href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="204,5,340,32"/>
+<area shape="rect" href="../../d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="211,81,333,108"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html" title="WinSockを使用するAPIを集約したクラス" alt="" coords="383,157,507,184"/>
+<area shape="rect" href="../../d1/d35/classalt_1_1_waitable_handle_library.html" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="185,157,359,184"/>
+<area shape="rect" href="../../d3/d45/classalt_1_1_tcp_connector.html" title="TCP通信に関するWindowsAPIを集約したクラス" alt="" coords="234,247,358,273"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="383,247,508,273"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad2e6b99a63964caa825c44e93ff8e777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ad2e6b99a63964caa825c44e93ff8e777">TcpClient</a> ()</td></tr>
+<tr class="separator:ad2e6b99a63964caa825c44e93ff8e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125d2277f401cbdebadb9689a5933e18"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#a125d2277f401cbdebadb9689a5933e18">~TcpClient</a> ()</td></tr>
+<tr class="separator:a125d2277f401cbdebadb9689a5933e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dae67ffa1db3be473fce92234f5c46c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#a4dae67ffa1db3be473fce92234f5c46c">Init</a> ()</td></tr>
+<tr class="separator:a4dae67ffa1db3be473fce92234f5c46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86c350e7ffbd686de10ea37329b610e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ab86c350e7ffbd686de10ea37329b610e">Start</a> (LPCTSTR lpctszIP, USHORT wPort, int retryCount, int retryInterval, bool kickOff)</td></tr>
+<tr class="separator:ab86c350e7ffbd686de10ea37329b610e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443e967102416741ed8332c3bb65a90e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#a443e967102416741ed8332c3bb65a90e">Stop</a> ()</td></tr>
+<tr class="separator:a443e967102416741ed8332c3bb65a90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1skeleton_1_1_i_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1skeleton_1_1_i_callback')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a9e821773cc4ef1701f0aa558bfbfd4e3 inherit pub_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a9e821773cc4ef1701f0aa558bfbfd4e3">ICallback</a> ()</td></tr>
+<tr class="separator:a9e821773cc4ef1701f0aa558bfbfd4e3 inherit pub_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa70abbbde3384c726c51e8ccb76a5b7 inherit pub_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#afa70abbbde3384c726c51e8ccb76a5b7">~ICallback</a> ()</td></tr>
+<tr class="separator:afa70abbbde3384c726c51e8ccb76a5b7 inherit pub_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a8a23b1e452c27532f0f513d1f9b0aa0f">GetErrNo</a> ()</td></tr>
+<tr class="memdesc:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を返します。  <a href="../../de/dcb/classalt_1_1_windows_library.html#a8a23b1e452c27532f0f513d1f9b0aa0f">[詳解]</a><br /></td></tr>
+<tr class="separator:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad4afc1a4930abd7b503c65dd87bb5300"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ad4afc1a4930abd7b503c65dd87bb5300">Invoke</a> (LPVOID lpvParam)</td></tr>
+<tr class="separator:ad4afc1a4930abd7b503c65dd87bb5300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:afc38ac1e67c481d699a7925bf2e1d69d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/db7/classalt_1_1_socket_builder.html">alt::SocketBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#afc38ac1e67c481d699a7925bf2e1d69d">_builder</a></td></tr>
+<tr class="separator:afc38ac1e67c481d699a7925bf2e1d69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5599e917c4b3d4dae81d704ba2a71975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d45/classalt_1_1_tcp_connector.html">alt::TcpConnector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#a5599e917c4b3d4dae81d704ba2a71975">_connector</a></td></tr>
+<tr class="separator:a5599e917c4b3d4dae81d704ba2a71975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803ca62ff34940e8f3e29cb2f72cee6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#a803ca62ff34940e8f3e29cb2f72cee6d">_stop</a></td></tr>
+<tr class="separator:a803ca62ff34940e8f3e29cb2f72cee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d02eb1a2af8ea2b26a670b6b92e279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#aa3d02eb1a2af8ea2b26a670b6b92e279">_thread</a></td></tr>
+<tr class="separator:aa3d02eb1a2af8ea2b26a670b6b92e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classalt_1_1skeleton_1_1_i_callback')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a8081c641e1b1eeb812e5458e1e078173 inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173">Invoker</a> (LPVOID me)</td></tr>
+<tr class="separator:a8081c641e1b1eeb812e5458e1e078173 inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TCPクラス性能測定用 </p>
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00117">117</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="ad2e6b99a63964caa825c44e93ff8e777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e6b99a63964caa825c44e93ff8e777">&#9670;&nbsp;</a></span>TcpClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TcpClient::TcpClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00485">485</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00132">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00133">_connector</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00131">_stop</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00134">_thread</a>.</p>
+
+</div>
+</div>
+<a id="a125d2277f401cbdebadb9689a5933e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125d2277f401cbdebadb9689a5933e18">&#9670;&nbsp;</a></span>~TcpClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TcpClient::~TcpClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00497">497</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00132">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00133">_connector</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00134">_thread</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00067">alt::HandleLibrary::Close()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00136">alt::SocketLibrary::Close()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de9/class_perf_check_1_1_tcp_client_a125d2277f401cbdebadb9689a5933e18_cgraph.png" border="0" usemap="#ad7/de9/class_perf_check_1_1_tcp_client_a125d2277f401cbdebadb9689a5933e18_cgraph" alt=""/></div>
+<map name="d7/de9/class_perf_check_1_1_tcp_client_a125d2277f401cbdebadb9689a5933e18_cgraph" id="ad7/de9/class_perf_check_1_1_tcp_client_a125d2277f401cbdebadb9689a5933e18_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,149,80"/>
+<area shape="rect" href="../../d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="198,5,321,47"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="197,71,321,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a4dae67ffa1db3be473fce92234f5c46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dae67ffa1db3be473fce92234f5c46c">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TcpClient::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00511">511</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00132">_builder</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00025">alt::SocketBuilder::Startup()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de9/class_perf_check_1_1_tcp_client_a4dae67ffa1db3be473fce92234f5c46c_cgraph.png" border="0" usemap="#ad7/de9/class_perf_check_1_1_tcp_client_a4dae67ffa1db3be473fce92234f5c46c_cgraph" alt=""/></div>
+<map name="d7/de9/class_perf_check_1_1_tcp_client_a4dae67ffa1db3be473fce92234f5c46c_cgraph" id="ad7/de9/class_perf_check_1_1_tcp_client_a4dae67ffa1db3be473fce92234f5c46c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,149,47"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#a181c3d90dedc9c319c127da540e5eb66" title=" " alt="" coords="197,5,323,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4afc1a4930abd7b503c65dd87bb5300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4afc1a4930abd7b503c65dd87bb5300">&#9670;&nbsp;</a></span>Invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD TcpClient::Invoke </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpvParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">alt::skeleton::ICallback</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00557">557</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00133">_connector</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00131">_stop</a>, <a class="el" href="../../d6/dea/_watch_dog_timer_test_8cpp_source.html#l00013">WindowsLibraryTest::count</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00032">DATA_SIZE</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00266">DumpData()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00245">MakeData()</a>, <a class="el" href="../../d0/d86/_tcp_connector_8cpp_source.html#l00019">alt::TcpConnector::Recv()</a>, <a class="el" href="../../d0/d86/_tcp_connector_8cpp_source.html#l00012">alt::TcpConnector::Send()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de9/class_perf_check_1_1_tcp_client_ad4afc1a4930abd7b503c65dd87bb5300_cgraph.png" border="0" usemap="#ad7/de9/class_perf_check_1_1_tcp_client_ad4afc1a4930abd7b503c65dd87bb5300_cgraph" alt=""/></div>
+<map name="d7/de9/class_perf_check_1_1_tcp_client_ad4afc1a4930abd7b503c65dd87bb5300_cgraph" id="ad7/de9/class_perf_check_1_1_tcp_client_ad4afc1a4930abd7b503c65dd87bb5300_cgraph">
+<area shape="rect" title=" " alt="" coords="5,74,149,115"/>
+<area shape="rect" href="../../da/d1b/_t_c_p_performance_check_8cpp.html#a1c70307bc86d20394383c47b2dead67c" title="バイナリデータをコンソールにダンプします。" alt="" coords="237,5,320,32"/>
+<area shape="rect" href="../../da/d1b/_t_c_p_performance_check_8cpp.html#acf7ae6907ad1ccee7260bbbf1af4eb76" title=" " alt="" coords="238,56,319,83"/>
+<area shape="rect" href="../../d3/d45/classalt_1_1_tcp_connector.html#a3e8bbb0975faf8597197ea3c2be45aaf" title=" " alt="" coords="199,107,359,133"/>
+<area shape="rect" href="../../d3/d45/classalt_1_1_tcp_connector.html#af68446909f8cf5a25dc5f9b0c368ae06" title=" " alt="" coords="197,157,360,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab86c350e7ffbd686de10ea37329b610e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86c350e7ffbd686de10ea37329b610e">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TcpClient::Start </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&#160;</td>
+          <td class="paramname"><em>wPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>retryCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>retryInterval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>kickOff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00518">518</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00132">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00133">_connector</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00134">_thread</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00024">alt::Thread::Create()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00198">alt::SocketBuilder::CreateTcpConnector()</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00032">DATA_SIZE</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00149">alt::SocketLibrary::GetErrNo()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00245">MakeData()</a>, <a class="el" href="../../d0/d86/_tcp_connector_8cpp_source.html#l00012">alt::TcpConnector::Send()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00154">alt::SocketLibrary::SetKeepAliveValue()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00121">alt::WaitableHandleLibrary::Wait()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de9/class_perf_check_1_1_tcp_client_ab86c350e7ffbd686de10ea37329b610e_cgraph.png" border="0" usemap="#ad7/de9/class_perf_check_1_1_tcp_client_ab86c350e7ffbd686de10ea37329b610e_cgraph" alt=""/></div>
+<map name="d7/de9/class_perf_check_1_1_tcp_client_ab86c350e7ffbd686de10ea37329b610e_cgraph" id="ad7/de9/class_perf_check_1_1_tcp_client_ab86c350e7ffbd686de10ea37329b610e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,293,149,335"/>
+<area shape="rect" href="../../d0/df1/classalt_1_1_thread.html#aa83b6d1bea0cdfccd637ad67cbccadf3" title="スレッドを作成します。" alt="" coords="220,33,349,59"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#a79a4b4059ffa8869f17c21fd8ef1a9a1" title=" " alt="" coords="211,235,359,276"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#ae5120bda97e8b7e3d23f4d9a3a06c513" title="WinSock API呼び出し時にエラーとなった時、エラーの詳細を返します。" alt="" coords="435,71,559,112"/>
+<area shape="rect" href="../../da/d1b/_t_c_p_performance_check_8cpp.html#acf7ae6907ad1ccee7260bbbf1af4eb76" title=" " alt="" coords="244,301,325,327"/>
+<area shape="rect" href="../../d3/d45/classalt_1_1_tcp_connector.html#af68446909f8cf5a25dc5f9b0c368ae06" title=" " alt="" coords="203,351,366,378"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a1ead02c159b94e8a85213e5e9448241b" title="KeepAlive送出タイミング、間隔をセッション個別に設定します。" alt="" coords="215,403,355,444"/>
+<area shape="rect" href="../../d1/d35/classalt_1_1_waitable_handle_library.html#a62419411bfe854913286b749144a9e7b" title="シグナル状態になるとブロックを解除します。" alt="" coords="197,468,372,509"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173" title=" " alt="" coords="420,5,575,47"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2" title=" " alt="" coords="623,5,777,47"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="638,256,762,297"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#aad903b2dbf4d8216315ad44cf94eed6b" title=" " alt="" coords="435,188,560,229"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#a8dcfda4a20837a616d17d371456d7095" title=" " alt="" coords="435,253,560,295"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#aab6534795679463917f2c8e4ee5dda02" title=" " alt="" coords="435,319,560,360"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#a12153830a802028c53b420bdc9f4b2b1" title=" " alt="" coords="435,384,560,425"/>
+<area shape="rect" href="../../dd/db7/classalt_1_1_socket_builder.html#a225275628d36851cc1d8ced730d55296" title=" " alt="" coords="435,449,560,491"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#aded39a1466072ba3d8b96b8e9e1f1c4d" title=" " alt="" coords="435,515,559,556"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a443e967102416741ed8332c3bb65a90e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a443e967102416741ed8332c3bb65a90e">&#9670;&nbsp;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpClient::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00550">550</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00133">_connector</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00131">_stop</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00136">alt::SocketLibrary::Close()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00218">DriveTcpClientConsoleHandler()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_cgraph.png" border="0" usemap="#ad7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_cgraph" alt=""/></div>
+<map name="d7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_cgraph" id="ad7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,149,47"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="197,5,321,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_icgraph.png" border="0" usemap="#ad7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_icgraph" alt=""/></div>
+<map name="d7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_icgraph" id="ad7/de9/class_perf_check_1_1_tcp_client_a443e967102416741ed8332c3bb65a90e_icgraph">
+<area shape="rect" title=" " alt="" coords="636,5,780,47"/>
+<area shape="rect" href="../../d3/dfb/_t_c_p_performance_check_8h.html#a014844708ec340dd9a093a2e9fc8c246" title=" " alt="" coords="393,13,588,39"/>
+<area shape="rect" href="../../d3/dfb/_t_c_p_performance_check_8h.html#ace22e4293a4b89cd1d4711ada6908264" title=" " alt="" coords="241,13,345,39"/>
+<area shape="rect" href="../../da/d9c/class_perf_check_1_1_t_c_p_performance_check.html#a07ebbfa5abb102e140ed66987e24a541" title="処理開始" alt="" coords="5,5,193,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="afc38ac1e67c481d699a7925bf2e1d69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc38ac1e67c481d699a7925bf2e1d69d">&#9670;&nbsp;</a></span>_builder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/db7/classalt_1_1_socket_builder.html">alt::SocketBuilder</a>* PerfCheck::TcpClient::_builder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00132">132</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00485">TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00497">~TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00511">Init()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00518">Start()</a>.</p>
+
+</div>
+</div>
+<a id="a5599e917c4b3d4dae81d704ba2a71975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5599e917c4b3d4dae81d704ba2a71975">&#9670;&nbsp;</a></span>_connector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d45/classalt_1_1_tcp_connector.html">alt::TcpConnector</a>* PerfCheck::TcpClient::_connector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00133">133</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00485">TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00497">~TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00557">Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00518">Start()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00550">Stop()</a>.</p>
+
+</div>
+</div>
+<a id="a803ca62ff34940e8f3e29cb2f72cee6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803ca62ff34940e8f3e29cb2f72cee6d">&#9670;&nbsp;</a></span>_stop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PerfCheck::TcpClient::_stop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00131">131</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00485">TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00557">Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00550">Stop()</a>.</p>
+
+</div>
+</div>
+<a id="aa3d02eb1a2af8ea2b26a670b6b92e279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d02eb1a2af8ea2b26a670b6b92e279">&#9670;&nbsp;</a></span>_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* PerfCheck::TcpClient::_thread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00134">134</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00485">TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00497">~TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00518">Start()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/User01/source/repos/Alternate/PerformanceCheck/<a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a></li>
+<li>C:/Users/User01/source/repos/Alternate/PerformanceCheck/<a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></li><li class="navelem"><a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html">TcpClient</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

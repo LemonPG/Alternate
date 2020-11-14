@@ -1,0 +1,6 @@
+<map id="alt::WorkerTemplate::Process" name="alt::WorkerTemplate::Process">
+<area shape="rect" id="node1" title="プロセス処理" alt="" coords="5,39,144,80"/>
+<area shape="rect" id="node2" href="$d6/d9a/classalt_1_1_worker_template.html#a04ffff9485cc3fb846ee88ca498a5f28" title="Process処理" alt="" coords="192,39,331,80"/>
+<area shape="rect" id="node3" href="$d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9" title=" " alt="" coords="379,5,507,47"/>
+<area shape="rect" id="node4" href="$d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd" title=" " alt="" coords="379,71,507,112"/>
+</map>

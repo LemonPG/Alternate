@@ -1,0 +1,16 @@
+<map id="PerfCheck::TStringPerformanceCheck::Core1" name="PerfCheck::TStringPerformanceCheck::Core1">
+<area shape="rect" id="node1" title=" " alt="" coords="5,216,209,257"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="296,5,419,47"/>
+<area shape="rect" id="node3" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="302,71,413,98"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="302,122,413,149"/>
+<area shape="rect" id="node5" href="$d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5" title="フォーマットに従ってパラメータを文字列化します。" alt="" coords="290,173,425,199"/>
+<area shape="rect" id="node6" href="$d1/dfc/classalt_1_1_file.html#aada4a338e4074581e5e59cf20f26f438" title="ファイルサイズを取得します。" alt="" coords="297,223,417,250"/>
+<area shape="rect" id="node7" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="531,282,642,309"/>
+<area shape="rect" id="node8" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ac8aa8c04ec7a27ade01f80bb4fe96b1d" title="HANDLEを使ってデータを読み込みます。" alt="" coords="265,325,449,367"/>
+<area shape="rect" id="node9" href="$d2/dd0/classalt_1_1_t_string.html#a0e43a48304c5bad472c00dd3f69f449c" title="文字列を指定した文字列で分割します。" alt="" coords="298,391,417,418"/>
+<area shape="rect" id="node13" href="$d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0" title=" " alt="" coords="257,456,457,497"/>
+<area shape="rect" id="node10" href="$d2/dd0/classalt_1_1_t_string.html#a2fb70d94c8fdba6d90145a01aec1ce3f" title="コンストラクタ" alt="" coords="519,337,654,363"/>
+<area shape="rect" id="node11" href="$db/d6a/classalt_1_1skeleton_1_1_array.html#a9809354620f7b812e9f69ee45194a029" title=" " alt="" coords="505,387,668,414"/>
+<area shape="rect" id="node12" href="$d2/dd0/classalt_1_1_t_string.html#a608e6d8c23be2cedc8d4a93ad00bc047" title="内部で確保している文字列数を取得します。" alt="" coords="529,438,644,465"/>
+<area shape="rect" id="node14" href="$d1/de5/classalt_1_1_console.html#a9cb3349d108b1e2dfadd10d78bd02c12" title="コンソールに文字を出力します。" alt="" coords="521,489,652,515"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="alt::skeleton::Array&lt; T &gt;" name="alt::skeleton::Array&lt; T &gt;">
+<area shape="rect" id="node1" title="サイズ可変の配列を具現したクラス" alt="" coords="5,247,168,273"/>
+<area shape="rect" id="node2" href="$da/d83/classalt_1_1_heap_memory.html" title="ヒープメモリに関するAPIを集約したクラス" alt="" coords="26,157,147,184"/>
+<area shape="rect" id="node3" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="25,81,148,108"/>
+<area shape="rect" id="node4" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="19,5,155,32"/>
+</map>

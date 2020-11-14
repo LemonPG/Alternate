@@ -1,0 +1,4 @@
+<map id="alt::FileUtility::MakeHardLink" name="alt::FileUtility::MakeHardLink">
+<area shape="rect" id="node1" title="HardLinkはdirコマンドで区別がつかない。アイコンにも 変化が現れない。こちらは管理者権限が不要である。 コマンドは、mklink /h 〜で作成する。削除はdel。 ディレクトリに対しては作成..." alt="" coords="192,13,381,39"/>
+<area shape="rect" id="node2" href="$db/d5a/namespace_windows_library_test.html#aee5b32f65bdd2a58d5c6bc75d6674613" title=" " alt="" coords="5,5,144,47"/>
+</map>

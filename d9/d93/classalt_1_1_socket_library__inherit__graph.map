@@ -1,0 +1,7 @@
+<map id="alt::SocketLibrary" name="alt::SocketLibrary">
+<area shape="rect" id="node1" title="WinSockを使用するAPIを集約したクラス" alt="" coords="155,80,279,107"/>
+<area shape="rect" id="node3" href="$dd/db7/classalt_1_1_socket_builder.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="5,155,131,181"/>
+<area shape="rect" id="node4" href="$d3/d45/classalt_1_1_tcp_connector.html" title="TCP通信に関するWindowsAPIを集約したクラス" alt="" coords="155,155,279,181"/>
+<area shape="rect" id="node5" href="$d3/d2b/classalt_1_1_udp_connector.html" title="UDP通信に関するWindowsAPIを集約したクラス" alt="" coords="303,155,430,181"/>
+<area shape="rect" id="node2" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="149,5,285,32"/>
+</map>

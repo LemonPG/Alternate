@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/WindowsLibrary/FunctionPointers.hpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d0/df8/_function_pointers_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">FunctionPointers.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/df8/_function_pointers_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">namespace </span>skeleton</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d7/d0a/namespacealt_1_1skeleton.html#a88bec48bb90fac976b7a2d2d1741a918">   18</a></span>&#160;        <span class="keyword">typedef</span> DWORD(*<a class="code" href="../../d7/d0a/namespacealt_1_1skeleton.html#a88bec48bb90fac976b7a2d2d1741a918">Invoker</a>)(LPVOID me);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">   27</a></span>&#160;        <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">ICallback</a> : <span class="keyword">public</span> <a class="code" href="../../de/dcb/classalt_1_1_windows_library.html">WindowsLibrary</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a9e821773cc4ef1701f0aa558bfbfd4e3">   30</a></span>&#160;            <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a9e821773cc4ef1701f0aa558bfbfd4e3">ICallback</a>() {};</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#afa70abbbde3384c726c51e8ccb76a5b7">   31</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#afa70abbbde3384c726c51e8ccb76a5b7">~ICallback</a>() {};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">   33</a></span>&#160;            <span class="keyword">virtual</span> DWORD <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">Invoke</a>(LPVOID lpvParam) = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173">   35</a></span>&#160;            <span class="keyword">static</span> DWORD WINAPI <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173">Invoker</a>(LPVOID me)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">ICallback</a>* <span class="keyword">function</span> = (<a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">ICallback</a>*)me;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">function</span>-&gt;<a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">Invoke</a>(me);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">   49</a></span>&#160;        <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">ITimeup</a> : <span class="keyword">public</span> <a class="code" href="../../de/dcb/classalt_1_1_windows_library.html">WindowsLibrary</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a75e3d514711392e9b1b76958d739fa14">   52</a></span>&#160;            <a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a75e3d514711392e9b1b76958d739fa14">ITimeup</a>() {};</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a8e332e0bd30a2b4f6ac50595c6d4bf85">   53</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a8e332e0bd30a2b4f6ac50595c6d4bf85">~ITimeup</a>() {};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a9a8b1c87be69de1742c768bb4b4f23f3">   55</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a9a8b1c87be69de1742c768bb4b4f23f3">Timeup</a>(LPVOID me, DWORD dwHiTime, DWORD dwLoTime) = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a4f9d3b296c72df2ad1fbe08dbf2fa0c6">   57</a></span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> WINAPI <a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a4f9d3b296c72df2ad1fbe08dbf2fa0c6">TimeupCall</a>(LPVOID me, DWORD dwHiTime, DWORD dwLoTime)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">ITimeup</a>* <span class="keyword">function</span> = (<a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">ITimeup</a>*)me;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keyword">function</span>-&gt;<a class="code" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a9a8b1c87be69de1742c768bb4b4f23f3">Timeup</a>(me, dwHiTime, dwLoTime);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_timeup_html_a8e332e0bd30a2b4f6ac50595c6d4bf85"><div class="ttname"><a href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a8e332e0bd30a2b4f6ac50595c6d4bf85">alt::skeleton::ITimeup::~ITimeup</a></div><div class="ttdeci">virtual ~ITimeup()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00053">FunctionPointers.hpp:53</a></div></div>
+<div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
+<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00018">WindowsLibrary.h:19</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html_a5a23e15aadaccd0d4de288e5bd8ff3d2"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">alt::skeleton::ICallback::Invoke</a></div><div class="ttdeci">virtual DWORD Invoke(LPVOID lpvParam)=0</div></div>
+<div class="ttc" id="a_windows_library_2framework_8h_html"><div class="ttname"><a href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a></div><div class="ttdoc">このプロジェクトのポーティングに関する情報</div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_timeup_html_a75e3d514711392e9b1b76958d739fa14"><div class="ttname"><a href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a75e3d514711392e9b1b76958d739fa14">alt::skeleton::ITimeup::ITimeup</a></div><div class="ttdeci">ITimeup()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00052">FunctionPointers.hpp:52</a></div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html_a8081c641e1b1eeb812e5458e1e078173"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173">alt::skeleton::ICallback::Invoker</a></div><div class="ttdeci">static DWORD WINAPI Invoker(LPVOID me)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00035">FunctionPointers.hpp:35</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_timeup_html_a9a8b1c87be69de1742c768bb4b4f23f3"><div class="ttname"><a href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a9a8b1c87be69de1742c768bb4b4f23f3">alt::skeleton::ITimeup::Timeup</a></div><div class="ttdeci">virtual void Timeup(LPVOID me, DWORD dwHiTime, DWORD dwLoTime)=0</div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html_a9e821773cc4ef1701f0aa558bfbfd4e3"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a9e821773cc4ef1701f0aa558bfbfd4e3">alt::skeleton::ICallback::ICallback</a></div><div class="ttdeci">ICallback()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00030">FunctionPointers.hpp:30</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_timeup_html_a4f9d3b296c72df2ad1fbe08dbf2fa0c6"><div class="ttname"><a href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html#a4f9d3b296c72df2ad1fbe08dbf2fa0c6">alt::skeleton::ITimeup::TimeupCall</a></div><div class="ttdeci">static void WINAPI TimeupCall(LPVOID me, DWORD dwHiTime, DWORD dwLoTime)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00057">FunctionPointers.hpp:57</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_timeup_html"><div class="ttname"><a href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">alt::skeleton::ITimeup</a></div><div class="ttdoc">WatchDogTimerクラスのコールバック関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00049">FunctionPointers.hpp:50</a></div></div>
+<div class="ttc" id="anamespacealt_1_1skeleton_html_a88bec48bb90fac976b7a2d2d1741a918"><div class="ttname"><a href="../../d7/d0a/namespacealt_1_1skeleton.html#a88bec48bb90fac976b7a2d2d1741a918">alt::skeleton::Invoker</a></div><div class="ttdeci">DWORD(* Invoker)(LPVOID me)</div><div class="ttdoc">CreateThread()に渡すスレッド実行関数のテンプレート</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00018">FunctionPointers.hpp:18</a></div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html_afa70abbbde3384c726c51e8ccb76a5b7"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#afa70abbbde3384c726c51e8ccb76a5b7">alt::skeleton::ICallback::~ICallback</a></div><div class="ttdeci">virtual ~ICallback()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00031">FunctionPointers.hpp:31</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div><div class="ttdoc">Threadクラスのスレッド実行関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00027">FunctionPointers.hpp:28</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

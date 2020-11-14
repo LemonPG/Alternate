@@ -1,0 +1,4 @@
+<map id="alt::TString::FromSJIS" name="alt::TString::FromSJIS">
+<area shape="rect" id="node1" title="SJIS文字列を取り込みます。" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="204,5,315,32"/>
+</map>

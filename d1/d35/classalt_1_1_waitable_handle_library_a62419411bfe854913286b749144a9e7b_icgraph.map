@@ -1,0 +1,9 @@
+<map id="alt::WaitableHandleLibrary::Wait" name="alt::WaitableHandleLibrary::Wait">
+<area shape="rect" id="node1" title="シグナル状態になるとブロックを解除します。" alt="" coords="244,169,419,211"/>
+<area shape="rect" id="node2" href="$da/d9c/class_perf_check_1_1_t_c_p_performance_check.html#a07ebbfa5abb102e140ed66987e24a541" title="処理開始" alt="" coords="7,5,195,47"/>
+<area shape="rect" id="node3" href="$de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96" title="処理開始" alt="" coords="5,71,196,112"/>
+<area shape="rect" id="node4" href="$d7/de9/class_perf_check_1_1_tcp_client.html#ab86c350e7ffbd686de10ea37329b610e" title=" " alt="" coords="29,136,173,177"/>
+<area shape="rect" id="node5" href="$dc/d1c/class_perf_check_1_1_udp_controller.html#a47e5ad20fa0327e70503a5c2aa91dafc" title=" " alt="" coords="17,201,185,243"/>
+<area shape="rect" id="node6" href="$db/d5a/namespace_windows_library_test.html#a8a14aa6020599f6545893bf7bb7013f4" title=" " alt="" coords="31,267,170,308"/>
+<area shape="rect" id="node7" href="$d9/d82/class_perf_check_1_1_tcp_server.html#a1c64f5711382bb41c094ef91749fd70f" title=" " alt="" coords="27,332,174,373"/>
+</map>

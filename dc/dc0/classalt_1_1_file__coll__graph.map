@@ -1,0 +1,6 @@
+<map id="alt::File" name="alt::File">
+<area shape="rect" id="node1" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="65,229,130,256"/>
+<area shape="rect" id="node2" href="$d2/d8c/classalt_1_1_read_write_handle_library.html" title="HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス" alt="" coords="5,155,189,181"/>
+<area shape="rect" id="node3" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="36,80,159,107"/>
+<area shape="rect" id="node4" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="29,5,165,32"/>
+</map>

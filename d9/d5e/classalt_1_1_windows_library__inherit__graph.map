@@ -1,0 +1,49 @@
+<map id="alt::WindowsLibrary" name="alt::WindowsLibrary">
+<area shape="rect" id="node1" title="プロジェクト共通基底クラス" alt="" coords="5,593,141,620"/>
+<area shape="rect" id="node2" href="$d4/d33/classalt_1_1_critical_section.html" title="CriticalSectionに関するWindowsAPIを集約したクラス" alt="" coords="203,81,331,108"/>
+<area shape="rect" id="node3" href="$df/d93/classalt_1_1_exception.html" title="基底となる例外クラス" alt="" coords="215,132,318,159"/>
+<area shape="rect" id="node6" href="$d3/d85/classalt_1_1_file_utility.html" title="ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="217,259,316,285"/>
+<area shape="rect" id="node7" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="205,309,328,336"/>
+<area shape="rect" id="node23" href="$da/d7f/classalt_1_1_log_file.html" title="Fileをベースとしたログに関する機能を集約したクラス" alt="" coords="223,441,310,468"/>
+<area shape="rect" id="node24" href="$d6/d60/classalt_1_1_logger.html" title="ログに関するクラス" alt="" coords="225,492,308,519"/>
+<area shape="rect" id="node25" href="$d3/d32/classalt_1_1_pipe.html" title="パイプに関するWindowsAPIを集約したクラス" alt="" coords="231,543,302,569"/>
+<area shape="rect" id="node26" href="$d6/d3f/classalt_1_1_process.html" title="プロセスに関するWindowsAPIを集約したクラス" alt="" coords="221,593,313,620"/>
+<area shape="rect" id="node27" href="$d4/d2d/classalt_1_1_query_performance.html" title="高分解能時間計測クラス" alt="" coords="191,644,343,671"/>
+<area shape="rect" id="node28" href="$db/da2/classalt_1_1_ring_buffer.html" title="リングバッファに関するクラス" alt="" coords="215,695,318,721"/>
+<area shape="rect" id="node29" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="189,745,344,772"/>
+<area shape="rect" id="node41" href="$db/dbd/classalt_1_1skeleton_1_1_i_timeup.html" title="WatchDogTimerクラスのコールバック関数を設定します。" alt="" coords="193,796,340,823"/>
+<area shape="rect" id="node42" href="$d8/d51/classalt_1_1_socket_library.html" title="WinSockを使用するAPIを集約したクラス" alt="" coords="205,996,329,1023"/>
+<area shape="rect" id="node46" href="$d2/dd0/classalt_1_1_t_string.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="224,1047,309,1073"/>
+<area shape="rect" id="node47" href="$d9/d1e/classalt_1_1_virtual_memory.html" title="仮想メモリに関するクラス" alt="" coords="203,1097,331,1124"/>
+<area shape="rect" id="node4" href="$df/df0/classalt_1_1_invalid_argment_exception.html" title="引数設定エラー例外" alt="" coords="396,5,583,32"/>
+<area shape="rect" id="node5" href="$d8/d97/classalt_1_1_runtime_exception.html" title="実行時エラー例外" alt="" coords="414,56,565,83"/>
+<area shape="rect" id="node8" href="$d1/de5/classalt_1_1_console.html" title="コンソールに関するクラス" alt="" coords="444,107,535,133"/>
+<area shape="rect" id="node9" href="$d8/d52/classalt_1_1_diagnostics.html" title="システム性能に関するWindowsAPIを集約したクラス" alt="" coords="433,157,545,184"/>
+<area shape="rect" id="node10" href="$da/d83/classalt_1_1_heap_memory.html" title="ヒープメモリに関するAPIを集約したクラス" alt="" coords="429,208,550,235"/>
+<area shape="rect" id="node11" href="$d2/d8c/classalt_1_1_read_write_handle_library.html" title="HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス" alt="" coords="397,259,581,285"/>
+<area shape="rect" id="node15" href="$d5/d53/classalt_1_1_shared_memory.html" title="共有メモリに関するWindowsAPIを集約したクラス" alt="" coords="423,309,555,336"/>
+<area shape="rect" id="node16" href="$dc/d44/classalt_1_1_transaction_file_utility.html" title="トランザクションNTFSに関するユーティリティクラス" alt="" coords="407,360,572,387"/>
+<area shape="rect" id="node17" href="$d1/d35/classalt_1_1_waitable_handle_library.html" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="402,411,577,437"/>
+<area shape="rect" id="node12" href="$d1/dfc/classalt_1_1_file.html" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="671,183,736,209"/>
+<area shape="rect" id="node14" href="$d9/de1/classalt_1_1_named_pipe.html" title="名前付きパイプに関するWindowsAPIを集約したクラス" alt="" coords="648,233,759,260"/>
+<area shape="rect" id="node13" href="$d4/d3b/classalt_1_1_transaction_file.html" title="トランザクションNTFSに関するクラス" alt="" coords="823,183,955,209"/>
+<area shape="rect" id="node18" href="$d1/d4d/classalt_1_1_event.html" title="イベントに関するWindowsAPIを集約したクラス" alt="" coords="665,284,741,311"/>
+<area shape="rect" id="node19" href="$d0/d5c/classalt_1_1_mutex.html" title="ミューテックスに関するWindowsAPIを集約したクラス" alt="" coords="663,335,743,361"/>
+<area shape="rect" id="node20" href="$d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="662,385,745,412"/>
+<area shape="rect" id="node22" href="$d5/db9/classalt_1_1_watch_dog_timer.html" title="タイマーに関するWindowsAPIを集約したクラス" alt="" coords="635,436,772,463"/>
+<area shape="rect" id="node21" href="$dd/d88/class_windows_library_test_1_1_my_thread.html" title=" " alt="" coords="820,429,959,470"/>
+<area shape="rect" id="node30" href="$d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html" title=" " alt="" coords="424,513,555,554"/>
+<area shape="rect" id="node31" href="$db/dc2/classalt_1_1_factory_method_1_1_queue_element.html" title=" " alt="" coords="424,578,555,619"/>
+<area shape="rect" id="node32" href="$d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCPクラス性能測定用" alt="" coords="392,644,587,671"/>
+<area shape="rect" id="node33" href="$df/d72/class_perf_check_1_1_server_worker.html" title="TCPクラス性能測定用" alt="" coords="405,695,573,721"/>
+<area shape="rect" id="node34" href="$d7/de9/class_perf_check_1_1_tcp_client.html" title="TCPクラス性能測定用" alt="" coords="417,745,561,772"/>
+<area shape="rect" id="node35" href="$d9/d82/class_perf_check_1_1_tcp_server.html" title="TCPクラス性能測定用" alt="" coords="416,796,563,823"/>
+<area shape="rect" id="node36" href="$dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDPクラス性能測定用" alt="" coords="405,847,573,873"/>
+<area shape="rect" id="node37" href="$d3/d1b/class_perf_check_1_1_upstream_driver.html" title=" " alt="" coords="400,897,579,924"/>
+<area shape="rect" id="node38" href="$dd/dd2/class_windows_library_test_1_1_callback.html" title=" " alt="" coords="420,949,559,990"/>
+<area shape="rect" id="node39" href="$dd/d8b/class_windows_library_test_1_1_event_test1.html" title="自動リセットイベントテストクラス" alt="" coords="420,1014,559,1055"/>
+<area shape="rect" id="node40" href="$de/d57/class_windows_library_test_1_1_event_test2.html" title="手動リセットイベントテストクラス" alt="" coords="420,1079,559,1121"/>
+<area shape="rect" id="node43" href="$dd/db7/classalt_1_1_socket_builder.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="427,1145,552,1172"/>
+<area shape="rect" id="node44" href="$d3/d45/classalt_1_1_tcp_connector.html" title="TCP通信に関するWindowsAPIを集約したクラス" alt="" coords="427,1196,551,1223"/>
+<area shape="rect" id="node45" href="$d3/d2b/classalt_1_1_udp_connector.html" title="UDP通信に関するWindowsAPIを集約したクラス" alt="" coords="426,1247,553,1273"/>
+</map>

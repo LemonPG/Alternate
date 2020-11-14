@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: alt::VirtualMemory クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d9/d1e/classalt_1_1_virtual_memory.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d8/d9e/classalt_1_1_virtual_memory-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alt::VirtualMemory クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>仮想メモリに関するクラス  
+ <a href="../../d9/d1e/classalt_1_1_virtual_memory.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/d78/_virtual_memory_8h_source.html">VirtualMemory.h</a>&gt;</code></p>
+<div class="dynheader">
+alt::VirtualMemory の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/dd1/classalt_1_1_virtual_memory__inherit__graph.png" border="0" usemap="#aalt_1_1_virtual_memory_inherit__map" alt="Inheritance graph"/></div>
+<map name="alt_1_1_virtual_memory_inherit__map" id="aalt_1_1_virtual_memory_inherit__map">
+<area shape="rect" title="仮想メモリに関するクラス" alt="" coords="9,80,137,107"/>
+<area shape="rect" href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+alt::VirtualMemory 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/classalt_1_1_virtual_memory__coll__graph.png" border="0" usemap="#aalt_1_1_virtual_memory_coll__map" alt="Collaboration graph"/></div>
+<map name="alt_1_1_virtual_memory_coll__map" id="aalt_1_1_virtual_memory_coll__map">
+<area shape="rect" title="仮想メモリに関するクラス" alt="" coords="9,80,137,107"/>
+<area shape="rect" href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0854e9b79bc77a621c7a806d711c52a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a0854e9b79bc77a621c7a806d711c52a6">VirtualMemory</a> ()</td></tr>
+<tr class="separator:a0854e9b79bc77a621c7a806d711c52a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7086c42725a741519b1c117bf2aa4fb7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7086c42725a741519b1c117bf2aa4fb7">~VirtualMemory</a> ()</td></tr>
+<tr class="separator:a7086c42725a741519b1c117bf2aa4fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fe46c6b06fe1cfd0f8944e82368e64"><td class="memItemLeft" align="right" valign="top">LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">Alloc</a> (SIZE_T size)</td></tr>
+<tr class="separator:a84fe46c6b06fe1cfd0f8944e82368e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd411bbcefe8d017df21be8a539b4ad"><td class="memItemLeft" align="right" valign="top">LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">Commit</a> ()</td></tr>
+<tr class="separator:aefd411bbcefe8d017df21be8a539b4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae086f090dc1bcaf5cdbc8e8079cd6428"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">Decommit</a> ()</td></tr>
+<tr class="separator:ae086f090dc1bcaf5cdbc8e8079cd6428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86c12d28fa763f223de5183fe464309"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">Free</a> ()</td></tr>
+<tr class="separator:ab86c12d28fa763f223de5183fe464309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162e78cd1ba2aab0aa56f8e5ca80ec80"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a162e78cd1ba2aab0aa56f8e5ca80ec80">Lock</a> ()</td></tr>
+<tr class="separator:a162e78cd1ba2aab0aa56f8e5ca80ec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb0f7c14df2d5ab7d9e83f725d72272"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">Release</a> ()</td></tr>
+<tr class="separator:a9bb0f7c14df2d5ab7d9e83f725d72272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3d4b492bb6405e6ae33783989c30b3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">Reserve</a> (SIZE_T size)</td></tr>
+<tr class="separator:a7a3d4b492bb6405e6ae33783989c30b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb7b049dceff8cde13b58e683619bc3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a2bb7b049dceff8cde13b58e683619bc3">Unlock</a> ()</td></tr>
+<tr class="separator:a2bb7b049dceff8cde13b58e683619bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a8a23b1e452c27532f0f513d1f9b0aa0f">GetErrNo</a> ()</td></tr>
+<tr class="memdesc:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を返します。  <a href="../../de/dcb/classalt_1_1_windows_library.html#a8a23b1e452c27532f0f513d1f9b0aa0f">[詳解]</a><br /></td></tr>
+<tr class="separator:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a983dd24e18dafc9380cea1c999b65d96"><td class="memItemLeft" align="right" valign="top">const DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a983dd24e18dafc9380cea1c999b65d96">_cdwProtect</a> = PAGE_READWRITE</td></tr>
+<tr class="separator:a983dd24e18dafc9380cea1c999b65d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e65225a8ed2951974da6e5b8353496"><td class="memItemLeft" align="right" valign="top">LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a></td></tr>
+<tr class="separator:a81e65225a8ed2951974da6e5b8353496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14871022e8ceb5ec707a8d03fc688a7b"><td class="memItemLeft" align="right" valign="top">SIZE_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a></td></tr>
+<tr class="separator:a14871022e8ceb5ec707a8d03fc688a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>仮想メモリに関するクラス </p>
+
+<p class="definition"> <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html">VirtualMemory.h</a> の <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00017">17</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a0854e9b79bc77a621c7a806d711c52a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0854e9b79bc77a621c7a806d711c52a6">&#9670;&nbsp;</a></span>VirtualMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VirtualMemory::VirtualMemory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00006">6</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+</div>
+</div>
+<a id="a7086c42725a741519b1c117bf2aa4fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7086c42725a741519b1c117bf2aa4fb7">&#9670;&nbsp;</a></span>~VirtualMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VirtualMemory::~VirtualMemory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00012">12</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00034">Free()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00078">Unlock()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_a7086c42725a741519b1c117bf2aa4fb7_cgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_a7086c42725a741519b1c117bf2aa4fb7_cgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_a7086c42725a741519b1c117bf2aa4fb7_cgraph" id="ad9/d1e/classalt_1_1_virtual_memory_a7086c42725a741519b1c117bf2aa4fb7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,133,80"/>
+<area shape="rect" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309" title=" " alt="" coords="181,5,309,47"/>
+<area shape="rect" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a2bb7b049dceff8cde13b58e683619bc3" title=" " alt="" coords="181,71,309,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a84fe46c6b06fe1cfd0f8944e82368e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fe46c6b06fe1cfd0f8944e82368e64">&#9670;&nbsp;</a></span>Alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPVOID VirtualMemory::Alloc </td>
+          <td>(</td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00023">23</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00035">_cdwProtect</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_a84fe46c6b06fe1cfd0f8944e82368e64_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_a84fe46c6b06fe1cfd0f8944e82368e64_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_a84fe46c6b06fe1cfd0f8944e82368e64_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_a84fe46c6b06fe1cfd0f8944e82368e64_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,320,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aefd411bbcefe8d017df21be8a539b4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd411bbcefe8d017df21be8a539b4ad">&#9670;&nbsp;</a></span>Commit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPVOID VirtualMemory::Commit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00050">50</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00035">_cdwProtect</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_aefd411bbcefe8d017df21be8a539b4ad_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_aefd411bbcefe8d017df21be8a539b4ad_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_aefd411bbcefe8d017df21be8a539b4ad_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_aefd411bbcefe8d017df21be8a539b4ad_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,320,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae086f090dc1bcaf5cdbc8e8079cd6428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae086f090dc1bcaf5cdbc8e8079cd6428">&#9670;&nbsp;</a></span>Decommit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VirtualMemory::Decommit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参照</dt><dd><a href="https://www.wabiapp.com/WabiSampleSource/windows/pragma_warning_push_pop.html">https://www.wabiapp.com/WabiSampleSource/windows/pragma_warning_push_pop.html</a> </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00065">65</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_ae086f090dc1bcaf5cdbc8e8079cd6428_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_ae086f090dc1bcaf5cdbc8e8079cd6428_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_ae086f090dc1bcaf5cdbc8e8079cd6428_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_ae086f090dc1bcaf5cdbc8e8079cd6428_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,320,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab86c12d28fa763f223de5183fe464309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86c12d28fa763f223de5183fe464309">&#9670;&nbsp;</a></span>Free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VirtualMemory::Free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00034">34</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00012">~VirtualMemory()</a>, <a class="el" href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_ab86c12d28fa763f223de5183fe464309_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_ab86c12d28fa763f223de5183fe464309_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_ab86c12d28fa763f223de5183fe464309_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_ab86c12d28fa763f223de5183fe464309_icgraph">
+<area shape="rect" title=" " alt="" coords="192,39,320,80"/>
+<area shape="rect" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7086c42725a741519b1c117bf2aa4fb7" title=" " alt="" coords="11,5,139,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e" title=" " alt="" coords="5,71,144,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a162e78cd1ba2aab0aa56f8e5ca80ec80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162e78cd1ba2aab0aa56f8e5ca80ec80">&#9670;&nbsp;</a></span>Lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VirtualMemory::Lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00073">73</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+</div>
+</div>
+<a id="a9bb0f7c14df2d5ab7d9e83f725d72272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb0f7c14df2d5ab7d9e83f725d72272">&#9670;&nbsp;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VirtualMemory::Release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00055">55</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_a9bb0f7c14df2d5ab7d9e83f725d72272_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_a9bb0f7c14df2d5ab7d9e83f725d72272_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_a9bb0f7c14df2d5ab7d9e83f725d72272_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_a9bb0f7c14df2d5ab7d9e83f725d72272_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,320,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a3d4b492bb6405e6ae33783989c30b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3d4b492bb6405e6ae33783989c30b3">&#9670;&nbsp;</a></span>Reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VirtualMemory::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00042">42</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00035">_cdwProtect</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_a7a3d4b492bb6405e6ae33783989c30b3_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_a7a3d4b492bb6405e6ae33783989c30b3_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_a7a3d4b492bb6405e6ae33783989c30b3_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_a7a3d4b492bb6405e6ae33783989c30b3_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,320,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2bb7b049dceff8cde13b58e683619bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb7b049dceff8cde13b58e683619bc3">&#9670;&nbsp;</a></span>Unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VirtualMemory::Unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a> の <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00078">78</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">_lpvAddress</a>, <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">_size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00012">~VirtualMemory()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d1e/classalt_1_1_virtual_memory_a2bb7b049dceff8cde13b58e683619bc3_icgraph.png" border="0" usemap="#ad9/d1e/classalt_1_1_virtual_memory_a2bb7b049dceff8cde13b58e683619bc3_icgraph" alt=""/></div>
+<map name="d9/d1e/classalt_1_1_virtual_memory_a2bb7b049dceff8cde13b58e683619bc3_icgraph" id="ad9/d1e/classalt_1_1_virtual_memory_a2bb7b049dceff8cde13b58e683619bc3_icgraph">
+<area shape="rect" title=" " alt="" coords="181,5,309,47"/>
+<area shape="rect" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7086c42725a741519b1c117bf2aa4fb7" title=" " alt="" coords="5,5,133,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a983dd24e18dafc9380cea1c999b65d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983dd24e18dafc9380cea1c999b65d96">&#9670;&nbsp;</a></span>_cdwProtect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DWORD alt::VirtualMemory::_cdwProtect = PAGE_READWRITE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html">VirtualMemory.h</a> の <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00035">35</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00023">Alloc()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00050">Commit()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00042">Reserve()</a>.</p>
+
+</div>
+</div>
+<a id="a81e65225a8ed2951974da6e5b8353496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e65225a8ed2951974da6e5b8353496">&#9670;&nbsp;</a></span>_lpvAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPVOID alt::VirtualMemory::_lpvAddress</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html">VirtualMemory.h</a> の <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00036">36</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00006">VirtualMemory()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00012">~VirtualMemory()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00023">Alloc()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00050">Commit()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00065">Decommit()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00034">Free()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00073">Lock()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00055">Release()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00042">Reserve()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00078">Unlock()</a>.</p>
+
+</div>
+</div>
+<a id="a14871022e8ceb5ec707a8d03fc688a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14871022e8ceb5ec707a8d03fc688a7b">&#9670;&nbsp;</a></span>_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIZE_T alt::VirtualMemory::_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html">VirtualMemory.h</a> の <a class="el" href="../../d0/d78/_virtual_memory_8h_source.html#l00037">37</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00006">VirtualMemory()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00012">~VirtualMemory()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00023">Alloc()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00050">Commit()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00065">Decommit()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00073">Lock()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00055">Release()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00042">Reserve()</a>, <a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00078">Unlock()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/User01/source/repos/Alternate/WindowsLibrary/<a class="el" href="../../d0/d78/_virtual_memory_8h_source.html">VirtualMemory.h</a></li>
+<li>C:/Users/User01/source/repos/Alternate/WindowsLibrary/<a class="el" href="../../dd/d8a/_virtual_memory_8cpp_source.html">VirtualMemory.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></li><li class="navelem"><a class="el" href="../../d9/d1e/classalt_1_1_virtual_memory.html">VirtualMemory</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

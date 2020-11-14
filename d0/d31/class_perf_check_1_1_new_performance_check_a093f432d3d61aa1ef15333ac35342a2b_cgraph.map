@@ -1,0 +1,12 @@
+<map id="PerfCheck::NewPerformanceCheck::Core" name="PerfCheck::NewPerformanceCheck::Core">
+<area shape="rect" id="node1" title=" " alt="" coords="5,141,193,182"/>
+<area shape="rect" id="node2" href="$d1/d4d/classalt_1_1_event.html#a3bccdda5174c37e8759d568768262c86" title="イベントを作成します。" alt="" coords="280,5,403,32"/>
+<area shape="rect" id="node3" href="$d0/df1/classalt_1_1_thread.html#aa83b6d1bea0cdfccd637ad67cbccadf3" title="スレッドを作成します。" alt="" coords="277,56,406,83"/>
+<area shape="rect" id="node6" href="$d4/d2d/classalt_1_1_query_performance.html#a6b2d5b74babd8060a1a5f513fcc379e4" title="計測開始〜計測終了までの時間を出力します。" alt="" coords="265,107,417,149"/>
+<area shape="rect" id="node7" href="$d4/d2d/classalt_1_1_query_performance.html#a2cbdc307b622603cd45ca84d73c5d523" title="計測を開始します。" alt="" coords="265,173,417,214"/>
+<area shape="rect" id="node8" href="$d4/d2d/classalt_1_1_query_performance.html#ae40ccc8512651f753a39e157afd1d9fc" title="計測を終了します。" alt="" coords="265,238,417,279"/>
+<area shape="rect" id="node9" href="$d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0" title=" " alt="" coords="241,303,441,345"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173" title=" " alt="" coords="489,49,644,90"/>
+<area shape="rect" id="node5" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2" title=" " alt="" coords="692,49,847,90"/>
+<area shape="rect" id="node10" href="$d1/de5/classalt_1_1_console.html#a9cb3349d108b1e2dfadd10d78bd02c12" title="コンソールに文字を出力します。" alt="" coords="501,311,632,337"/>
+</map>

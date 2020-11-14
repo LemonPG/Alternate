@@ -1,0 +1,4 @@
+<map id="PerfCheck::TcpServer::Wait" name="PerfCheck::TcpServer::Wait">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$d1/d35/classalt_1_1_waitable_handle_library.html#a62419411bfe854913286b749144a9e7b" title="シグナル状態になるとブロックを解除します。" alt="" coords="200,5,375,47"/>
+</map>

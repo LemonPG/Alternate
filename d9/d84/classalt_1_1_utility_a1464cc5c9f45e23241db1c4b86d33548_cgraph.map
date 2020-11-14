@@ -1,0 +1,4 @@
+<map id="alt::Utility::GetTemporaryFileName" name="alt::Utility::GetTemporaryFileName">
+<area shape="rect" id="node1" title="テンポラリファイル名を取得します。" alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="220,13,331,39"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="PerfCheck::ConsolePerformanceCheck" name="PerfCheck::ConsolePerformanceCheck">
+<area shape="rect" id="node1" title="Console性能測定用" alt="" coords="5,323,216,364"/>
+<area shape="rect" id="node2" href="$d5/d0c/class_perf_check_1_1_performance_check.html" title="性能測定用" alt="" coords="11,247,211,273"/>
+<area shape="rect" id="node3" href="$d1/de5/classalt_1_1_console.html" title="コンソールに関するクラス" alt="" coords="65,157,156,184"/>
+<area shape="rect" id="node4" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="49,81,172,108"/>
+<area shape="rect" id="node5" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="43,5,179,32"/>
+</map>

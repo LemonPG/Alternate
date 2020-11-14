@@ -1,0 +1,28 @@
+<map id="C:/Users/User01/source/repos/Alternate/WindowsLibraryTest/HeapMemoryTest.cpp" name="C:/Users/User01/source/repos/Alternate/WindowsLibraryTest/HeapMemoryTest.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="464,5,675,61"/>
+<area shape="rect" id="node2" href="$d3/dcd/_windows_library_test_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="367,109,422,136"/>
+<area shape="rect" id="node6" href="$de/dff/_heap_memory_8h.html" title="ヒープメモリに関するAPIを集約したクラス" alt="" coords="467,259,578,285"/>
+<area shape="rect" id="node22" href="$de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="591,109,665,136"/>
+<area shape="rect" id="node24" href="$d8/d48/_thread_8h.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="747,109,819,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="174,184,266,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="291,184,395,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="419,184,475,211"/>
+<area shape="rect" id="node7" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,333,713,360"/>
+<area shape="rect" id="node21" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="811,333,936,360"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,408,88,435"/>
+<area shape="rect" id="node9" title=" " alt="" coords="113,408,175,435"/>
+<area shape="rect" id="node10" title=" " alt="" coords="200,408,293,435"/>
+<area shape="rect" id="node11" title=" " alt="" coords="317,408,408,435"/>
+<area shape="rect" id="node12" title=" " alt="" coords="433,408,511,435"/>
+<area shape="rect" id="node13" title=" " alt="" coords="536,408,611,435"/>
+<area shape="rect" id="node14" title=" " alt="" coords="635,408,699,435"/>
+<area shape="rect" id="node15" title=" " alt="" coords="723,408,800,435"/>
+<area shape="rect" id="node16" title=" " alt="" coords="824,408,888,435"/>
+<area shape="rect" id="node17" title=" " alt="" coords="912,408,981,435"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1006,408,1085,435"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1109,408,1187,435"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1211,408,1293,435"/>
+<area shape="rect" id="node23" href="$db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="550,184,629,211"/>
+<area shape="rect" id="node25" href="$d0/df8/_function_pointers_8hpp.html" title="コールバック機能を集約したクラス" alt="" coords="710,184,855,211"/>
+<area shape="rect" id="node26" href="$df/d15/_windows_library_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="755,259,810,285"/>
+</map>

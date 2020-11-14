@@ -1,0 +1,5 @@
+<map id="alt::Process" name="alt::Process">
+<area shape="rect" id="node1" title="プロセスに関するWindowsAPIを集約したクラス" alt="" coords="22,200,114,227"/>
+<area shape="rect" id="node2" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node3" href="$d3/d32/classalt_1_1_pipe.html" title="パイプに関するWindowsAPIを集約したクラス" alt="" coords="85,81,155,108"/>
+</map>

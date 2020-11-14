@@ -1,0 +1,14 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,216,144,257"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="223,5,345,47"/>
+<area shape="rect" id="node3" href="$d9/de1/classalt_1_1_named_pipe.html#adcac9f08e932947b36cd9482145a442d" title="サーバー側でクライアント接続を待機します。" alt="" coords="201,71,367,98"/>
+<area shape="rect" id="node4" href="$d9/de1/classalt_1_1_named_pipe.html#a83a8119e8f04fd1e9b112cdd81d0eb46" title="パイプを作成します。" alt="" coords="205,122,363,149"/>
+<area shape="rect" id="node5" href="$d0/df1/classalt_1_1_thread.html#aa83b6d1bea0cdfccd637ad67cbccadf3" title="スレッドを作成します。" alt="" coords="219,173,349,199"/>
+<area shape="rect" id="node8" href="$d9/de1/classalt_1_1_named_pipe.html#a20e7bd2a7fa522288d30453d7854cfa3" title="パイプをオープンします。" alt="" coords="209,223,359,250"/>
+<area shape="rect" id="node9" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ac8aa8c04ec7a27ade01f80bb4fe96b1d" title="HANDLEを使ってデータを読み込みます。" alt="" coords="192,275,376,316"/>
+<area shape="rect" id="node10" href="$d1/d35/classalt_1_1_waitable_handle_library.html#a62419411bfe854913286b749144a9e7b" title="シグナル状態になるとブロックを解除します。" alt="" coords="197,340,371,381"/>
+<area shape="rect" id="node11" href="$d9/de1/classalt_1_1_named_pipe.html#a0a3845cc3ab2a292fa080e63226561aa" title="クライアント側でサーバー接続を待機します。" alt="" coords="211,406,357,433"/>
+<area shape="rect" id="node12" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ae4a52040d9f06b5766351c0f8cdd2302" title="HANDLEを使ってデータを書き込みます。" alt="" coords="192,457,376,499"/>
+<area shape="rect" id="node6" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173" title=" " alt="" coords="424,165,579,207"/>
+<area shape="rect" id="node7" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2" title=" " alt="" coords="627,165,781,207"/>
+</map>

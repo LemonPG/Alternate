@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/PerformanceCheck/PerformanceCheck.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dd/da6/_performance_check_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PerformanceCheck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/da6/_performance_check_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d15/_t_string_8h.html">TString.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d6e/_console_8h.html">Console.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../dd/da6/_performance_check_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">   12</a></span>&#160;<span class="preprocessor">#define CONFIG_FILE _T(&quot;.\\PerformanceCheck.ini&quot;)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d5/d0c/class_perf_check_1_1_performance_check.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html">PerformanceCheck</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5e12fd6df0eba3d2a4cef6136575c1d7">PerformanceCheck</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a7d67c7e261e5bf7c6045b39d1e9b09b2">~PerformanceCheck</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> VOID <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#acf83a76d6d66e034e3061fcd6f27f413">Init</a>(<a class="code" href="../../d1/de5/classalt_1_1_console.html">alt::Console</a>&amp; console);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a486312a92bc41660de1dbaa1e7489333">   43</a></span>&#160;        <span class="keyword">virtual</span> BOOL <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a486312a92bc41660de1dbaa1e7489333">DoAction</a>() = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">Write</a>(LPCTSTR message);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5725208097c2daef667b7cb908a62da9">Pos</a>(SHORT x, SHORT y);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a94c1a8f0dcb46f658f30a5065bd82180">Size</a>(SHORT width, SHORT height);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5212ece093791739f21487c03f179d55">Buffer</a>(SHORT x, SHORT y);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a35e55b0ebd95def05701b246ac289134">Clear</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a46260150903a9382892124a6ff463cc8">   52</a></span>&#160;        <a class="code" href="../../d1/de5/classalt_1_1_console.html">alt::Console</a>* <a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a46260150903a9382892124a6ff463cc8">_con</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a35e55b0ebd95def05701b246ac289134"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a35e55b0ebd95def05701b246ac289134">PerfCheck::PerformanceCheck::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00059">PerformanceCheck.cpp:59</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a5e12fd6df0eba3d2a4cef6136575c1d7"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5e12fd6df0eba3d2a4cef6136575c1d7">PerfCheck::PerformanceCheck::PerformanceCheck</a></div><div class="ttdeci">PerformanceCheck()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00025">PerformanceCheck.cpp:25</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a5212ece093791739f21487c03f179d55"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5212ece093791739f21487c03f179d55">PerfCheck::PerformanceCheck::Buffer</a></div><div class="ttdeci">void Buffer(SHORT x, SHORT y)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00054">PerformanceCheck.cpp:54</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a46260150903a9382892124a6ff463cc8"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a46260150903a9382892124a6ff463cc8">PerfCheck::PerformanceCheck::_con</a></div><div class="ttdeci">alt::Console * _con</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da6/_performance_check_8h_source.html#l00052">PerformanceCheck.h:52</a></div></div>
+<div class="ttc" id="a_console_8h_html"><div class="ttname"><a href="../../d3/d6e/_console_8h.html">Console.h</a></div><div class="ttdoc">コンソールに関するクラス</div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html">PerfCheck::PerformanceCheck</a></div><div class="ttdoc">性能測定用</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da6/_performance_check_8h_source.html#l00020">PerformanceCheck.h:21</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_acf83a76d6d66e034e3061fcd6f27f413"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#acf83a76d6d66e034e3061fcd6f27f413">PerfCheck::PerformanceCheck::Init</a></div><div class="ttdeci">virtual VOID Init(alt::Console &amp;console)</div><div class="ttdoc">初期化処理</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00034">PerformanceCheck.cpp:34</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a486312a92bc41660de1dbaa1e7489333"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a486312a92bc41660de1dbaa1e7489333">PerfCheck::PerformanceCheck::DoAction</a></div><div class="ttdeci">virtual BOOL DoAction()=0</div><div class="ttdoc">処理開始</div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a94c1a8f0dcb46f658f30a5065bd82180"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a94c1a8f0dcb46f658f30a5065bd82180">PerfCheck::PerformanceCheck::Size</a></div><div class="ttdeci">void Size(SHORT width, SHORT height)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00049">PerformanceCheck.cpp:49</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a1f0f8d8f74cbdf329afe1d1e533954a0"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">PerfCheck::PerformanceCheck::Write</a></div><div class="ttdeci">void Write(LPCTSTR message)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00039">PerformanceCheck.cpp:39</a></div></div>
+<div class="ttc" id="aclassalt_1_1_console_html"><div class="ttname"><a href="../../d1/de5/classalt_1_1_console.html">alt::Console</a></div><div class="ttdoc">コンソールに関するクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6e/_console_8h_source.html#l00094">Console.h:95</a></div></div>
+<div class="ttc" id="a_t_string_8h_html"><div class="ttname"><a href="../../de/d15/_t_string_8h.html">TString.h</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="anamespace_perf_check_html"><div class="ttname"><a href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dcf/_array_performance_check_8h_source.html#l00015">ArrayPerformanceCheck.h:16</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a5725208097c2daef667b7cb908a62da9"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5725208097c2daef667b7cb908a62da9">PerfCheck::PerformanceCheck::Pos</a></div><div class="ttdeci">void Pos(SHORT x, SHORT y)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00044">PerformanceCheck.cpp:44</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a7d67c7e261e5bf7c6045b39d1e9b09b2"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a7d67c7e261e5bf7c6045b39d1e9b09b2">PerfCheck::PerformanceCheck::~PerformanceCheck</a></div><div class="ttdeci">virtual ~PerformanceCheck()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00030">PerformanceCheck.cpp:30</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_0646cd346598a23584b295256f406e84.html">PerformanceCheck</a></li><li class="navelem"><a class="el" href="../../dd/da6/_performance_check_8h.html">PerformanceCheck.h</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

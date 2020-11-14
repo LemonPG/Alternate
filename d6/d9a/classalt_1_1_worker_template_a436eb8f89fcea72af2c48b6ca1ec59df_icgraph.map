@@ -1,0 +1,8 @@
+<map id="alt::WorkerTemplate::CriticalAction" name="alt::WorkerTemplate::CriticalAction">
+<area shape="rect" id="node1" title="排他処理共通" alt="" coords="372,104,511,145"/>
+<area shape="rect" id="node2" href="$d6/d9a/classalt_1_1_worker_template.html#a8509a99c8c5c3f039d45eddfc18d125b" title="退出処理" alt="" coords="185,5,324,47"/>
+<area shape="rect" id="node4" href="$d6/d9a/classalt_1_1_worker_template.html#a8822b45b9fb3702e63bf7f192f266dc5" title="初期化処理" alt="" coords="185,71,324,112"/>
+<area shape="rect" id="node5" href="$d6/d9a/classalt_1_1_worker_template.html#a153d211ff7ac52eae378fa9a0e581928" title="開始処理" alt="" coords="185,136,324,177"/>
+<area shape="rect" id="node6" href="$d6/d9a/classalt_1_1_worker_template.html#a0c7959f62845abeedcf2ef5cdaffca5f" title="終了処理" alt="" coords="185,201,324,243"/>
+<area shape="rect" id="node3" href="$d2/d51/namespace_middle_library_test.html#a8faa4cbe899c3abd590426860a1f342b" title=" " alt="" coords="5,104,137,145"/>
+</map>

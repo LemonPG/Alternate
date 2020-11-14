@@ -1,0 +1,11 @@
+<map id="PerfCheck::TcpClient" name="PerfCheck::TcpClient">
+<area shape="rect" id="node1" title="TCPクラス性能測定用" alt="" coords="159,336,303,363"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="5,157,160,184"/>
+<area shape="rect" id="node4" href="$d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="127,247,209,273"/>
+<area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="204,5,340,32"/>
+<area shape="rect" id="node6" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="211,81,333,108"/>
+<area shape="rect" id="node8" href="$d8/d51/classalt_1_1_socket_library.html" title="WinSockを使用するAPIを集約したクラス" alt="" coords="383,157,507,184"/>
+<area shape="rect" id="node5" href="$d1/d35/classalt_1_1_waitable_handle_library.html" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="185,157,359,184"/>
+<area shape="rect" id="node7" href="$d3/d45/classalt_1_1_tcp_connector.html" title="TCP通信に関するWindowsAPIを集約したクラス" alt="" coords="234,247,358,273"/>
+<area shape="rect" id="node9" href="$dd/db7/classalt_1_1_socket_builder.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="383,247,508,273"/>
+</map>

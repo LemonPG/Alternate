@@ -1,0 +1,11 @@
+<map id="PerfCheck::FilePerformanceCheck::Core1" name="PerfCheck::FilePerformanceCheck::Core1">
+<area shape="rect" id="node1" title=" " alt="" coords="5,188,189,229"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="276,5,399,47"/>
+<area shape="rect" id="node3" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="282,71,393,98"/>
+<area shape="rect" id="node4" href="$d4/d2d/classalt_1_1_query_performance.html#a6b2d5b74babd8060a1a5f513fcc379e4" title="計測開始〜計測終了までの時間を出力します。" alt="" coords="261,123,413,164"/>
+<area shape="rect" id="node5" href="$d4/d2d/classalt_1_1_query_performance.html#a2cbdc307b622603cd45ca84d73c5d523" title="計測を開始します。" alt="" coords="261,188,413,229"/>
+<area shape="rect" id="node6" href="$d4/d2d/classalt_1_1_query_performance.html#ae40ccc8512651f753a39e157afd1d9fc" title="計測を終了します。" alt="" coords="261,253,413,295"/>
+<area shape="rect" id="node7" href="$d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0" title=" " alt="" coords="237,319,437,360"/>
+<area shape="rect" id="node9" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ae4a52040d9f06b5766351c0f8cdd2302" title="HANDLEを使ってデータを書き込みます。" alt="" coords="245,384,429,425"/>
+<area shape="rect" id="node8" href="$d1/de5/classalt_1_1_console.html#a9cb3349d108b1e2dfadd10d78bd02c12" title="コンソールに文字を出力します。" alt="" coords="485,326,616,353"/>
+</map>

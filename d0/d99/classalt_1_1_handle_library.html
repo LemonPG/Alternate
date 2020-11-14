@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: alt::HandleLibrary クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d0/d99/classalt_1_1_handle_library.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="../../d8/d11/classalt_1_1_handle_library-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alt::HandleLibrary クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>HANDLEを扱うWindowsAPIを集約した基底クラス  
+ <a href="../../d0/d99/classalt_1_1_handle_library.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a>&gt;</code></p>
+<div class="dynheader">
+alt::HandleLibrary の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/de7/classalt_1_1_handle_library__inherit__graph.png" border="0" usemap="#aalt_1_1_handle_library_inherit__map" alt="Inheritance graph"/></div>
+<map name="alt_1_1_handle_library_inherit__map" id="aalt_1_1_handle_library_inherit__map">
+<area shape="rect" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="189,157,312,184"/>
+<area shape="rect" href="../../d1/de5/classalt_1_1_console.html" title="コンソールに関するクラス" alt="" coords="407,5,497,32"/>
+<area shape="rect" href="../../d8/d52/classalt_1_1_diagnostics.html" title="システム性能に関するWindowsAPIを集約したクラス" alt="" coords="396,56,508,83"/>
+<area shape="rect" href="../../da/d83/classalt_1_1_heap_memory.html" title="ヒープメモリに関するAPIを集約したクラス" alt="" coords="391,107,513,133"/>
+<area shape="rect" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html" title="HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス" alt="" coords="360,157,544,184"/>
+<area shape="rect" href="../../d5/d53/classalt_1_1_shared_memory.html" title="共有メモリに関するWindowsAPIを集約したクラス" alt="" coords="386,208,518,235"/>
+<area shape="rect" href="../../dc/d44/classalt_1_1_transaction_file_utility.html" title="トランザクションNTFSに関するユーティリティクラス" alt="" coords="369,259,535,285"/>
+<area shape="rect" href="../../d1/d35/classalt_1_1_waitable_handle_library.html" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="365,309,539,336"/>
+<area shape="rect" href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,157,141,184"/>
+<area shape="rect" href="../../d1/dfc/classalt_1_1_file.html" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="628,132,693,159"/>
+<area shape="rect" href="../../d9/de1/classalt_1_1_named_pipe.html" title="名前付きパイプに関するWindowsAPIを集約したクラス" alt="" coords="605,183,716,209"/>
+<area shape="rect" href="../../d4/d3b/classalt_1_1_transaction_file.html" title="トランザクションNTFSに関するクラス" alt="" coords="781,132,913,159"/>
+<area shape="rect" href="../../d1/d4d/classalt_1_1_event.html" title="イベントに関するWindowsAPIを集約したクラス" alt="" coords="623,245,699,272"/>
+<area shape="rect" href="../../d0/d5c/classalt_1_1_mutex.html" title="ミューテックスに関するWindowsAPIを集約したクラス" alt="" coords="621,296,701,323"/>
+<area shape="rect" href="../../d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="619,347,702,373"/>
+<area shape="rect" href="../../d5/db9/classalt_1_1_watch_dog_timer.html" title="タイマーに関するWindowsAPIを集約したクラス" alt="" coords="592,397,729,424"/>
+<area shape="rect" href="../../dd/d88/class_windows_library_test_1_1_my_thread.html" title=" " alt="" coords="777,339,916,381"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+alt::HandleLibrary 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d33/classalt_1_1_handle_library__coll__graph.png" border="0" usemap="#aalt_1_1_handle_library_coll__map" alt="Collaboration graph"/></div>
+<map name="alt_1_1_handle_library_coll__map" id="aalt_1_1_handle_library_coll__map">
+<area shape="rect" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="12,80,135,107"/>
+<area shape="rect" href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa51f3ae3a74acc7b07203d94c947844e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#aa51f3ae3a74acc7b07203d94c947844e">HandleLibrary</a> ()</td></tr>
+<tr class="memdesc:aa51f3ae3a74acc7b07203d94c947844e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../d0/d99/classalt_1_1_handle_library.html#aa51f3ae3a74acc7b07203d94c947844e">[詳解]</a><br /></td></tr>
+<tr class="separator:aa51f3ae3a74acc7b07203d94c947844e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43512e9d9203f92663aa11fff67d136"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#aa43512e9d9203f92663aa11fff67d136">~HandleLibrary</a> ()</td></tr>
+<tr class="memdesc:aa43512e9d9203f92663aa11fff67d136"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="../../d0/d99/classalt_1_1_handle_library.html#aa43512e9d9203f92663aa11fff67d136">[詳解]</a><br /></td></tr>
+<tr class="separator:aa43512e9d9203f92663aa11fff67d136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55ea73b1c4338a2fa8096fc31e65718"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718">Close</a> ()</td></tr>
+<tr class="memdesc:ad55ea73b1c4338a2fa8096fc31e65718"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用しなくなったハンドルはこれでクローズします。  <a href="../../d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718">[詳解]</a><br /></td></tr>
+<tr class="separator:ad55ea73b1c4338a2fa8096fc31e65718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07585b59c2d46bb6eb60e55d4b9b35c3"><td class="memItemLeft" align="right" valign="top">virtual HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#a07585b59c2d46bb6eb60e55d4b9b35c3">GetHandle</a> ()</td></tr>
+<tr class="memdesc:a07585b59c2d46bb6eb60e55d4b9b35c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">継承先はこの関数でハンドルを取得します。  <a href="../../d0/d99/classalt_1_1_handle_library.html#a07585b59c2d46bb6eb60e55d4b9b35c3">[詳解]</a><br /></td></tr>
+<tr class="separator:a07585b59c2d46bb6eb60e55d4b9b35c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a8a23b1e452c27532f0f513d1f9b0aa0f">GetErrNo</a> ()</td></tr>
+<tr class="memdesc:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を返します。  <a href="../../de/dcb/classalt_1_1_windows_library.html#a8a23b1e452c27532f0f513d1f9b0aa0f">[詳解]</a><br /></td></tr>
+<tr class="separator:a8a23b1e452c27532f0f513d1f9b0aa0f inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a03edc7a6d9d82f83145167dde56c3742"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a></td></tr>
+<tr class="memdesc:a03edc7a6d9d82f83145167dde56c3742"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドルを使用するWindowsAPIで保持するHANDLE値  <a href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">[詳解]</a><br /></td></tr>
+<tr class="separator:a03edc7a6d9d82f83145167dde56c3742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>HANDLEを扱うWindowsAPIを集約した基底クラス </p>
+
+<p class="definition"> <a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a> の <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00036">36</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aa51f3ae3a74acc7b07203d94c947844e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51f3ae3a74acc7b07203d94c947844e">&#9670;&nbsp;</a></span>HandleLibrary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HandleLibrary::HandleLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="section note"><dt>覚え書き</dt><dd>ここで _hObject を INVALID_HANDLE_VALUE で初期化します。 継承先はこのコンストラクタを指定して初期化します。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00052">52</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">_hObject</a>.</p>
+
+</div>
+</div>
+<a id="aa43512e9d9203f92663aa11fff67d136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43512e9d9203f92663aa11fff67d136">&#9670;&nbsp;</a></span>~HandleLibrary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HandleLibrary::~HandleLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+<dl class="section note"><dt>覚え書き</dt><dd>_hObject をクローズしていない場合、ここで確実にクローズします。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00057">57</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00067">Close()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d99/classalt_1_1_handle_library_aa43512e9d9203f92663aa11fff67d136_cgraph.png" border="0" usemap="#ad0/d99/classalt_1_1_handle_library_aa43512e9d9203f92663aa11fff67d136_cgraph" alt=""/></div>
+<map name="d0/d99/classalt_1_1_handle_library_aa43512e9d9203f92663aa11fff67d136_cgraph" id="ad0/d99/classalt_1_1_handle_library_aa43512e9d9203f92663aa11fff67d136_cgraph">
+<area shape="rect" title="デストラクタ" alt="" coords="5,5,128,47"/>
+<area shape="rect" href="../../d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="176,5,299,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ad55ea73b1c4338a2fa8096fc31e65718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55ea73b1c4338a2fa8096fc31e65718">&#9670;&nbsp;</a></span>Close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL HandleLibrary::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用しなくなったハンドルはこれでクローズします。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>クローズに成功したか否か。 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">成功(TRUE)</td><td>失敗(FALSE)  使用していない場合は、何もしません。 使用していた場合は、ハンドルをクローズし、初期化します。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00057">~HandleLibrary()</a>, <a class="el" href="../../db/d90/_log_file_8cpp_source.html#l00026">alt::LogFile::~LogFile()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00305">PerfCheck::ServerWorker::~ServerWorker()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00497">PerfCheck::TcpClient::~TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00610">PerfCheck::TcpProxy::~TcpProxy()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00383">PerfCheck::TcpServer::~TcpServer()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00212">PerfCheck::UdpController::~UdpController()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00063">PerfCheck::TStringPerformanceCheck::Core1()</a>, <a class="el" href="../../d5/d30/_file_performance_check_8cpp_source.html#l00072">PerfCheck::FilePerformanceCheck::Core1()</a>, <a class="el" href="../../d5/d30/_file_performance_check_8cpp_source.html#l00107">PerfCheck::FilePerformanceCheck::Core2()</a>, <a class="el" href="../../db/d90/_log_file_8cpp_source.html#l00123">alt::LogFile::LogWrite()</a>, <a class="el" href="../../d3/dc8/_diagnostics_test_8cpp_source.html#l00016">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d99/classalt_1_1_handle_library_ad55ea73b1c4338a2fa8096fc31e65718_icgraph.png" border="0" usemap="#ad0/d99/classalt_1_1_handle_library_ad55ea73b1c4338a2fa8096fc31e65718_icgraph" alt=""/></div>
+<map name="d0/d99/classalt_1_1_handle_library_ad55ea73b1c4338a2fa8096fc31e65718_icgraph" id="ad0/d99/classalt_1_1_handle_library_ad55ea73b1c4338a2fa8096fc31e65718_icgraph">
+<area shape="rect" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="1263,352,1385,393"/>
+<area shape="rect" href="../../d0/d99/classalt_1_1_handle_library.html#aa43512e9d9203f92663aa11fff67d136" title="デストラクタ" alt="" coords="1051,5,1174,47"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#a440a7de2dcbb9facb68e56dc47cb9dea" title=" " alt="" coords="1041,71,1185,98"/>
+<area shape="rect" href="../../df/d72/class_perf_check_1_1_server_worker.html#a4b07ed2a75e613b16fbdee5a0441a91b" title=" " alt="" coords="1029,123,1197,164"/>
+<area shape="rect" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#a125d2277f401cbdebadb9689a5933e18" title=" " alt="" coords="1041,188,1185,229"/>
+<area shape="rect" href="../../dd/d18/class_perf_check_1_1_tcp_proxy.html#a64c3cee87a3be0b055b0803dffb4b67c" title=" " alt="" coords="1040,253,1185,295"/>
+<area shape="rect" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a728a9e31c53cf86887f1f6149b1c46dd" title=" " alt="" coords="1039,319,1186,360"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#ad488a18df0a39ff1f4748eddafaa1026" title=" " alt="" coords="1029,384,1197,425"/>
+<area shape="rect" href="../../d6/d10/class_perf_check_1_1_t_string_performance_check.html#a74f349e9de38779bdaa26a6ce123935c" title=" " alt="" coords="1011,449,1215,491"/>
+<area shape="rect" href="../../d1/d7a/class_perf_check_1_1_file_performance_check.html#aed8bbb3463e7c9abb5174f0a486bfda0" title=" " alt="" coords="1021,515,1205,556"/>
+<area shape="rect" href="../../d1/d7a/class_perf_check_1_1_file_performance_check.html#ac64fc4bb5f0bd4a5c51b89021c8fe3b7" title=" " alt="" coords="1021,580,1205,621"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#aeb1513e5e86a7eda7e1de831389ebf9b" title=" " alt="" coords="1039,889,1186,915"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a17ea89b5c9d54106d41ba93f2666b267" title=" " alt="" coords="1043,940,1182,981"/>
+<area shape="rect" href="../../d6/d10/class_perf_check_1_1_t_string_performance_check.html#a0f756858aa7488a712d3899568fdf64c" title=" " alt="" coords="759,379,963,420"/>
+<area shape="rect" href="../../d6/d10/class_perf_check_1_1_t_string_performance_check.html#a98586f86b22fa4d4bd12ab146b0721e7" title="処理開始" alt="" coords="507,339,711,380"/>
+<area shape="rect" href="../../d1/d7a/class_perf_check_1_1_file_performance_check.html#a5c93da0a2ed8f794d35865ead7e0d9b0" title=" " alt="" coords="769,515,953,556"/>
+<area shape="rect" href="../../d1/d7a/class_perf_check_1_1_file_performance_check.html#a8e13cb7e11e16ac5e0c380f1136940fc" title="処理開始" alt="" coords="517,404,701,445"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#a0f281bed146bbea187c5895ae478d0f1" title=" " alt="" coords="785,1015,937,1042"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#ad5b95f02030ee815de8e6cf086ba60fa" title=" " alt="" coords="789,1066,932,1093"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#a6e0ed877714f027815d826b4b8c0e31d" title=" " alt="" coords="789,965,933,991"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#a77cedfff87146548cafa22da8de73ece" title=" " alt="" coords="793,722,928,749"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#a316a86aa9aaaf9c467e29fd16cf2b08b" title=" " alt="" coords="787,914,934,941"/>
+<area shape="rect" href="../../da/d7f/classalt_1_1_log_file.html#a77da18f6a9e43c6e55ec9e59d65c5a7f" title=" " alt="" coords="787,863,934,890"/>
+<area shape="rect" href="../../d6/d60/classalt_1_1_logger.html#a0c869769c89bb589c3100a0ec5146ac2" title=" " alt="" coords="545,1031,672,1058"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a8a14aa6020599f6545893bf7bb7013f4" title=" " alt="" coords="539,965,678,1007"/>
+<area shape="rect" href="../../db/d4a/class_perf_check_1_1_logger_performance_check.html#a4429c0eb73d2377a4aae2ad2877d16ea" title=" " alt="" coords="256,947,459,988"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182" title=" " alt="" coords="288,881,427,923"/>
+<area shape="rect" href="../../db/d4a/class_perf_check_1_1_logger_performance_check.html#aafbe29a139716ee35933472851cc8a0e" title="処理開始" alt="" coords="5,947,208,988"/>
+<area shape="rect" href="../../d6/d60/classalt_1_1_logger.html#a2494e4e92907195918eedafe7a6e61f9" title=" " alt="" coords="550,1082,667,1109"/>
+<area shape="rect" href="../../d6/d60/classalt_1_1_logger.html#a2c5dd33d16107ba6fe01629dacb28f15" title=" " alt="" coords="553,813,664,839"/>
+<area shape="rect" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html#a8b9022f92d3a2b3e9a805d10878ee5e5" title=" " alt="" coords="541,616,677,657"/>
+<area shape="rect" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html#a7b468353d12f8239b20f67dd3343b509" title=" " alt="" coords="531,681,686,723"/>
+<area shape="rect" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html#a1536401cd8669ef245afe16e3e0fc868" title=" " alt="" coords="535,747,682,788"/>
+<area shape="rect" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html#a214a54aedccbfb4989ccce2282310f57" title=" " alt="" coords="535,469,682,511"/>
+<area shape="rect" href="../../da/d9a/classalt_1_1_factory_method_1_1_terminate_element.html#a9c9c4417b03a6861ffabc9e61f5623fc" title=" " alt="" coords="537,535,680,591"/>
+<area shape="rect" href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html#a98a3cc53fb95561a33657fb76682c169" title=" " alt="" coords="282,616,433,657"/>
+<area shape="rect" href="../../d2/d51/namespace_middle_library_test.html#a0043e77c0d005d12e97aacb46c157086" title=" " alt="" coords="41,616,173,657"/>
+<area shape="rect" href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html#a5317e751636e3fc741eee98dad05d9ef" title=" " alt="" coords="277,715,438,756"/>
+<area shape="rect" href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html#a2092671cf9c3992e64f658a91a4ff785" title=" " alt="" coords="277,511,437,552"/>
+<area shape="rect" href="../../d6/d60/classalt_1_1_logger.html#adcbe913f6a127d99a46d9ceb59228248" title=" " alt="" coords="549,914,669,941"/>
+<area shape="rect" href="../../d6/d60/classalt_1_1_logger.html#aac951b48f2527233b6d1694b07de2a3e" title=" " alt="" coords="549,863,668,890"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a07585b59c2d46bb6eb60e55d4b9b35c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07585b59c2d46bb6eb60e55d4b9b35c3">&#9670;&nbsp;</a></span>GetHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE HandleLibrary::GetHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>継承先はこの関数でハンドルを取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>HANDLE値 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">失敗した場合は</td><td>INVALID_HANDLE_VALUE が返ります。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00062">62</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00646">PerfCheck::TcpProxy::Start()</a>, <a class="el" href="../../df/d57/_heap_memory_test_8cpp_source.html#l00014">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d99/classalt_1_1_handle_library_a07585b59c2d46bb6eb60e55d4b9b35c3_icgraph.png" border="0" usemap="#ad0/d99/classalt_1_1_handle_library_a07585b59c2d46bb6eb60e55d4b9b35c3_icgraph" alt=""/></div>
+<map name="d0/d99/classalt_1_1_handle_library_a07585b59c2d46bb6eb60e55d4b9b35c3_icgraph" id="ad0/d99/classalt_1_1_handle_library_a07585b59c2d46bb6eb60e55d4b9b35c3_icgraph">
+<area shape="rect" title="継承先はこの関数でハンドルを取得します。" alt="" coords="199,39,321,80"/>
+<area shape="rect" href="../../dd/d18/class_perf_check_1_1_tcp_proxy.html#a61f893a81ef9be3c6db607bbb3648fbd" title=" " alt="" coords="5,5,151,47"/>
+<area shape="rect" href="../../db/d5a/namespace_windows_library_test.html#a0ac1b3837392b1a4f4d4cb37955671bf" title=" " alt="" coords="9,71,147,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a03edc7a6d9d82f83145167dde56c3742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03edc7a6d9d82f83145167dde56c3742">&#9670;&nbsp;</a></span>_hObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE alt::HandleLibrary::_hObject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ハンドルを使用するWindowsAPIで保持するHANDLE値 </p>
+
+<p class="definition"> <a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a> の <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">70</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d6/d8f/_diagnostics_8cpp_source.html#l00012">alt::Diagnostics::Diagnostics()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00052">HandleLibrary()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00018">alt::Console::~Console()</a>, <a class="el" href="../../d6/d5a/_heap_memory_8cpp_source.html#l00060">alt::HeapMemory::Allocate()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00116">alt::Console::Clear()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00067">Close()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00030">alt::TransactionFileUtility::Commit()</a>, <a class="el" href="../../d6/d5a/_heap_memory_8cpp_source.html#l00075">alt::HeapMemory::Compact()</a>, <a class="el" href="../../d0/d2c/_named_pipe_8cpp_source.html#l00043">alt::NamedPipe::Connect()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00054">alt::TransactionFileUtility::Copy()</a>, <a class="el" href="../../d6/d5a/_heap_memory_8cpp_source.html#l00026">alt::HeapMemory::Create()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00104">alt::TransactionFile::Create()</a>, <a class="el" href="../../d8/dd4/_event_8cpp_source.html#l00012">alt::Event::Create()</a>, <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00012">alt::File::Create()</a>, <a class="el" href="../../da/d4c/_mutex_8cpp_source.html#l00012">alt::Mutex::Create()</a>, <a class="el" href="../../d0/d2c/_named_pipe_8cpp_source.html#l00012">alt::NamedPipe::Create()</a>, <a class="el" href="../../dd/d28/_shared_memory_8cpp_source.html#l00026">alt::SharedMemory::Create()</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00024">alt::Thread::Create()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00040">alt::TransactionFileUtility::CreateFolder()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00049">alt::TransactionFileUtility::Delete()</a>, <a class="el" href="../../d6/d5a/_heap_memory_8cpp_source.html#l00045">alt::HeapMemory::Destroy()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00116">alt::ReadWriteHandleLibrary::Flush()</a>, <a class="el" href="../../d6/d5a/_heap_memory_8cpp_source.html#l00070">alt::HeapMemory::Free()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00062">GetHandle()</a>, <a class="el" href="../../d6/d8f/_diagnostics_8cpp_source.html#l00022">alt::Diagnostics::GetProcessIO()</a>, <a class="el" href="../../d6/d8f/_diagnostics_8cpp_source.html#l00017">alt::Diagnostics::GetProcessMemory()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00146">alt::Console::GetScreenBufferInfo()</a>, <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00049">alt::File::GetSize()</a>, <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00067">alt::File::GetType()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00028">alt::Console::Init()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00014">alt::TransactionFileUtility::Init()</a>, <a class="el" href="../../d3/d48/_watch_dog_timer_8cpp_source.html#l00022">alt::WatchDogTimer::InitTimer()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00093">alt::TransactionFileUtility::MakeHardLink()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00081">alt::TransactionFileUtility::MakeSymbolicLink()</a>, <a class="el" href="../../dd/d28/_shared_memory_8cpp_source.html#l00049">alt::SharedMemory::Mapped()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00068">alt::TransactionFileUtility::Move()</a>, <a class="el" href="../../d8/dd4/_event_8cpp_source.html#l00025">alt::Event::Open()</a>, <a class="el" href="../../da/d4c/_mutex_8cpp_source.html#l00019">alt::Mutex::Open()</a>, <a class="el" href="../../d0/d2c/_named_pipe_8cpp_source.html#l00048">alt::NamedPipe::Open()</a>, <a class="el" href="../../dd/d28/_shared_memory_8cpp_source.html#l00039">alt::SharedMemory::Open()</a>, <a class="el" href="../../d8/dd4/_event_8cpp_source.html#l00048">alt::Event::Pulse()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00080">alt::ReadWriteHandleLibrary::Read()</a>, <a class="el" href="../../d6/d5a/_heap_memory_8cpp_source.html#l00065">alt::HeapMemory::Reallocate()</a>, <a class="el" href="../../da/d4c/_mutex_8cpp_source.html#l00026">alt::Mutex::Release()</a>, <a class="el" href="../../d8/dd4/_event_8cpp_source.html#l00043">alt::Event::Reset()</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00045">alt::Thread::Resume()</a>, <a class="el" href="../../dc/ded/_transaction_file_8cpp_source.html#l00035">alt::TransactionFileUtility::Rollback()</a>, <a class="el" href="../../d8/dd4/_event_8cpp_source.html#l00038">alt::Event::Set()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00094">alt::Console::SetBufferSize()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00045">alt::Console::SetColor()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00085">alt::Console::SetCursorPosition()</a>, <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00044">alt::File::SetEOF()</a>, <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00035">alt::File::SetPointer()</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00050">alt::Thread::SetPriority()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00105">alt::Console::SetWindowInfo()</a>, <a class="el" href="../../d3/d48/_watch_dog_timer_8cpp_source.html#l00035">alt::WatchDogTimer::StartTimer()</a>, <a class="el" href="../../d3/d48/_watch_dog_timer_8cpp_source.html#l00059">alt::WatchDogTimer::StopTimer()</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00040">alt::Thread::Suspend()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00121">alt::WaitableHandleLibrary::Wait()</a>, <a class="el" href="../../d3/d48/_watch_dog_timer_8cpp_source.html#l00054">alt::WatchDogTimer::WaitTimer()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00051">alt::Console::Write()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00098">alt::ReadWriteHandleLibrary::Write()</a> (計62項目).</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/User01/source/repos/Alternate/WindowsLibrary/<a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a></li>
+<li>C:/Users/User01/source/repos/Alternate/WindowsLibrary/<a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></li><li class="navelem"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html">HandleLibrary</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

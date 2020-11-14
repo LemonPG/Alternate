@@ -1,0 +1,12 @@
+<map id="LeakCheck::TStringMemoryLeakCheck::DoAction4" name="LeakCheck::TStringMemoryLeakCheck::DoAction4">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,188,90"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5" title="フォーマットに従ってパラメータを文字列化します。" alt="" coords="246,5,381,32"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html#a8540af1dda49b91f7e555fac62fcab12" title="文字列を置換します。" alt="" coords="243,56,383,83"/>
+<area shape="rect" id="node9" href="$d2/dd0/classalt_1_1_t_string.html#aa5e83e8af03b2c05ad70b09fe5b45699" title="文字列を置換します。" alt="" coords="236,107,391,133"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1_t_string.html#acad2a465990b22f3b6bc701bc3d933a7" title="文字列を検索します。" alt="" coords="453,157,572,184"/>
+<area shape="rect" id="node6" href="$d2/dd0/classalt_1_1_t_string.html#a608e6d8c23be2cedc8d4a93ad00bc047" title="内部で確保している文字列数を取得します。" alt="" coords="650,56,765,83"/>
+<area shape="rect" id="node8" href="$d2/dd0/classalt_1_1_t_string.html#ac866a608eed54a7ee3f7d18c8912a911" title="文字列を切り出します。" alt="" coords="439,56,587,83"/>
+<area shape="rect" id="node5" href="$d2/dd0/classalt_1_1_t_string.html#a82ddbc7ae6b8f33ef93bc552af9e8ba1" title=" " alt="" coords="635,157,780,184"/>
+<area shape="rect" id="node7" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="652,107,763,133"/>
+<area shape="rect" id="node10" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="457,208,568,235"/>
+</map>

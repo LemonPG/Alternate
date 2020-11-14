@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/WindowsLibrary/VirtualMemory.cpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dd/d8a/_virtual_memory_8cpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">VirtualMemory.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d8a/_virtual_memory_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d78/_virtual_memory_8h.html">VirtualMemory.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a0854e9b79bc77a621c7a806d711c52a6">    6</a></span>&#160;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a0854e9b79bc77a621c7a806d711c52a6">VirtualMemory::VirtualMemory</a>()</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7086c42725a741519b1c117bf2aa4fb7">   12</a></span>&#160;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7086c42725a741519b1c117bf2aa4fb7">VirtualMemory::~VirtualMemory</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        this-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a2bb7b049dceff8cde13b58e683619bc3">Unlock</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        this-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">Free</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a> = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">   23</a></span>&#160;LPVOID <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">VirtualMemory::Alloc</a>(SIZE_T size)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    LPVOID lpvAddress = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    DWORD dwAllocationType = MEM_COMMIT | MEM_RESERVE;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> = ::VirtualAlloc(lpvAddress, size, dwAllocationType, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a983dd24e18dafc9380cea1c999b65d96">_cdwProtect</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a> = size;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">   34</a></span>&#160;BOOL <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">VirtualMemory::Free</a>()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    DWORD dwFreeType = MEM_RELEASE;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// MEM_RELEASEの場合は、sizeに０を指定する。</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    return ::VirtualFree(<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>, 0, dwFreeType);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">   42</a></span>&#160;BOOL <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">VirtualMemory::Reserve</a>(SIZE_T size)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> = ::VirtualAlloc(<span class="keyword">nullptr</span>, size, MEM_RESERVE, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a983dd24e18dafc9380cea1c999b65d96">_cdwProtect</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a> = size;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> == <span class="keyword">nullptr</span> ? FALSE : TRUE;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">   50</a></span>&#160;LPVOID <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">VirtualMemory::Commit</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    return ::VirtualAlloc(<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a>, MEM_COMMIT, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a983dd24e18dafc9380cea1c999b65d96">_cdwProtect</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">   55</a></span>&#160;BOOL <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">VirtualMemory::Release</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    BOOL ret = ::VirtualFree(<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>, 0, MEM_RELEASE);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a> = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">   65</a></span>&#160;BOOL <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">VirtualMemory::Decommit</a>()</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#pragma warning(push)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#pragma warning(disable:6250)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    return ::VirtualFree(<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a>, MEM_DECOMMIT);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a162e78cd1ba2aab0aa56f8e5ca80ec80">   73</a></span>&#160;BOOL <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a162e78cd1ba2aab0aa56f8e5ca80ec80">VirtualMemory::Lock</a>()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    return ::VirtualLock(<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a2bb7b049dceff8cde13b58e683619bc3">   78</a></span>&#160;BOOL <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a2bb7b049dceff8cde13b58e683619bc3">VirtualMemory::Unlock</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    return ::VirtualUnlock(<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">_lpvAddress</a>, <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">_size</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_aefd411bbcefe8d017df21be8a539b4ad"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">alt::VirtualMemory::Commit</a></div><div class="ttdeci">LPVOID Commit()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00050">VirtualMemory.cpp:50</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a162e78cd1ba2aab0aa56f8e5ca80ec80"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a162e78cd1ba2aab0aa56f8e5ca80ec80">alt::VirtualMemory::Lock</a></div><div class="ttdeci">BOOL Lock()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00073">VirtualMemory.cpp:73</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a84fe46c6b06fe1cfd0f8944e82368e64"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">alt::VirtualMemory::Alloc</a></div><div class="ttdeci">LPVOID Alloc(SIZE_T size)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00023">VirtualMemory.cpp:23</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a7086c42725a741519b1c117bf2aa4fb7"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7086c42725a741519b1c117bf2aa4fb7">alt::VirtualMemory::~VirtualMemory</a></div><div class="ttdeci">virtual ~VirtualMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00012">VirtualMemory.cpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a2bb7b049dceff8cde13b58e683619bc3"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a2bb7b049dceff8cde13b58e683619bc3">alt::VirtualMemory::Unlock</a></div><div class="ttdeci">BOOL Unlock()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00078">VirtualMemory.cpp:78</a></div></div>
+<div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_ab86c12d28fa763f223de5183fe464309"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">alt::VirtualMemory::Free</a></div><div class="ttdeci">BOOL Free()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00034">VirtualMemory.cpp:34</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_ae086f090dc1bcaf5cdbc8e8079cd6428"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">alt::VirtualMemory::Decommit</a></div><div class="ttdeci">BOOL Decommit()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00065">VirtualMemory.cpp:65</a></div></div>
+<div class="ttc" id="a_virtual_memory_8h_html"><div class="ttname"><a href="../../d0/d78/_virtual_memory_8h.html">VirtualMemory.h</a></div><div class="ttdoc">仮想メモリに関するクラス</div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a7a3d4b492bb6405e6ae33783989c30b3"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">alt::VirtualMemory::Reserve</a></div><div class="ttdeci">BOOL Reserve(SIZE_T size)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00042">VirtualMemory.cpp:42</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a0854e9b79bc77a621c7a806d711c52a6"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a0854e9b79bc77a621c7a806d711c52a6">alt::VirtualMemory::VirtualMemory</a></div><div class="ttdeci">VirtualMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00006">VirtualMemory.cpp:6</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a9bb0f7c14df2d5ab7d9e83f725d72272"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">alt::VirtualMemory::Release</a></div><div class="ttdeci">BOOL Release()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00055">VirtualMemory.cpp:55</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a983dd24e18dafc9380cea1c999b65d96"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a983dd24e18dafc9380cea1c999b65d96">alt::VirtualMemory::_cdwProtect</a></div><div class="ttdeci">const DWORD _cdwProtect</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d78/_virtual_memory_8h_source.html#l00035">VirtualMemory.h:35</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a14871022e8ceb5ec707a8d03fc688a7b"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a14871022e8ceb5ec707a8d03fc688a7b">alt::VirtualMemory::_size</a></div><div class="ttdeci">SIZE_T _size</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d78/_virtual_memory_8h_source.html#l00037">VirtualMemory.h:37</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a81e65225a8ed2951974da6e5b8353496"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a81e65225a8ed2951974da6e5b8353496">alt::VirtualMemory::_lpvAddress</a></div><div class="ttdeci">LPVOID _lpvAddress</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d78/_virtual_memory_8h_source.html#l00036">VirtualMemory.h:36</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../dd/d8a/_virtual_memory_8cpp.html">VirtualMemory.cpp</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

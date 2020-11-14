@@ -1,0 +1,5 @@
+<map id="alt::SharedMemory" name="alt::SharedMemory">
+<area shape="rect" id="node1" title="共有メモリに関するWindowsAPIを集約したクラス" alt="" coords="7,155,139,181"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="12,80,135,107"/>
+<area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
+</map>

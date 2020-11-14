@@ -1,0 +1,11 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,203,144,244"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="223,5,345,47"/>
+<area shape="rect" id="node3" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="229,71,339,98"/>
+<area shape="rect" id="node4" href="$d3/d85/classalt_1_1_file_utility.html#ac0495fee8af7ea9f250f41d6bbc2e430" title=" " alt="" coords="213,122,355,149"/>
+<area shape="rect" id="node5" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#a954690880e4bb77115eae6311b9ddc62" title="まだデバイスに出力されていないデータを吐き出させます。" alt="" coords="192,173,376,215"/>
+<area shape="rect" id="node6" href="$d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b" title=" " alt="" coords="211,239,357,266"/>
+<area shape="rect" id="node7" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ac8aa8c04ec7a27ade01f80bb4fe96b1d" title="HANDLEを使ってデータを読み込みます。" alt="" coords="192,291,376,332"/>
+<area shape="rect" id="node8" href="$d1/dfc/classalt_1_1_file.html#ae6fad650e4b7f6eb74efc91e0728261e" title="ファイルポインタを移動します。" alt="" coords="217,357,351,383"/>
+<area shape="rect" id="node9" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ae4a52040d9f06b5766351c0f8cdd2302" title="HANDLEを使ってデータを書き込みます。" alt="" coords="192,408,376,449"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="alt::FactoryMethod::QueueElement::Setup" name="alt::FactoryMethod::QueueElement::Setup">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,164,90"/>
+<area shape="rect" id="node2" href="$d1/d4d/classalt_1_1_event.html#a3bccdda5174c37e8759d568768262c86" title="イベントを作成します。" alt="" coords="223,5,345,32"/>
+<area shape="rect" id="node3" href="$d0/df1/classalt_1_1_thread.html#aa83b6d1bea0cdfccd637ad67cbccadf3" title="スレッドを作成します。" alt="" coords="219,56,349,83"/>
+<area shape="rect" id="node6" href="$de/d54/classalt_1_1_factory_method_1_1_i_element.html#a782ad5dac69281d9e11670c1c5fa9def" title=" " alt="" coords="212,107,356,149"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173" title=" " alt="" coords="404,49,559,90"/>
+<area shape="rect" id="node5" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2" title=" " alt="" coords="607,49,761,90"/>
+</map>

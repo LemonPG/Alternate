@@ -1,0 +1,8 @@
+<map id="alt::Logger::init" name="alt::Logger::init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,113,83"/>
+<area shape="rect" id="node2" href="$d6/d60/classalt_1_1_logger.html#abc41bfb031d896170c7675fa96a6b30c" title=" " alt="" coords="165,5,295,32"/>
+<area shape="rect" id="node3" href="$d1/de5/classalt_1_1_console.html#a9e7599f62e2edb8e055db80110ee51f3" title="コンソール出力ウィンドウを作成します。" alt="" coords="161,56,299,83"/>
+<area shape="rect" id="node4" href="$d1/de5/classalt_1_1_console.html#ab48cd88aa36134b969c55ab2cf5ff2be" title="Consoleクラスを初期化します。" alt="" coords="172,107,288,133"/>
+<area shape="rect" id="node5" href="$d1/de5/classalt_1_1_console.html#a3da266c918bb72d78bef3449bf225514" title=" " alt="" coords="347,81,561,108"/>
+<area shape="rect" id="node6" href="$d1/de5/classalt_1_1_console.html#a3a5c0b5f0fffc84bddd9718d0a406c33" title="文字色、背景色を設定します。" alt="" coords="379,132,529,159"/>
+</map>

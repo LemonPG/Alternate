@@ -1,0 +1,5 @@
+<map id="alt::UdpConnector" name="alt::UdpConnector">
+<area shape="rect" id="node1" title="UDP通信に関するWindowsAPIを集約したクラス" alt="" coords="10,155,137,181"/>
+<area shape="rect" id="node2" href="$d8/d51/classalt_1_1_socket_library.html" title="WinSockを使用するAPIを集約したクラス" alt="" coords="11,80,135,107"/>
+<area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
+</map>

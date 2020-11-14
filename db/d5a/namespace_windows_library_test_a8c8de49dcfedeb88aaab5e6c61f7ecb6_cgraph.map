@@ -1,0 +1,10 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,123,144,164"/>
+<area shape="rect" id="node2" href="$d0/df1/classalt_1_1_thread.html#aa83b6d1bea0cdfccd637ad67cbccadf3" title="スレッドを作成します。" alt="" coords="215,13,344,39"/>
+<area shape="rect" id="node5" href="$d0/d99/classalt_1_1_handle_library.html#a07585b59c2d46bb6eb60e55d4b9b35c3" title="継承先はこの関数でハンドルを取得します。" alt="" coords="218,64,341,105"/>
+<area shape="rect" id="node6" href="$d0/df1/classalt_1_1_thread.html#ae310020d93f08b91cf6012eda4600103" title="スレッドを再開します。" alt="" coords="210,130,349,157"/>
+<area shape="rect" id="node7" href="$d0/df1/classalt_1_1_thread.html#a796a1d520e5ddbd35a07dee36a8a1083" title="スレッド実行優先度を変更します。" alt="" coords="203,181,355,207"/>
+<area shape="rect" id="node8" href="$d1/d35/classalt_1_1_waitable_handle_library.html#a62419411bfe854913286b749144a9e7b" title="シグナル状態になるとブロックを解除します。" alt="" coords="192,232,367,273"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173" title=" " alt="" coords="415,5,569,47"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2" title=" " alt="" coords="617,5,772,47"/>
+</map>

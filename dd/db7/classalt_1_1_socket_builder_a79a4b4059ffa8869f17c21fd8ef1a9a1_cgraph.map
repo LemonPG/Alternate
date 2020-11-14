@@ -1,0 +1,10 @@
+<map id="alt::SocketBuilder::CreateTcpConnector" name="alt::SocketBuilder::CreateTcpConnector">
+<area shape="rect" id="node1" title=" " alt="" coords="5,167,153,209"/>
+<area shape="rect" id="node2" href="$d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="375,138,499,179"/>
+<area shape="rect" id="node3" href="$dd/db7/classalt_1_1_socket_builder.html#aad903b2dbf4d8216315ad44cf94eed6b" title=" " alt="" coords="201,37,327,78"/>
+<area shape="rect" id="node4" href="$d8/d51/classalt_1_1_socket_library.html#ae5120bda97e8b7e3d23f4d9a3a06c513" title="WinSock API呼び出し時にエラーとなった時、エラーの詳細を返します。" alt="" coords="202,102,326,143"/>
+<area shape="rect" id="node5" href="$dd/db7/classalt_1_1_socket_builder.html#a8dcfda4a20837a616d17d371456d7095" title=" " alt="" coords="201,167,327,209"/>
+<area shape="rect" id="node6" href="$dd/db7/classalt_1_1_socket_builder.html#aab6534795679463917f2c8e4ee5dda02" title=" " alt="" coords="201,233,327,274"/>
+<area shape="rect" id="node7" href="$dd/db7/classalt_1_1_socket_builder.html#a12153830a802028c53b420bdc9f4b2b1" title=" " alt="" coords="201,298,327,339"/>
+<area shape="rect" id="node8" href="$dd/db7/classalt_1_1_socket_builder.html#a225275628d36851cc1d8ced730d55296" title=" " alt="" coords="201,363,327,405"/>
+</map>

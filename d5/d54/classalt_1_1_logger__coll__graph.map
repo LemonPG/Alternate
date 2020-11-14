@@ -1,0 +1,11 @@
+<map id="alt::Logger" name="alt::Logger">
+<area shape="rect" id="node1" title="ログに関するクラス" alt="" coords="29,465,112,492"/>
+<area shape="rect" id="node2" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="219,5,355,32"/>
+<area shape="rect" id="node3" href="$da/d7f/classalt_1_1_log_file.html" title="Fileをベースとしたログに関する機能を集約したクラス" alt="" coords="271,376,358,403"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1_t_string.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="391,132,476,159"/>
+<area shape="rect" id="node7" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="124,81,247,108"/>
+<area shape="rect" id="node8" href="$d4/d33/classalt_1_1_critical_section.html" title="CriticalSectionに関するWindowsAPIを集約したクラス" alt="" coords="223,132,351,159"/>
+<area shape="rect" id="node5" href="$d1/dfc/classalt_1_1_file.html" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="182,287,247,313"/>
+<area shape="rect" id="node6" href="$d2/d8c/classalt_1_1_read_write_handle_library.html" title="HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス" alt="" coords="93,183,277,209"/>
+<area shape="rect" id="node9" href="$d1/de5/classalt_1_1_console.html" title="コンソールに関するクラス" alt="" coords="25,235,116,261"/>
+</map>

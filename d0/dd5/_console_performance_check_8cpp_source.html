@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/PerformanceCheck/ConsolePerformanceCheck.cpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d0/dd5/_console_performance_check_8cpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ConsolePerformanceCheck.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/dd5/_console_performance_check_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/da8/_console_performance_check_8h.html">ConsolePerformanceCheck.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#afda30a76be5df32b69be4e7792d7d375">   13</a></span>&#160;<a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#afda30a76be5df32b69be4e7792d7d375">ConsolePerformanceCheck::ConsolePerformanceCheck</a>()</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#ac4644ef3a28efb050dba57718140e368">response0</a> = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a020e5439899f4c6ed9acb837245366ed">response1</a> = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a1851c12e5e2036def628b192a0261911">response2</a> = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a3e55c16a71d8fa9b4ede1abcac56de6b">   20</a></span>&#160;<a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a3e55c16a71d8fa9b4ede1abcac56de6b">ConsolePerformanceCheck::~ConsolePerformanceCheck</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a068f6ba7f6cc15e1ca5cf765d73f8e71">   25</a></span>&#160;BOOL <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a068f6ba7f6cc15e1ca5cf765d73f8e71">ConsolePerformanceCheck::DoAction</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    this-&gt;<a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#af1ccd7084c7b095a094071b68888419c">Core</a>(0);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#af1ccd7084c7b095a094071b68888419c">Core</a>(1);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#af1ccd7084c7b095a094071b68888419c">Core</a>(2);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    TCHAR tszMsg[128];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    wsprintf(tszMsg, _T(<span class="stringliteral">&quot;response0 = %dmsec response1 = %dmsec response2 = %dmsec\n&quot;</span>),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;             <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#ac4644ef3a28efb050dba57718140e368">response0</a>, <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a020e5439899f4c6ed9acb837245366ed">response1</a>, <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a1851c12e5e2036def628b192a0261911">response2</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">Write</a>(tszMsg);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#af1ccd7084c7b095a094071b68888419c">   39</a></span>&#160;BOOL <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#af1ccd7084c7b095a094071b68888419c">ConsolePerformanceCheck::Core</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> param1)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a621f1124dde841fb468d2efa2456fac2">count</a> = 10000;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d4/d2d/classalt_1_1_query_performance.html">alt::QueryPerformance</a> Q;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q.<a class="code" href="../../d4/d2d/classalt_1_1_query_performance.html#a2cbdc307b622603cd45ca84d73c5d523">Start</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a35e55b0ebd95def05701b246ac289134">Clear</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (param1 == 2)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a94c1a8f0dcb46f658f30a5065bd82180">Size</a>(80, 25);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5212ece093791739f21487c03f179d55">Buffer</a>(80, 25);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a621f1124dde841fb468d2efa2456fac2">count</a>; i++)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (param1 == 0)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;ABCDEFGHIJKLMLOPQRSTUVWXYZ\n&quot;</span>));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;☆☆☆☆☆☆☆☆☆☆\n&quot;</span>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (param1 == 1)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">Write</a>(_T(<span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyz\n&quot;</span>));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">Write</a>(_T(<span class="stringliteral">&quot;★★★★★★★★★★\n&quot;</span>));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5725208097c2daef667b7cb908a62da9">Pos</a>(10, 10);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">Write</a>(_T(<span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyz\n&quot;</span>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5725208097c2daef667b7cb908a62da9">Pos</a>(10, 20);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            this-&gt;<a class="code" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">Write</a>(_T(<span class="stringliteral">&quot;◆◇□■◆◇□■◆◇\n&quot;</span>));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Q.<a class="code" href="../../d4/d2d/classalt_1_1_query_performance.html#ae40ccc8512651f753a39e157afd1d9fc">Stop</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> msec = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(Q.<a class="code" href="../../d4/d2d/classalt_1_1_query_performance.html#a6b2d5b74babd8060a1a5f513fcc379e4">PastTime</a>());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (param1 == 0) <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#ac4644ef3a28efb050dba57718140e368">response0</a> = msec;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (param1 == 1) <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a020e5439899f4c6ed9acb837245366ed">response1</a> = msec;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (param1 == 2) <a class="code" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a1851c12e5e2036def628b192a0261911">response2</a> = msec;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassalt_1_1_query_performance_html"><div class="ttname"><a href="../../d4/d2d/classalt_1_1_query_performance.html">alt::QueryPerformance</a></div><div class="ttdoc">高分解能時間計測クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00018">WatchDogTimer.h:19</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a35e55b0ebd95def05701b246ac289134"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a35e55b0ebd95def05701b246ac289134">PerfCheck::PerformanceCheck::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00059">PerformanceCheck.cpp:59</a></div></div>
+<div class="ttc" id="aclassalt_1_1_query_performance_html_a6b2d5b74babd8060a1a5f513fcc379e4"><div class="ttname"><a href="../../d4/d2d/classalt_1_1_query_performance.html#a6b2d5b74babd8060a1a5f513fcc379e4">alt::QueryPerformance::PastTime</a></div><div class="ttdeci">double PastTime()</div><div class="ttdoc">計測開始〜計測終了までの時間を出力します。</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00038">WatchDogTimer.h:38</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_a068f6ba7f6cc15e1ca5cf765d73f8e71"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a068f6ba7f6cc15e1ca5cf765d73f8e71">PerfCheck::ConsolePerformanceCheck::DoAction</a></div><div class="ttdeci">virtual BOOL DoAction()</div><div class="ttdoc">処理開始</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_console_performance_check_8cpp_source.html#l00025">ConsolePerformanceCheck.cpp:25</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a5212ece093791739f21487c03f179d55"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5212ece093791739f21487c03f179d55">PerfCheck::PerformanceCheck::Buffer</a></div><div class="ttdeci">void Buffer(SHORT x, SHORT y)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00054">PerformanceCheck.cpp:54</a></div></div>
+<div class="ttc" id="aclassalt_1_1_query_performance_html_ae40ccc8512651f753a39e157afd1d9fc"><div class="ttname"><a href="../../d4/d2d/classalt_1_1_query_performance.html#ae40ccc8512651f753a39e157afd1d9fc">alt::QueryPerformance::Stop</a></div><div class="ttdeci">VOID Stop()</div><div class="ttdoc">計測を終了します。</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00033">WatchDogTimer.h:33</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_a1851c12e5e2036def628b192a0261911"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a1851c12e5e2036def628b192a0261911">PerfCheck::ConsolePerformanceCheck::response2</a></div><div class="ttdeci">int response2</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da8/_console_performance_check_8h_source.html#l00031">ConsolePerformanceCheck.h:31</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_a020e5439899f4c6ed9acb837245366ed"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a020e5439899f4c6ed9acb837245366ed">PerfCheck::ConsolePerformanceCheck::response1</a></div><div class="ttdeci">int response1</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da8/_console_performance_check_8h_source.html#l00030">ConsolePerformanceCheck.h:30</a></div></div>
+<div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
+<div class="ttc" id="a_console_performance_check_8h_html"><div class="ttname"><a href="../../db/da8/_console_performance_check_8h.html">ConsolePerformanceCheck.h</a></div><div class="ttdoc">Console性能測定用</div></div>
+<div class="ttc" id="aclassalt_1_1_query_performance_html_a2cbdc307b622603cd45ca84d73c5d523"><div class="ttname"><a href="../../d4/d2d/classalt_1_1_query_performance.html#a2cbdc307b622603cd45ca84d73c5d523">alt::QueryPerformance::Start</a></div><div class="ttdeci">VOID Start()</div><div class="ttdoc">計測を開始します。</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00030">WatchDogTimer.h:30</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_afda30a76be5df32b69be4e7792d7d375"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#afda30a76be5df32b69be4e7792d7d375">PerfCheck::ConsolePerformanceCheck::ConsolePerformanceCheck</a></div><div class="ttdeci">ConsolePerformanceCheck()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_console_performance_check_8cpp_source.html#l00013">ConsolePerformanceCheck.cpp:13</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a94c1a8f0dcb46f658f30a5065bd82180"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a94c1a8f0dcb46f658f30a5065bd82180">PerfCheck::PerformanceCheck::Size</a></div><div class="ttdeci">void Size(SHORT width, SHORT height)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00049">PerformanceCheck.cpp:49</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_ac4644ef3a28efb050dba57718140e368"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#ac4644ef3a28efb050dba57718140e368">PerfCheck::ConsolePerformanceCheck::response0</a></div><div class="ttdeci">int response0</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da8/_console_performance_check_8h_source.html#l00029">ConsolePerformanceCheck.h:29</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_af1ccd7084c7b095a094071b68888419c"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#af1ccd7084c7b095a094071b68888419c">PerfCheck::ConsolePerformanceCheck::Core</a></div><div class="ttdeci">virtual BOOL Core(const int param1)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_console_performance_check_8cpp_source.html#l00039">ConsolePerformanceCheck.cpp:39</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a1f0f8d8f74cbdf329afe1d1e533954a0"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0">PerfCheck::PerformanceCheck::Write</a></div><div class="ttdeci">void Write(LPCTSTR message)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00039">PerformanceCheck.cpp:39</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_console_performance_check_html_a3e55c16a71d8fa9b4ede1abcac56de6b"><div class="ttname"><a href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a3e55c16a71d8fa9b4ede1abcac56de6b">PerfCheck::ConsolePerformanceCheck::~ConsolePerformanceCheck</a></div><div class="ttdeci">virtual ~ConsolePerformanceCheck()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_console_performance_check_8cpp_source.html#l00020">ConsolePerformanceCheck.cpp:20</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html_a621f1124dde841fb468d2efa2456fac2"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a621f1124dde841fb468d2efa2456fac2">WindowsLibraryTest::count</a></div><div class="ttdeci">const int count</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dea/_watch_dog_timer_test_8cpp_source.html#l00013">WatchDogTimerTest.cpp:13</a></div></div>
+<div class="ttc" id="anamespace_perf_check_html"><div class="ttname"><a href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dcf/_array_performance_check_8h_source.html#l00015">ArrayPerformanceCheck.h:16</a></div></div>
+<div class="ttc" id="aclass_perf_check_1_1_performance_check_html_a5725208097c2daef667b7cb908a62da9"><div class="ttname"><a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a5725208097c2daef667b7cb908a62da9">PerfCheck::PerformanceCheck::Pos</a></div><div class="ttdeci">void Pos(SHORT x, SHORT y)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d44/_performance_check_8cpp_source.html#l00044">PerformanceCheck.cpp:44</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_0646cd346598a23584b295256f406e84.html">PerformanceCheck</a></li><li class="navelem"><a class="el" href="../../d0/dd5/_console_performance_check_8cpp.html">ConsolePerformanceCheck.cpp</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

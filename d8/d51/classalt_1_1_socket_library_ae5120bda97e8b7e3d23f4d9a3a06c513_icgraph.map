@@ -1,0 +1,7 @@
+<map id="alt::SocketLibrary::GetErrNo" name="alt::SocketLibrary::GetErrNo">
+<area shape="rect" id="node1" title="WinSock API呼び出し時にエラーとなった時、エラーの詳細を返します。" alt="" coords="415,71,539,112"/>
+<area shape="rect" id="node2" href="$dd/db7/classalt_1_1_socket_builder.html#a79a4b4059ffa8869f17c21fd8ef1a9a1" title=" " alt="" coords="209,12,357,53"/>
+<area shape="rect" id="node4" href="$d7/de9/class_perf_check_1_1_tcp_client.html#ab86c350e7ffbd686de10ea37329b610e" title=" " alt="" coords="6,71,150,112"/>
+<area shape="rect" id="node5" href="$dc/d1c/class_perf_check_1_1_udp_controller.html#a47e5ad20fa0327e70503a5c2aa91dafc" title=" " alt="" coords="199,129,367,171"/>
+<area shape="rect" id="node3" href="$dd/d18/class_perf_check_1_1_tcp_proxy.html#a7fd1c988e01290d236584859d1f7cbdb" title=" " alt="" coords="5,5,151,47"/>
+</map>

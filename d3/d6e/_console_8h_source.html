@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/WindowsLibrary/Console.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d3/d6e/_console_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Console.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d6e/_console_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d6/d94/namespacealt.html#a09434d1f1b28611c51a9e050f6f912b7">   18</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d6/d94/namespacealt.html#a09434d1f1b28611c51a9e050f6f912b7">ForeColor</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Black = 0,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Blue = FOREGROUND_BLUE,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        BlueH = Blue | FOREGROUND_INTENSITY,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        Green = FOREGROUND_GREEN,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        GreenH = Green | FOREGROUND_INTENSITY,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        Red = FOREGROUND_RED,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        RedH = Red | FOREGROUND_INTENSITY,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        Cyan = (Blue | Green),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        CyanH = Cyan | FOREGROUND_INTENSITY,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Magenta = (Blue | Red),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        MagentaH = Magenta | FOREGROUND_INTENSITY,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        Yellow = (Green | Red),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        YellowH = Yellow | FOREGROUND_INTENSITY,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        White = (Blue | Green | Red),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d6/d94/namespacealt.html#a09434d1f1b28611c51a9e050f6f912b7ae90dfb84e30edf611e326eeb04d680de">WhiteH</a> = White | FOREGROUND_INTENSITY</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d6/d94/namespacealt.html#abc5ef61fec45772fe6711d49f87f878d">   56</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d6/d94/namespacealt.html#abc5ef61fec45772fe6711d49f87f878d">BackColor</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        Black = 0,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Blue = BACKGROUND_BLUE,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        BlueH = Blue | BACKGROUND_INTENSITY,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        Green = BACKGROUND_GREEN,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        GreenH = Green | BACKGROUND_INTENSITY,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        Red = BACKGROUND_RED,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        RedH = Red | BACKGROUND_INTENSITY,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        Cyan = (Blue | Green),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        CyanH = Cyan | BACKGROUND_INTENSITY,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        Magenta = (Blue | Red),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        MagentaH = Magenta | BACKGROUND_INTENSITY,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        Yellow = (Green | Red),</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        YellowH = Yellow | BACKGROUND_INTENSITY,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        White = (Blue | Green | Red),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="../../d6/d94/namespacealt.html#abc5ef61fec45772fe6711d49f87f878dae90dfb84e30edf611e326eeb04d680de">WhiteH</a> = White | BACKGROUND_INTENSITY</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d1/de5/classalt_1_1_console.html">   94</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d1/de5/classalt_1_1_console.html">Console</a> : <span class="keyword">public</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html">HandleLibrary</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="../../d1/de5/classalt_1_1_console.html">Console</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../d1/de5/classalt_1_1_console.html">Console</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        BOOL Create();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        BOOL <a class="code" href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        BOOL SetColor(<a class="code" href="../../d6/d94/namespacealt.html#a09434d1f1b28611c51a9e050f6f912b7">ForeColor</a> foreColor, <a class="code" href="../../d6/d94/namespacealt.html#abc5ef61fec45772fe6711d49f87f878d">BackColor</a> backColor);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        DWORD Write(LPCTSTR lpctszString);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        VOID Format(LPCTSTR format, ...);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        BOOL SetTitle(LPCTSTR lpctszTitle);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        BOOL SetCursorPosition(SHORT x, SHORT y);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        BOOL SetBufferSize(SHORT x, SHORT y);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        BOOL SetWindowInfo(SHORT width, SHORT height);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        VOID Clear();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        BOOL GetScreenBufferInfo(CONSOLE_SCREEN_BUFFER_INFO&amp; csbi);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="../../d1/de5/classalt_1_1_console.html#afb4a904b90ddebf9e1c7058d4f49b1fa">  137</a></span>&#160;        CONSOLE_SCREEN_BUFFER_INFO <a class="code" href="../../d1/de5/classalt_1_1_console.html#afb4a904b90ddebf9e1c7058d4f49b1fa">_prevConsoleScreenBufferInfo</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    };</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="anamespacealt_html_a09434d1f1b28611c51a9e050f6f912b7ae90dfb84e30edf611e326eeb04d680de"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a09434d1f1b28611c51a9e050f6f912b7ae90dfb84e30edf611e326eeb04d680de">alt::ForeColor::Black</a></div><div class="ttdeci">@ Black</div><div class="ttdoc">黒</div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_a1e3b6d38df0786ccf7f938d60e386aae"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">ストラテジーの初期化を行います。</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00098">ConsoleDriver.cpp:98</a></div></div>
+<div class="ttc" id="anamespacealt_html_abc5ef61fec45772fe6711d49f87f878dae90dfb84e30edf611e326eeb04d680de"><div class="ttname"><a href="../../d6/d94/namespacealt.html#abc5ef61fec45772fe6711d49f87f878dae90dfb84e30edf611e326eeb04d680de">alt::BackColor::Black</a></div><div class="ttdeci">@ Black</div><div class="ttdoc">黒</div></div>
+<div class="ttc" id="a_windows_library_2framework_8h_html"><div class="ttname"><a href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a></div><div class="ttdoc">このプロジェクトのポーティングに関する情報</div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
+<div class="ttc" id="anamespacealt_html_a09434d1f1b28611c51a9e050f6f912b7"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a09434d1f1b28611c51a9e050f6f912b7">alt::ForeColor</a></div><div class="ttdeci">ForeColor</div><div class="ttdoc">コンソール出力時の文字色設定</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6e/_console_8h_source.html#l00018">Console.h:19</a></div></div>
+<div class="ttc" id="aclassalt_1_1_handle_library_html"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a></div><div class="ttdoc">HANDLEを扱うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00036">WindowsLibrary.h:37</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
+<div class="ttc" id="aclassalt_1_1_console_html"><div class="ttname"><a href="../../d1/de5/classalt_1_1_console.html">alt::Console</a></div><div class="ttdoc">コンソールに関するクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6e/_console_8h_source.html#l00094">Console.h:95</a></div></div>
+<div class="ttc" id="aclassalt_1_1_console_html_afb4a904b90ddebf9e1c7058d4f49b1fa"><div class="ttname"><a href="../../d1/de5/classalt_1_1_console.html#afb4a904b90ddebf9e1c7058d4f49b1fa">alt::Console::_prevConsoleScreenBufferInfo</a></div><div class="ttdeci">CONSOLE_SCREEN_BUFFER_INFO _prevConsoleScreenBufferInfo</div><div class="ttdoc">コンソールウィンドウ出力情報</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6e/_console_8h_source.html#l00137">Console.h:137</a></div></div>
+<div class="ttc" id="anamespacealt_html_abc5ef61fec45772fe6711d49f87f878d"><div class="ttname"><a href="../../d6/d94/namespacealt.html#abc5ef61fec45772fe6711d49f87f878d">alt::BackColor</a></div><div class="ttdeci">BackColor</div><div class="ttdoc">コンソール出力時の背景色設定</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6e/_console_8h_source.html#l00056">Console.h:57</a></div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../d3/d6e/_console_8h.html">Console.h</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<map id="alt::FactoryMethod::ClockElement::Init" name="alt::FactoryMethod::ClockElement::Init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,141,148"/>
+<area shape="rect" id="node2" href="$de/d54/classalt_1_1_factory_method_1_1_i_element.html#a782ad5dac69281d9e11670c1c5fa9def" title=" " alt="" coords="189,41,333,83"/>
+<area shape="rect" id="node3" href="$d5/db9/classalt_1_1_watch_dog_timer.html#a00269009977e22fabcbeb5a0dadb5d98" title=" " alt="" coords="193,107,330,148"/>
+<area shape="rect" id="node4" href="$da/d7f/classalt_1_1_log_file.html#a77cedfff87146548cafa22da8de73ece" title=" " alt="" coords="194,173,329,199"/>
+<area shape="rect" id="node5" href="$da/d7f/classalt_1_1_log_file.html#aeb1513e5e86a7eda7e1de831389ebf9b" title=" " alt="" coords="381,173,528,199"/>
+<area shape="rect" id="node6" href="$d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718" title="使用しなくなったハンドルはこれでクローズします。" alt="" coords="607,5,729,47"/>
+<area shape="rect" id="node7" href="$da/d7f/classalt_1_1_log_file.html#a4b5683a58166c4e8f2dd880ff687658d" title=" " alt="" coords="591,71,745,98"/>
+<area shape="rect" id="node10" href="$d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9" title=" " alt="" coords="604,224,732,265"/>
+<area shape="rect" id="node11" href="$da/d7f/classalt_1_1_log_file.html#acbb4fd66ca3206577ee4312caa0951bb" title=" " alt="" coords="588,122,748,149"/>
+<area shape="rect" id="node14" href="$d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd" title=" " alt="" coords="604,289,732,331"/>
+<area shape="rect" id="node15" href="$da/d7f/classalt_1_1_log_file.html#ac31f37660c2a2316db0adb4349ac6a6e" title=" " alt="" coords="581,173,755,199"/>
+<area shape="rect" id="node19" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ae4a52040d9f06b5766351c0f8cdd2302" title="HANDLEを使ってデータを書き込みます。" alt="" coords="576,355,760,396"/>
+<area shape="rect" id="node8" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="824,21,935,47"/>
+<area shape="rect" id="node9" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="824,71,935,98"/>
+<area shape="rect" id="node12" href="$d3/d85/classalt_1_1_file_utility.html#aa49803c4854048870694fcd5fd0055ab" title=" " alt="" coords="814,122,945,149"/>
+<area shape="rect" id="node13" href="$db/d6a/classalt_1_1skeleton_1_1_array.html#a9809354620f7b812e9f69ee45194a029" title=" " alt="" coords="999,122,1161,149"/>
+<area shape="rect" id="node16" href="$d3/d85/classalt_1_1_file_utility.html#ac0495fee8af7ea9f250f41d6bbc2e430" title=" " alt="" coords="808,173,951,199"/>
+<area shape="rect" id="node17" href="$d3/d85/classalt_1_1_file_utility.html#a4312abfabf019adbf5c51d7c1ce4e3e5" title=" " alt="" coords="811,223,947,250"/>
+<area shape="rect" id="node18" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="824,274,935,301"/>
+</map>

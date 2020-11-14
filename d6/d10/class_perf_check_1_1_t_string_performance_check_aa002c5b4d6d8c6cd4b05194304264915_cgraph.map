@@ -1,0 +1,10 @@
+<map id="PerfCheck::TStringPerformanceCheck::Core2" name="PerfCheck::TStringPerformanceCheck::Core2">
+<area shape="rect" id="node1" title=" " alt="" coords="5,141,209,182"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="302,5,413,32"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5" title="フォーマットに従ってパラメータを文字列化します。" alt="" coords="290,56,425,83"/>
+<area shape="rect" id="node4" href="$d4/d2d/classalt_1_1_query_performance.html#a6b2d5b74babd8060a1a5f513fcc379e4" title="計測開始〜計測終了までの時間を出力します。" alt="" coords="281,107,433,149"/>
+<area shape="rect" id="node5" href="$d4/d2d/classalt_1_1_query_performance.html#a2cbdc307b622603cd45ca84d73c5d523" title="計測を開始します。" alt="" coords="281,173,433,214"/>
+<area shape="rect" id="node6" href="$d4/d2d/classalt_1_1_query_performance.html#ae40ccc8512651f753a39e157afd1d9fc" title="計測を終了します。" alt="" coords="281,238,433,279"/>
+<area shape="rect" id="node7" href="$d5/d0c/class_perf_check_1_1_performance_check.html#a1f0f8d8f74cbdf329afe1d1e533954a0" title=" " alt="" coords="257,303,457,345"/>
+<area shape="rect" id="node8" href="$d1/de5/classalt_1_1_console.html#a9cb3349d108b1e2dfadd10d78bd02c12" title="コンソールに文字を出力します。" alt="" coords="505,311,636,337"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="alt::SocketLibrary::SetKeepAliveValue" name="alt::SocketLibrary::SetKeepAliveValue">
+<area shape="rect" id="node1" title="KeepAlive送出タイミング、間隔をセッション個別に設定します。" alt="" coords="200,39,340,80"/>
+<area shape="rect" id="node2" href="$d9/d82/class_perf_check_1_1_tcp_server.html#a3b1d6af61604eae9f1c46684a96ff4ff" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node3" href="$d7/de9/class_perf_check_1_1_tcp_client.html#ab86c350e7ffbd686de10ea37329b610e" title=" " alt="" coords="7,71,151,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Init" name="Init">
+<area shape="rect" id="node1" title="ストラテジーの初期化を行います。" alt="" coords="5,5,44,32"/>
+<area shape="rect" id="node2" href="$db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824" title=" " alt="" coords="92,5,232,32"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="280,5,391,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,179,144,221"/>
+<area shape="rect" id="node2" href="$d0/d5c/classalt_1_1_mutex.html#a8d60f50d41bbcbf9ebd67753174faacc" title="ミューテックスを作成します。" alt="" coords="216,5,343,32"/>
+<area shape="rect" id="node3" href="$d0/df1/classalt_1_1_thread.html#aa83b6d1bea0cdfccd637ad67cbccadf3" title="スレッドを作成します。" alt="" coords="215,56,344,83"/>
+<area shape="rect" id="node6" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="224,107,335,133"/>
+<area shape="rect" id="node7" href="$d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5" title="フォーマットに従ってパラメータを文字列化します。" alt="" coords="212,157,347,184"/>
+<area shape="rect" id="node8" href="$d0/d99/classalt_1_1_handle_library.html#a07585b59c2d46bb6eb60e55d4b9b35c3" title="継承先はこの関数でハンドルを取得します。" alt="" coords="218,209,341,250"/>
+<area shape="rect" id="node9" href="$d0/d5c/classalt_1_1_mutex.html#a73f12854cbe99077ca97b426384b4b76" title="ミューテックスをオープンします。" alt="" coords="220,275,339,301"/>
+<area shape="rect" id="node10" href="$d0/d5c/classalt_1_1_mutex.html#a6fe5dfb4ec5b6d3d1e633b8cf2d4247f" title="ミューテックスを解放します。" alt="" coords="212,325,347,352"/>
+<area shape="rect" id="node11" href="$d1/d35/classalt_1_1_waitable_handle_library.html#a62419411bfe854913286b749144a9e7b" title="シグナル状態になるとブロックを解除します。" alt="" coords="192,377,367,418"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173" title=" " alt="" coords="415,49,569,90"/>
+<area shape="rect" id="node5" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2" title=" " alt="" coords="617,49,772,90"/>
+</map>

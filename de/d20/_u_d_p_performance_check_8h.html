@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/PerformanceCheck/UDPPerformanceCheck.h ファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('de/d20/_u_d_p_performance_check_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">UDPPerformanceCheck.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>UDPクラス性能測定用  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dd/da6/_performance_check_8h_source.html">PerformanceCheck.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d23/_socket_builder_8h_source.html">SocketBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d22/_udp_connector_8h_source.html">UdpConnector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d48/_thread_8h_source.html">Thread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dd0/_watch_dog_timer_8h_source.html">WatchDogTimer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d6e/_console_8h_source.html">Console.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+UDPPerformanceCheck.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d4c/_u_d_p_performance_check_8h__incl.png" border="0" usemap="#a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_performance_check_2_u_d_p_performance_check_8h" alt=""/></div>
+<map name="_c_1_2_users_2_user01_2source_2repos_2_alternate_2_performance_check_2_u_d_p_performance_check_8h" id="a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_performance_check_2_u_d_p_performance_check_8h">
+<area shape="rect" title="UDPクラス性能測定用" alt="" coords="816,5,1027,61"/>
+<area shape="rect" href="../../dd/da6/_performance_check_8h.html" title="性能測定用" alt="" coords="661,109,803,136"/>
+<area shape="rect" href="../../d3/d6e/_console_8h.html" title="コンソールに関するクラス" alt="" coords="692,259,772,285"/>
+<area shape="rect" href="../../dd/d23/_socket_builder_8h.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="796,259,911,285"/>
+<area shape="rect" href="../../da/d22/_udp_connector_8h.html" title="UDP通信に関するWindowsAPIを集約したクラス" alt="" coords="843,333,957,360"/>
+<area shape="rect" href="../../d8/d48/_thread_8h.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="1119,184,1191,211"/>
+<area shape="rect" href="../../dd/dd0/_watch_dog_timer_8h.html" title="タイマーに関するWindowsAPIを集約したクラス" alt="" coords="1215,184,1342,211"/>
+<area shape="rect" href="../../de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="552,184,627,211"/>
+<area shape="rect" href="../../de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,408,713,435"/>
+<area shape="rect" href="../../d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="1113,408,1239,435"/>
+<area shape="rect" href="../../db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="483,259,562,285"/>
+<area shape="rect" title=" " alt="" coords="5,483,88,509"/>
+<area shape="rect" title=" " alt="" coords="113,483,175,509"/>
+<area shape="rect" title=" " alt="" coords="200,483,293,509"/>
+<area shape="rect" title=" " alt="" coords="317,483,408,509"/>
+<area shape="rect" title=" " alt="" coords="433,483,511,509"/>
+<area shape="rect" title=" " alt="" coords="536,483,611,509"/>
+<area shape="rect" title=" " alt="" coords="635,483,699,509"/>
+<area shape="rect" title=" " alt="" coords="723,483,800,509"/>
+<area shape="rect" title=" " alt="" coords="824,483,888,509"/>
+<area shape="rect" title=" " alt="" coords="912,483,981,509"/>
+<area shape="rect" title=" " alt="" coords="1006,483,1085,509"/>
+<area shape="rect" title=" " alt="" coords="1109,483,1187,509"/>
+<area shape="rect" title=" " alt="" coords="1211,483,1293,509"/>
+<area shape="rect" href="../../de/dff/_heap_memory_8h.html" title="ヒープメモリに関するAPIを集約したクラス" alt="" coords="467,333,578,360"/>
+<area shape="rect" href="../../d0/d0b/_tcp_connector_8h.html" title="TCP通信に関するWindowsAPIを集約したクラス" alt="" coords="705,333,818,360"/>
+<area shape="rect" href="../../d0/df8/_function_pointers_8hpp.html" title="コールバック機能を集約したクラス" alt="" coords="1145,259,1290,285"/>
+<area shape="rect" href="../../df/d15/_windows_library_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="1033,333,1087,360"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d9e/_u_d_p_performance_check_8h__dep__incl.png" border="0" usemap="#a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_performance_check_2_u_d_p_performance_check_8hdep" alt=""/></div>
+<map name="_c_1_2_users_2_user01_2source_2repos_2_alternate_2_performance_check_2_u_d_p_performance_check_8hdep" id="a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_performance_check_2_u_d_p_performance_check_8hdep">
+<area shape="rect" title="UDPクラス性能測定用" alt="" coords="117,5,327,61"/>
+<area shape="rect" href="../../d2/d44/_performance_check_8cpp.html" title="性能測定用" alt="" coords="5,109,204,165"/>
+<area shape="rect" href="../../d1/d11/_u_d_p_performance_check_8cpp.html" title="UDP性能測定用" alt="" coords="228,109,453,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../de/d20/_u_d_p_performance_check_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html">PerfCheck::UdpController</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UDPクラス性能測定用  <a href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html">PerfCheck::UDPPerformanceCheck</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UDPクラス性能測定用  <a href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:d1/d3d/namespace_perf_check"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ae53f55441c1489a3eb106c6cffd07ca2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#ae53f55441c1489a3eb106c6cffd07ca2">_DUMP_DATA</a></td></tr>
+<tr class="separator:ae53f55441c1489a3eb106c6cffd07ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55149bc1f05cf18af067a302e31e3f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#af55149bc1f05cf18af067a302e31e3f9">DATA_SIZE</a>&#160;&#160;&#160;1460</td></tr>
+<tr class="separator:af55149bc1f05cf18af067a302e31e3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dbf022fd258ea4dc972d414a5c0371"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a00dbf022fd258ea4dc972d414a5c0371">DUMP_COUNT</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:a00dbf022fd258ea4dc972d414a5c0371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758495ea83d4fecebc2e40939e475e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a758495ea83d4fecebc2e40939e475e15">KEYWORD_IP_ADDRESS</a>&#160;&#160;&#160;_T(&quot;IPAddress&quot;)</td></tr>
+<tr class="separator:a758495ea83d4fecebc2e40939e475e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5047940b2246e8efc472129e863782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a1a5047940b2246e8efc472129e863782">KEYWORD_KICK_OFF</a>&#160;&#160;&#160;_T(&quot;KickOff&quot;)</td></tr>
+<tr class="separator:a1a5047940b2246e8efc472129e863782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a75a4b873e8a4b28754773a9e2b8c05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a2a75a4b873e8a4b28754773a9e2b8c05">KEYWORD_PORT</a>&#160;&#160;&#160;_T(&quot;Port&quot;)</td></tr>
+<tr class="separator:a2a75a4b873e8a4b28754773a9e2b8c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58363ae771a4b53e247b158bc8219739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a58363ae771a4b53e247b158bc8219739">SECTION_UDP_CONTROLLER_1</a>&#160;&#160;&#160;_T(&quot;UdpController1&quot;)</td></tr>
+<tr class="separator:a58363ae771a4b53e247b158bc8219739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee08f93c5494a92f6b4e017c1bb897e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#aee08f93c5494a92f6b4e017c1bb897e8">SECTION_UDP_CONTROLLER_2</a>&#160;&#160;&#160;_T(&quot;UdpController2&quot;)</td></tr>
+<tr class="separator:aee08f93c5494a92f6b4e017c1bb897e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892ff5467679da8e68edfe1e9c2069d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a892ff5467679da8e68edfe1e9c2069d5">SLEEP_TIME_120</a>&#160;&#160;&#160;120000</td></tr>
+<tr class="separator:a892ff5467679da8e68edfe1e9c2069d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5449099e66212a4116f2f2ed8713df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a2e5449099e66212a4116f2f2ed8713df">SLEEP_TIME_30</a>&#160;&#160;&#160;30000</td></tr>
+<tr class="separator:a2e5449099e66212a4116f2f2ed8713df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af3ccc92ba908b3a85951422cd4226600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#af3ccc92ba908b3a85951422cd4226600">DriveUdpController1</a> ()</td></tr>
+<tr class="separator:af3ccc92ba908b3a85951422cd4226600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752b3918aaef02beeeefb1a928c9ac0f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a752b3918aaef02beeeefb1a928c9ac0f">DriveUdpController1ConsoleHandler</a> (DWORD dwType)</td></tr>
+<tr class="separator:a752b3918aaef02beeeefb1a928c9ac0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab563208cb0b1cb50eabf407d4991e804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#ab563208cb0b1cb50eabf407d4991e804">DriveUdpController2</a> ()</td></tr>
+<tr class="separator:ab563208cb0b1cb50eabf407d4991e804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3915ae82cb862acabd2eae0a1a45fd"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a6e3915ae82cb862acabd2eae0a1a45fd">DriveUdpController2ConsoleHandler</a> (DWORD dwType)</td></tr>
+<tr class="separator:a6e3915ae82cb862acabd2eae0a1a45fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c70307bc86d20394383c47b2dead67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#a1c70307bc86d20394383c47b2dead67c">DumpData</a> (LPCTSTR lpctszFrom, int direction, BYTE byData[], int iDataLen)</td></tr>
+<tr class="memdesc:a1c70307bc86d20394383c47b2dead67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータをコンソールにダンプします。  <a href="../../de/d20/_u_d_p_performance_check_8h.html#a1c70307bc86d20394383c47b2dead67c">[詳解]</a><br /></td></tr>
+<tr class="separator:a1c70307bc86d20394383c47b2dead67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7ae6907ad1ccee7260bbbf1af4eb76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html#acf7ae6907ad1ccee7260bbbf1af4eb76">MakeData</a> (BYTE byData[])</td></tr>
+<tr class="separator:acf7ae6907ad1ccee7260bbbf1af4eb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>UDPクラス性能測定用 </p>
+<dl class="section author"><dt>著者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'kum'+'ak'+'uma'+'04'+'21@'+'gm'+'ail'+'.c'+'om'; return false;">kumak<span style="display: none;">.nosp@m.</span>uma0<span style="display: none;">.nosp@m.</span>421@g<span style="display: none;">.nosp@m.</span>mail<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2020.05.17 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> に定義があります。</p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ae53f55441c1489a3eb106c6cffd07ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53f55441c1489a3eb106c6cffd07ca2">&#9670;&nbsp;</a></span>_DUMP_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUMP_DATA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af55149bc1f05cf18af067a302e31e3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55149bc1f05cf18af067a302e31e3f9">&#9670;&nbsp;</a></span>DATA_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_SIZE&#160;&#160;&#160;1460</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00018">18</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a00dbf022fd258ea4dc972d414a5c0371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dbf022fd258ea4dc972d414a5c0371">&#9670;&nbsp;</a></span>DUMP_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DUMP_COUNT&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00017">17</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a758495ea83d4fecebc2e40939e475e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758495ea83d4fecebc2e40939e475e15">&#9670;&nbsp;</a></span>KEYWORD_IP_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYWORD_IP_ADDRESS&#160;&#160;&#160;_T(&quot;IPAddress&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00022">22</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1a5047940b2246e8efc472129e863782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5047940b2246e8efc472129e863782">&#9670;&nbsp;</a></span>KEYWORD_KICK_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYWORD_KICK_OFF&#160;&#160;&#160;_T(&quot;KickOff&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00024">24</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2a75a4b873e8a4b28754773a9e2b8c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a75a4b873e8a4b28754773a9e2b8c05">&#9670;&nbsp;</a></span>KEYWORD_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYWORD_PORT&#160;&#160;&#160;_T(&quot;Port&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00023">23</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a58363ae771a4b53e247b158bc8219739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58363ae771a4b53e247b158bc8219739">&#9670;&nbsp;</a></span>SECTION_UDP_CONTROLLER_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SECTION_UDP_CONTROLLER_1&#160;&#160;&#160;_T(&quot;UdpController1&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00020">20</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aee08f93c5494a92f6b4e017c1bb897e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee08f93c5494a92f6b4e017c1bb897e8">&#9670;&nbsp;</a></span>SECTION_UDP_CONTROLLER_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SECTION_UDP_CONTROLLER_2&#160;&#160;&#160;_T(&quot;UdpController2&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00021">21</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a892ff5467679da8e68edfe1e9c2069d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892ff5467679da8e68edfe1e9c2069d5">&#9670;&nbsp;</a></span>SLEEP_TIME_120</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SLEEP_TIME_120&#160;&#160;&#160;120000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00027">27</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2e5449099e66212a4116f2f2ed8713df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5449099e66212a4116f2f2ed8713df">&#9670;&nbsp;</a></span>SLEEP_TIME_30</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SLEEP_TIME_30&#160;&#160;&#160;30000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af3ccc92ba908b3a85951422cd4226600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ccc92ba908b3a85951422cd4226600">&#9670;&nbsp;</a></span>DriveUdpController1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DriveUdpController1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00043">43</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00014">__udpController1</a>, <a class="el" href="../../d8/dff/_console_driver_8h_source.html#l00011">CONFIG_FILE</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00049">alt::TString::Ctr()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00018">DriveUdpController1ConsoleHandler()</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00018">KEYWORD_IP_ADDRESS</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00022">KEYWORD_KICK_OFF</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00019">KEYWORD_PORT</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00045">alt::TString::Ptr()</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00020">SECTION_UDP_CONTROLLER_1</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00021">SECTION_UDP_CONTROLLER_2</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00183">PerfCheck::UDPPerformanceCheck::DoAction()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_cgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_cgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_cgraph" id="ade/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,140,91"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="224,5,335,32"/>
+<area shape="rect" href="../../d1/d11/_u_d_p_performance_check_8cpp.html#a752b3918aaef02beeeefb1a928c9ac0f" title=" " alt="" coords="188,57,371,98"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="224,123,335,149"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a0fee7e998e4d10ee6f6d10467af39448" title=" " alt="" coords="419,57,587,98"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="635,57,759,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_icgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_icgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_icgraph" id="ade/d20/_u_d_p_performance_check_8h_af3ccc92ba908b3a85951422cd4226600_icgraph">
+<area shape="rect" title=" " alt="" coords="244,13,379,39"/>
+<area shape="rect" href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96" title="処理開始" alt="" coords="5,5,196,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a752b3918aaef02beeeefb1a928c9ac0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752b3918aaef02beeeefb1a928c9ac0f">&#9670;&nbsp;</a></span>DriveUdpController1ConsoleHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL DriveUdpController1ConsoleHandler </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00018">18</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00014">__udpController1</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00269">PerfCheck::UdpController::Stop()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00043">DriveUdpController1()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_cgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_cgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_cgraph" id="ade/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a0fee7e998e4d10ee6f6d10467af39448" title=" " alt="" coords="236,5,404,47"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="452,5,576,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_icgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_icgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_icgraph" id="ade/d20/_u_d_p_performance_check_8h_a752b3918aaef02beeeefb1a928c9ac0f_icgraph">
+<area shape="rect" title=" " alt="" coords="427,5,609,47"/>
+<area shape="rect" href="../../de/d20/_u_d_p_performance_check_8h.html#af3ccc92ba908b3a85951422cd4226600" title=" " alt="" coords="244,13,379,39"/>
+<area shape="rect" href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96" title="処理開始" alt="" coords="5,5,196,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab563208cb0b1cb50eabf407d4991e804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab563208cb0b1cb50eabf407d4991e804">&#9670;&nbsp;</a></span>DriveUdpController2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DriveUdpController2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00121">121</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00015">__udpController2</a>, <a class="el" href="../../d8/dff/_console_driver_8h_source.html#l00011">CONFIG_FILE</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00049">alt::TString::Ctr()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00096">DriveUdpController2ConsoleHandler()</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00018">KEYWORD_IP_ADDRESS</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00022">KEYWORD_KICK_OFF</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00019">KEYWORD_PORT</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00045">alt::TString::Ptr()</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00020">SECTION_UDP_CONTROLLER_1</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00021">SECTION_UDP_CONTROLLER_2</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00183">PerfCheck::UDPPerformanceCheck::DoAction()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_cgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_cgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_cgraph" id="ade/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,140,91"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="224,5,335,32"/>
+<area shape="rect" href="../../d1/d11/_u_d_p_performance_check_8cpp.html#a6e3915ae82cb862acabd2eae0a1a45fd" title=" " alt="" coords="188,57,371,98"/>
+<area shape="rect" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="224,123,335,149"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a0fee7e998e4d10ee6f6d10467af39448" title=" " alt="" coords="419,57,587,98"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="635,57,759,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_icgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_icgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_icgraph" id="ade/d20/_u_d_p_performance_check_8h_ab563208cb0b1cb50eabf407d4991e804_icgraph">
+<area shape="rect" title=" " alt="" coords="244,13,379,39"/>
+<area shape="rect" href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96" title="処理開始" alt="" coords="5,5,196,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e3915ae82cb862acabd2eae0a1a45fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3915ae82cb862acabd2eae0a1a45fd">&#9670;&nbsp;</a></span>DriveUdpController2ConsoleHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL DriveUdpController2ConsoleHandler </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00096">96</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00015">__udpController2</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00269">PerfCheck::UdpController::Stop()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00121">DriveUdpController2()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_cgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_cgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_cgraph" id="ade/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a0fee7e998e4d10ee6f6d10467af39448" title=" " alt="" coords="236,5,404,47"/>
+<area shape="rect" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3" title="ソケットが使用されていた場合、クローズします。" alt="" coords="452,5,576,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_icgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_icgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_icgraph" id="ade/d20/_u_d_p_performance_check_8h_a6e3915ae82cb862acabd2eae0a1a45fd_icgraph">
+<area shape="rect" title=" " alt="" coords="427,5,609,47"/>
+<area shape="rect" href="../../de/d20/_u_d_p_performance_check_8h.html#ab563208cb0b1cb50eabf407d4991e804" title=" " alt="" coords="244,13,379,39"/>
+<area shape="rect" href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96" title="処理開始" alt="" coords="5,5,196,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c70307bc86d20394383c47b2dead67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c70307bc86d20394383c47b2dead67c">&#9670;&nbsp;</a></span>DumpData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DumpData </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>byData</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バイナリデータをコンソールにダンプします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszFrom</td><td>出力スレッド名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>(0:"Down"表示, 1:"Up"表示) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byData</td><td>ダンプデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iDataLen</td><td>ダンプサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>最初に16進、次にキャラクタで出力します。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00266">266</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00031">DUMP_COUNT</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00332">PerfCheck::ServerWorker::Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00557">PerfCheck::TcpClient::Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00662">PerfCheck::UpstreamDriver::Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00695">PerfCheck::DownstreamDriver::Invoke()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00276">PerfCheck::UdpController::Invoke()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_a1c70307bc86d20394383c47b2dead67c_icgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_a1c70307bc86d20394383c47b2dead67c_icgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_a1c70307bc86d20394383c47b2dead67c_icgraph" id="ade/d20/_u_d_p_performance_check_8h_a1c70307bc86d20394383c47b2dead67c_icgraph">
+<area shape="rect" title="バイナリデータをコンソールにダンプします。" alt="" coords="248,143,331,170"/>
+<area shape="rect" href="../../df/d72/class_perf_check_1_1_server_worker.html#abd1ce20aead7f3ef8a3421db40ce0fb1" title=" " alt="" coords="19,5,187,47"/>
+<area shape="rect" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ad4afc1a4930abd7b503c65dd87bb5300" title=" " alt="" coords="31,71,175,112"/>
+<area shape="rect" href="../../d3/d1b/class_perf_check_1_1_upstream_driver.html#afc11efdd3ce081431c5e03de35bb540e" title=" " alt="" coords="13,136,192,177"/>
+<area shape="rect" href="../../d6/d1f/class_perf_check_1_1_downstream_driver.html#add4048500306e4bd3fb03699967ee114" title=" " alt="" coords="5,201,200,243"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#af8470a61a776700fe354e90c5c0f029c" title=" " alt="" coords="19,267,187,308"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf7ae6907ad1ccee7260bbbf1af4eb76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7ae6907ad1ccee7260bbbf1af4eb76">&#9670;&nbsp;</a></span>MakeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MakeData </td>
+          <td>(</td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>byData</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00245">245</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00032">DATA_SIZE</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00557">PerfCheck::TcpClient::Invoke()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00276">PerfCheck::UdpController::Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00518">PerfCheck::TcpClient::Start()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00233">PerfCheck::UdpController::Start()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/_u_d_p_performance_check_8h_acf7ae6907ad1ccee7260bbbf1af4eb76_icgraph.png" border="0" usemap="#ade/d20/_u_d_p_performance_check_8h_acf7ae6907ad1ccee7260bbbf1af4eb76_icgraph" alt=""/></div>
+<map name="de/d20/_u_d_p_performance_check_8h_acf7ae6907ad1ccee7260bbbf1af4eb76_icgraph" id="ade/d20/_u_d_p_performance_check_8h_acf7ae6907ad1ccee7260bbbf1af4eb76_icgraph">
+<area shape="rect" title=" " alt="" coords="221,111,303,138"/>
+<area shape="rect" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ad4afc1a4930abd7b503c65dd87bb5300" title=" " alt="" coords="17,5,161,47"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#af8470a61a776700fe354e90c5c0f029c" title=" " alt="" coords="5,71,173,112"/>
+<area shape="rect" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ab86c350e7ffbd686de10ea37329b610e" title=" " alt="" coords="17,136,161,177"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a47e5ad20fa0327e70503a5c2aa91dafc" title=" " alt="" coords="5,201,173,243"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_0646cd346598a23584b295256f406e84.html">PerformanceCheck</a></li><li class="navelem"><a class="el" href="../../de/d20/_u_d_p_performance_check_8h.html">UDPPerformanceCheck.h</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

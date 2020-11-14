@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/User01/source/repos/Alternate/WindowsLibrary/Exception.hpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alternate
+   &#160;<span id="projectnumber">ea3ab50ace5437c54720bc73d7e507768373ea4d</span>
+   </div>
+   <div id="projectbrief">Windows C/C++ Library for Visual Studio 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('de/d75/_exception_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Exception.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d75/_exception_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../de/d75/_exception_8hpp.html#a7c069c4571d894dac0e7b901fc71aaff">   12</a></span>&#160;<span class="preprocessor">#define ALT_REASON_INVALID_ARGUMENT _T(&quot;引数の設定が異常です。&quot;)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../de/d75/_exception_8hpp.html#a448cd8537e09a8f3633a16758aa1b553">   13</a></span>&#160;<span class="preprocessor">#define ALT_REASON_RUNTIME_ERROR    _T(&quot;実行時にエラーが発生しました。&quot;)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../df/d93/classalt_1_1_exception.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d93/classalt_1_1_exception.html">Exception</a> : <span class="keyword">public</span> <a class="code" href="../../de/dcb/classalt_1_1_windows_library.html">WindowsLibrary</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../df/d93/classalt_1_1_exception.html#afa8dfc36891255a4585b6319a177d404">   24</a></span>&#160;        <a class="code" href="../../df/d93/classalt_1_1_exception.html#afa8dfc36891255a4585b6319a177d404">Exception</a>() {};</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../df/d93/classalt_1_1_exception.html#a70722bf534546ad9a55074b347e2b724">   25</a></span>&#160;        <a class="code" href="../../df/d93/classalt_1_1_exception.html#a70722bf534546ad9a55074b347e2b724">~Exception</a>() {};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../df/df0/classalt_1_1_invalid_argment_exception.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/df0/classalt_1_1_invalid_argment_exception.html">InvalidArgmentException</a> : <a class="code" href="../../df/d93/classalt_1_1_exception.html">Exception</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../df/df0/classalt_1_1_invalid_argment_exception.html#a4f0b56daef593d1908783a24d393ad8a">   35</a></span>&#160;        <a class="code" href="../../df/df0/classalt_1_1_invalid_argment_exception.html#a4f0b56daef593d1908783a24d393ad8a">InvalidArgmentException</a>() {};</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../df/df0/classalt_1_1_invalid_argment_exception.html#ab77ceff533f3933317e2205fb06c87d0">   36</a></span>&#160;        <a class="code" href="../../df/df0/classalt_1_1_invalid_argment_exception.html#ab77ceff533f3933317e2205fb06c87d0">~InvalidArgmentException</a>() {};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../df/df0/classalt_1_1_invalid_argment_exception.html#a7b7393d0596722b828949b63f9ed073d">   38</a></span>&#160;        LPCTSTR <a class="code" href="../../df/df0/classalt_1_1_invalid_argment_exception.html#a7b7393d0596722b828949b63f9ed073d">getReason</a>() { <span class="keywordflow">return</span> <a class="code" href="../../de/d75/_exception_8hpp.html#a7c069c4571d894dac0e7b901fc71aaff">ALT_REASON_INVALID_ARGUMENT</a>; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 実行時エラー例外</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d8/d97/classalt_1_1_runtime_exception.html">   48</a></span>&#160;<span class="comment"></span>    <span class="keyword">class </span><a class="code" href="../../d8/d97/classalt_1_1_runtime_exception.html">RuntimeException</a> : <a class="code" href="../../df/d93/classalt_1_1_exception.html">Exception</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d8/d97/classalt_1_1_runtime_exception.html#a8b94b3001b5dc91af1d2b94afdce08da">   51</a></span>&#160;        <a class="code" href="../../d8/d97/classalt_1_1_runtime_exception.html#a8b94b3001b5dc91af1d2b94afdce08da">RuntimeException</a>() {};</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d8/d97/classalt_1_1_runtime_exception.html#ac45c4cbc5693352b661fc386d2c1252f">   52</a></span>&#160;        <a class="code" href="../../d8/d97/classalt_1_1_runtime_exception.html#ac45c4cbc5693352b661fc386d2c1252f">~RuntimeException</a>() {};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d8/d97/classalt_1_1_runtime_exception.html#a8ec159a9151889a066c7dd1582b4d0e2">   54</a></span>&#160;        LPCTSTR <a class="code" href="../../d8/d97/classalt_1_1_runtime_exception.html#a8ec159a9151889a066c7dd1582b4d0e2">getReason</a>() { <span class="keywordflow">return</span> <a class="code" href="../../de/d75/_exception_8hpp.html#a448cd8537e09a8f3633a16758aa1b553">ALT_REASON_RUNTIME_ERROR</a>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassalt_1_1_exception_html_afa8dfc36891255a4585b6319a177d404"><div class="ttname"><a href="../../df/d93/classalt_1_1_exception.html#afa8dfc36891255a4585b6319a177d404">alt::Exception::Exception</a></div><div class="ttdeci">Exception()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00024">Exception.hpp:24</a></div></div>
+<div class="ttc" id="aclassalt_1_1_runtime_exception_html"><div class="ttname"><a href="../../d8/d97/classalt_1_1_runtime_exception.html">alt::RuntimeException</a></div><div class="ttdoc">実行時エラー例外</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00048">Exception.hpp:49</a></div></div>
+<div class="ttc" id="aclassalt_1_1_invalid_argment_exception_html_a7b7393d0596722b828949b63f9ed073d"><div class="ttname"><a href="../../df/df0/classalt_1_1_invalid_argment_exception.html#a7b7393d0596722b828949b63f9ed073d">alt::InvalidArgmentException::getReason</a></div><div class="ttdeci">LPCTSTR getReason()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00038">Exception.hpp:38</a></div></div>
+<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00018">WindowsLibrary.h:19</a></div></div>
+<div class="ttc" id="a_windows_library_2framework_8h_html"><div class="ttname"><a href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a></div><div class="ttdoc">このプロジェクトのポーティングに関する情報</div></div>
+<div class="ttc" id="a_exception_8hpp_html_a7c069c4571d894dac0e7b901fc71aaff"><div class="ttname"><a href="../../de/d75/_exception_8hpp.html#a7c069c4571d894dac0e7b901fc71aaff">ALT_REASON_INVALID_ARGUMENT</a></div><div class="ttdeci">#define ALT_REASON_INVALID_ARGUMENT</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00012">Exception.hpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_invalid_argment_exception_html_a4f0b56daef593d1908783a24d393ad8a"><div class="ttname"><a href="../../df/df0/classalt_1_1_invalid_argment_exception.html#a4f0b56daef593d1908783a24d393ad8a">alt::InvalidArgmentException::InvalidArgmentException</a></div><div class="ttdeci">InvalidArgmentException()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00035">Exception.hpp:35</a></div></div>
+<div class="ttc" id="aclassalt_1_1_runtime_exception_html_a8b94b3001b5dc91af1d2b94afdce08da"><div class="ttname"><a href="../../d8/d97/classalt_1_1_runtime_exception.html#a8b94b3001b5dc91af1d2b94afdce08da">alt::RuntimeException::RuntimeException</a></div><div class="ttdeci">RuntimeException()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00051">Exception.hpp:51</a></div></div>
+<div class="ttc" id="aclassalt_1_1_runtime_exception_html_ac45c4cbc5693352b661fc386d2c1252f"><div class="ttname"><a href="../../d8/d97/classalt_1_1_runtime_exception.html#ac45c4cbc5693352b661fc386d2c1252f">alt::RuntimeException::~RuntimeException</a></div><div class="ttdeci">~RuntimeException()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00052">Exception.hpp:52</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
+<div class="ttc" id="aclassalt_1_1_runtime_exception_html_a8ec159a9151889a066c7dd1582b4d0e2"><div class="ttname"><a href="../../d8/d97/classalt_1_1_runtime_exception.html#a8ec159a9151889a066c7dd1582b4d0e2">alt::RuntimeException::getReason</a></div><div class="ttdeci">LPCTSTR getReason()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00054">Exception.hpp:54</a></div></div>
+<div class="ttc" id="aclassalt_1_1_invalid_argment_exception_html_ab77ceff533f3933317e2205fb06c87d0"><div class="ttname"><a href="../../df/df0/classalt_1_1_invalid_argment_exception.html#ab77ceff533f3933317e2205fb06c87d0">alt::InvalidArgmentException::~InvalidArgmentException</a></div><div class="ttdeci">~InvalidArgmentException()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00036">Exception.hpp:36</a></div></div>
+<div class="ttc" id="aclassalt_1_1_exception_html_a70722bf534546ad9a55074b347e2b724"><div class="ttname"><a href="../../df/d93/classalt_1_1_exception.html#a70722bf534546ad9a55074b347e2b724">alt::Exception::~Exception</a></div><div class="ttdeci">~Exception()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00025">Exception.hpp:25</a></div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
+<div class="ttc" id="aclassalt_1_1_exception_html"><div class="ttname"><a href="../../df/d93/classalt_1_1_exception.html">alt::Exception</a></div><div class="ttdoc">基底となる例外クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00021">Exception.hpp:22</a></div></div>
+<div class="ttc" id="a_exception_8hpp_html_a448cd8537e09a8f3633a16758aa1b553"><div class="ttname"><a href="../../de/d75/_exception_8hpp.html#a448cd8537e09a8f3633a16758aa1b553">ALT_REASON_RUNTIME_ERROR</a></div><div class="ttdeci">#define ALT_REASON_RUNTIME_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00013">Exception.hpp:13</a></div></div>
+<div class="ttc" id="aclassalt_1_1_invalid_argment_exception_html"><div class="ttname"><a href="../../df/df0/classalt_1_1_invalid_argment_exception.html">alt::InvalidArgmentException</a></div><div class="ttdoc">引数設定エラー例外</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d75/_exception_8hpp_source.html#l00032">Exception.hpp:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../de/d75/_exception_8hpp.html">Exception.hpp</a></li>
+    <li class="footer">構築: <a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

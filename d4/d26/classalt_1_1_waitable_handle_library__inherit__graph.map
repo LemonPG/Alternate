@@ -1,0 +1,10 @@
+<map id="alt::WaitableHandleLibrary" name="alt::WaitableHandleLibrary">
+<area shape="rect" id="node1" title="HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス" alt="" coords="111,155,285,181"/>
+<area shape="rect" id="node4" href="$d1/d4d/classalt_1_1_event.html" title="イベントに関するWindowsAPIを集約したクラス" alt="" coords="5,229,81,256"/>
+<area shape="rect" id="node5" href="$d0/d5c/classalt_1_1_mutex.html" title="ミューテックスに関するWindowsAPIを集約したクラス" alt="" coords="106,229,186,256"/>
+<area shape="rect" id="node6" href="$d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="210,229,293,256"/>
+<area shape="rect" id="node8" href="$d5/db9/classalt_1_1_watch_dog_timer.html" title="タイマーに関するWindowsAPIを集約したクラス" alt="" coords="317,229,455,256"/>
+<area shape="rect" id="node2" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="137,80,259,107"/>
+<area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="130,5,266,32"/>
+<area shape="rect" id="node7" href="$dd/d88/class_windows_library_test_1_1_my_thread.html" title=" " alt="" coords="182,304,321,345"/>
+</map>

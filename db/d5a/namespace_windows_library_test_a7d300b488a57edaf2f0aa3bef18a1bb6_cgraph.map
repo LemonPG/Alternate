@@ -1,0 +1,23 @@
+<map id="WindowsLibraryTest::TEST_CLASS" name="WindowsLibraryTest::TEST_CLASS">
+<area shape="rect" id="node1" title=" " alt="" coords="5,388,144,429"/>
+<area shape="rect" id="node2" href="$d9/d84/classalt_1_1_utility.html#a163772bc932a56f64f6a97ec56cf38e6" title=" " alt="" coords="205,66,378,92"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d" title="内部で確保している文字列ポインタを取得します。" alt="" coords="466,15,577,42"/>
+<area shape="rect" id="node5" href="$d9/d84/classalt_1_1_utility.html#a3faa335f8213fa6dada7c1d544e92bf0" title=" " alt="" coords="205,116,378,143"/>
+<area shape="rect" id="node6" href="$d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a" title="ファイルを作成、オープンします。" alt="" coords="236,167,347,194"/>
+<area shape="rect" id="node7" href="$d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5" title="フォーマットに従ってパラメータを文字列化します。" alt="" coords="454,268,589,295"/>
+<area shape="rect" id="node8" href="$d9/d84/classalt_1_1_utility.html#a543123d45b34f44e6a2369be1e22e3b2" title=" " alt="" coords="228,572,355,599"/>
+<area shape="rect" id="node10" href="$d9/d84/classalt_1_1_utility.html#a301e0f661cddc35aa4cba29ca10c16de" title=" " alt="" coords="199,370,383,396"/>
+<area shape="rect" id="node12" href="$d9/d84/classalt_1_1_utility.html#aa1d5fbe59b6ef18f4c2ef8f5953876d4" title=" " alt="" coords="204,268,379,295"/>
+<area shape="rect" id="node13" href="$d9/d84/classalt_1_1_utility.html#a77d71bb7556483a858cb0b95a9747dbc" title=" " alt="" coords="439,446,604,472"/>
+<area shape="rect" id="node14" href="$d9/d84/classalt_1_1_utility.html#a344657b9268b513deb5048a922f46512" title=" " alt="" coords="193,471,389,498"/>
+<area shape="rect" id="node15" href="$d1/dfc/classalt_1_1_file.html#aada4a338e4074581e5e59cf20f26f438" title="ファイルサイズを取得します。" alt="" coords="231,522,351,548"/>
+<area shape="rect" id="node16" href="$d9/d84/classalt_1_1_utility.html#a1464cc5c9f45e23241db1c4b86d33548" title="テンポラリファイル名を取得します。" alt="" coords="208,624,375,665"/>
+<area shape="rect" id="node17" href="$d9/d84/classalt_1_1_utility.html#a4a8fad9b559b699c034b48ef71363bd0" title="テンポラリフォルダを取得します。" alt="" coords="194,740,389,767"/>
+<area shape="rect" id="node18" href="$d9/d84/classalt_1_1_utility.html#af561158b447e50bec0058d80257b510d" title=" " alt="" coords="192,690,391,716"/>
+<area shape="rect" id="node19" href="$d9/d84/classalt_1_1_utility.html#a188253ea5e02b720afbcb244b4676be9" title=" " alt="" coords="217,319,365,346"/>
+<area shape="rect" id="node21" href="$d2/d8c/classalt_1_1_read_write_handle_library.html#ac8aa8c04ec7a27ade01f80bb4fe96b1d" title="HANDLEを使ってデータを読み込みます。" alt="" coords="199,792,383,833"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1_t_string.html#a608e6d8c23be2cedc8d4a93ad00bc047" title="内部で確保している文字列数を取得します。" alt="" coords="464,66,579,92"/>
+<area shape="rect" id="node9" href="$d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f" title="内部で確保している文字列ポインタを取得します。" alt="" coords="466,631,577,658"/>
+<area shape="rect" id="node11" href="$db/d6a/classalt_1_1skeleton_1_1_array.html#a9809354620f7b812e9f69ee45194a029" title=" " alt="" coords="440,370,603,396"/>
+<area shape="rect" id="node20" href="$d9/d84/classalt_1_1_utility.html#a44b444c065e25b5cc167bc43a99cf3e0" title=" " alt="" coords="444,319,599,346"/>
+</map>

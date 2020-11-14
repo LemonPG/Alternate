@@ -1,0 +1,6 @@
+<map id="alt::TString::Trim" name="alt::TString::Trim">
+<area shape="rect" id="node1" title="左右の余白を切り取ります。" alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html#ae15bda05eae37b1a08c000b34f5b49c1" title="左側の余白を切り取ります。" alt="" coords="177,5,315,32"/>
+<area shape="rect" id="node4" href="$d2/dd0/classalt_1_1_t_string.html#a96dfce82b33545537f954c9ccbc0a0a9" title="右側の余白を切り取ります。" alt="" coords="172,56,320,83"/>
+<area shape="rect" id="node3" href="$d2/dd0/classalt_1_1_t_string.html#a608e6d8c23be2cedc8d4a93ad00bc047" title="内部で確保している文字列数を取得します。" alt="" coords="368,31,483,57"/>
+</map>

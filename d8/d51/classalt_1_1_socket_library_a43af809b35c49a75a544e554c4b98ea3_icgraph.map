@@ -1,0 +1,30 @@
+<map id="alt::SocketLibrary::Close" name="alt::SocketLibrary::Close">
+<area shape="rect" id="node1" title="ソケットが使用されていた場合、クローズします。" alt="" coords="901,365,1025,407"/>
+<area shape="rect" id="node2" href="$df/d72/class_perf_check_1_1_server_worker.html#a4b07ed2a75e613b16fbdee5a0441a91b" title=" " alt="" coords="685,5,853,47"/>
+<area shape="rect" id="node3" href="$dd/db7/classalt_1_1_socket_builder.html#a52ef110c656469f7b47e097f51a1f815" title=" " alt="" coords="707,71,832,112"/>
+<area shape="rect" id="node4" href="$d8/d51/classalt_1_1_socket_library.html#ae775249d1160ce4dd2d4daefa51de863" title="デストラクタ" alt="" coords="707,136,831,177"/>
+<area shape="rect" id="node5" href="$d7/de9/class_perf_check_1_1_tcp_client.html#a125d2277f401cbdebadb9689a5933e18" title=" " alt="" coords="697,201,841,243"/>
+<area shape="rect" id="node6" href="$dd/d18/class_perf_check_1_1_tcp_proxy.html#a64c3cee87a3be0b055b0803dffb4b67c" title=" " alt="" coords="697,267,842,308"/>
+<area shape="rect" id="node7" href="$dc/d1c/class_perf_check_1_1_udp_controller.html#ad488a18df0a39ff1f4748eddafaa1026" title=" " alt="" coords="685,332,853,373"/>
+<area shape="rect" id="node8" href="$dd/db7/classalt_1_1_socket_builder.html#a79a4b4059ffa8869f17c21fd8ef1a9a1" title=" " alt="" coords="464,456,612,497"/>
+<area shape="rect" id="node11" href="$dd/db7/classalt_1_1_socket_builder.html#a7a79b989735d0b029e4d6541191ead53" title=" " alt="" coords="694,397,845,439"/>
+<area shape="rect" id="node13" href="$dd/db7/classalt_1_1_socket_builder.html#a12153830a802028c53b420bdc9f4b2b1" title=" " alt="" coords="707,515,832,556"/>
+<area shape="rect" id="node16" href="$d9/d82/class_perf_check_1_1_tcp_server.html#a19a0db0999f82c4addba261b9c3e918a" title=" " alt="" coords="696,580,843,621"/>
+<area shape="rect" id="node20" href="$d7/de9/class_perf_check_1_1_tcp_client.html#a443e967102416741ed8332c3bb65a90e" title=" " alt="" coords="697,645,841,687"/>
+<area shape="rect" id="node23" href="$dc/d1c/class_perf_check_1_1_udp_controller.html#a0fee7e998e4d10ee6f6d10467af39448" title=" " alt="" coords="685,711,853,752"/>
+<area shape="rect" id="node9" href="$dd/d18/class_perf_check_1_1_tcp_proxy.html#a7fd1c988e01290d236584859d1f7cbdb" title=" " alt="" coords="245,463,390,504"/>
+<area shape="rect" id="node10" href="$d7/de9/class_perf_check_1_1_tcp_client.html#ab86c350e7ffbd686de10ea37329b610e" title=" " alt="" coords="245,397,389,439"/>
+<area shape="rect" id="node12" href="$dc/d1c/class_perf_check_1_1_udp_controller.html#a47e5ad20fa0327e70503a5c2aa91dafc" title=" " alt="" coords="454,391,622,432"/>
+<area shape="rect" id="node14" href="$dd/db7/classalt_1_1_socket_builder.html#a91cf1c6c5d11a4d14f0124798c20ebfa" title=" " alt="" coords="475,521,601,563"/>
+<area shape="rect" id="node15" href="$d9/d82/class_perf_check_1_1_tcp_server.html#afc84c73704ae5d8175255e6ab439e5f8" title=" " alt="" coords="244,528,391,569"/>
+<area shape="rect" id="node17" href="$d3/dfb/_t_c_p_performance_check_8h.html#a9cd506852e419bbe7653782d7a9a6a33" title=" " alt="" coords="439,591,637,618"/>
+<area shape="rect" id="node18" href="$d3/dfb/_t_c_p_performance_check_8h.html#a46dd974d481648d889ce0b172710f5c3" title=" " alt="" coords="264,595,371,622"/>
+<area shape="rect" id="node19" href="$da/d9c/class_perf_check_1_1_t_c_p_performance_check.html#a07ebbfa5abb102e140ed66987e24a541" title="処理開始" alt="" coords="7,628,195,669"/>
+<area shape="rect" id="node21" href="$d3/dfb/_t_c_p_performance_check_8h.html#a014844708ec340dd9a093a2e9fc8c246" title=" " alt="" coords="441,651,635,678"/>
+<area shape="rect" id="node22" href="$d3/dfb/_t_c_p_performance_check_8h.html#ace22e4293a4b89cd1d4711ada6908264" title=" " alt="" coords="265,650,369,677"/>
+<area shape="rect" id="node24" href="$de/d20/_u_d_p_performance_check_8h.html#a752b3918aaef02beeeefb1a928c9ac0f" title=" " alt="" coords="447,769,629,811"/>
+<area shape="rect" id="node27" href="$de/d20/_u_d_p_performance_check_8h.html#a6e3915ae82cb862acabd2eae0a1a45fd" title=" " alt="" coords="447,704,629,745"/>
+<area shape="rect" id="node25" href="$de/d20/_u_d_p_performance_check_8h.html#af3ccc92ba908b3a85951422cd4226600" title=" " alt="" coords="250,771,385,798"/>
+<area shape="rect" id="node26" href="$de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96" title="処理開始" alt="" coords="5,721,196,763"/>
+<area shape="rect" id="node28" href="$de/d20/_u_d_p_performance_check_8h.html#ab563208cb0b1cb50eabf407d4991e804" title=" " alt="" coords="250,714,385,741"/>
+</map>

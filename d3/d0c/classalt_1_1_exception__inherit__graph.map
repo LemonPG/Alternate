@@ -1,0 +1,6 @@
+<map id="alt::Exception" name="alt::Exception">
+<area shape="rect" id="node1" title="基底となる例外クラス" alt="" coords="143,80,246,107"/>
+<area shape="rect" id="node3" href="$df/df0/classalt_1_1_invalid_argment_exception.html" title="引数設定エラー例外" alt="" coords="5,155,192,181"/>
+<area shape="rect" id="node4" href="$d8/d97/classalt_1_1_runtime_exception.html" title="実行時エラー例外" alt="" coords="217,155,367,181"/>
+<area shape="rect" id="node2" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="127,5,263,32"/>
+</map>
