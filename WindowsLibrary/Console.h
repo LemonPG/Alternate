@@ -1,6 +1,6 @@
 /**
  @file		Console.h
- @brief		コンソールに関するクラス
+ @brief		コンソールに関するWindowsAPIを集約したクラス
  @author	kumakuma0421@gmail.com
  @date		2019.12.21
  */

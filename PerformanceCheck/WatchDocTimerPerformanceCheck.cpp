@@ -1,6 +1,6 @@
 /**
  @file		WatchDocTimerPerformanceCheck.cpp
- @brief		WatchDocTimer性能測定用
+ @brief		WatchDocTimerクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.03.15
  */

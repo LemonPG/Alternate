@@ -107,7 +107,7 @@ BOOL FileUtility::DirectoryWatch(LPCTSTR watchDirectory)
 	BOOL ret;
 	DWORD dwResponse;
 
-	while (1) // TODO:ループから抜ける方法がない。…FileUtilityでは収まらないようだ。
+	while (1) //! @todo ループから抜ける方法がない。…FileUtilityでは収まらないようだ。
 	{
 		WCHAR* buffer = new WCHAR[1024];
 		ZeroMemory(buffer, sizeof(WCHAR) * 1024);

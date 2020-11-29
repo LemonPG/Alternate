@@ -1,6 +1,6 @@
 /**
  @file		FilePerformanceCheck.cpp
- @brief		File性能測定用
+ @brief		Fileクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.03.15
  */

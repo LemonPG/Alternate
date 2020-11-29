@@ -1,6 +1,6 @@
 /**
  @file		TStringPerformanceCheck.cpp
- @brief		TString性能測定用
+ @brief		TStringクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.03.21
  */

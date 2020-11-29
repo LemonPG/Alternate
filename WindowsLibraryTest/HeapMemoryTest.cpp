@@ -1,6 +1,8 @@
-/*
- https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts
- Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
+/**
+ @file		HeapMemoryTest.cpp
+ @brief		ヒープメモリに関するAPIを集約したクラスのテストクラス
+ @author	kumakuma0421@gmail.com
+ @date		2020.3.7
  */
 #include "pch.h"
 #include "HeapMemory.h"

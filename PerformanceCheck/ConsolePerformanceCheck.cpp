@@ -1,6 +1,6 @@
 /**
  @file		ConsolePerformanceCheck.cpp
- @brief		Console性能測定用
+ @brief		Consoleクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.03.15
  */

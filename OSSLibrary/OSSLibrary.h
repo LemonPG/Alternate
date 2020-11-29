@@ -1,5 +1,5 @@
 /**
- @file		OSSLibrary.cpp
+ @file		OSSLibrary.h
  @brief		Open Source Software を集約したプロジェクトファイル
  @note		DllMain()のプロトタイプもここで宣言しています。
  @author	kumakuma0421@gmail.com

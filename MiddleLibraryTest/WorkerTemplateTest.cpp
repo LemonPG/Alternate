@@ -100,9 +100,8 @@ namespace MiddleLibraryTest
 		{
 			Logger::WriteMessage("SequencialCall\n");
 
-			// TODO:コピーコンストラクタがまだ動いている。
-			// インスタンスを引数にしているところは
-			// &への変更が必要。
+			//! @todo コピーコンストラクタがまだ動いている。
+			//! インスタンスを引数にしているところは'&'への変更が必要。
 
 			WorkerTemplate workerTemplate;
 			WorkerFunction workerFunction;

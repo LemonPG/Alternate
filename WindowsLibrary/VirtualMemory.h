@@ -1,6 +1,6 @@
 /**
  @file		VirtualMemory.h
- @brief		仮想メモリに関するクラス
+ @brief		仮想メモリに関するWindowsAPIを集約したクラス
  @author	kumakuma0421@gmail.com
  @date		2020.2.24
  */

@@ -1,6 +1,6 @@
 /**
  @file		UDPPerformanceCheck.cpp
- @brief		UDP性能測定用
+ @brief		UDPクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.05.17
  */

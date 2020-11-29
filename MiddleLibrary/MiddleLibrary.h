@@ -1,6 +1,6 @@
 /**
  @file		MiddleLibrary.h
- @brief		MiddleLibraryソリューションのメインクラス
+ @brief		MiddleLibraryプロジェクトのメインクラス
  @author	kumakuma0421@gmail.com
  @date		2020.05.05
  */

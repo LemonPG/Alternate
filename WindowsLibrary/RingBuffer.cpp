@@ -1,6 +1,6 @@
 /**
  @file		RingBuffer.cpp
- @brief		リングバッファ
+ @brief		リングバッファに関するクラス
  @author	kumakuma0421@gmail.com
  @date		2020.4.4
  */

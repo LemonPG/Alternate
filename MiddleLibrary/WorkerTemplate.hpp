@@ -226,7 +226,7 @@ namespace alt
 
 			_criticalSection.Leave();
 
-			return ret; // TODO:C4172 ローカル変数またはテンポラリのアドレスを返します
+			return ret; //! @todo C4172 ローカル変数またはテンポラリのアドレスを返します
 		}
 
 	private:

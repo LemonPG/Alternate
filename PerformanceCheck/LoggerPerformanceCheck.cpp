@@ -1,6 +1,6 @@
 /**
  @file		LoggerPerformanceCheck.cpp
- @brief		Logger性能測定用
+ @brief		Loggerクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.11.07
  */

@@ -32,6 +32,23 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSSLibrary", "OSSLibrary\OS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSSLibraryTest", "OSSLibraryTest\OSSLibraryTest.vcxproj", "{2E380B50-D08A-4B50-B9F0-55DD5D68742F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doxygen", "Doxygen", "{2EE8C41B-B7C4-42CC-BB5F-655E8ED354C7}"
+	ProjectSection(SolutionItems) = preProject
+		Doxygen\ConsoleDriver.txt = Doxygen\ConsoleDriver.txt
+		Doxygen\DBLibrary.txt = Doxygen\DBLibrary.txt
+		Doxygen\DBLibraryTest.txt = Doxygen\DBLibraryTest.txt
+		Doxygen\Doxyfile = Doxygen\Doxyfile
+		Doxygen\MainPage.txt = Doxygen\MainPage.txt
+		Doxygen\MemoryLeakCheck.txt = Doxygen\MemoryLeakCheck.txt
+		Doxygen\MiddleLibrary.txt = Doxygen\MiddleLibrary.txt
+		Doxygen\MiddleLibraryTest.txt = Doxygen\MiddleLibraryTest.txt
+		Doxygen\OSSLibrary.txt = Doxygen\OSSLibrary.txt
+		Doxygen\OSSLibraryTest.txt = Doxygen\OSSLibraryTest.txt
+		Doxygen\PerformanceCheck.txt = Doxygen\PerformanceCheck.txt
+		Doxygen\WindowsLibrary.txt = Doxygen\WindowsLibrary.txt
+		Doxygen\WindowsLibraryTest.txt = Doxygen\WindowsLibraryTest.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

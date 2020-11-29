@@ -1,6 +1,6 @@
 /**
  @file		ArrayPerformanceCheck.cpp
- @brief		Array性能測定用
+ @brief		Arrayクラス性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.03.15
  */

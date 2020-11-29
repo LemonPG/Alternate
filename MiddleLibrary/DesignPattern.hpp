@@ -1,6 +1,10 @@
-//
-// DesignPattern.h
-//
+/**
+ @file		DesignPattern.hpp
+ @brief		種々のデザインパターンの実装クラス
+ @author	kumakuma0421@gmail.com
+ @date		2020.2.24
+ */
+
 #pragma once
 
 #include "framework.h"
@@ -10,48 +14,98 @@ namespace alt
 {
 	namespace skeleton
 	{
-		//
-		// テンプレートクラスなのでDLL_DECLSPECは付けません。
-		//
+		/**
+		 @brief	ISupplierインターフェースクラス
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template <class T>
 		class ISupplier
 		{
 		public:
+			/**
+			 @brief		Tを返す関数 get()
+			 @return	T
+			*/
 			virtual T get() = 0;
 		};
 
+		/**
+		 @brief	IConsumerインターフェースクラス
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template <class T>
 		class IConsumer
 		{
 		public:
+			/**
+			 @brief		Tを引数とする関数 accept()
+			 @param[in]	t テンプレートT
+			*/
 			virtual void accept(T t) = 0;
 		};
 
+		/**
+		 @brief	IPredicateインターフェースクラス
+		 @note	test(T t):bool
+		 @attension	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template <class T>
 		class IPredicate
 		{
 		public:
+			/**
+			 @brief		Tを引数とする関数 test()
+			 @param[in] t テンプレートT
+			 @return	bool
+			 @retval	true:成功
+			 @retval	false:失敗
+			*/
 			virtual bool test(T t) = 0;
 		};
 
+		/**
+		 @brief	IFunctionインターフェースクラス
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template <class T, class V>
 		class IFunction
 		{
 		public:
+			/**
+			 @brief		Tを引数とする関数 apply()
+			 @param[in] t テンプレートT
+			 @return	V テンプレートV
+			*/
 			virtual V apply(T t) = 0;
 		};
 
+		/**
+		 @brief	IObserverインターフェースクラス
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template<typename Data>
 		class IObserver
 		{
 		public:
+			/**
+			 @brief Dataを引数とする関数 Update()
+			 @param data テンプレートData
+			*/
 			virtual void Update(Data data) = 0;
 		};
 
+		/**
+		 @brief	ISubscriberインターフェースクラス
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template<typename Data>
 		class ISubscriber
 		{
 		public:
+			/**
+			 @brief Dataを引数とする関数 Notify()
+			 @param data テンプレートData
+			*/
 			virtual void Notify(Data data)
 			{
 				for (IObserver<Data>* observer : _observers)
@@ -60,51 +114,87 @@ namespace alt
 				}
 			}
 
+			/**
+			 @brief		IObserver<Data>*を引数とする関数 Add()
+			 @param[in] observer Subscriberに登録するObserverオブジェクト
+			*/
 			virtual void Add(IObserver<Data>* observer)
 			{
 				_observers.push_back(observer);
 			}
 
+			/**
+			 @brief		IObserver<Data>*を引数とする関数 Remove()
+			 @param[in] observer Subscriberから削除するObserverオブジェクト
+			*/
 			virtual void Remove(IObserver<Data>* observer)
 			{
 				for (auto item : _observers)
 				{
 					if (item == observer)
 					{
-						// TODO:消し方は後で実装する
+						//! @todo 消し方は後で実装する
 					}
 				}
 			}
 
 		private:
+			//! @brief Subscriberが管理するObserverの保存用
 			std::vector<IObserver<Data>*> _observers;
 		};
 
+		/**
+		 @brief	Strategy
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template<class T, class V>
 		class Strategy
 		{
 		public:
+			//! @brief コンストラクタ
 			Strategy() {};
+
+			//! @brief デストラクタ
 			virtual ~Strategy() {};
 
+			/**
+			 * @brief	テンプレート引数Tに応じて、テンプレートVを返却します。
+			 * @param	t テンプレートT
+			 * @return	V テンプレートV
+			 * @retval	事前にSet()で設定した、Tに紐付くオブジェクト
+			*/
 			virtual V Get(T t)
 			{
 				return _strategy[t];
 			};
 
+			/**
+			 * @brief	テンプレートTをキーとしたテンプレートVを設定します。
+			 * @param	t テンプレートT
+			 * @param	v テンプレートV
+			*/
 			virtual void Set(T t, V v)
 			{
 				_strategy.insert(std::make_pair(t, v));
 			};
 
 		private:
+			//! @brief Set()で登録されたオブジェクトを管理するマップ
 			std::map<T, V> _strategy;
 		};
 
+		/**
+		 @brief	Singleton
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template<class T>
 		class Singleton
 		{
 		public:
+			/**
+			 * @brief 唯一となるインスタンスを取得します。
+			 * @return T*インスタンス
+			*/
 			static T* Instance()
 			{
 				if (_instance == nullptr)
@@ -116,11 +206,17 @@ namespace alt
 			};
 
 		private:
+			//! @brief コンストラクタ(privateで秘匿状態)
 			Singleton() {};
 
+			//! @brief 唯一となるインスタンスを管理する変数
 			static T* _instance;
 		};
 
+		/**
+		 @brief	Command
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template<typename CommandFunction>
 		class Command
 		{
@@ -141,6 +237,10 @@ namespace alt
 			long _waitTime;
 		};
 
+		/**
+		 @brief	Commander
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		template<typename CommandFunction>
 		class Commander
 		{
@@ -168,6 +268,10 @@ namespace alt
 			std::vector<Command<CommandFunction>*> _commands;
 		};
 
+		/**
+		 @brief	CompositeLeaf
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		class CompositeLeaf
 		{
 		public:
@@ -187,6 +291,10 @@ namespace alt
 			std::map<std::wstring, std::wstring> _properties;
 		};
 
+		/**
+		 @brief	CompositeNode
+		 @note	テンプレートクラスなのでDLL_DECLSPECは付けません。
+		*/
 		class CompositeNode
 		{
 		public:

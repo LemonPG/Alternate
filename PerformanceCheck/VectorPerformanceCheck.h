@@ -1,6 +1,6 @@
 /**
  @file		VectorPerformanceCheck.h
- @brief		std::vector<T>クラス性能測定用
+ @brief		std::vector<T>性能測定用
  @author	kumakuma0421@gmail.com
  @date		2020.03.15
  */
