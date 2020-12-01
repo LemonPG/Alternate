@@ -1,9 +1,8 @@
-/**
- @file		NamedPipe.cpp
- @brief		名前付きパイプに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	NamedPipe.cpp
+//! @brief	名前付きパイプに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "NamedPipe.h"
 

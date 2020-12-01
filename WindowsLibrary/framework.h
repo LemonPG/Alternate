@@ -1,9 +1,8 @@
-/**
- @file		framework.h
- @brief		このプロジェクトのポーティングに関する情報
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	framework.h
+//! @brief	このプロジェクトのポーティングに関する情報
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #define WIN32_LEAN_AND_MEAN             // Windows ヘッダーからほとんど使用されていない部分を除外する

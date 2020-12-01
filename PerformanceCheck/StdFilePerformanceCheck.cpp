@@ -1,9 +1,8 @@
-/**
- @file		StdFilePerformanceCheck.cpp
- @brief		Fileクラスの比較用
- @author	kumakuma0421@gmail.com
- @date		2020.03.24
- */
+//! @file	StdFilePerformanceCheck.cpp
+//! @brief	Fileクラスの比較用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.24
+
 #include "pch.h"
 #include "StdFilePerformanceCheck.h"
 

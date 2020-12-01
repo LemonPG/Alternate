@@ -1,9 +1,8 @@
-/**
- @file		TransactionFileTest.cpp
- @brief		トランザクションNTFSに関するAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.27
- */
+//! @file	TransactionFileTest.cpp
+//! @brief	トランザクションNTFSに関するAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.27
+
 #include "pch.h"
 #include "TransactionFile.h"
 #include "FileUtility.h"

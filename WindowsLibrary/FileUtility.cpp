@@ -1,9 +1,8 @@
-/**
- @file		FileUtility.cpp
- @brief		ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	FileUtility.cpp
+//! @brief	ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "FileUtility.h"
 

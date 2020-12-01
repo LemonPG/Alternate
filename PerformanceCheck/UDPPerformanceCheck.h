@@ -1,9 +1,8 @@
-/**
- @file		UDPPerformanceCheck.h
- @brief		UDPクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.05.17
- */
+//! @file	UDPPerformanceCheck.h
+//! @brief	UDP性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.17
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -37,10 +36,8 @@ void DriveUdpController2();
 
 namespace PerfCheck
 {
-	/**
-	 @class	UDPPerformanceCheck
-	 @brief	UDPクラス性能測定用
-	*/
+	//! @class	UDPPerformanceCheck
+	//! @brief	UDP性能測定用
 	class UDPPerformanceCheck : public PerformanceCheck
 	{
 	public:
@@ -50,10 +47,8 @@ namespace PerfCheck
 		virtual BOOL DoAction();
 	};
 
-	/**
-	 @class	UdpController
-	 @brief	UDPクラス性能測定用
-	*/
+	//! @class	UdpController
+	//! @brief	UDP性能測定用
 	class UdpController : public alt::skeleton::ICallback
 	{
 	public:

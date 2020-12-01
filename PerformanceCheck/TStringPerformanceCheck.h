@@ -1,9 +1,8 @@
-/**
- @file		TStringPerformanceCheck.h
- @brief		TStringクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.21
- */
+//! @file	TStringPerformanceCheck.h
+//! @brief	TStringクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.21
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -17,10 +16,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	TStringPerformanceCheck
-	 @brief	TStringクラス性能測定用
-	*/
+	//! @class	TStringPerformanceCheck
+	//! @brief	TStringクラス性能測定用
 	class TStringPerformanceCheck : public PerformanceCheck
 	{
 	public:

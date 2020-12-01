@@ -1,9 +1,8 @@
-/**
- @file		SQLite3Test.cpp
- @brief		SQLite3に関するAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	SQLite3Test.cpp
+//! @brief	SQLite3に関するAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "SQLite3/Engine.h"
 #include "SQLite3/Statement.h"

@@ -1,9 +1,8 @@
-/**
- @file		PipeTest.cpp
- @brief		パイプに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.6
- */
+//! @file	PipeTest.cpp
+//! @brief	パイプに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.6
+
 #include "pch.h"
 #include "Pipe.h"
 

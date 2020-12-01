@@ -1,9 +1,8 @@
-/**
- @file		WatchDogTimerTest.cpp
- @brief		タイマーに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	WatchDogTimerTest.cpp
+//! @brief	タイマーに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "WatchDogTimer.h"
 #include "Thread.h"

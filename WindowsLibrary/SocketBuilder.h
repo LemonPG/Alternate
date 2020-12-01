@@ -1,9 +1,8 @@
-/**
- @file		SocketBuilder.h
- @brief		ソケットに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.01.03
- */
+//! @file	SocketBuilder.h
+//! @brief	ソケットに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.01.03
+
 #pragma once
 
 #include "framework.h"
@@ -13,10 +12,8 @@
 
 namespace alt
 {
-	/**
-	 @class	SocketBuilder
-	 @brief	ソケットに関するWindowsAPIを集約したクラス
-	 */
+	//! @class	SocketBuilder
+	//! @brief	ソケットに関するWindowsAPIを集約したクラス
 	class DLL_DECLSPEC SocketBuilder : public SocketLibrary
 	{
 	public:

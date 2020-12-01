@@ -1,9 +1,7 @@
-/**
- @file		TCPPerformanceCheck.cpp
- @brief		TCPクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.05.16
- */
+//! @file	TCPPerformanceCheck.cpp
+//! @brief	TCPクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.16
 
 #include "pch.h"
 #include "TCPPerformanceCheck.h"
@@ -255,14 +253,12 @@ int MakeData(BYTE byData[])
 	return DATA_SIZE;
 }
 
-/**
- @brief バイナリデータをコンソールにダンプします。
- @param[in] lpctszFrom 出力スレッド名
- @param[in]	direction (0:"Down"表示, 1:"Up"表示)
- @param[in] byData ダンプデータ
- @param[in] iDataLen ダンプサイズ
- @note		最初に16進、次にキャラクタで出力します。
- */
+//! @brief		バイナリデータをコンソールにダンプします。
+//! @param[in]	lpctszFrom 出力スレッド名
+//! @param[in]	direction (0:"Down"表示, 1:"Up"表示)
+//! @param[in]	byData		ダンプデータ
+//! @param[in]	iDataLen	ダンプサイズ
+//! @note		最初に16進、次にキャラクタで出力します。
 void DumpData(LPCTSTR lpctszFrom, int direction, BYTE byData[], int iDataLen) // 0:Down 1:Up
 {
 	LPCTSTR lpctszMsg =

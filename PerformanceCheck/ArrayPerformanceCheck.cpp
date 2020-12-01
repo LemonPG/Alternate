@@ -1,9 +1,7 @@
-/**
- @file		ArrayPerformanceCheck.cpp
- @brief		Arrayクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	ArrayPerformanceCheck.cpp
+//! @brief	Arrayクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
 
 #include "pch.h"
 #include "ArrayPerformanceCheck.h"

@@ -1,9 +1,8 @@
-/**
- @file		Process.h
- @brief		プロセスに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.31
- */
+//! @file	Process.h
+//! @brief	プロセスに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.31
+
 #pragma once
 
 #include "framework.h"
@@ -12,25 +11,32 @@
 
 namespace alt
 {
-	/**
-	 @enum	Priority
-	 @brief	プロセスの優先度設定値
-	*/
+	//! @enum	Priority
+	//! @brief	プロセスの優先度設定値
 	enum class Priority
 	{
+		//! リアルタイム
 		Realtime = REALTIME_PRIORITY_CLASS,
+
+		//! 優先：タイムクリティカル
 		High = HIGH_PRIORITY_CLASS,
+
+		//! 通常より少し上
 		AboveNormal = ABOVE_NORMAL_PRIORITY_CLASS,
+
+		//! 通常：一般的なプロセス
 		Normal = NORMAL_PRIORITY_CLASS,
+
+		//! 通常より少し下
 		BelowNormal = BELOW_NORMAL_PRIORITY_CLASS,
+
+		//! アイドル：システムがアイドル状態の時に実行される。
 		Idle = IDLE_PRIORITY_CLASS
 	};
 
-	/**
-	 @class	Process
-	 @brief	プロセスに関するWindowsAPIを集約したクラス
-	 @sa https://docs.microsoft.com/en-us/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output
-	*/
+	//! @class	Process
+	//! @brief	プロセスに関するWindowsAPIを集約したクラス
+	//! @sa		https://docs.microsoft.com/en-us/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output
 	class DLL_DECLSPEC Process : public WindowsLibrary
 	{
 	public:

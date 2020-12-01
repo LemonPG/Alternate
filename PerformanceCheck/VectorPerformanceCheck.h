@@ -1,9 +1,8 @@
-/**
- @file		VectorPerformanceCheck.h
- @brief		std::vector<T>性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	VectorPerformanceCheck.h
+//! @brief	std::vector<T>性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -13,10 +12,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	VectorPerformanceCheck
-	 @brief	std::vector<T>クラス性能測定用
-	*/
+	//! @class	VectorPerformanceCheck
+	//! @brief	std::vector<T>クラス性能測定用
 	class VectorPerformanceCheck : public PerformanceCheck
 	{
 	public:

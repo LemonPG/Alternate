@@ -1,9 +1,8 @@
-/**
- @file		ArrayTest.cpp
- @brief		可変配列に関するクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.2.24
- */
+//! @file	ArrayTest.cpp
+//! @brief	可変配列に関するクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
+
 #include "pch.h"
 #include "Array.hpp"
 

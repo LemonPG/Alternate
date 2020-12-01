@@ -1,9 +1,7 @@
-/**
- @file		NewPerformanceCheck.cpp
- @brief		newの性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.4.11
- */
+//! @file	NewPerformanceCheck.cpp
+//! @brief	newの性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.11
 
 #include "pch.h"
 #include "NewPerformanceCheck.h"

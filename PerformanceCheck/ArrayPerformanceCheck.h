@@ -1,9 +1,8 @@
-/**
- @file		ArrayPerformanceCheck.h
- @brief		Arrayクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	ArrayPerformanceCheck.h
+//! @brief	Arrayクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -14,10 +13,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	ArrayPerformanceCheck
-	 @brief	Arrayクラス性能測定用
-	*/
+	//! @class	ArrayPerformanceCheck
+	//! @brief	Arrayクラス性能測定用
 	class ArrayPerformanceCheck : public PerformanceCheck
 	{
 	public:

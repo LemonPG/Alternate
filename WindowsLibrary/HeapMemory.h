@@ -1,9 +1,8 @@
-/**
- @file		HeapMemory.h
- @brief		ヒープメモリに関するAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.7
- */
+//! @file	HeapMemory.h
+//! @brief	ヒープメモリに関するAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.7
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class	HeapMemory
-	 @brief	ヒープメモリに関するAPIを集約したクラス
-	*/
+	//! @class	HeapMemory
+	//! @brief	ヒープメモリに関するAPIを集約したクラス
 	class DLL_DECLSPEC HeapMemory : public HandleLibrary
 	{
 	public:

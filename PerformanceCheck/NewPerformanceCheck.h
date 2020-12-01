@@ -1,9 +1,8 @@
-/**
- @file		NewPerformanceCheck.h
- @brief		newの性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.4.11
- */
+//! @file	NewPerformanceCheck.h
+//! @brief	newの性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.11
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -13,10 +12,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	NewPerformanceCheck
-	 @brief	newの性能測定用
-	*/
+	//! @class	NewPerformanceCheck
+	//! @brief	newの性能測定用
 	class NewPerformanceCheck : public PerformanceCheck
 	{
 	public:

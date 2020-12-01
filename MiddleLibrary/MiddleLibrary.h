@@ -1,9 +1,8 @@
-/**
- @file		MiddleLibrary.h
- @brief		MiddleLibraryプロジェクトのメインクラス
- @author	kumakuma0421@gmail.com
- @date		2020.05.05
- */
+//! @file	MiddleLibrary.h
+//! @brief	MiddleLibraryプロジェクトのメインクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.05
+
 #pragma once
 
 #include "framework.h"
@@ -14,10 +13,8 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpvRese
 
 namespace alt
 {
-	/**
-	 @class	MiddleLibrary
-	 @brief	MiddleLibraryソリューションのメインクラス
-	*/
+	//! @class	MiddleLibrary
+	//! @brief	MiddleLibraryプロジェクトのメインクラス
 	class DLL_DECLSPEC MiddleLibrary
 	{
 	public:

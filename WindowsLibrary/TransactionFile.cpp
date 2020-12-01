@@ -1,9 +1,8 @@
-/**
- @file		TransactionFile.cpp
- @brief		トランザクションNTFSに関するAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.27
- */
+//! @file	TransactionFile.cpp
+//! @brief	トランザクションNTFSに関するAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.27
+
 #include "pch.h"
 #include "TransactionFile.h"
 

@@ -1,9 +1,8 @@
-/**
- @file		EventTest.cpp
- @brief		イベントに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	EventTest.cpp
+//! @brief	イベントに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "Event.h"
 #include "Thread.h"
@@ -12,10 +11,8 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace WindowsLibraryTest
 {
-	/**
-	 @class	EventTest1
-	 @brief	自動リセットイベントテストクラス
-	*/
+	//! @class	EventTest1
+	//! @brief	自動リセットイベントテストクラス
 	class EventTest1 : public alt::skeleton::ICallback
 	{
 	public:
@@ -79,10 +76,8 @@ namespace WindowsLibraryTest
 		BOOL _bOwner;
 	};
 
-	/**
-	 @class	EventTest2
-	 @brief	手動リセットイベントテストクラス
-	*/
+	//! @class	EventTest2
+	//! @brief	手動リセットイベントテストクラス
 	class EventTest2 : public alt::skeleton::ICallback
 	{
 	public:

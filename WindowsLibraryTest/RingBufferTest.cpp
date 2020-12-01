@@ -1,9 +1,8 @@
-/**
- @file		RingBufferTest.cpp
- @brief		リングバッファに関するクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.4
- */
+//! @file	RingBufferTest.cpp
+//! @brief	リングバッファに関するクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.4
+
 #include "pch.h"
 #include "RingBuffer.h"
 

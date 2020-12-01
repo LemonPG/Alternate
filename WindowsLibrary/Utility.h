@@ -1,9 +1,8 @@
-/**
- @file		Utility.h
- @brief		汎用的に使えるユーティリティクラス
- @author	kumakuma0421@gmail.com
- @date		2020.2.24
- */
+//! @file	Utility.h
+//! @brief	汎用的に使えるユーティリティクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class	Utility
-	 @brief	汎用的に使えるユーティリティクラス
-	*/
+	//! @class	Utility
+	//! @brief	汎用的に使えるユーティリティクラス
 	class DLL_DECLSPEC Utility
 	{
 	public:

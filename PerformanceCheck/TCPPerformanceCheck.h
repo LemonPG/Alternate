@@ -1,9 +1,8 @@
-/**
- @file		TCPPerformanceCheck.h
- @brief		TCPクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.05.16
- */
+//! @file	TCPPerformanceCheck.h
+//! @brief	TCP性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.16
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -47,10 +46,8 @@ BOOL DriveTcpClientConsoleHandler(DWORD dwType);
 
 namespace PerfCheck
 {
-	/**
-	 @class	TCPPerformanceCheck
-	 @brief	TCPクラス性能測定用
-	*/
+	//! @class	TCPPerformanceCheck
+	//! @brief	TCP性能測定用
 	class TCPPerformanceCheck : public PerformanceCheck
 	{
 	public:
@@ -60,10 +57,8 @@ namespace PerfCheck
 		virtual BOOL DoAction();
 	};
 
-	/**
-	 @class	ServerWorker
-	 @brief	TCPクラス性能測定用
-	*/
+	//! @class	ServerWorker
+	//! @brief	TCP性能測定用（サーバースレッド）
 	class ServerWorker : public alt::skeleton::ICallback
 	{
 	public:
@@ -82,10 +77,8 @@ namespace PerfCheck
 		alt::Thread* _thread;
 	};
 
-	/**
-	 @class	TcpServer
-	 @brief	TCPクラス性能測定用
-	*/
+	//! @class	TcpServer
+	//! @brief	TCP性能測定用（サーバー）
 	class TcpServer : public alt::skeleton::ICallback
 	{
 	public:
@@ -110,10 +103,8 @@ namespace PerfCheck
 #pragma warning (pop)
 	};
 
-	/**
-	 @class	TcpClient
-	 @brief	TCPクラス性能測定用
-	*/
+	//! @class	TcpClient
+	//! @brief	TCP性能測定用（クライアント）
 	class TcpClient : public alt::skeleton::ICallback
 	{
 	public:
@@ -134,10 +125,8 @@ namespace PerfCheck
 		alt::Thread* _thread;
 	};
 
-	/**
-	 @class	TcpClient
-	 @brief	TCPクラス性能測定用
-	*/
+	//! @class	UpstreamDriver
+	//! @brief	TCP性能測定用（アップストリーム）
 	class UpstreamDriver : public alt::skeleton::ICallback
 	{
 	public:
@@ -155,10 +144,8 @@ namespace PerfCheck
 		alt::TcpConnector* _connectorClient;
 	};
 
-	/**
-	 @class	DownstreamDriver
-	 @brief	TCPクラス性能測定用
-	*/
+	//! @class	DownstreamDriver
+	//! @brief	TCP性能測定用（ダウンストリーム）
 	class DownstreamDriver : public alt::skeleton::ICallback
 	{
 	public:
@@ -176,6 +163,8 @@ namespace PerfCheck
 		alt::TcpConnector* _connectorClient;
 	};
 
+	//! @class	TcpProxy
+	//! @brief	TCP性能測定用（プロキシー）
 	class TcpProxy
 	{
 	public:

@@ -1,9 +1,7 @@
-/**
- @file		TStringMemoryLeakCheck.cpp
- @brief		TStringのメモリーリークを確認します。
- @author	kumakuma0421@gmail.com
- @date		2020.03.01
- */
+//! @file	TStringMemoryLeakCheck.cpp
+//! @brief	TStringのメモリーリークを確認します。
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.01
 
 #include "pch.h"
 #include "TStringMemoryLeakCheck.h"

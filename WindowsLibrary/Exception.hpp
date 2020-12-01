@@ -1,9 +1,8 @@
-/**
- @file		Exception.hpp
- @brief		例外に関するクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	Exception.hpp
+//! @brief	例外に関するクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "framework.h"
@@ -14,10 +13,8 @@
 
 namespace alt
 {
-	/**
-	 @class	Exception
-	 @brief	基底となる例外クラス
-	 */
+	//! @class	Exception
+	//! @brief	基底となる例外クラス
 	class Exception : public WindowsLibrary
 	{
 	public:
@@ -25,10 +22,8 @@ namespace alt
 		~Exception() {};
 	};
 
-	/**
-	 @class	InvalidArgmentException
-	 @brief	引数設定エラー例外
-	 */
+	//! @class	InvalidArgmentException
+	//! @brief	引数設定エラー例外
 	class InvalidArgmentException : Exception
 	{
 	public:
@@ -38,13 +33,8 @@ namespace alt
 		LPCTSTR getReason() { return ALT_REASON_INVALID_ARGUMENT; }
 	};
 
-	//
-	// 実行時エラー例外
-	//
-	/**
-	 @class	RuntimeException
-	 @brief	実行時エラー例外
-	 */
+	//! @class	RuntimeException
+	//! @brief	実行時エラー例外
 	class RuntimeException : Exception
 	{
 	public:

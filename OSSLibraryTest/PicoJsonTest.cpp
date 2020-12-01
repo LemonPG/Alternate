@@ -1,9 +1,8 @@
-/**
- @file		PicoJsonTest.cpp
- @brief		PicoJsonのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.05.07
- */
+//! @file	PicoJsonTest.cpp
+//! @brief	PicoJsonのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.07
+
 #include "pch.h"
 #include "OSSLibrary.h"
 

@@ -1,9 +1,8 @@
-/**
- @file		LoggerTest.cpp
- @brief		ログに関するクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	LoggerTest.cpp
+//! @brief	ログに関するクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "Logger.h"
 #include "Thread.h"

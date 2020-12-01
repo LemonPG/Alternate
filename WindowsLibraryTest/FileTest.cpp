@@ -1,9 +1,8 @@
-/**
- @file		FileTest.cpp
- @brief		ファイルIOに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	FileTest.cpp
+//! @brief	ファイルIOに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+//! 
 #include "pch.h"
 #include "File.h"
 #include "FileUtility.h"

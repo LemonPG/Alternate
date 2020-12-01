@@ -102,7 +102,6 @@ namespace MiddleLibraryTest
 
 			//! @todo コピーコンストラクタがまだ動いている。
 			//! インスタンスを引数にしているところは'&'への変更が必要。
-
 			WorkerTemplate workerTemplate;
 			WorkerFunction workerFunction;
 			Data data(128);

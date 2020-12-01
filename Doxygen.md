@@ -51,20 +51,14 @@ int hensu = 0;
 ## マクロへのコメント
 
 ```
-/**
- * @def
- * マクロのコメント
- */
+//! @def マクロのコメント
 #define MAX_NANIKA 256
 ```
 
 ## 列挙体へのコメント
 
 ```
-/**
- * @enum Enum
- * 列挙体への説明
- */
+//! @enum Enum 列挙体への説明
 enum Enum {
     //! 列挙体の各要素へのコメント
     EnumItem1 = 0x00

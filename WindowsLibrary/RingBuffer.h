@@ -1,9 +1,8 @@
-/**
- @file		RingBuffer.h
- @brief		リングバッファに関するクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.4
- */
+//! @file	RingBuffer.h
+//! @brief	リングバッファに関するクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.4
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class	RingBuffer
-	 @brief	リングバッファに関するクラス
-	*/
+	//! @class	RingBuffer
+	//! @brief	リングバッファに関するクラス
 	class DLL_DECLSPEC RingBuffer : public WindowsLibrary
 	{
 	public:
@@ -38,4 +35,3 @@ namespace alt
 		LPBYTE _lpbyWritePoint;
 	};
 }
-

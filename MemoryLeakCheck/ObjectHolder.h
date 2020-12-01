@@ -1,17 +1,14 @@
-/**
- @file		ObjectHolder.h
- @brief		MemoryLeakCheckソリューション用コンテナクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.11
- */
+//! @file	ObjectHolder.h
+//! @brief	MemoryLeakCheckソリューション用コンテナクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.11
+
 #pragma once
 
 namespace LeakCheck
 {
-	/**
-	 @class	ObjectHolder
-	 @brief	MemoryLeakCheckソリューション用コンテナクラス
-	*/
+	//! @class	ObjectHolder
+	//! @brief	MemoryLeakCheckソリューション用コンテナクラス
 	template<class T>
 	class ObjectHolder
 	{

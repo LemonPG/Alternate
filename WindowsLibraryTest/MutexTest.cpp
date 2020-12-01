@@ -1,9 +1,8 @@
-/**
- @file		MutexTest.cpp
- @brief		ミューテックスに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.29
- */
+//! @file	MutexTest.cpp
+//! @brief	ミューテックスに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.29
+
 #include "pch.h"
 #include "Mutex.h"
 #include "Thread.h"

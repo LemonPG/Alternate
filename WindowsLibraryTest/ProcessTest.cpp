@@ -1,9 +1,8 @@
-/**
- @file		ProcessTest.cpp
- @brief		プロセスに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.31
- */
+//! @file	ProcessTest.cpp
+//! @brief	プロセスに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.31
+
 #include "pch.h"
 #include "Process.h"
 

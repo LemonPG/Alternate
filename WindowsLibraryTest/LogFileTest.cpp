@@ -1,9 +1,8 @@
-/**
- @file		LogFileTest.cpp
- @brief		Fileをベースとしたログに関する機能を集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	LogFileTest.cpp
+//! @brief	Fileをベースとしたログに関する機能を集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "LogFile.h"
 #include "Thread.h"

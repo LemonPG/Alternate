@@ -1,9 +1,8 @@
-/**
- @file		WatchDocTimerPerformanceCheck.h
- @brief		WatchDocTimerクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	WatchDocTimerPerformanceCheck.h
+//! @brief	WatchDocTimerクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -14,10 +13,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @struct	WatchDogData
-	 @brief     WatchDocTimerデータ保存用
-	*/
+	//! @struct	WatchDogData
+	//! @brief	WatchDocTimerデータ保存用
 	typedef struct _WatchDogData
 	{
 		DWORD Tick;
@@ -28,10 +25,8 @@ namespace PerfCheck
 		LARGE_INTEGER Frequency;
 	} WatchDogData;
 
-	/**
-	 @class	WatchDocTimerPerformanceCheck
-	 @brief	WatchDocTimerクラス性能測定用
-	*/
+	//! @class	WatchDocTimerPerformanceCheck
+	//! @brief	WatchDocTimerクラス性能測定用
 	class WatchDocTimerPerformanceCheck : public PerformanceCheck
 	{
 	public:

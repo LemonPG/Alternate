@@ -1,9 +1,8 @@
-/**
- @file		SharedMemoryTest.cpp
- @brief		共有メモリに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.2
- */
+//! @file	SharedMemoryTest.cpp
+//! @brief	共有メモリに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.2
+
 #include "pch.h"
 #include "SharedMemory.h"
 #include "Thread.h"

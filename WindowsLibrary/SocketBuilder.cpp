@@ -1,9 +1,8 @@
-/**
- @file		SocketBuilder.cpp
- @brief		ソケットに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.01.03
- */
+//! @file	SocketBuilder.cpp
+//! @brief	ソケットに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.01.03
+
 #include "pch.h"
 #include "SocketBuilder.h"
 

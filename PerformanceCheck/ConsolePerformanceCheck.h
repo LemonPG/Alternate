@@ -1,9 +1,8 @@
-/**
- @file		ConsolePerformanceCheck.h
- @brief		Consoleクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	ConsolePerformanceCheck.h
+//! @brief	Consoleクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -12,10 +11,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	ConsolePerformanceCheck
-	 @brief	Console性能測定用
-	*/
+	//! @class	ConsolePerformanceCheck
+	//! @brief	Console性能測定用
 	class ConsolePerformanceCheck : public PerformanceCheck
 	{
 	public:

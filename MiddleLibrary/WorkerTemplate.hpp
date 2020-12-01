@@ -9,18 +9,37 @@ namespace alt
 {
 	enum class WorkerStatus
 	{
+		//! 生成直後
 		Created,
+
+		//! 初期化前
 		BeforeInitialize,
+		//! 初期化後
 		Initialized,
+
+		//! スタート前
 		BeforeStart,
+		//! スタート後
 		Started,
+
+		//! コマンド実行前
 		BeforeExecute,
+		//! コマンド実行語
 		Executed,
+
+		//! プロセス処理前
 		BeforeProcess,
+		//! プロセス処理後
 		Processed,
+
+		//! 停止前
 		BeforeStop,
+		//! 停止後
 		Stopped,
+
+		//! 終了前
 		BeforeExit,
+		//! 終了
 		Exited
 	};
 
@@ -99,16 +118,16 @@ namespace alt
 	class WorkerTemplate
 	{
 	public:
-		//! コンストラクタ
+		//! @brief コンストラクタ
 		WorkerTemplate()
 		{
 			_workerStatus = WorkerStatus::Created;
 		}
 
-		//! デストラクタ
+		//! @brief デストラクタ
 		virtual ~WorkerTemplate() {};
 
-		//! 初期化処理
+		//! @brief 初期化処理
 		template <typename Function>
 		bool Init(Function function)
 		{
@@ -121,7 +140,7 @@ namespace alt
 			return ret;
 		}
 
-		//! 開始処理
+		//! @brief 開始処理
 		template <typename Function>
 		bool Start(Function function)
 		{
@@ -134,7 +153,7 @@ namespace alt
 			return ret;
 		}
 
-		//! コマンド処理
+		//! @brief コマンド処理
 		template <typename Function>
 		bool Command(Function function, Message message)
 		{
@@ -147,7 +166,7 @@ namespace alt
 			return ret;
 		}
 
-		//! プロセス処理
+		//! @brief プロセス処理
 		template <typename Function>
 		Data Process(Function function, Data data)
 		{
@@ -160,7 +179,7 @@ namespace alt
 			return ret;
 		}
 
-		//! 終了処理
+		//! @brief 終了処理
 		template <typename Function>
 		bool Stop(Function function)
 		{
@@ -173,7 +192,7 @@ namespace alt
 			return ret;
 		}
 
-		//! 退出処理
+		//! @brief 退出処理
 		template <typename Function>
 		bool Exit(Function function)
 		{
@@ -186,11 +205,11 @@ namespace alt
 			return ret;
 		}
 
-		//! 状態取得
+		//! @brief 状態取得
 		WorkerStatus GetStatus() { return _workerStatus; };
 
 	protected:
-		//! 排他処理共通
+		//! @brief 排他処理共通
 		template <typename Function>
 		bool CriticalAction(Function function)
 		{
@@ -203,7 +222,7 @@ namespace alt
 			return ret;
 		}
 
-		//! Command処理
+		//! @brief Command処理
 		template <typename Function>
 		bool CriticalCommand(Function function, Message message)
 		{
@@ -216,7 +235,7 @@ namespace alt
 			return ret;
 		}
 
-		//! Process処理
+		//! @brief Process処理
 		template <typename Function>
 		Data CriticalProcess(Function function, Data data)
 		{

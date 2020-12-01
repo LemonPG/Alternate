@@ -1,9 +1,8 @@
-/**
- @file		VirtualMemoryTest.cpp
- @brief		仮想メモリに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2020.2.24
- */
+//! @file	VirtualMemoryTest.cpp
+//! @brief	仮想メモリに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
+
 #include "pch.h"
 #include "VirtualMemory.h"
 

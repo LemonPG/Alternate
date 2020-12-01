@@ -1,9 +1,8 @@
-/**
- @file		ThreadTest.cpp
- @brief		スレッドに関するWindowsAPIを集約したクラスのテストクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	ThreadTest.cpp
+//! @brief	スレッドに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "Thread.h"
 

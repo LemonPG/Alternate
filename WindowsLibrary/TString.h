@@ -1,9 +1,8 @@
-/**
- @file		TString.h
- @brief		文字列に関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	TString.h
+//! @brief	文字列に関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "framework.h"
@@ -12,10 +11,8 @@
 
 namespace alt
 {
-	/**
-	 @class TString
-	 @brief 文字列に関するWindowsAPIを集約したクラス
-	 */
+	//! @class TString
+	//! @brief 文字列に関するWindowsAPIを集約したクラス
 	class DLL_DECLSPEC TString : public WindowsLibrary
 	{
 	public:

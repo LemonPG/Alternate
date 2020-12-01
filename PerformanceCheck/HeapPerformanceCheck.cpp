@@ -1,9 +1,7 @@
-/**
- @file		HeapPerformanceCheck.cpp
- @brief		HeapMemoryクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.4.11
- */
+//! @file	HeapPerformanceCheck.cpp
+//! @brief	HeapMemoryクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.11
 
 #include "pch.h"
 #include "HeapPerformanceCheck.h"
