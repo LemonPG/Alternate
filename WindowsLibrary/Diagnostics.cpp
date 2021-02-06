@@ -1,9 +1,8 @@
-/**
- @file		Diagnostics.cpp
- @brief		システム性能に関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.24
- */
+//! @file	Diagnostics.cpp
+//! @brief	システム性能に関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.24
+
 #include "pch.h"
 #include "Diagnostics.h"
 

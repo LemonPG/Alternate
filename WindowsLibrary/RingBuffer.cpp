@@ -1,9 +1,8 @@
-/**
- @file		RingBuffer.cpp
- @brief		リングバッファ
- @author	kumakuma0421@gmail.com
- @date		2020.4.4
- */
+//! @file	RingBuffer.cpp
+//! @brief	リングバッファに関するクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.4
+
 #include "pch.h"
 #include "RingBuffer.h"
 

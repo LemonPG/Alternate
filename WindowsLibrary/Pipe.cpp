@@ -1,9 +1,8 @@
-/**
- @file		Pipe.cpp
- @brief		パイプに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.6
- */
+//! @file	Pipe.cpp
+//! @brief	パイプに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.6
+
 #include "pch.h"
 #include "Pipe.h"
 

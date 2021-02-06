@@ -1,9 +1,8 @@
-/**
- @file		TcpConnector.h
- @brief		TCP通信に関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	TcpConnector.h
+//! @brief	TCP通信に関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class	TcpConnector
-	 @brief	TCP通信に関するWindowsAPIを集約したクラス
-	 */
+	//! @class	TcpConnector
+	//! @brief	TCP通信に関するWindowsAPIを集約したクラス
 	class DLL_DECLSPEC TcpConnector : public SocketLibrary
 	{
 	public:

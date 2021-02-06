@@ -1,9 +1,8 @@
-/**
- @file		Event.cpp
- @brief		イベントに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	Event.cpp
+//! @brief	イベントに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "Event.h"
 

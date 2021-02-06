@@ -1,7 +1,8 @@
-/*
- https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts
- Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
- */
+//! @file	DesignPatternTest.cpp
+//! @brief	種々のデザインパターンの実装クラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "DesignPattern.hpp"
 #include "TString.h"

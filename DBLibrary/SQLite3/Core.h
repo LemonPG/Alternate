@@ -1,3 +1,8 @@
+//! @file	Core.h
+//! @brief	SqLite3操作クラス(Core)
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.4
+
 #pragma once
 
 #include <Windows.h>
@@ -7,30 +12,23 @@ namespace alt
 {
 	namespace db
 	{
-		// @sa https://www.sqlite.org/cintro.html
+		//! @class Core
+		//! @brief SqLite3操作クラス(Core)
+		//! @sa https://www.sqlite.org/cintro.html
 		class Core
 		{
 		public:
-			Core()
-			{
-				_lastError = SQLITE_OK;
-			}
+			//! @brief コンストラクタ
+			Core() { _lastError = SQLITE_OK; }
 
-			virtual ~Core()
-			{
-
-			}
+			//! @brief デストラクタ
+			virtual ~Core() {}
 
 		protected:
-			//
-			// @brief 各関数の戻り値判定共通
-			//
-			bool getResponse()
-			{
-				return _lastError != SQLITE_OK ? false : true;
-			}
+			//! @brief 各関数の戻り値判定共通
+			bool getResponse() { return _lastError != SQLITE_OK ? false : true; }
 
-			// @brief SQLite3関数戻り値
+			//! @brief SQLite3関数エラー値
 			int _lastError;
 		};
 	}

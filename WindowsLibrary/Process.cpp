@@ -1,9 +1,8 @@
-/**
- @file		Process.cpp
- @brief		プロセスに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.31
- */
+//! @file	Process.cpp
+//! @brief	プロセスに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.31
+
 #include "pch.h"
 #include "Process.h"
 

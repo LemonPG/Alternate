@@ -1,9 +1,7 @@
-/**
- @file		FilePerformanceCheck.cpp
- @brief		File性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	FilePerformanceCheck.cpp
+//! @brief	Fileクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
 
 #include "pch.h"
 #include "FilePerformanceCheck.h"

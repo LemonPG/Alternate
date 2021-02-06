@@ -1,9 +1,8 @@
-/**
- @file		SocketBuilder.cpp
- @brief		ソケットに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.01.03
- */
+//! @file	SocketBuilder.cpp
+//! @brief	ソケットに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.01.03
+
 #include "pch.h"
 #include "SocketBuilder.h"
 
@@ -19,7 +18,7 @@ SocketBuilder::~SocketBuilder()
 {
 	this->Close();
 
-	WSACleanup(); // TODO:TCPConnectorだけ存続させる場合を考慮できていない
+	WSACleanup(); //! @todo TCPConnectorだけ存続させる場合を考慮できていない
 }
 
 BOOL SocketBuilder::Startup()
@@ -326,7 +325,7 @@ TcpConnector* SocketBuilder::Wait()
 
 			TCHAR tszMsg[80];
 			wsprintf(tszMsg, _T("Accepted (%s,%d)\n"), tszAcceptIPAddress, iAcceptPort);
-			// TODO:なんらかの形式で接続情報を出力しよう。
+			//! @todo なんらかの形式で接続情報を出力しよう。
 			OutputDebugString(tszMsg);
 
 			response = new TcpConnector(mySocket);

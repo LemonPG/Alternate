@@ -1,6 +1,8 @@
-// ----------------------------------------------------------------------------
-// MiddleLibrary.cpp : DLL アプリケーションのエントリ ポイントを定義します。
-// ----------------------------------------------------------------------------
+//! @file	MiddleLibrary.cpp
+//! @brief	MiddleLibraryプロジェクトのメインクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.05
+
 #include "pch.h"
 #include "MiddleLibrary.h"
 

@@ -1,9 +1,8 @@
-/**
- @file		HeapPerformanceCheck.h
- @brief		HeapMemoryクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.4.11
- */
+//! @file	HeapPerformanceCheck.h
+//! @brief	HeapMemoryクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.11
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -14,10 +13,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	HeapPerformanceCheck
-	 @brief	HeapMemoryクラス性能測定用
-	*/
+	//! @class	HeapPerformanceCheck
+	//! @brief	HeapMemoryクラス性能測定用
 	class HeapPerformanceCheck : public PerformanceCheck
 	{
 	public:

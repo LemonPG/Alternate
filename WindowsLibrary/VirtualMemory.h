@@ -1,19 +1,16 @@
-/**
- @file		VirtualMemory.h
- @brief		仮想メモリに関するクラス
- @author	kumakuma0421@gmail.com
- @date		2020.2.24
- */
+//! @file	VirtualMemory.h
+//! @brief	仮想メモリに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
+
 #pragma once
 
 #include "WindowsLibrary.h"
 
 namespace alt
 {
-	/**
-	 @class	VirtualMemory
-	 @brief	仮想メモリに関するクラス
-	*/
+	//! @class	VirtualMemory
+	//! @brief	仮想メモリに関するクラス
 	class DLL_DECLSPEC VirtualMemory : public WindowsLibrary
 	{
 	public:
@@ -37,4 +34,3 @@ namespace alt
 		SIZE_T _size;
 	};
 }
-

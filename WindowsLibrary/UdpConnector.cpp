@@ -1,9 +1,8 @@
-/**
- @file		UdpConnector.cpp
- @brief		UDP通信に関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.01.03
- */
+//! @file	UdpConnector.cpp
+//! @brief	UDP通信に関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.01.03
+
 #include "pch.h"
 #include "UdpConnector.h"
 

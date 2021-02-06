@@ -1,9 +1,7 @@
-/**
- @file		TStringPerformanceCheck.cpp
- @brief		TString性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.21
- */
+//! @file	TStringPerformanceCheck.cpp
+//! @brief	TStringクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.21
 
 #include "pch.h"
 #include "TStringPerformanceCheck.h"

@@ -1,9 +1,8 @@
-/**
- @file		SharedMemory.h
- @brief		共有メモリに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.2
- */
+//! @file	SharedMemory.h
+//! @brief	共有メモリに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.2
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class	SharedMemory
-	 @brief	共有メモリに関するWindowsAPIを集約したクラス
-	*/
+	//! @class	SharedMemory
+	//! @brief	共有メモリに関するWindowsAPIを集約したクラス
 	class DLL_DECLSPEC SharedMemory : public HandleLibrary
 	{
 	public:
@@ -32,4 +29,3 @@ namespace alt
 	};
 
 }
-

@@ -257,7 +257,7 @@ void QueueElement::Update(IData* data)
 {
 	_exclusive.Enter();
 	_queue.push(data);
-	_event.Set(); // TODO:本当は戻り値チェック
+	_event.Set(); //! @todo 本当は戻り値チェック
 	_exclusive.Leave();
 }
 
@@ -385,7 +385,7 @@ IData* DummyProduct::Process(IData* data)
 	if (data->GetSeqNo() % 10 == 0)
 	{
 		IMessage message;
-		message.SetParam(0, this->GetID(), 0); // TODO:暫定
+		message.SetParam(0, this->GetID(), 0); //! @todo 暫定
 		this->Notify(&message);
 	}
 

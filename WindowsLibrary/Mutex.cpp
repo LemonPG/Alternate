@@ -1,9 +1,8 @@
-/**
- @file		Mutex.cpp
- @brief		ミューテックスに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.29
- */
+//! @file	Mutex.cpp
+//! @brief	ミューテックスに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.29
+
 #include "pch.h"
 #include "Mutex.h"
 

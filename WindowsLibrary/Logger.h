@@ -1,9 +1,8 @@
-/**
- @file		Logger.h
- @brief		ログに関するクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	Logger.h
+//! @brief	ログに関するクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "framework.h"
@@ -14,10 +13,8 @@
 
 namespace alt
 {
-	/**
-	 @class		Logger
-	 @brief		ログに関するクラス
-	 */
+	//! @class	Logger
+	//! @brief	ログに関するクラス
 	class DLL_DECLSPEC Logger : public WindowsLibrary
 	{
 	public:
@@ -42,5 +39,3 @@ namespace alt
 		static LogFile* _log;
 	};
 }
-
-

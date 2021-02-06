@@ -1,9 +1,7 @@
-/**
- @file		ConsolePerformanceCheck.cpp
- @brief		Console性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	ConsolePerformanceCheck.cpp
+//! @brief	Consoleクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
 
 #include "pch.h"
 #include "ConsolePerformanceCheck.h"

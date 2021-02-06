@@ -1,9 +1,7 @@
-/**
- @file		LoggerPerformanceCheck.cpp
- @brief		Logger性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.11.07
- */
+//! @file	LoggerPerformanceCheck.cpp
+//! @brief	Loggerクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.11.07
 
 #include "pch.h"
 #include "LoggerPerformanceCheck.h"

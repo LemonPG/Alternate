@@ -1,9 +1,8 @@
-/**
- @file		TcpConnector.cpp
- @brief		TCP通信に関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	TcpConnector.cpp
+//! @brief	TCP通信に関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "TcpConnector.h"
 

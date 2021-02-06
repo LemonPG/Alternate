@@ -1,9 +1,7 @@
-/**
- @file		Utility.cpp
- @brief		汎用的に使えるユーティリティクラス
- @author	kumakuma0421@gmail.com
- @date		2020.2.24
- */
+//! @file	Utility.cpp
+//! @brief	汎用的に使えるユーティリティクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
 
 #include "pch.h"
 #include "Utility.h"

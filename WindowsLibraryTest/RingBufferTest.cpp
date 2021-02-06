@@ -1,7 +1,8 @@
-/*
- https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts
- Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
- */
+//! @file	RingBufferTest.cpp
+//! @brief	リングバッファに関するクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.4
+
 #include "pch.h"
 #include "RingBuffer.h"
 

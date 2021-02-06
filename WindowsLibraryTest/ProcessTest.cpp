@@ -1,7 +1,8 @@
-/*
- https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts
- Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
- */
+//! @file	ProcessTest.cpp
+//! @brief	プロセスに関するWindowsAPIを集約したクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.31
+
 #include "pch.h"
 #include "Process.h"
 
@@ -154,8 +155,8 @@ namespace WindowsLibraryTest
 
 			for (int i = 0; i < 10; i++)
 			{
-				sprintf_s(szBuf, "DIR C:\\Windows"); // TODO:インタラクティブに動かない
-				//sprintf_s(szBuf, "find TEST ..\\..\\README.md"); // TODO:インタラクティブに動かない
+				sprintf_s(szBuf, "DIR C:\\Windows"); //! @todo インタラクティブに動かない
+				//sprintf_s(szBuf, "find TEST ..\\..\\README.md"); //! @todo インタラクティブに動かない
 				dwSize = (DWORD)strlen(szBuf);
 
 				DWORD dwWrite = testProcess.Write(szBuf, dwSize);

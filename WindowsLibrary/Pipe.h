@@ -1,9 +1,8 @@
-/**
- @file		Pipe.h
- @brief		パイプに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.6
- */
+//! @file	Pipe.h
+//! @brief	パイプに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.6
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class	Pipe
-	 @brief	パイプに関するWindowsAPIを集約したクラス
-	 */
+	//! @class	Pipe
+	//! @brief	パイプに関するWindowsAPIを集約したクラス
 	class DLL_DECLSPEC Pipe : public WindowsLibrary
 	{
 	public:

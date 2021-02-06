@@ -1,9 +1,8 @@
-/**
- @file		Console.cpp
- @brief		コンソールに関するクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	Console.cpp
+//! @brief	コンソールに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "Console.h"
 

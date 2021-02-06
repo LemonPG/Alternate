@@ -1,3 +1,8 @@
+//! @file	ArrayMemoryLeakCheck.cpp
+//! @brief	Arrayのメモリーリークを確認します。
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.01
+
 #include "pch.h"
 #include "ArrayMemoryLeakCheck.h"
 

@@ -1,7 +1,8 @@
-/*
- https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts
- Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
- */
+//! @file	ArrayTest.cpp
+//! @brief	可変配列に関するクラスのテストクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
+
 #include "pch.h"
 #include "Array.hpp"
 
@@ -120,7 +121,7 @@ namespace WindowsLibraryTest
 
 		//	arrayCopy.Clear(true);
 		//}
-		// TODO:動かない原因を後で追及
+		//! @todo 動かない原因を後で追及
 
 		TEST_METHOD(ArrayTest2)
 		{

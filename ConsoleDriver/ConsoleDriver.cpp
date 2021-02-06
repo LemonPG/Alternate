@@ -1,9 +1,8 @@
-/**
- @file		ConsoleDriver.cpp
- @brief		Consoleからシステムを起動します。
- @author	kumakuma0421@gmail.com
- @date		2020.01.03
- */
+//! @file	ConsoleDriver.cpp
+//! @brief	Consoleからシステムを起動します。
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.01.03
+
 #include "pch.h"
 #include "ConsoleDriver.h"
 #include "DesignPattern.hpp"
@@ -19,12 +18,10 @@ alt::TString _configFile;
 
 volatile bool __loopKeep = true;
 
-/**
- @brief	エントリーポイント(メイン関数)です。
- @param[in]	argc パラメータ数
- @param[in] argv パラメータ
- @note		argv[0]はこのEXEのファイル名になります。
- */
+//! @brief		エントリーポイント(メイン関数)です。
+//! @param[in]	argc パラメータ数
+//! @param[in]	argv パラメータ
+//! @note		argv[0]はこのEXEのファイル名になります。
 int _tmain(int argc, TCHAR* argv[])
 {
 	_tprintf(_T("main(%d, TCHAR*) IN.\n"), argc);
@@ -90,11 +87,9 @@ int _tmain(int argc, TCHAR* argv[])
 	return 0;
 }
 
-/**
- @brief		ストラテジーの初期化を行います。
- @details	INIファイルのセクション名で関数起動を切り替えます。
- @return	void
- */
+//! @brief		ストラテジーの初期化を行います。
+//! @details	INIファイルのセクション名で関数起動を切り替えます。
+//! @return		void
 void Init()
 {
 	_tprintf(_T("Init() IN.\n"));

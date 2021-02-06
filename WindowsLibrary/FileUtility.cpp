@@ -1,9 +1,8 @@
-/**
- @file		FileUtility.cpp
- @brief		ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	FileUtility.cpp
+//! @brief	ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #include "pch.h"
 #include "FileUtility.h"
 
@@ -107,7 +106,7 @@ BOOL FileUtility::DirectoryWatch(LPCTSTR watchDirectory)
 	BOOL ret;
 	DWORD dwResponse;
 
-	while (1) // TODO:ループから抜ける方法がない。…FileUtilityでは収まらないようだ。
+	while (1) //! @todo ループから抜ける方法がない。…FileUtilityでは収まらないようだ。
 	{
 		WCHAR* buffer = new WCHAR[1024];
 		ZeroMemory(buffer, sizeof(WCHAR) * 1024);

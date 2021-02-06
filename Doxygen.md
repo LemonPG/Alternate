@@ -63,29 +63,22 @@ int hensu = 0; //!< 変数の後ろに記載する場合
 ## マクロのコメント
 
 ```
-/**
- * @def
- * マクロのコメント
- */
+//! @def マクロのコメント
 #define MAX_NANIKA 256
 ```
 
 ## 列挙体のコメント
 
 ```
-/**
- * @enum Numbers
- * 列挙体の説明
- */
-enum Numbers {
-    //! 各要素のコメント
-    Zero = 0x00,
-    //! 各要素へのコメント
-    One = 0x01
-};
+//! @enum Enum 列挙体への説明
+enum Enum {
+    //! 列挙体の各要素へのコメント
+    EnumItem1 = 0x00
+}
 ```
 
 # 特殊コマンド
+
 @mainpage Doxygenのトップページの内容を記載
 @page ドキュメントページ
 @section ページ内のセクション

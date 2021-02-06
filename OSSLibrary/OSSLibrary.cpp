@@ -1,9 +1,8 @@
-﻿/**
- @file		OSSLibrary.cpp
- @brief		Open Source Software を集約したプロジェクトファイル
- @author	kumakuma0421@gmail.com
- @date		2020.05.07
- */
+﻿//! @file	OSSLibrary.cpp
+//! @brief	Open Source Software を集約したプロジェクトファイル
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.05.07
+
 #include "pch.h"
 #include "OSSLibrary.h"
 

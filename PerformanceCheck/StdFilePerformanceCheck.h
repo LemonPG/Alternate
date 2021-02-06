@@ -1,9 +1,8 @@
-/**
- @file		StdFilePerformanceCheck.h
- @brief		Fileクラスの比較用
- @author	kumakuma0421@gmail.com
- @date		2020.03.24
- */
+//! @file	StdFilePerformanceCheck.h
+//! @brief	Fileクラスの比較用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.24
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -11,10 +10,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	StdFilePerformanceCheck
-	 @brief	Fileクラスの比較用
-	*/
+	//! @class	StdFilePerformanceCheck
+	//! @brief	Fileクラスの比較用
 	class StdFilePerformanceCheck : public PerformanceCheck
 	{
 	public:

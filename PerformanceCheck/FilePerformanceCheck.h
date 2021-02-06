@@ -1,9 +1,8 @@
-/**
- @file		FilePerformanceCheck.h
- @brief		Fileクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.03.15
- */
+//! @file	FilePerformanceCheck.h
+//! @brief	Fileクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.15
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -13,10 +12,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	FilePerformanceCheck
-	 @brief	Fileクラス性能測定用
-	*/
+	//! @class	FilePerformanceCheck
+	//! @brief	Fileクラス性能測定用
 	class FilePerformanceCheck : public PerformanceCheck
 	{
 	public:

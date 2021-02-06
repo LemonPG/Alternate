@@ -1,9 +1,8 @@
-/**
- @file		LogFile.h
- @brief		Fileをベースとしたログに関する機能を集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	LogFile.h
+//! @brief	Fileをベースとしたログに関する機能を集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "framework.h"
@@ -14,10 +13,8 @@
 
 namespace alt
 {
-	/**
-	 @enum	LogLevel
-	 @brief	ログの出力レベル
-	 */
+	//! @enum	LogLevel
+	//! @brief	ログの出力レベル
 	enum class LogLevel
 	{
 		//! (0)異常終了レベル
@@ -34,10 +31,8 @@ namespace alt
 		Trace
 	};
 
-	/**
-	 @enum	LogMode
-	 @brief	起動時の既存ファイルの扱い方
-	 */
+	//! @enum	LogMode
+	//! @brief	起動時の既存ファイルの扱い方
 	enum class LogMode
 	{
 		//! 新規作成モード
@@ -46,10 +41,8 @@ namespace alt
 		Append
 	};
 
-	/**
-	 @class	LogFile
-	 @brief	Fileをベースとしたログに関する機能を集約したクラス
-	 */
+	//! @class	LogFile
+	//! @brief	Fileをベースとしたログに関する機能を集約したクラス
 	class DLL_DECLSPEC LogFile : public WindowsLibrary
 	{
 	public:
@@ -103,5 +96,3 @@ namespace alt
 		LPCTSTR _lpctszLogLevelTrace = _T("Trace");
 	};
 }
-
-

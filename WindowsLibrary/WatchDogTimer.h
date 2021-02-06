@@ -1,9 +1,8 @@
-/**
- @file		WatchDogTimer.h
- @brief		タイマーに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	WatchDogTimer.h
+//! @brief	タイマーに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "WindowsLibrary.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @class		QueryPerformance
-	 @brief		高分解能時間計測クラス
-	 */
+	//! @class	QueryPerformance
+	//! @brief	高分解能時間計測クラス
 	class DLL_DECLSPEC QueryPerformance : public WindowsLibrary
 	{
 	public:
@@ -61,10 +58,8 @@ namespace alt
 		LARGE_INTEGER _frequency;
 	};
 
-	/**
-	 @class		WatchDogTimer
-	 @brief		タイマーに関するWindowsAPIを集約したクラス
-	 */
+	//! @class	WatchDogTimer
+	//! @brief	タイマーに関するWindowsAPIを集約したクラス
 	class DLL_DECLSPEC WatchDogTimer : public WaitableHandleLibrary
 	{
 	public:

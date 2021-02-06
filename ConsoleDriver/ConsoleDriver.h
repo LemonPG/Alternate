@@ -1,9 +1,8 @@
-/**
- @file		ConsoleDriver.h
- @brief		Consoleからシステムを起動します。
- @author	kumakuma0421@gmail.com
- @date		2020.01.03
- */
+//! @file	ConsoleDriver.h
+//! @brief	Consoleからシステムを起動します。
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.01.03
+
 #pragma once
 
 #include "framework.h"

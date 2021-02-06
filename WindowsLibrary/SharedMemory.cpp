@@ -1,9 +1,8 @@
-/**
- @file		SharedMemory.cpp
- @brief		共有メモリに関するWindowsAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.2
- */
+//! @file	SharedMemory.cpp
+//! @brief	共有メモリに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.2
+
 #include "pch.h"
 #include "SharedMemory.h"
 

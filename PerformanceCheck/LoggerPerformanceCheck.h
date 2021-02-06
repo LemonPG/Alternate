@@ -1,9 +1,8 @@
-/**
- @file		LoggerPerformanceCheck.h
- @brief		Loggerクラス性能測定用
- @author	kumakuma0421@gmail.com
- @date		2020.11.07
- */
+//! @file	LoggerPerformanceCheck.h
+//! @brief	Loggerクラス性能測定用
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.11.07
+
 #pragma once
 
 #include "PerformanceCheck.h"
@@ -11,10 +10,8 @@
 
 namespace PerfCheck
 {
-	/**
-	 @class	LoggerPerformanceCheck
-	 @brief	Loggerクラス性能測定用
-	*/
+	//! @class	LoggerPerformanceCheck
+	//! @brief	Loggerクラス性能測定用
 	class LoggerPerformanceCheck : public PerformanceCheck
 	{
 	public:

@@ -1,9 +1,8 @@
-/**
- @file		Array.hpp
- @brief		可変配列に関するクラス
- @author	kumakuma0421@gmail.com
- @date		2020.2.24
- */
+//! @file	Array.hpp
+//! @brief	可変配列に関するクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.2.24
+
 #pragma once
 
 #include "framework.h"
@@ -13,11 +12,9 @@ namespace alt
 {
 	namespace skeleton
 	{
-		/**
-		 @class	Array
-		 @brief	サイズ可変の配列を具現したクラス
-		 @note	構造体、クラス以外は動作が不安定です。
-		 */
+		//! @class	Array
+		//! @brief	サイズ可変の配列を具現したクラス
+		//! @note	構造体、クラス以外は動作が不安定です。
 		template<class T>
 		class Array
 		{

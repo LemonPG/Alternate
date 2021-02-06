@@ -1,9 +1,7 @@
-/**
- @file		MemoryLeakCheck.cpp
- @brief		TestProjectでは検出できない、メモリーリークを確認します。
- @author	kumakuma0421@gmail.com
- @date		2020.03.01
- */
+//! @file	MemoryLeakCheck.cpp
+//! @brief	TestProjectでは検出できない、メモリーリークを確認します。
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.03.01
 
 #include "pch.h"
 #include "MemoryLeakCheck.h"

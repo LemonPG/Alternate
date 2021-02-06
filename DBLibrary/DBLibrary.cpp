@@ -1,9 +1,8 @@
-/**
- @file		DBLibrary.cpp
- @brief		DB APIを集約するクラスの基底クラス
- @author	kumakuma0421@gmail.com
- @date		2020.4.4
- */
+//! @file	DBLibrary.cpp
+//! @brief	DB APIを集約するクラスの基底クラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.4.4
+
 #include "pch.h"
 #include "DBLibrary.h"
 

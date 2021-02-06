@@ -1,9 +1,8 @@
-/**
- @file		Console.h
- @brief		コンソールに関するクラス
- @author	kumakuma0421@gmail.com
- @date		2019.12.21
- */
+//! @file	Console.h
+//! @brief	コンソールに関するWindowsAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2019.12.21
+
 #pragma once
 
 #include "framework.h"
@@ -11,10 +10,8 @@
 
 namespace alt
 {
-	/**
-	 @enum	ForeColor
-	 @brief	コンソール出力時の文字色設定
-	 */
+	//! @enum	ForeColor
+	//! @brief	コンソール出力時の文字色設定
 	enum class ForeColor
 	{
 		//! 黒
@@ -49,10 +46,8 @@ namespace alt
 		WhiteH = White | FOREGROUND_INTENSITY
 	};
 
-	/**
-	 @enum	BackColor
-	 @brief	コンソール出力時の背景色設定
-	 */
+	//! @enum	BackColor
+	//! @brief	コンソール出力時の背景色設定
 	enum class BackColor
 	{
 		//! 黒
@@ -87,10 +82,8 @@ namespace alt
 		WhiteH = White | BACKGROUND_INTENSITY
 	};
 
-	/**
-	 @class	Console
-	 @brief	コンソールに関するクラス
-	 */
+	//! @class	Console
+	//! @brief	コンソールに関するクラス
 	class DLL_DECLSPEC Console : public HandleLibrary
 	{
 	public:
@@ -100,13 +93,24 @@ namespace alt
 		//! @brief デストラクタ
 		virtual ~Console();
 
-		//! @brief コンソール出力ウィンドウを作成します。
+		//! @brief	コンソール出力ウィンドウを作成します。
+		//! @return BOOL	実行結果
+		//! @retval TRUE	成功
+		//! @retval FALSE	失敗
 		BOOL Create();
 
 		//! @brief Consoleクラスを初期化します。
+		//! @return BOOL	実行結果
+		//! @retval TRUE	成功
+		//! @retval FALSE 失敗
 		BOOL Init();
 
 		//! @brief 文字色、背景色を設定します。
+		//! @param[in] foreColor 文字色
+		//! @param[in] backColor 背景色
+		//! @return bool
+		//! @retval true 成功
+		//! @retval false 失敗
 		BOOL SetColor(ForeColor foreColor, BackColor backColor);
 
 		//! @brief コンソールに文字を出力します。
@@ -137,4 +141,3 @@ namespace alt
 		CONSOLE_SCREEN_BUFFER_INFO _prevConsoleScreenBufferInfo;
 	};
 }
-

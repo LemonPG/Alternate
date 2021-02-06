@@ -1,9 +1,8 @@
-/**
- @file		HeapMemory.cpp
- @brief		ヒープメモリに関するAPIを集約したクラス
- @author	kumakuma0421@gmail.com
- @date		2020.3.7
- */
+//! @file	HeapMemory.cpp
+//! @brief	ヒープメモリに関するAPIを集約したクラス
+//! @author	kumakuma0421@gmail.com
+//! @date	2020.3.7
+
 #include "pch.h"
 #include "HeapMemory.h"
 
