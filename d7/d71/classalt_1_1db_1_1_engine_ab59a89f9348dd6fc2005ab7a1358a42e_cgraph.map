@@ -1,6 +1,6 @@
 <map id="alt::db::Engine::CommitTransaction" name="alt::db::Engine::CommitTransaction">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,232,57"/>
-<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#af8d9775827ca60b3480d2ab83f7d0c14" title=" " alt="" coords="280,31,443,57"/>
-<area shape="rect" id="node3" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title=" " alt="" coords="491,5,668,32"/>
+<area shape="rect" id="node1" title="トランザクションコミット" alt="" coords="5,31,232,57"/>
+<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#af8d9775827ca60b3480d2ab83f7d0c14" title="SQLステートメント実行" alt="" coords="280,31,443,57"/>
+<area shape="rect" id="node3" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title="各関数の戻り値判定共通" alt="" coords="491,5,668,32"/>
 <area shape="rect" id="node4" href="$de/dd3/sqlite3_8h.html#a97487ec8150e0bcc8fa392ab8f0e24db" title=" " alt="" coords="532,56,627,83"/>
 </map>

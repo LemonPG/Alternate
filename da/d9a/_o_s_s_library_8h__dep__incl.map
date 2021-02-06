@@ -1,7 +1,7 @@
 <map id="C:/Users/User01/source/repos/Alternate/OSSLibrary/OSSLibrary.h" name="C:/Users/User01/source/repos/Alternate/OSSLibrary/OSSLibrary.h">
-<area shape="rect" id="node1" title=" " alt="" coords="345,5,531,61"/>
+<area shape="rect" id="node1" title="Open Source Software を集約したプロジェクトファイル" alt="" coords="345,5,531,61"/>
 <area shape="rect" id="node2" href="$d2/d46/_o_s_s_library_8cpp.html" title="Open Source Software を集約したプロジェクトファイル" alt="" coords="5,109,191,165"/>
-<area shape="rect" id="node3" href="$d8/da9/_o_s_s_library_test_8cpp.html" title=" " alt="" coords="215,109,426,165"/>
-<area shape="rect" id="node4" href="$da/dda/_pico_json_test_8cpp.html" title=" " alt="" coords="450,109,661,165"/>
-<area shape="rect" id="node5" href="$d5/d4d/_o_s_s_library_test_2_template_test_8cpp.html" title=" " alt="" coords="685,109,895,165"/>
+<area shape="rect" id="node3" href="$d8/da9/_o_s_s_library_test_8cpp.html" title="OSSLibraryプロジェクトのテストクラス" alt="" coords="215,109,426,165"/>
+<area shape="rect" id="node4" href="$da/dda/_pico_json_test_8cpp.html" title="PicoJsonのテストクラス" alt="" coords="450,109,661,165"/>
+<area shape="rect" id="node5" href="$d5/d4d/_o_s_s_library_test_2_template_test_8cpp.html" title="テストクラスのテンプレート" alt="" coords="685,109,895,165"/>
 </map>

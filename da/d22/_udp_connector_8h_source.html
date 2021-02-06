@@ -88,36 +88,36 @@ $(document).ready(function(){initNavTree('da/d22/_udp_connector_8h_source.html',
 </div><!--header-->
 <div class="contents">
 <a href="../../da/d22/_udp_connector_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d3/d2b/classalt_1_1_udp_connector.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html">UdpConnector</a> : <span class="keyword">public</span> <a class="code" href="../../d8/d51/classalt_1_1_socket_library.html">SocketLibrary</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html">UdpConnector</a>(SOCKET socket);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> BOOL SetSockAddr(LPCTSTR lpctszAddress, u_short portNo);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> INT Send(LPVOID lpvBuf, DWORD dwSize);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> INT Recv(LPVOID lpvBuf, DWORD dwSize);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html">UdpConnector</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d3/d2b/classalt_1_1_udp_connector.html#a1fcce3ed2843bbc299c651a67629ae78">   29</a></span>&#160;        SOCKADDR_IN <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html#a1fcce3ed2843bbc299c651a67629ae78">_sockAddrIn</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d3/d2b/classalt_1_1_udp_connector.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html">UdpConnector</a> : <span class="keyword">public</span> <a class="code" href="../../d8/d51/classalt_1_1_socket_library.html">SocketLibrary</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html">UdpConnector</a>(SOCKET socket);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> BOOL SetSockAddr(LPCTSTR lpctszAddress, u_short portNo);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> INT Send(LPVOID lpvBuf, DWORD dwSize);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> INT Recv(LPVOID lpvBuf, DWORD dwSize);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html">UdpConnector</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d3/d2b/classalt_1_1_udp_connector.html#a1fcce3ed2843bbc299c651a67629ae78">   26</a></span>&#160;        SOCKADDR_IN <a class="code" href="../../d3/d2b/classalt_1_1_udp_connector.html#a1fcce3ed2843bbc299c651a67629ae78">_sockAddrIn</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_windows_library_2framework_8h_html"><div class="ttname"><a href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a></div><div class="ttdoc">このプロジェクトのポーティングに関する情報</div></div>
-<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1_udp_connector_html_a1fcce3ed2843bbc299c651a67629ae78"><div class="ttname"><a href="../../d3/d2b/classalt_1_1_udp_connector.html#a1fcce3ed2843bbc299c651a67629ae78">alt::UdpConnector::_sockAddrIn</a></div><div class="ttdeci">SOCKADDR_IN _sockAddrIn</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/_udp_connector_8h_source.html#l00029">UdpConnector.h:29</a></div></div>
-<div class="ttc" id="aclassalt_1_1_socket_library_html"><div class="ttname"><a href="../../d8/d51/classalt_1_1_socket_library.html">alt::SocketLibrary</a></div><div class="ttdoc">WinSockを使用するAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00131">WindowsLibrary.h:132</a></div></div>
-<div class="ttc" id="aclassalt_1_1_udp_connector_html"><div class="ttname"><a href="../../d3/d2b/classalt_1_1_udp_connector.html">alt::UdpConnector</a></div><div class="ttdoc">UDP通信に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/_udp_connector_8h_source.html#l00018">UdpConnector.h:19</a></div></div>
-<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_udp_connector_html_a1fcce3ed2843bbc299c651a67629ae78"><div class="ttname"><a href="../../d3/d2b/classalt_1_1_udp_connector.html#a1fcce3ed2843bbc299c651a67629ae78">alt::UdpConnector::_sockAddrIn</a></div><div class="ttdeci">SOCKADDR_IN _sockAddrIn</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/_udp_connector_8h_source.html#l00026">UdpConnector.h:26</a></div></div>
+<div class="ttc" id="aclassalt_1_1_socket_library_html"><div class="ttname"><a href="../../d8/d51/classalt_1_1_socket_library.html">alt::SocketLibrary</a></div><div class="ttdoc">WinSockを使用するAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00104">WindowsLibrary.h:105</a></div></div>
+<div class="ttc" id="aclassalt_1_1_udp_connector_html"><div class="ttname"><a href="../../d3/d2b/classalt_1_1_udp_connector.html">alt::UdpConnector</a></div><div class="ttdoc">UDP通信に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/_udp_connector_8h_source.html#l00015">UdpConnector.h:16</a></div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約したプロジェクトファイル</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

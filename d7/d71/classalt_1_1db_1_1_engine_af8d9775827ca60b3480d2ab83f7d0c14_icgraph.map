@@ -1,8 +1,8 @@
 <map id="alt::db::Engine::Execute" name="alt::db::Engine::Execute">
-<area shape="rect" id="node1" title=" " alt="" coords="472,107,635,133"/>
-<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#a9a886522def9c0d6ca60ccbeaf177482" title=" " alt="" coords="203,5,418,32"/>
+<area shape="rect" id="node1" title="SQLステートメント実行" alt="" coords="472,107,635,133"/>
+<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#a9a886522def9c0d6ca60ccbeaf177482" title="トランザクション開始" alt="" coords="203,5,418,32"/>
 <area shape="rect" id="node3" href="$d5/ddf/namespace_d_b_library_test.html#a813570a8a6ff685a8dde68341f0ca51d" title=" " alt="" coords="5,49,149,90"/>
-<area shape="rect" id="node4" href="$d7/d71/classalt_1_1db_1_1_engine.html#ab59a89f9348dd6fc2005ab7a1358a42e" title=" " alt="" coords="197,107,424,133"/>
-<area shape="rect" id="node5" href="$d7/d71/classalt_1_1db_1_1_engine.html#aa8c9dbeffa7ed243990aa04c643189a4" title=" " alt="" coords="229,158,393,199"/>
-<area shape="rect" id="node6" href="$d7/d71/classalt_1_1db_1_1_engine.html#a324a4a683a114d30aa422229fdac3131" title=" " alt="" coords="229,224,392,251"/>
+<area shape="rect" id="node4" href="$d7/d71/classalt_1_1db_1_1_engine.html#ab59a89f9348dd6fc2005ab7a1358a42e" title="トランザクションコミット" alt="" coords="197,107,424,133"/>
+<area shape="rect" id="node5" href="$d7/d71/classalt_1_1db_1_1_engine.html#aa8c9dbeffa7ed243990aa04c643189a4" title="トランザクションロールバック" alt="" coords="229,158,393,199"/>
+<area shape="rect" id="node6" href="$d7/d71/classalt_1_1db_1_1_engine.html#a324a4a683a114d30aa422229fdac3131" title="空き領域の整理" alt="" coords="229,224,392,251"/>
 </map>

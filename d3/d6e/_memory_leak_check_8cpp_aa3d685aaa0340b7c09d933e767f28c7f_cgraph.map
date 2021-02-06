@@ -1,9 +1,9 @@
 <map id="_tmain" name="_tmain">
 <area shape="rect" id="node1" title=" " alt="" coords="5,345,67,371"/>
-<area shape="rect" id="node2" href="$dd/dc4/class_leak_check_1_1_array_memory_leak_check.html#a1aabc5188705ff015f0048c05eb947d3" title=" " alt="" coords="115,115,316,156"/>
-<area shape="rect" id="node7" href="$d9/d10/class_leak_check_1_1_t_string_memory_leak_check.html#ab0f370fa3b387d9f825da5ffe96d6b9a" title=" " alt="" coords="124,304,307,345"/>
-<area shape="rect" id="node21" href="$dd/dc4/class_leak_check_1_1_array_memory_leak_check.html#a7a08e881d0007467f42abc8a93e38dcb" title=" " alt="" coords="115,369,316,411"/>
-<area shape="rect" id="node22" href="$d9/d10/class_leak_check_1_1_t_string_memory_leak_check.html#a315394b00f5e9d7223eb355158279189" title=" " alt="" coords="124,435,307,476"/>
+<area shape="rect" id="node2" href="$dd/dc4/class_leak_check_1_1_array_memory_leak_check.html#a1aabc5188705ff015f0048c05eb947d3" title="メモリーリーク調査" alt="" coords="115,115,316,156"/>
+<area shape="rect" id="node7" href="$d9/d10/class_leak_check_1_1_t_string_memory_leak_check.html#ab0f370fa3b387d9f825da5ffe96d6b9a" title="メモリーリーク調査" alt="" coords="124,304,307,345"/>
+<area shape="rect" id="node21" href="$dd/dc4/class_leak_check_1_1_array_memory_leak_check.html#a7a08e881d0007467f42abc8a93e38dcb" title="初期化処理" alt="" coords="115,369,316,411"/>
+<area shape="rect" id="node22" href="$d9/d10/class_leak_check_1_1_t_string_memory_leak_check.html#a315394b00f5e9d7223eb355158279189" title="初期化処理" alt="" coords="124,435,307,476"/>
 <area shape="rect" id="node3" href="$db/d6a/classalt_1_1skeleton_1_1_array.html#aa5d0d3ce767071dd9f96815f946c040c" title=" " alt="" coords="397,5,529,47"/>
 <area shape="rect" id="node4" href="$d5/de3/class_leak_check_1_1_object_holder.html#a5aba27f9d5a3c3c3e6a9d16ed4664751" title=" " alt="" coords="364,71,563,98"/>
 <area shape="rect" id="node5" href="$db/d6a/classalt_1_1skeleton_1_1_array.html#a9d25df2353c24573efb6255cdd4646a8" title=" " alt="" coords="383,122,544,149"/>

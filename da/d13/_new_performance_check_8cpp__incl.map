@@ -15,9 +15,9 @@
 <area shape="rect" id="node34" href="$d8/d48/_thread_8h.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="1199,259,1271,285"/>
 <area shape="rect" id="node35" href="$de/d6d/_event_8h.html" title="イベントに関するWindowsAPIを集約したクラス" alt="" coords="1311,333,1376,360"/>
 <area shape="rect" id="node13" href="$de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="778,259,853,285"/>
-<area shape="rect" id="node30" href="$d3/d6e/_console_8h.html" title="コンソールに関するクラス" alt="" coords="873,408,953,435"/>
+<area shape="rect" id="node30" href="$d3/d6e/_console_8h.html" title="コンソールに関するWindowsAPIを集約したクラス" alt="" coords="873,408,953,435"/>
 <area shape="rect" id="node14" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="867,483,959,509"/>
-<area shape="rect" id="node27" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="1109,483,1234,509"/>
+<area shape="rect" id="node27" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="1109,483,1234,509"/>
 <area shape="rect" id="node28" href="$db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="753,333,832,360"/>
 <area shape="rect" id="node15" title=" " alt="" coords="395,557,478,584"/>
 <area shape="rect" id="node16" title=" " alt="" coords="503,557,565,584"/>

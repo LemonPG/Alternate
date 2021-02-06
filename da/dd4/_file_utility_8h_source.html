@@ -88,43 +88,43 @@ $(document).ready(function(){initNavTree('da/dd4/_file_utility_8h_source.html','
 </div><!--header-->
 <div class="contents">
 <a href="../../da/dd4/_file_utility_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d0c/_file_8h.html">File.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d15/_t_string_8h.html">TString.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d5e/_array_8hpp.html">Array.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d3/d85/classalt_1_1_file_utility.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html">FileUtility</a> : <span class="keyword">public</span> <a class="code" href="../../de/dcb/classalt_1_1_windows_library.html">WindowsLibrary</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">static</span> BOOL Delete(LPCTSTR name);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> BOOL Copy(LPCTSTR source, LPCTSTR dest, BOOL bFailIfExists = FALSE);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">static</span> BOOL Move(LPCTSTR source, LPCTSTR dest);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> BOOL MakeDir(LPCTSTR name);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> BOOL RemoveDir(LPCTSTR name);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">static</span> BOOL IsExist(LPCTSTR name);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">static</span> <a class="code" href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">skeleton::Array&lt;TString&gt;</a> Find(LPCTSTR name);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> BOOL DirectoryWatch(LPCTSTR watchDirectory);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> BOOL MakeSymbolicLink(LPCTSTR source, LPCTSTR link, BOOL isFile = TRUE);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">static</span> BOOL MakeHardLink(LPCTSTR source, LPCTSTR link);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d0c/_file_8h.html">File.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d15/_t_string_8h.html">TString.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d5e/_array_8hpp.html">Array.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d3/d85/classalt_1_1_file_utility.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html">FileUtility</a> : <span class="keyword">public</span> <a class="code" href="../../de/dcb/classalt_1_1_windows_library.html">WindowsLibrary</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">static</span> BOOL Delete(LPCTSTR name);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">static</span> BOOL Copy(LPCTSTR source, LPCTSTR dest, BOOL bFailIfExists = FALSE);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">static</span> BOOL Move(LPCTSTR source, LPCTSTR dest);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">static</span> BOOL MakeDir(LPCTSTR name);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> BOOL RemoveDir(LPCTSTR name);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">static</span> BOOL IsExist(LPCTSTR name);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> <a class="code" href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">skeleton::Array&lt;TString&gt;</a> Find(LPCTSTR name);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> BOOL DirectoryWatch(LPCTSTR watchDirectory);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">static</span> BOOL MakeSymbolicLink(LPCTSTR source, LPCTSTR link, BOOL isFile = TRUE);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">static</span> BOOL MakeHardLink(LPCTSTR source, LPCTSTR link);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_file_8h_html"><div class="ttname"><a href="../../df/d0c/_file_8h.html">File.h</a></div><div class="ttdoc">ファイルIOに関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1skeleton_1_1_array_html"><div class="ttname"><a href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">alt::skeleton::Array</a></div><div class="ttdoc">サイズ可変の配列を具現したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5e/_array_8hpp_source.html#l00022">Array.hpp:23</a></div></div>
-<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00018">WindowsLibrary.h:19</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_array_html"><div class="ttname"><a href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">alt::skeleton::Array</a></div><div class="ttdoc">サイズ可変の配列を具現したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5e/_array_8hpp_source.html#l00019">Array.hpp:20</a></div></div>
+<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00015">WindowsLibrary.h:16</a></div></div>
 <div class="ttc" id="a_windows_library_2framework_8h_html"><div class="ttname"><a href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a></div><div class="ttdoc">このプロジェクトのポーティングに関する情報</div></div>
-<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
 <div class="ttc" id="a_array_8hpp_html"><div class="ttname"><a href="../../db/d5e/_array_8hpp.html">Array.hpp</a></div><div class="ttdoc">可変配列に関するクラス</div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
 <div class="ttc" id="a_t_string_8h_html"><div class="ttname"><a href="../../de/d15/_t_string_8h.html">TString.h</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_file_utility_html"><div class="ttname"><a href="../../d3/d85/classalt_1_1_file_utility.html">alt::FileUtility</a></div><div class="ttdoc">ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd4/_file_utility_8h_source.html#l00020">FileUtility.h:21</a></div></div>
+<div class="ttc" id="aclassalt_1_1_file_utility_html"><div class="ttname"><a href="../../d3/d85/classalt_1_1_file_utility.html">alt::FileUtility</a></div><div class="ttdoc">ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd4/_file_utility_8h_source.html#l00017">FileUtility.h:18</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

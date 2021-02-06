@@ -88,38 +88,38 @@ $(document).ready(function(){initNavTree('df/d0c/_file_8h_source.html','../../')
 </div><!--header-->
 <div class="contents">
 <a href="../../df/d0c/_file_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d1/dfc/classalt_1_1_file.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d1/dfc/classalt_1_1_file.html">File</a> : <span class="keyword">public</span> <a class="code" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html">ReadWriteHandleLibrary</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        BOOL Create(LPCTSTR lpctszFileName, DWORD dwDesiredAccess, DWORD dwShareMode, DWORD dwCreationDisposition);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        BOOL SetPointer(DWORD dwMoveMethod, LARGE_INTEGER liDistanceToMove = { 0 });</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        BOOL SetEOF();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        LONGLONG GetSize();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        DWORD GetType();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d1/dfc/classalt_1_1_file.html#a4ca639426928b82f25f4d1424021a96f">   75</a></span>&#160;        BOOL <a class="code" href="../../d1/dfc/classalt_1_1_file.html#a4ca639426928b82f25f4d1424021a96f">IsOpen</a>() { <span class="keywordflow">return</span> _hObject == INVALID_HANDLE_VALUE ? FALSE : TRUE; };</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/dfc/classalt_1_1_file.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d1/dfc/classalt_1_1_file.html">File</a> : <span class="keyword">public</span> <a class="code" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html">ReadWriteHandleLibrary</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        BOOL Create(LPCTSTR lpctszFileName, DWORD dwDesiredAccess, DWORD dwShareMode, DWORD dwCreationDisposition);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        BOOL SetPointer(DWORD dwMoveMethod, LARGE_INTEGER liDistanceToMove = { 0 });</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        BOOL SetEOF();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        LONGLONG GetSize();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        DWORD GetType();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d1/dfc/classalt_1_1_file.html#a4ca639426928b82f25f4d1424021a96f">   60</a></span>&#160;        BOOL <a class="code" href="../../d1/dfc/classalt_1_1_file.html#a4ca639426928b82f25f4d1424021a96f">IsOpen</a>() { <span class="keywordflow">return</span> _hObject == INVALID_HANDLE_VALUE ? FALSE : TRUE; };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_file_html_a4ca639426928b82f25f4d1424021a96f"><div class="ttname"><a href="../../d1/dfc/classalt_1_1_file.html#a4ca639426928b82f25f4d1424021a96f">alt::File::IsOpen</a></div><div class="ttdeci">BOOL IsOpen()</div><div class="ttdoc">ファイルがすでに操作可能か否か。</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00075">File.h:75</a></div></div>
-<div class="ttc" id="aclassalt_1_1_file_html"><div class="ttname"><a href="../../d1/dfc/classalt_1_1_file.html">alt::File</a></div><div class="ttdoc">ファイルIOに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00018">File.h:19</a></div></div>
+<div class="ttc" id="aclassalt_1_1_file_html_a4ca639426928b82f25f4d1424021a96f"><div class="ttname"><a href="../../d1/dfc/classalt_1_1_file.html#a4ca639426928b82f25f4d1424021a96f">alt::File::IsOpen</a></div><div class="ttdeci">BOOL IsOpen()</div><div class="ttdoc">ファイルがすでに操作可能か否か。</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00060">File.h:60</a></div></div>
+<div class="ttc" id="aclassalt_1_1_file_html"><div class="ttname"><a href="../../d1/dfc/classalt_1_1_file.html">alt::File</a></div><div class="ttdoc">ファイルIOに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00015">File.h:16</a></div></div>
 <div class="ttc" id="a_windows_library_2framework_8h_html"><div class="ttname"><a href="../../de/d30/_windows_library_2framework_8h.html">framework.h</a></div><div class="ttdoc">このプロジェクトのポーティングに関する情報</div></div>
-<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1_read_write_handle_library_html"><div class="ttname"><a href="../../d2/d8c/classalt_1_1_read_write_handle_library.html">alt::ReadWriteHandleLibrary</a></div><div class="ttdoc">HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00077">WindowsLibrary.h:78</a></div></div>
-<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_read_write_handle_library_html"><div class="ttname"><a href="../../d2/d8c/classalt_1_1_read_write_handle_library.html">alt::ReadWriteHandleLibrary</a></div><div class="ttdoc">HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00061">WindowsLibrary.h:62</a></div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約したプロジェクトファイル</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

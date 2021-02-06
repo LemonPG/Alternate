@@ -1,5 +1,5 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibraryTest/DiagnosticsTest.cpp" name="C:/Users/User01/source/repos/Alternate/WindowsLibraryTest/DiagnosticsTest.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,474,61"/>
+<area shape="rect" id="node1" title="システム性能に関するWindowsAPIを集約したクラスのテストクラス" alt="" coords="263,5,474,61"/>
 <area shape="rect" id="node2" href="$d3/dcd/_windows_library_test_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="199,109,253,136"/>
 <area shape="rect" id="node6" href="$d5/d6d/_diagnostics_8h.html" title="システム性能に関するWindowsAPIを集約したクラス" alt="" coords="255,259,357,285"/>
 <area shape="rect" id="node8" href="$df/d0c/_file_8h.html" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="395,333,449,360"/>
@@ -7,7 +7,7 @@
 <area shape="rect" id="node3" title=" " alt="" coords="5,184,97,211"/>
 <area shape="rect" id="node4" title=" " alt="" coords="122,184,226,211"/>
 <area shape="rect" id="node5" title=" " alt="" coords="250,184,306,211"/>
-<area shape="rect" id="node7" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="391,408,517,435"/>
+<area shape="rect" id="node7" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="391,408,517,435"/>
 <area shape="rect" id="node9" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="628,408,720,435"/>
 <area shape="rect" id="node10" title=" " alt="" coords="13,483,95,509"/>
 <area shape="rect" id="node11" title=" " alt="" coords="120,483,183,509"/>

@@ -3,9 +3,9 @@
 <area shape="rect" id="node2" href="$dd/da6/_performance_check_8h.html" title="性能測定用" alt="" coords="155,259,298,285"/>
 <area shape="rect" id="node22" href="$d6/dec/_logger_8h.html" title="ログに関するクラス" alt="" coords="364,109,436,136"/>
 <area shape="rect" id="node3" href="$de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="524,333,599,360"/>
-<area shape="rect" id="node21" href="$d3/d6e/_console_8h.html" title="コンソールに関するクラス" alt="" coords="191,408,271,435"/>
+<area shape="rect" id="node21" href="$d3/d6e/_console_8h.html" title="コンソールに関するWindowsAPIを集約したクラス" alt="" coords="191,408,271,435"/>
 <area shape="rect" id="node4" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,557,713,584"/>
-<area shape="rect" id="node18" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="175,557,300,584"/>
+<area shape="rect" id="node18" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="175,557,300,584"/>
 <area shape="rect" id="node19" href="$db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="651,408,730,435"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,632,88,659"/>
 <area shape="rect" id="node6" title=" " alt="" coords="113,632,175,659"/>

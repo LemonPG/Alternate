@@ -1,12 +1,12 @@
 <map id="C:/Users/User01/source/repos/Alternate/MiddleLibraryTest/MiddleLibraryTest.cpp" name="C:/Users/User01/source/repos/Alternate/MiddleLibraryTest/MiddleLibraryTest.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="573,5,767,61"/>
+<area shape="rect" id="node1" title="MiddleLibraryプロジェクトのテストクラス" alt="" coords="573,5,767,61"/>
 <area shape="rect" id="node2" href="$d9/d34/_middle_library_test_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="261,184,316,211"/>
-<area shape="rect" id="node7" href="$d3/dcf/_middle_library_8h.html" title="MiddleLibraryソリューションのメインクラス" alt="" coords="731,109,841,136"/>
+<area shape="rect" id="node7" href="$d3/dcf/_middle_library_8h.html" title="MiddleLibraryプロジェクトのメインクラス" alt="" coords="731,109,841,136"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,259,97,285"/>
 <area shape="rect" id="node4" title=" " alt="" coords="122,259,226,285"/>
 <area shape="rect" id="node5" title=" " alt="" coords="250,259,327,285"/>
 <area shape="rect" id="node6" title=" " alt="" coords="351,259,407,285"/>
-<area shape="rect" id="node8" href="$de/df9/_middle_library_2framework_8h.html" title=" " alt="" coords="615,184,707,211"/>
+<area shape="rect" id="node8" href="$de/df9/_middle_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="615,184,707,211"/>
 <area shape="rect" id="node17" href="$de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="1050,259,1125,285"/>
 <area shape="rect" id="node33" href="$da/dd4/_file_utility_8h.html" title="ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="1119,184,1205,211"/>
 <area shape="rect" id="node9" title=" " alt="" coords="393,557,475,584"/>
@@ -18,7 +18,7 @@
 <area shape="rect" id="node15" title=" " alt="" coords="889,259,944,285"/>
 <area shape="rect" id="node16" title=" " alt="" coords="968,259,1025,285"/>
 <area shape="rect" id="node18" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="1008,483,1100,509"/>
-<area shape="rect" id="node30" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="1125,483,1250,509"/>
+<area shape="rect" id="node30" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="1125,483,1250,509"/>
 <area shape="rect" id="node31" href="$db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="1072,333,1151,360"/>
 <area shape="rect" id="node19" title=" " alt="" coords="587,557,681,584"/>
 <area shape="rect" id="node20" title=" " alt="" coords="705,557,795,584"/>

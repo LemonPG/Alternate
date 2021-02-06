@@ -1,4 +1,4 @@
 <map id="PerfCheck::UDPPerformanceCheck" name="PerfCheck::UDPPerformanceCheck">
-<area shape="rect" id="node1" title="UDPクラス性能測定用" alt="" coords="10,80,201,121"/>
+<area shape="rect" id="node1" title="UDP性能測定用" alt="" coords="10,80,201,121"/>
 <area shape="rect" id="node2" href="$d5/d0c/class_perf_check_1_1_performance_check.html" title="性能測定用" alt="" coords="5,5,205,32"/>
 </map>

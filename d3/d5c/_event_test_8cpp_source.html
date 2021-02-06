@@ -87,258 +87,255 @@ $(document).ready(function(){initNavTree('d3/d5c/_event_test_8cpp_source.html','
 <div class="title">EventTest.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d3/d5c/_event_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d6d/_event_8h.html">Event.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d48/_thread_8h.html">Thread.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">EventTest1</a> : <span class="keyword">public</span> <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a71bf42839b709023572e9aac15e90f64">   20</a></span>&#160;        <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a71bf42839b709023572e9aac15e90f64">EventTest1</a>(BOOL bOwner)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            _bOwner = bOwner;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            _thread = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a03385aa95fa02afbff922f31e6ade8a1">   26</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a03385aa95fa02afbff922f31e6ade8a1">~EventTest1</a>()</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">   30</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>()</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                BOOL ret = _event.Create(_T(<span class="stringliteral">&quot;EventTest1&quot;</span>), FALSE, TRUE); <span class="comment">// 自動リセットイベント</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                BOOL ret = _event.Open(_T(<span class="stringliteral">&quot;EventTest1&quot;</span>));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            _thread = <span class="keyword">new</span> <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            BOOL ret = _thread-&gt;Create();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">   48</a></span>&#160;        HANDLE <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>() { <span class="keywordflow">return</span> _thread-&gt;GetHandle(); };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">   51</a></span>&#160;        <span class="keyword">virtual</span> DWORD <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">Invoke</a>(LPVOID lpvParam)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() called.\n&quot;</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                Logger::WriteMessage(<span class="stringliteral">&quot;--- Event pulse after 5 seconds ---\n&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                Sleep(5000);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                BOOL ret = _event.Pulse();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                Logger::WriteMessage(<span class="stringliteral">&quot;--- Event pulsed ---\n&quot;</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                DWORD dwRet = _event.Wait();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                Logger::WriteMessage(<span class="stringliteral">&quot;--- Event received ---\n&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                Assert::AreEqual(WAIT_OBJECT_0, dwRet);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() stopped.\n&quot;</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#af44c587ea2fab68e3aef3fec73cf2d0d">   75</a></span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#af44c587ea2fab68e3aef3fec73cf2d0d">_thread</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3ce72753e75bbc78aca34080061af2ca">   76</a></span>&#160;        <a class="code" href="../../d1/d4d/classalt_1_1_event.html">alt::Event</a> <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3ce72753e75bbc78aca34080061af2ca">_event</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3db75dd4bc3a60b61f4dbc835f8fe1c2">   77</a></span>&#160;        BOOL <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3db75dd4bc3a60b61f4dbc835f8fe1c2">_bOwner</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    };</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">   84</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">EventTest2</a> : <span class="keyword">public</span> <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eaf7318cd2534db2f0654b9ddf396ad">   87</a></span>&#160;        <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eaf7318cd2534db2f0654b9ddf396ad">EventTest2</a>(BOOL bOwner)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            _bOwner = bOwner;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            _thread = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        };</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a09856bcb2eb7ae30b828514e15985aed">   93</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a09856bcb2eb7ae30b828514e15985aed">~EventTest2</a>()</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        };</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">   97</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>()</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                BOOL ret = _event.Create(_T(<span class="stringliteral">&quot;EventTest2&quot;</span>), TRUE, FALSE); <span class="comment">// 手動リセットイベント</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                BOOL ret = _event.Open(_T(<span class="stringliteral">&quot;EventTest2&quot;</span>));</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            _thread = <span class="keyword">new</span> <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            BOOL ret = _thread-&gt;Create();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        };</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">  115</a></span>&#160;        HANDLE <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>() { <span class="keywordflow">return</span> _thread-&gt;GetHandle(); };</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">  118</a></span>&#160;        <span class="keyword">virtual</span> DWORD <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">Invoke</a>(LPVOID lpvParam)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() called.\n&quot;</span>);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            BOOL ret;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordtype">int</span> iLoopCount = (_bOwner ? 5 : 20);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; iLoopCount; i++)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">if</span> (_bOwner)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event set after 5 seconds ---\n&quot;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    Sleep(2000);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    ret = _event.Set();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event set ---\n&quot;</span>);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    Sleep(2000);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    ret = _event.Reset();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event reset ---\n&quot;</span>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    DWORD dwRet = _event.Wait();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event received ---\n&quot;</span>);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                    Assert::AreEqual(WAIT_OBJECT_0, dwRet);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    Sleep(500);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                ret = _event.Set();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() stopped.\n&quot;</span>);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        };</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#acae2f5cee066959b581542899146b404">  160</a></span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#acae2f5cee066959b581542899146b404">_thread</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a53840103280054a2eb8bded6e2d8222b">  161</a></span>&#160;        <a class="code" href="../../d1/d4d/classalt_1_1_event.html">alt::Event</a> <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a53840103280054a2eb8bded6e2d8222b">_event</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a64f8e36616fc8b81156a1b022a9842ff">  162</a></span>&#160;        BOOL <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a64f8e36616fc8b81156a1b022a9842ff">_bOwner</a>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    };</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#a710431da044c9d16f5e9d74d4ef29797">  165</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a710431da044c9d16f5e9d74d4ef29797">TEST_CLASS</a>(EventTest)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        TEST_METHOD(<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">EventTest1</a>)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest1 Start.\n&quot;</span>);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a> eventTestSender(TRUE);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a> eventTestReceiver1(FALSE);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a> eventTestReceiver2(FALSE);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            eventTestSender.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            eventTestReceiver1.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            eventTestReceiver2.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            HANDLE hThreads[3];</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            hThreads[0] = eventTestSender.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            hThreads[1] = eventTestReceiver1.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            hThreads[2] = eventTestReceiver2.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            WaitForMultipleObjects(3, hThreads, TRUE, INFINITE);</div>
+<a href="../../d3/d5c/_event_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d6d/_event_8h.html">Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d48/_thread_8h.html">Thread.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">EventTest1</a> : <span class="keyword">public</span> <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a71bf42839b709023572e9aac15e90f64">   19</a></span>&#160;        <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a71bf42839b709023572e9aac15e90f64">EventTest1</a>(BOOL bOwner)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            _bOwner = bOwner;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            _thread = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a03385aa95fa02afbff922f31e6ade8a1">   25</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a03385aa95fa02afbff922f31e6ade8a1">~EventTest1</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">   29</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                BOOL ret = _event.Create(_T(<span class="stringliteral">&quot;EventTest1&quot;</span>), FALSE, TRUE); <span class="comment">// 自動リセットイベント</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                BOOL ret = _event.Open(_T(<span class="stringliteral">&quot;EventTest1&quot;</span>));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            _thread = <span class="keyword">new</span> <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            BOOL ret = _thread-&gt;Create();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">   47</a></span>&#160;        HANDLE <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>() { <span class="keywordflow">return</span> _thread-&gt;GetHandle(); };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">   50</a></span>&#160;        <span class="keyword">virtual</span> DWORD <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">Invoke</a>(LPVOID lpvParam)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() called.\n&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                Logger::WriteMessage(<span class="stringliteral">&quot;--- Event pulse after 5 seconds ---\n&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                Sleep(5000);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                BOOL ret = _event.Pulse();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                Logger::WriteMessage(<span class="stringliteral">&quot;--- Event pulsed ---\n&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                DWORD dwRet = _event.Wait();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                Logger::WriteMessage(<span class="stringliteral">&quot;--- Event received ---\n&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                Assert::AreEqual(WAIT_OBJECT_0, dwRet);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() stopped.\n&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#af44c587ea2fab68e3aef3fec73cf2d0d">   74</a></span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#af44c587ea2fab68e3aef3fec73cf2d0d">_thread</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3ce72753e75bbc78aca34080061af2ca">   75</a></span>&#160;        <a class="code" href="../../d1/d4d/classalt_1_1_event.html">alt::Event</a> <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3ce72753e75bbc78aca34080061af2ca">_event</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3db75dd4bc3a60b61f4dbc835f8fe1c2">   76</a></span>&#160;        BOOL <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3db75dd4bc3a60b61f4dbc835f8fe1c2">_bOwner</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">   81</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">EventTest2</a> : <span class="keyword">public</span> <a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eaf7318cd2534db2f0654b9ddf396ad">   84</a></span>&#160;        <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eaf7318cd2534db2f0654b9ddf396ad">EventTest2</a>(BOOL bOwner)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            _bOwner = bOwner;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            _thread = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a09856bcb2eb7ae30b828514e15985aed">   90</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a09856bcb2eb7ae30b828514e15985aed">~EventTest2</a>()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">   94</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                BOOL ret = _event.Create(_T(<span class="stringliteral">&quot;EventTest2&quot;</span>), TRUE, FALSE); <span class="comment">// 手動リセットイベント</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                BOOL ret = _event.Open(_T(<span class="stringliteral">&quot;EventTest2&quot;</span>));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            _thread = <span class="keyword">new</span> <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            BOOL ret = _thread-&gt;Create();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        };</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">  112</a></span>&#160;        HANDLE <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>() { <span class="keywordflow">return</span> _thread-&gt;GetHandle(); };</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">  115</a></span>&#160;        <span class="keyword">virtual</span> DWORD <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">Invoke</a>(LPVOID lpvParam)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() called.\n&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            BOOL ret;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordtype">int</span> iLoopCount = (_bOwner ? 5 : 20);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; iLoopCount; i++)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">if</span> (_bOwner)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event set after 5 seconds ---\n&quot;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    Sleep(2000);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    ret = _event.Set();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event set ---\n&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    Sleep(2000);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    ret = _event.Reset();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event reset ---\n&quot;</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    DWORD dwRet = _event.Wait();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    Logger::WriteMessage(<span class="stringliteral">&quot;--- Event received ---\n&quot;</span>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    Assert::AreEqual(WAIT_OBJECT_0, dwRet);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    Sleep(500);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">if</span> (_bOwner)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                ret = _event.Set();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;Thread::Invoke() stopped.\n&quot;</span>);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        };</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#acae2f5cee066959b581542899146b404">  157</a></span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#acae2f5cee066959b581542899146b404">_thread</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a53840103280054a2eb8bded6e2d8222b">  158</a></span>&#160;        <a class="code" href="../../d1/d4d/classalt_1_1_event.html">alt::Event</a> <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a53840103280054a2eb8bded6e2d8222b">_event</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a64f8e36616fc8b81156a1b022a9842ff">  159</a></span>&#160;        BOOL <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a64f8e36616fc8b81156a1b022a9842ff">_bOwner</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    };</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#a710431da044c9d16f5e9d74d4ef29797">  162</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a710431da044c9d16f5e9d74d4ef29797">TEST_CLASS</a>(EventTest)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        TEST_METHOD(<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">EventTest1</a>)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest1 Start.\n&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a> eventTestSender(TRUE);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a> eventTestReceiver1(FALSE);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a> eventTestReceiver2(FALSE);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            eventTestSender.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            eventTestReceiver1.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            eventTestReceiver2.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">Start</a>();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            HANDLE hThreads[3];</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            hThreads[0] = eventTestSender.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            hThreads[1] = eventTestReceiver1.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>();</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            hThreads[2] = eventTestReceiver2.<a class="code" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">GetHandle</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            WaitForMultipleObjects(3, hThreads, TRUE, INFINITE);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest1 stopped.\n&quot;</span>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest1 stopped.\n&quot;</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        TEST_METHOD(<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">EventTest2</a>)</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest2 Start.\n&quot;</span>);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a> eventTestSender(TRUE);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a> eventTestReceiver1(FALSE);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a> eventTestReceiver2(FALSE);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            eventTestSender.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            eventTestReceiver1.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            eventTestReceiver2.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            HANDLE hThreads[3];</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            hThreads[0] = eventTestSender.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            hThreads[1] = eventTestReceiver1.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            hThreads[2] = eventTestReceiver2.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            WaitForMultipleObjects(3, hThreads, TRUE, INFINITE);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest2 stopped.\n&quot;</span>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    };</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        TEST_METHOD(<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">EventTest2</a>)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest2 Start.\n&quot;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a> eventTestSender(TRUE);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a> eventTestReceiver1(FALSE);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a> eventTestReceiver2(FALSE);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            eventTestSender.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            eventTestReceiver1.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            eventTestReceiver2.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">Start</a>();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            HANDLE hThreads[3];</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            hThreads[0] = eventTestSender.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            hThreads[1] = eventTestReceiver1.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            hThreads[2] = eventTestReceiver2.<a class="code" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">GetHandle</a>();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            WaitForMultipleObjects(3, hThreads, TRUE, INFINITE);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;EventTest2 stopped.\n&quot;</span>);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    };</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a></div><div class="ttdoc">自動リセットイベントテストクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00017">EventTest.cpp:18</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html_a710431da044c9d16f5e9d74d4ef29797"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a710431da044c9d16f5e9d74d4ef29797">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(EventTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00165">EventTest.cpp:165</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_acae2f5cee066959b581542899146b404"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#acae2f5cee066959b581542899146b404">WindowsLibraryTest::EventTest2::_thread</a></div><div class="ttdeci">alt::Thread * _thread</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00160">EventTest.cpp:157</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a64f8e36616fc8b81156a1b022a9842ff"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a64f8e36616fc8b81156a1b022a9842ff">WindowsLibraryTest::EventTest2::_bOwner</a></div><div class="ttdeci">BOOL _bOwner</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00162">EventTest.cpp:162</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_af44c587ea2fab68e3aef3fec73cf2d0d"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#af44c587ea2fab68e3aef3fec73cf2d0d">WindowsLibraryTest::EventTest1::_thread</a></div><div class="ttdeci">alt::Thread * _thread</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00075">EventTest.cpp:72</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a></div><div class="ttdoc">手動リセットイベントテストクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00084">EventTest.cpp:85</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a6c3e2443c541462da4ddf931e2fe9040"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">WindowsLibraryTest::EventTest2::Invoke</a></div><div class="ttdeci">virtual DWORD Invoke(LPVOID lpvParam)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00118">EventTest.cpp:118</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html">WindowsLibraryTest::EventTest1</a></div><div class="ttdoc">自動リセットイベントテストクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00016">EventTest.cpp:17</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html_a710431da044c9d16f5e9d74d4ef29797"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a710431da044c9d16f5e9d74d4ef29797">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(EventTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00162">EventTest.cpp:162</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_acae2f5cee066959b581542899146b404"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#acae2f5cee066959b581542899146b404">WindowsLibraryTest::EventTest2::_thread</a></div><div class="ttdeci">alt::Thread * _thread</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00157">EventTest.cpp:154</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a64f8e36616fc8b81156a1b022a9842ff"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a64f8e36616fc8b81156a1b022a9842ff">WindowsLibraryTest::EventTest2::_bOwner</a></div><div class="ttdeci">BOOL _bOwner</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00159">EventTest.cpp:159</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_af44c587ea2fab68e3aef3fec73cf2d0d"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#af44c587ea2fab68e3aef3fec73cf2d0d">WindowsLibraryTest::EventTest1::_thread</a></div><div class="ttdeci">alt::Thread * _thread</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00074">EventTest.cpp:71</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html">WindowsLibraryTest::EventTest2</a></div><div class="ttdoc">手動リセットイベントテストクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00081">EventTest.cpp:82</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a6c3e2443c541462da4ddf931e2fe9040"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">WindowsLibraryTest::EventTest2::Invoke</a></div><div class="ttdeci">virtual DWORD Invoke(LPVOID lpvParam)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00115">EventTest.cpp:115</a></div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a0c73408123589813a4c91ffeba415213"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">WindowsLibraryTest::EventTest2::GetHandle</a></div><div class="ttdeci">HANDLE GetHandle()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00115">EventTest.cpp:115</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a03385aa95fa02afbff922f31e6ade8a1"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a03385aa95fa02afbff922f31e6ade8a1">WindowsLibraryTest::EventTest1::~EventTest1</a></div><div class="ttdeci">virtual ~EventTest1()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00026">EventTest.cpp:26</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a3db75dd4bc3a60b61f4dbc835f8fe1c2"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3db75dd4bc3a60b61f4dbc835f8fe1c2">WindowsLibraryTest::EventTest1::_bOwner</a></div><div class="ttdeci">BOOL _bOwner</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00077">EventTest.cpp:77</a></div></div>
-<div class="ttc" id="aclassalt_1_1_event_html"><div class="ttname"><a href="../../d1/d4d/classalt_1_1_event.html">alt::Event</a></div><div class="ttdoc">イベントに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6d/_event_8h_source.html#l00017">Event.h:18</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a09856bcb2eb7ae30b828514e15985aed"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a09856bcb2eb7ae30b828514e15985aed">WindowsLibraryTest::EventTest2::~EventTest2</a></div><div class="ttdeci">virtual ~EventTest2()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00093">EventTest.cpp:93</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_aedd4a8b4dd4557ac812674bc436f4bde"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">WindowsLibraryTest::EventTest1::GetHandle</a></div><div class="ttdeci">HANDLE GetHandle()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00048">EventTest.cpp:48</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a85f97a0232dea824aeb63b553a3c7e99"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">WindowsLibraryTest::EventTest1::Invoke</a></div><div class="ttdeci">virtual DWORD Invoke(LPVOID lpvParam)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00051">EventTest.cpp:51</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00010">ArrayTest.cpp:11</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_ad685d5f378025e932bf1fb0fddcf8625"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">WindowsLibraryTest::EventTest1::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00030">EventTest.cpp:30</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a0c73408123589813a4c91ffeba415213"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a0c73408123589813a4c91ffeba415213">WindowsLibraryTest::EventTest2::GetHandle</a></div><div class="ttdeci">HANDLE GetHandle()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00112">EventTest.cpp:112</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a03385aa95fa02afbff922f31e6ade8a1"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a03385aa95fa02afbff922f31e6ade8a1">WindowsLibraryTest::EventTest1::~EventTest1</a></div><div class="ttdeci">virtual ~EventTest1()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00025">EventTest.cpp:25</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a3db75dd4bc3a60b61f4dbc835f8fe1c2"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3db75dd4bc3a60b61f4dbc835f8fe1c2">WindowsLibraryTest::EventTest1::_bOwner</a></div><div class="ttdeci">BOOL _bOwner</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00076">EventTest.cpp:76</a></div></div>
+<div class="ttc" id="aclassalt_1_1_event_html"><div class="ttname"><a href="../../d1/d4d/classalt_1_1_event.html">alt::Event</a></div><div class="ttdoc">イベントに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6d/_event_8h_source.html#l00014">Event.h:15</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a09856bcb2eb7ae30b828514e15985aed"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a09856bcb2eb7ae30b828514e15985aed">WindowsLibraryTest::EventTest2::~EventTest2</a></div><div class="ttdeci">virtual ~EventTest2()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00090">EventTest.cpp:90</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_aedd4a8b4dd4557ac812674bc436f4bde"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#aedd4a8b4dd4557ac812674bc436f4bde">WindowsLibraryTest::EventTest1::GetHandle</a></div><div class="ttdeci">HANDLE GetHandle()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00047">EventTest.cpp:47</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a85f97a0232dea824aeb63b553a3c7e99"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">WindowsLibraryTest::EventTest1::Invoke</a></div><div class="ttdeci">virtual DWORD Invoke(LPVOID lpvParam)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00050">EventTest.cpp:50</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00011">ArrayTest.cpp:12</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_ad685d5f378025e932bf1fb0fddcf8625"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#ad685d5f378025e932bf1fb0fddcf8625">WindowsLibraryTest::EventTest1::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00029">EventTest.cpp:29</a></div></div>
 <div class="ttc" id="a_thread_8h_html"><div class="ttname"><a href="../../d8/d48/_thread_8h.html">Thread.h</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div></div>
 <div class="ttc" id="a_event_8h_html"><div class="ttname"><a href="../../de/d6d/_event_8h.html">Event.h</a></div><div class="ttdoc">イベントに関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a53840103280054a2eb8bded6e2d8222b"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a53840103280054a2eb8bded6e2d8222b">WindowsLibraryTest::EventTest2::_event</a></div><div class="ttdeci">alt::Event _event</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00161">EventTest.cpp:161</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a8eb562015f8cd56663d8259dc6146f39"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">WindowsLibraryTest::EventTest2::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00097">EventTest.cpp:97</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a3ce72753e75bbc78aca34080061af2ca"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3ce72753e75bbc78aca34080061af2ca">WindowsLibraryTest::EventTest1::_event</a></div><div class="ttdeci">alt::Event _event</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00076">EventTest.cpp:76</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a8eaf7318cd2534db2f0654b9ddf396ad"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eaf7318cd2534db2f0654b9ddf396ad">WindowsLibraryTest::EventTest2::EventTest2</a></div><div class="ttdeci">EventTest2(BOOL bOwner)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00087">EventTest.cpp:87</a></div></div>
-<div class="ttc" id="aclassalt_1_1_thread_html"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00033">Thread.h:34</a></div></div>
-<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div><div class="ttdoc">Threadクラスのスレッド実行関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00027">FunctionPointers.hpp:28</a></div></div>
-<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a71bf42839b709023572e9aac15e90f64"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a71bf42839b709023572e9aac15e90f64">WindowsLibraryTest::EventTest1::EventTest1</a></div><div class="ttdeci">EventTest1(BOOL bOwner)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00020">EventTest.cpp:20</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a53840103280054a2eb8bded6e2d8222b"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a53840103280054a2eb8bded6e2d8222b">WindowsLibraryTest::EventTest2::_event</a></div><div class="ttdeci">alt::Event _event</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00158">EventTest.cpp:158</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a8eb562015f8cd56663d8259dc6146f39"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eb562015f8cd56663d8259dc6146f39">WindowsLibraryTest::EventTest2::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00094">EventTest.cpp:94</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a3ce72753e75bbc78aca34080061af2ca"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a3ce72753e75bbc78aca34080061af2ca">WindowsLibraryTest::EventTest1::_event</a></div><div class="ttdeci">alt::Event _event</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00075">EventTest.cpp:75</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test2_html_a8eaf7318cd2534db2f0654b9ddf396ad"><div class="ttname"><a href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a8eaf7318cd2534db2f0654b9ddf396ad">WindowsLibraryTest::EventTest2::EventTest2</a></div><div class="ttdeci">EventTest2(BOOL bOwner)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00084">EventTest.cpp:84</a></div></div>
+<div class="ttc" id="aclassalt_1_1_thread_html"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00041">Thread.h:42</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div><div class="ttdoc">Threadクラスのスレッド実行関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00024">FunctionPointers.hpp:25</a></div></div>
+<div class="ttc" id="aclass_windows_library_test_1_1_event_test1_html_a71bf42839b709023572e9aac15e90f64"><div class="ttname"><a href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a71bf42839b709023572e9aac15e90f64">WindowsLibraryTest::EventTest1::EventTest1</a></div><div class="ttdeci">EventTest1(BOOL bOwner)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5c/_event_test_8cpp_source.html#l00019">EventTest.cpp:19</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

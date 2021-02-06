@@ -1,5 +1,5 @@
 <map id="alt::db::Statement::Bind" name="alt::db::Statement::Bind">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,132,65"/>
-<area shape="rect" id="node2" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title=" " alt="" coords="180,5,357,32"/>
+<area shape="rect" id="node1" title="パラメータのバインド処理" alt="" coords="5,23,132,65"/>
+<area shape="rect" id="node2" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title="各関数の戻り値判定共通" alt="" coords="180,5,357,32"/>
 <area shape="rect" id="node3" href="$de/dd3/sqlite3_8h.html#aa6d5cc21ec0004b2e0bdce3395590aad" title=" " alt="" coords="213,56,325,83"/>
 </map>

@@ -39,12 +39,12 @@
 <area shape="rect" id="node27" href="$d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="693,798,775,825"/>
 <area shape="rect" id="node29" href="$d5/db9/classalt_1_1_watch_dog_timer.html" title="タイマーに関するWindowsAPIを集約したクラス" alt="" coords="665,623,803,650"/>
 <area shape="rect" id="node28" href="$dd/d88/class_windows_library_test_1_1_my_thread.html" title=" " alt="" coords="851,877,989,919"/>
-<area shape="rect" id="node37" href="$d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCPクラス性能測定用" alt="" coords="423,821,617,847"/>
-<area shape="rect" id="node38" href="$df/d72/class_perf_check_1_1_server_worker.html" title="TCPクラス性能測定用" alt="" coords="436,871,604,898"/>
-<area shape="rect" id="node39" href="$d7/de9/class_perf_check_1_1_tcp_client.html" title="TCPクラス性能測定用" alt="" coords="448,922,592,949"/>
-<area shape="rect" id="node40" href="$d9/d82/class_perf_check_1_1_tcp_server.html" title="TCPクラス性能測定用" alt="" coords="447,1023,593,1050"/>
-<area shape="rect" id="node41" href="$dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDPクラス性能測定用" alt="" coords="436,1074,604,1101"/>
-<area shape="rect" id="node42" href="$d3/d1b/class_perf_check_1_1_upstream_driver.html" title=" " alt="" coords="431,1125,609,1151"/>
+<area shape="rect" id="node37" href="$d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCP性能測定用（ダウンストリーム）" alt="" coords="423,821,617,847"/>
+<area shape="rect" id="node38" href="$df/d72/class_perf_check_1_1_server_worker.html" title="TCP性能測定用（サーバースレッド）" alt="" coords="436,871,604,898"/>
+<area shape="rect" id="node39" href="$d7/de9/class_perf_check_1_1_tcp_client.html" title="TCP性能測定用（クライアント）" alt="" coords="448,922,592,949"/>
+<area shape="rect" id="node40" href="$d9/d82/class_perf_check_1_1_tcp_server.html" title="TCP性能測定用（サーバー）" alt="" coords="447,1023,593,1050"/>
+<area shape="rect" id="node41" href="$dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDP性能測定用" alt="" coords="436,1074,604,1101"/>
+<area shape="rect" id="node42" href="$d3/d1b/class_perf_check_1_1_upstream_driver.html" title="TCP性能測定用（アップストリーム）" alt="" coords="431,1125,609,1151"/>
 <area shape="rect" id="node43" href="$dd/dd2/class_windows_library_test_1_1_callback.html" title=" " alt="" coords="451,624,589,665"/>
 <area shape="rect" id="node44" href="$dd/d8b/class_windows_library_test_1_1_event_test1.html" title="自動リセットイベントテストクラス" alt="" coords="451,689,589,731"/>
 <area shape="rect" id="node45" href="$de/d57/class_windows_library_test_1_1_event_test2.html" title="手動リセットイベントテストクラス" alt="" coords="451,755,589,796"/>

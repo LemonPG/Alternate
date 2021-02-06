@@ -1,5 +1,5 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibrary/VirtualMemory.h" name="C:/Users/User01/source/repos/Alternate/WindowsLibrary/VirtualMemory.h">
-<area shape="rect" id="node1" title="仮想メモリに関するクラス" alt="" coords="123,5,333,61"/>
-<area shape="rect" id="node2" href="$dd/d8a/_virtual_memory_8cpp.html" title=" " alt="" coords="5,109,216,165"/>
-<area shape="rect" id="node3" href="$dc/d69/_virtual_memory_test_8cpp.html" title=" " alt="" coords="240,109,451,165"/>
+<area shape="rect" id="node1" title="仮想メモリに関するWindowsAPIを集約したクラス" alt="" coords="123,5,333,61"/>
+<area shape="rect" id="node2" href="$dd/d8a/_virtual_memory_8cpp.html" title="仮想メモリに関するWindowsAPIを集約したクラス" alt="" coords="5,109,216,165"/>
+<area shape="rect" id="node3" href="$dc/d69/_virtual_memory_test_8cpp.html" title="仮想メモリに関するWindowsAPIを集約したクラスのテストクラス" alt="" coords="240,109,451,165"/>
 </map>

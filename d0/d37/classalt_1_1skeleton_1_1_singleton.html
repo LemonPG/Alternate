@@ -93,29 +93,37 @@ $(document).ready(function(){initNavTree('d0/d37/classalt_1_1skeleton_1_1_single
 </div><!--header-->
 <div class="contents">
 
+<p>シングルトン テンプレート  
+ <a href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
 <tr class="memitem:a329cd4613b87fbf883e4c2a9ed4e435b"><td class="memItemLeft" align="right" valign="top">static T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#a329cd4613b87fbf883e4c2a9ed4e435b">Instance</a> ()</td></tr>
+<tr class="memdesc:a329cd4613b87fbf883e4c2a9ed4e435b"><td class="mdescLeft">&#160;</td><td class="mdescRight">唯一となるインスタンスを取得します。  <a href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#a329cd4613b87fbf883e4c2a9ed4e435b">[詳解]</a><br /></td></tr>
 <tr class="separator:a329cd4613b87fbf883e4c2a9ed4e435b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 非公開メンバ関数</h2></td></tr>
 <tr class="memitem:a0917da009e19c358ff9fafc8fa103b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#a0917da009e19c358ff9fafc8fa103b47">Singleton</a> ()</td></tr>
+<tr class="memdesc:a0917da009e19c358ff9fafc8fa103b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ(privateで秘匿状態)  <a href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#a0917da009e19c358ff9fafc8fa103b47">[詳解]</a><br /></td></tr>
 <tr class="separator:a0917da009e19c358ff9fafc8fa103b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 静的非公開変数類</h2></td></tr>
 <tr class="memitem:a7e699daa0ed065d3fd16a64a8cab76d9"><td class="memItemLeft" align="right" valign="top">static T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#a7e699daa0ed065d3fd16a64a8cab76d9">_instance</a> = nullptr</td></tr>
+<tr class="memdesc:a7e699daa0ed065d3fd16a64a8cab76d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">唯一となるインスタンスを管理する変数  <a href="../../d0/d37/classalt_1_1skeleton_1_1_singleton.html#a7e699daa0ed065d3fd16a64a8cab76d9">[詳解]</a><br /></td></tr>
 <tr class="separator:a7e699daa0ed065d3fd16a64a8cab76d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class alt::skeleton::Singleton&lt; T &gt;</h3>
 
+<p>シングルトン テンプレート </p>
+<dl class="section note"><dt>覚え書き</dt><dd>テンプレートクラスなのでDLL_DECLSPECは付けません。 </dd></dl>
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00105">105</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00160">160</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a0917da009e19c358ff9fafc8fa103b47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0917da009e19c358ff9fafc8fa103b47">&#9670;&nbsp;</a></span>Singleton()</h2>
@@ -142,7 +150,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00119">119</a> 行目に定義があります。</p>
+<p>コンストラクタ(privateで秘匿状態) </p>
+
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00177">177</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -172,9 +182,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00108">108</a> 行目に定義があります。</p>
+<p>唯一となるインスタンスを取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>T*インスタンス </dd></dl>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00119">alt::skeleton::Singleton&lt; T &gt;::_instance</a>.</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00165">165</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00177">alt::skeleton::Singleton&lt; T &gt;::_instance</a>.</p>
 
 </div>
 </div>
@@ -201,9 +214,11 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00121">121</a> 行目に定義があります。</p>
+<p>唯一となるインスタンスを管理する変数 </p>
 
-<p class="reference">参照元 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00108">alt::skeleton::Singleton&lt; T &gt;::Instance()</a>.</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00180">180</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00165">alt::skeleton::Singleton&lt; T &gt;::Instance()</a>.</p>
 
 </div>
 </div>

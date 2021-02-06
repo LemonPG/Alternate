@@ -1,5 +1,5 @@
 <map id="PerfCheck::DownstreamDriver" name="PerfCheck::DownstreamDriver">
-<area shape="rect" id="node1" title="TCPクラス性能測定用" alt="" coords="7,287,201,313"/>
+<area shape="rect" id="node1" title="TCP性能測定用（ダウンストリーム）" alt="" coords="7,287,201,313"/>
 <area shape="rect" id="node2" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="5,132,160,159"/>
 <area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="48,5,184,32"/>
 <area shape="rect" id="node5" href="$d8/d51/classalt_1_1_socket_library.html" title="WinSockを使用するAPIを集約したクラス" alt="" coords="121,81,245,108"/>

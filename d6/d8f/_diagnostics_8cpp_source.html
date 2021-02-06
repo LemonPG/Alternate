@@ -88,43 +88,43 @@ $(document).ready(function(){initNavTree('d6/d8f/_diagnostics_8cpp_source.html',
 </div><!--header-->
 <div class="contents">
 <a href="../../d6/d8f/_diagnostics_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d6d/_diagnostics_8h.html">Diagnostics.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#a24c4f22a9628a083b82a194089cfdd19">   12</a></span>&#160;<a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#a24c4f22a9628a083b82a194089cfdd19">Diagnostics::Diagnostics</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::GetCurrentProcess();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1">   17</a></span>&#160;BOOL <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1">Diagnostics::GetProcessMemory</a>(PROCESS_MEMORY_COUNTERS&amp; processMemoryCounters)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    return ::GetProcessMemoryInfo(<a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, &amp;processMemoryCounters, <span class="keyword">sizeof</span>(processMemoryCounters));</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1">   22</a></span>&#160;BOOL <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1">Diagnostics::GetProcessIO</a>(IO_COUNTERS&amp; ioCounters)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    return ::GetProcessIoCounters(<a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, &amp;ioCounters);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">   27</a></span>&#160;BOOL <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">Diagnostics::GetIpStatistics</a>(MIB_IPSTATS&amp; mibIPStats)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ULONG ret;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    ret = <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">::GetIpStatistics</a>(&amp;mibIPStats);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> ret == NOERROR ? TRUE : FALSE;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d6d/_diagnostics_8h.html">Diagnostics.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#a24c4f22a9628a083b82a194089cfdd19">   11</a></span>&#160;<a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#a24c4f22a9628a083b82a194089cfdd19">Diagnostics::Diagnostics</a>()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::GetCurrentProcess();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1">   16</a></span>&#160;BOOL <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1">Diagnostics::GetProcessMemory</a>(PROCESS_MEMORY_COUNTERS&amp; processMemoryCounters)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    return ::GetProcessMemoryInfo(<a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, &amp;processMemoryCounters, <span class="keyword">sizeof</span>(processMemoryCounters));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1">   21</a></span>&#160;BOOL <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1">Diagnostics::GetProcessIO</a>(IO_COUNTERS&amp; ioCounters)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    return ::GetProcessIoCounters(<a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, &amp;ioCounters);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">   26</a></span>&#160;BOOL <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">Diagnostics::GetIpStatistics</a>(MIB_IPSTATS&amp; mibIPStats)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ULONG ret;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ret = <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">::GetIpStatistics</a>(&amp;mibIPStats);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> ret == NOERROR ? TRUE : FALSE;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="aclassalt_1_1_diagnostics_html_aadd5d3b428ee3aabff4cc84f62e413c1"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1">alt::Diagnostics::GetProcessIO</a></div><div class="ttdeci">BOOL GetProcessIO(IO_COUNTERS &amp;ioCounters)</div><div class="ttdoc">プロセスI/O情報を取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00022">Diagnostics.cpp:22</a></div></div>
-<div class="ttc" id="aclassalt_1_1_diagnostics_html_aabaa4a5c5209a5f3521cacc424f37df1"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1">alt::Diagnostics::GetProcessMemory</a></div><div class="ttdeci">BOOL GetProcessMemory(PROCESS_MEMORY_COUNTERS &amp;processMemoryCounters)</div><div class="ttdoc">プロセスメモリ情報を取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00017">Diagnostics.cpp:17</a></div></div>
-<div class="ttc" id="aclassalt_1_1_diagnostics_html_a24c4f22a9628a083b82a194089cfdd19"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#a24c4f22a9628a083b82a194089cfdd19">alt::Diagnostics::Diagnostics</a></div><div class="ttdeci">Diagnostics()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00012">Diagnostics.cpp:12</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1_diagnostics_html_aeb355120c1e490e706a9534d26b2f782"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">alt::Diagnostics::GetIpStatistics</a></div><div class="ttdeci">BOOL GetIpStatistics(MIB_IPSTATS &amp;mibIPStats)</div><div class="ttdoc">ネットワークI/O情報を取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00027">Diagnostics.cpp:27</a></div></div>
+<div class="ttc" id="aclassalt_1_1_diagnostics_html_aadd5d3b428ee3aabff4cc84f62e413c1"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#aadd5d3b428ee3aabff4cc84f62e413c1">alt::Diagnostics::GetProcessIO</a></div><div class="ttdeci">BOOL GetProcessIO(IO_COUNTERS &amp;ioCounters)</div><div class="ttdoc">プロセスI/O情報を取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00021">Diagnostics.cpp:21</a></div></div>
+<div class="ttc" id="aclassalt_1_1_diagnostics_html_aabaa4a5c5209a5f3521cacc424f37df1"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#aabaa4a5c5209a5f3521cacc424f37df1">alt::Diagnostics::GetProcessMemory</a></div><div class="ttdeci">BOOL GetProcessMemory(PROCESS_MEMORY_COUNTERS &amp;processMemoryCounters)</div><div class="ttdoc">プロセスメモリ情報を取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00016">Diagnostics.cpp:16</a></div></div>
+<div class="ttc" id="aclassalt_1_1_diagnostics_html_a24c4f22a9628a083b82a194089cfdd19"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#a24c4f22a9628a083b82a194089cfdd19">alt::Diagnostics::Diagnostics</a></div><div class="ttdeci">Diagnostics()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00011">Diagnostics.cpp:11</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_diagnostics_html_aeb355120c1e490e706a9534d26b2f782"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html#aeb355120c1e490e706a9534d26b2f782">alt::Diagnostics::GetIpStatistics</a></div><div class="ttdeci">BOOL GetIpStatistics(MIB_IPSTATS &amp;mibIPStats)</div><div class="ttdoc">ネットワークI/O情報を取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8f/_diagnostics_8cpp_source.html#l00026">Diagnostics.cpp:26</a></div></div>
 <div class="ttc" id="a_diagnostics_8h_html"><div class="ttname"><a href="../../d5/d6d/_diagnostics_8h.html">Diagnostics.h</a></div><div class="ttdoc">システム性能に関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_handle_library_html_a03edc7a6d9d82f83145167dde56c3742"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">alt::HandleLibrary::_hObject</a></div><div class="ttdeci">HANDLE _hObject</div><div class="ttdoc">ハンドルを使用するWindowsAPIで保持するHANDLE値</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00070">WindowsLibrary.h:70</a></div></div>
+<div class="ttc" id="aclassalt_1_1_handle_library_html_a03edc7a6d9d82f83145167dde56c3742"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">alt::HandleLibrary::_hObject</a></div><div class="ttdeci">HANDLE _hObject</div><div class="ttdoc">ハンドルを使用するWindowsAPIで保持するHANDLE値</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00056">WindowsLibrary.h:56</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

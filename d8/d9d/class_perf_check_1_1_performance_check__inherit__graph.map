@@ -7,9 +7,9 @@
 <area shape="rect" id="node6" href="$db/d4a/class_perf_check_1_1_logger_performance_check.html" title="Loggerクラス性能測定用" alt="" coords="257,267,460,308"/>
 <area shape="rect" id="node7" href="$d0/d31/class_perf_check_1_1_new_performance_check.html" title="newの性能測定用" alt="" coords="265,332,453,373"/>
 <area shape="rect" id="node8" href="$d1/dbe/class_perf_check_1_1_std_file_performance_check.html" title="Fileクラスの比較用" alt="" coords="257,397,461,439"/>
-<area shape="rect" id="node9" href="$da/d9c/class_perf_check_1_1_t_c_p_performance_check.html" title="TCPクラス性能測定用" alt="" coords="265,463,453,504"/>
+<area shape="rect" id="node9" href="$da/d9c/class_perf_check_1_1_t_c_p_performance_check.html" title="TCP性能測定用" alt="" coords="265,463,453,504"/>
 <area shape="rect" id="node10" href="$d6/d10/class_perf_check_1_1_t_string_performance_check.html" title="TStringクラス性能測定用" alt="" coords="257,528,461,569"/>
-<area shape="rect" id="node11" href="$de/d39/class_perf_check_1_1_u_d_p_performance_check.html" title="UDPクラス性能測定用" alt="" coords="263,593,454,635"/>
+<area shape="rect" id="node11" href="$de/d39/class_perf_check_1_1_u_d_p_performance_check.html" title="UDP性能測定用" alt="" coords="263,593,454,635"/>
 <area shape="rect" id="node12" href="$da/de7/class_perf_check_1_1_vector_performance_check.html" title="std::vector&lt;T&gt;クラス性能測定用" alt="" coords="258,659,459,700"/>
 <area shape="rect" id="node13" href="$d6/d59/class_perf_check_1_1_watch_doc_timer_performance_check.html" title="WatchDocTimerクラス性能測定用" alt="" coords="267,724,450,765"/>
 </map>

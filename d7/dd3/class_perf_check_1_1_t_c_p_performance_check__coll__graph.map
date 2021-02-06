@@ -1,5 +1,5 @@
 <map id="PerfCheck::TCPPerformanceCheck" name="PerfCheck::TCPPerformanceCheck">
-<area shape="rect" id="node1" title="TCPクラス性能測定用" alt="" coords="11,323,199,364"/>
+<area shape="rect" id="node1" title="TCP性能測定用" alt="" coords="11,323,199,364"/>
 <area shape="rect" id="node2" href="$d5/d0c/class_perf_check_1_1_performance_check.html" title="性能測定用" alt="" coords="5,247,205,273"/>
 <area shape="rect" id="node3" href="$d1/de5/classalt_1_1_console.html" title="コンソールに関するクラス" alt="" coords="60,157,151,184"/>
 <area shape="rect" id="node4" href="$d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="" coords="44,81,167,108"/>

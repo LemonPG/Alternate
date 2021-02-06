@@ -1,6 +1,6 @@
 <map id="alt::db::Engine::~Engine" name="alt::db::Engine::~Engine">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,168,57"/>
-<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#a585b0a930ef0f843b0ce8bbee2bc63a0" title=" " alt="" coords="216,31,363,57"/>
-<area shape="rect" id="node3" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title=" " alt="" coords="411,5,588,32"/>
+<area shape="rect" id="node1" title="デストラクタ" alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#a585b0a930ef0f843b0ce8bbee2bc63a0" title="DBファイルのクローズ" alt="" coords="216,31,363,57"/>
+<area shape="rect" id="node3" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title="各関数の戻り値判定共通" alt="" coords="411,5,588,32"/>
 <area shape="rect" id="node4" href="$de/dd3/sqlite3_8h.html#ac43c9032fc6ef3b2a231dc3a9fa44b2d" title=" " alt="" coords="450,56,549,83"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="PerfCheck::UdpController" name="PerfCheck::UdpController">
-<area shape="rect" id="node1" title="UDPクラス性能測定用" alt="" coords="145,336,313,363"/>
+<area shape="rect" id="node1" title="UDP性能測定用" alt="" coords="145,336,313,363"/>
 <area shape="rect" id="node2" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="5,157,160,184"/>
 <area shape="rect" id="node4" href="$d0/df1/classalt_1_1_thread.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="124,247,207,273"/>
 <area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="204,5,340,32"/>

@@ -90,16 +90,19 @@ $(document).ready(function(){initNavTree('d2/d1b/_t_string_memory_leak_check_8h.
 <div class="title">TStringMemoryLeakCheck.h ファイル</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>TStringのメモリーリークを確認します。  
+<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 TStringMemoryLeakCheck.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/dd9/_t_string_memory_leak_check_8h__incl.png" border="0" usemap="#a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_memory_leak_check_2_t_string_memory_leak_check_8h" alt=""/></div>
 <map name="_c_1_2_users_2_user01_2source_2repos_2_alternate_2_memory_leak_check_2_t_string_memory_leak_check_8h" id="a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_memory_leak_check_2_t_string_memory_leak_check_8h">
-<area shape="rect" title=" " alt="" coords="611,5,842,61"/>
+<area shape="rect" title="TStringのメモリーリークを確認します。" alt="" coords="611,5,842,61"/>
 <area shape="rect" href="../../de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="689,109,764,136"/>
 <area shape="rect" href="../../de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,333,713,360"/>
-<area shape="rect" href="../../d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="764,333,889,360"/>
+<area shape="rect" href="../../d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="764,333,889,360"/>
 <area shape="rect" href="../../db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="687,184,766,211"/>
 <area shape="rect" title=" " alt="" coords="5,408,88,435"/>
 <area shape="rect" title=" " alt="" coords="113,408,175,435"/>
@@ -122,9 +125,9 @@ TStringMemoryLeakCheck.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d61/_t_string_memory_leak_check_8h__dep__incl.png" border="0" usemap="#a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_memory_leak_check_2_t_string_memory_leak_check_8hdep" alt=""/></div>
 <map name="_c_1_2_users_2_user01_2source_2repos_2_alternate_2_memory_leak_check_2_t_string_memory_leak_check_8hdep" id="a_c_1_2_users_2_user01_2source_2repos_2_alternate_2_memory_leak_check_2_t_string_memory_leak_check_8hdep">
-<area shape="rect" title=" " alt="" coords="132,5,363,61"/>
+<area shape="rect" title="TStringのメモリーリークを確認します。" alt="" coords="132,5,363,61"/>
 <area shape="rect" href="../../d3/d6e/_memory_leak_check_8cpp.html" title="TestProjectでは検出できない、メモリーリークを確認します。" alt="" coords="5,109,236,165"/>
-<area shape="rect" href="../../d4/d4e/_t_string_memory_leak_check_8cpp.html" title=" " alt="" coords="260,109,491,165"/>
+<area shape="rect" href="../../d4/d4e/_t_string_memory_leak_check_8cpp.html" title="TStringのメモリーリークを確認します。" alt="" coords="260,109,491,165"/>
 </map>
 </div>
 </div>
@@ -133,6 +136,7 @@ TStringMemoryLeakCheck.h の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d10/class_leak_check_1_1_t_string_memory_leak_check.html">LeakCheck::TStringMemoryLeakCheck</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TStringのメモリーリークチェッククラス  <a href="../../d9/d10/class_leak_check_1_1_t_string_memory_leak_check.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -140,7 +144,13 @@ TStringMemoryLeakCheck.h の依存先関係図:</div>
 <tr class="memitem:dc/de5/namespace_leak_check"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/namespace_leak_check.html">LeakCheck</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TStringのメモリーリークを確認します。 </p>
+<dl class="section author"><dt>著者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'kum'+'ak'+'uma'+'04'+'21@'+'gm'+'ail'+'.c'+'om'; return false;">kumak<span style="display: none;">.nosp@m.</span>uma0<span style="display: none;">.nosp@m.</span>421@g<span style="display: none;">.nosp@m.</span>mail<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2020.03.01 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../d2/d1b/_t_string_memory_leak_check_8h_source.html">TStringMemoryLeakCheck.h</a> に定義があります。</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

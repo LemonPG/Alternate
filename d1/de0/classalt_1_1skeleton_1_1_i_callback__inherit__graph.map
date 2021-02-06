@@ -2,12 +2,12 @@
 <area shape="rect" id="node1" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="189,314,344,341"/>
 <area shape="rect" id="node3" href="$d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html" title=" " alt="" coords="424,5,555,47"/>
 <area shape="rect" id="node4" href="$db/dc2/classalt_1_1_factory_method_1_1_queue_element.html" title=" " alt="" coords="424,71,555,112"/>
-<area shape="rect" id="node5" href="$d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCPクラス性能測定用" alt="" coords="392,137,587,163"/>
-<area shape="rect" id="node6" href="$df/d72/class_perf_check_1_1_server_worker.html" title="TCPクラス性能測定用" alt="" coords="405,187,573,214"/>
-<area shape="rect" id="node7" href="$d7/de9/class_perf_check_1_1_tcp_client.html" title="TCPクラス性能測定用" alt="" coords="417,238,561,265"/>
-<area shape="rect" id="node8" href="$d9/d82/class_perf_check_1_1_tcp_server.html" title="TCPクラス性能測定用" alt="" coords="416,289,563,315"/>
-<area shape="rect" id="node9" href="$dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDPクラス性能測定用" alt="" coords="405,339,573,366"/>
-<area shape="rect" id="node10" href="$d3/d1b/class_perf_check_1_1_upstream_driver.html" title=" " alt="" coords="400,390,579,417"/>
+<area shape="rect" id="node5" href="$d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCP性能測定用（ダウンストリーム）" alt="" coords="392,137,587,163"/>
+<area shape="rect" id="node6" href="$df/d72/class_perf_check_1_1_server_worker.html" title="TCP性能測定用（サーバースレッド）" alt="" coords="405,187,573,214"/>
+<area shape="rect" id="node7" href="$d7/de9/class_perf_check_1_1_tcp_client.html" title="TCP性能測定用（クライアント）" alt="" coords="417,238,561,265"/>
+<area shape="rect" id="node8" href="$d9/d82/class_perf_check_1_1_tcp_server.html" title="TCP性能測定用（サーバー）" alt="" coords="416,289,563,315"/>
+<area shape="rect" id="node9" href="$dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDP性能測定用" alt="" coords="405,339,573,366"/>
+<area shape="rect" id="node10" href="$d3/d1b/class_perf_check_1_1_upstream_driver.html" title="TCP性能測定用（アップストリーム）" alt="" coords="400,390,579,417"/>
 <area shape="rect" id="node11" href="$dd/dd2/class_windows_library_test_1_1_callback.html" title=" " alt="" coords="420,441,559,483"/>
 <area shape="rect" id="node12" href="$dd/d8b/class_windows_library_test_1_1_event_test1.html" title="自動リセットイベントテストクラス" alt="" coords="420,507,559,548"/>
 <area shape="rect" id="node13" href="$de/d57/class_windows_library_test_1_1_event_test2.html" title="手動リセットイベントテストクラス" alt="" coords="420,572,559,613"/>

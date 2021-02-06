@@ -1,6 +1,6 @@
 <map id="alt::FactoryMethod::PipelineFactoryMethod::Buildup" name="alt::FactoryMethod::PipelineFactoryMethod::Buildup">
 <area shape="rect" id="node1" title=" " alt="" coords="5,49,168,105"/>
-<area shape="rect" id="node2" href="$db/d5c/classalt_1_1skeleton_1_1_i_subscriber.html#a6ffca7924baec61bbdbd38409d284461" title=" " alt="" coords="216,5,413,32"/>
+<area shape="rect" id="node2" href="$db/d5c/classalt_1_1skeleton_1_1_i_subscriber.html#a6ffca7924baec61bbdbd38409d284461" title="IObserver&lt;Data&gt;*を引数とする関数 Add()" alt="" coords="216,5,413,32"/>
 <area shape="rect" id="node3" href="$de/d54/classalt_1_1_factory_method_1_1_i_element.html#a3e151c5565f5a6cc456a2d3b0f2e33d4" title=" " alt="" coords="237,57,392,98"/>
 <area shape="rect" id="node4" href="$de/d54/classalt_1_1_factory_method_1_1_i_element.html#a674cc9040a127214e558fe7a4559332e" title=" " alt="" coords="249,122,380,163"/>
 </map>

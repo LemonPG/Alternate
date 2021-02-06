@@ -88,78 +88,78 @@ $(document).ready(function(){initNavTree('dd/d28/_shared_memory_8cpp_source.html
 </div><!--header-->
 <div class="contents">
 <a href="../../dd/d28/_shared_memory_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/dac/_shared_memory_8h.html">SharedMemory.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#ad4cee9385b663fa8bc396e934ca9b50e">   12</a></span>&#160;<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#ad4cee9385b663fa8bc396e934ca9b50e">SharedMemory::SharedMemory</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    :<a class="code" href="../../d0/d99/classalt_1_1_handle_library.html">HandleLibrary</a>()</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#adc56751ce1b30224689e71cd3b6c09be">   18</a></span>&#160;<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#adc56751ce1b30224689e71cd3b6c09be">SharedMemory::~SharedMemory</a>()</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        this-&gt;<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">Unmapped</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#a4a80998e1bd38ce79af061df31958e77">   26</a></span>&#160;BOOL <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a4a80998e1bd38ce79af061df31958e77">SharedMemory::Create</a>(LPCTSTR lpctszName, DWORD dwSize)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::CreateFileMapping(</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        INVALID_HANDLE_VALUE,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        PAGE_READWRITE,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        0,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        dwSize,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        lpctszName);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> == <span class="keyword">nullptr</span> ? FALSE : TRUE;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#aca27590f5e3634c12f350d0915b0bf00">   39</a></span>&#160;BOOL <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#aca27590f5e3634c12f350d0915b0bf00">SharedMemory::Open</a>(LPCTSTR lpctszName)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::OpenFileMapping(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        FILE_MAP_ALL_ACCESS,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        FALSE,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        lpctszName);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> == <span class="keyword">nullptr</span> ? FALSE : TRUE;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#a8e5afc293bd68a18b514c7803d71786f">   49</a></span>&#160;LPVOID <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a8e5afc293bd68a18b514c7803d71786f">SharedMemory::Mapped</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a> = ::MapViewOfFile(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        FILE_MAP_ALL_ACCESS,</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/dac/_shared_memory_8h.html">SharedMemory.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#ad4cee9385b663fa8bc396e934ca9b50e">   11</a></span>&#160;<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#ad4cee9385b663fa8bc396e934ca9b50e">SharedMemory::SharedMemory</a>()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    :<a class="code" href="../../d0/d99/classalt_1_1_handle_library.html">HandleLibrary</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#adc56751ce1b30224689e71cd3b6c09be">   17</a></span>&#160;<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#adc56751ce1b30224689e71cd3b6c09be">SharedMemory::~SharedMemory</a>()</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        this-&gt;<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">Unmapped</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#a4a80998e1bd38ce79af061df31958e77">   25</a></span>&#160;BOOL <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a4a80998e1bd38ce79af061df31958e77">SharedMemory::Create</a>(LPCTSTR lpctszName, DWORD dwSize)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::CreateFileMapping(</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        INVALID_HANDLE_VALUE,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        PAGE_READWRITE,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        0,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        dwSize,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        lpctszName);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> == <span class="keyword">nullptr</span> ? FALSE : TRUE;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#aca27590f5e3634c12f350d0915b0bf00">   38</a></span>&#160;BOOL <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#aca27590f5e3634c12f350d0915b0bf00">SharedMemory::Open</a>(LPCTSTR lpctszName)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::OpenFileMapping(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        FILE_MAP_ALL_ACCESS,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        FALSE,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        lpctszName);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> == <span class="keyword">nullptr</span> ? FALSE : TRUE;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#a8e5afc293bd68a18b514c7803d71786f">   48</a></span>&#160;LPVOID <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a8e5afc293bd68a18b514c7803d71786f">SharedMemory::Mapped</a>()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a> = ::MapViewOfFile(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        FILE_MAP_ALL_ACCESS,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        0,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        0,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        0,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        0);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">   61</a></span>&#160;BOOL <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">SharedMemory::Unmapped</a>()</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    return ::UnmapViewOfFile(<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">   60</a></span>&#160;BOOL <a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">SharedMemory::Unmapped</a>()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    return ::UnmapViewOfFile(<a class="code" href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">_lpvMapped</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_a5b179b319e9ce99d3bec22a551b0b633"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">alt::SharedMemory::_lpvMapped</a></div><div class="ttdeci">LPVOID _lpvMapped</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dac/_shared_memory_8h_source.html#l00031">SharedMemory.h:31</a></div></div>
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_a4a80998e1bd38ce79af061df31958e77"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a4a80998e1bd38ce79af061df31958e77">alt::SharedMemory::Create</a></div><div class="ttdeci">BOOL Create(LPCTSTR lpctszName, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00026">SharedMemory.cpp:26</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_a5b179b319e9ce99d3bec22a551b0b633"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a5b179b319e9ce99d3bec22a551b0b633">alt::SharedMemory::_lpvMapped</a></div><div class="ttdeci">LPVOID _lpvMapped</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dac/_shared_memory_8h_source.html#l00028">SharedMemory.h:28</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_a4a80998e1bd38ce79af061df31958e77"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a4a80998e1bd38ce79af061df31958e77">alt::SharedMemory::Create</a></div><div class="ttdeci">BOOL Create(LPCTSTR lpctszName, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00025">SharedMemory.cpp:25</a></div></div>
 <div class="ttc" id="a_shared_memory_8h_html"><div class="ttname"><a href="../../d2/dac/_shared_memory_8h.html">SharedMemory.h</a></div><div class="ttdoc">共有メモリに関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_a8e5afc293bd68a18b514c7803d71786f"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a8e5afc293bd68a18b514c7803d71786f">alt::SharedMemory::Mapped</a></div><div class="ttdeci">LPVOID Mapped()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00049">SharedMemory.cpp:49</a></div></div>
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_a705cbf059f2cd8bf63818edb06bb70c4"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">alt::SharedMemory::Unmapped</a></div><div class="ttdeci">BOOL Unmapped()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00061">SharedMemory.cpp:61</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_a8e5afc293bd68a18b514c7803d71786f"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a8e5afc293bd68a18b514c7803d71786f">alt::SharedMemory::Mapped</a></div><div class="ttdeci">LPVOID Mapped()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00048">SharedMemory.cpp:48</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_a705cbf059f2cd8bf63818edb06bb70c4"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#a705cbf059f2cd8bf63818edb06bb70c4">alt::SharedMemory::Unmapped</a></div><div class="ttdeci">BOOL Unmapped()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00060">SharedMemory.cpp:60</a></div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="aclassalt_1_1_handle_library_html"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a></div><div class="ttdoc">HANDLEを扱うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00036">WindowsLibrary.h:37</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_adc56751ce1b30224689e71cd3b6c09be"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#adc56751ce1b30224689e71cd3b6c09be">alt::SharedMemory::~SharedMemory</a></div><div class="ttdeci">virtual ~SharedMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00018">SharedMemory.cpp:18</a></div></div>
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_aca27590f5e3634c12f350d0915b0bf00"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#aca27590f5e3634c12f350d0915b0bf00">alt::SharedMemory::Open</a></div><div class="ttdeci">BOOL Open(LPCTSTR lpctszName)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00039">SharedMemory.cpp:39</a></div></div>
-<div class="ttc" id="aclassalt_1_1_handle_library_html_a03edc7a6d9d82f83145167dde56c3742"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">alt::HandleLibrary::_hObject</a></div><div class="ttdeci">HANDLE _hObject</div><div class="ttdoc">ハンドルを使用するWindowsAPIで保持するHANDLE値</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00070">WindowsLibrary.h:70</a></div></div>
-<div class="ttc" id="aclassalt_1_1_shared_memory_html_ad4cee9385b663fa8bc396e934ca9b50e"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#ad4cee9385b663fa8bc396e934ca9b50e">alt::SharedMemory::SharedMemory</a></div><div class="ttdeci">SharedMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00012">SharedMemory.cpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_handle_library_html"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a></div><div class="ttdoc">HANDLEを扱うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00029">WindowsLibrary.h:30</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_adc56751ce1b30224689e71cd3b6c09be"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#adc56751ce1b30224689e71cd3b6c09be">alt::SharedMemory::~SharedMemory</a></div><div class="ttdeci">virtual ~SharedMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00017">SharedMemory.cpp:17</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_aca27590f5e3634c12f350d0915b0bf00"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#aca27590f5e3634c12f350d0915b0bf00">alt::SharedMemory::Open</a></div><div class="ttdeci">BOOL Open(LPCTSTR lpctszName)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00038">SharedMemory.cpp:38</a></div></div>
+<div class="ttc" id="aclassalt_1_1_handle_library_html_a03edc7a6d9d82f83145167dde56c3742"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">alt::HandleLibrary::_hObject</a></div><div class="ttdeci">HANDLE _hObject</div><div class="ttdoc">ハンドルを使用するWindowsAPIで保持するHANDLE値</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00056">WindowsLibrary.h:56</a></div></div>
+<div class="ttc" id="aclassalt_1_1_shared_memory_html_ad4cee9385b663fa8bc396e934ca9b50e"><div class="ttname"><a href="../../d5/d53/classalt_1_1_shared_memory.html#ad4cee9385b663fa8bc396e934ca9b50e">alt::SharedMemory::SharedMemory</a></div><div class="ttdeci">SharedMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d28/_shared_memory_8cpp_source.html#l00011">SharedMemory.cpp:11</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

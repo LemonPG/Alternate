@@ -1,5 +1,5 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibraryTest/MutexTest.cpp" name="C:/Users/User01/source/repos/Alternate/WindowsLibraryTest/MutexTest.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="274,5,485,61"/>
+<area shape="rect" id="node1" title="ミューテックスに関するWindowsAPIを集約したクラスのテストクラス" alt="" coords="274,5,485,61"/>
 <area shape="rect" id="node2" href="$d3/dcd/_windows_library_test_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="199,109,253,136"/>
 <area shape="rect" id="node6" href="$da/d78/_mutex_8h.html" title="ミューテックスに関するWindowsAPIを集約したクラス" alt="" coords="298,259,367,285"/>
 <area shape="rect" id="node8" href="$d8/d48/_thread_8h.html" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="381,109,453,136"/>
@@ -7,7 +7,7 @@
 <area shape="rect" id="node3" title=" " alt="" coords="5,184,97,211"/>
 <area shape="rect" id="node4" title=" " alt="" coords="122,184,226,211"/>
 <area shape="rect" id="node5" title=" " alt="" coords="250,184,306,211"/>
-<area shape="rect" id="node7" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="393,333,518,360"/>
+<area shape="rect" id="node7" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="393,333,518,360"/>
 <area shape="rect" id="node9" href="$d0/df8/_function_pointers_8hpp.html" title="コールバック機能を集約したクラス" alt="" coords="443,184,588,211"/>
 <area shape="rect" id="node10" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="684,333,776,360"/>
 <area shape="rect" id="node24" href="$df/d15/_windows_library_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="544,259,599,285"/>

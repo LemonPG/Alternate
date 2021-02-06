@@ -1,6 +1,6 @@
 <map id="alt::db::Statement::Prepare" name="alt::db::Statement::Prepare">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,132,90"/>
-<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#a0f5d64abd0da77787a19d1a8f9462e42" title=" " alt="" coords="181,5,356,32"/>
-<area shape="rect" id="node3" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title=" " alt="" coords="180,56,357,83"/>
+<area shape="rect" id="node1" title="SQLステートメントの準備" alt="" coords="5,49,132,90"/>
+<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html#a0f5d64abd0da77787a19d1a8f9462e42" title="エンジン部を取得" alt="" coords="181,5,356,32"/>
+<area shape="rect" id="node3" href="$dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541" title="各関数の戻り値判定共通" alt="" coords="180,56,357,83"/>
 <area shape="rect" id="node4" href="$de/dd3/sqlite3_8h.html#ad1651e0e1c121ec4027dbd419eb8daca" title=" " alt="" coords="207,107,331,133"/>
 </map>

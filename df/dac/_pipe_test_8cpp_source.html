@@ -87,86 +87,83 @@ $(document).ready(function(){initNavTree('df/dac/_pipe_test_8cpp_source.html','.
 <div class="title">PipeTest.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../df/dac/_pipe_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dc3/_pipe_8h.html">Pipe.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#ac04b770ff043b4b93359ae10abb05fb4">   12</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#ac04b770ff043b4b93359ae10abb05fb4">TEST_CLASS</a>(PipeTest)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        TEST_METHOD(PipeTest1)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="../../d3/d32/classalt_1_1_pipe.html">alt::Pipe</a> pipe;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ad7b3156e21c833d94921a0b57f7563c1">Create</a>());</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            CHAR szBuf[256];</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            FillMemory(szBuf, <span class="keyword">sizeof</span>(szBuf), <span class="charliteral">&#39;A&#39;</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ac3a2447214e634dd65daa7c6765b817a">Write</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            ZeroMemory(szBuf, <span class="keyword">sizeof</span>(szBuf));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Assert::AreEqual&lt;DWORD&gt;(<span class="keyword">sizeof</span>(szBuf), pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ab3af2647ebfc1cddb07e84ad67cfc88b">Peek</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Assert::AreEqual&lt;DWORD&gt;(<span class="keyword">sizeof</span>(szBuf), pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#a5bed4b1ee42523c54179f9cd6f2896f3">Read</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            Logger::WriteMessage(szBuf);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#a5e50417944e69a0f0df97218d3e0789f">Close</a>());</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        TEST_METHOD(PipeTest2)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="../../d3/d32/classalt_1_1_pipe.html">alt::Pipe</a> pipe;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ad7b3156e21c833d94921a0b57f7563c1">Create</a>());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            CHAR szBuf[256];</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            ZeroMemory(szBuf, <span class="keyword">sizeof</span>(szBuf));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Assert::AreEqual&lt;DWORD&gt;(0, pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ab3af2647ebfc1cddb07e84ad67cfc88b">Peek</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#a5e50417944e69a0f0df97218d3e0789f">Close</a>());</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<a href="../../df/dac/_pipe_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dc3/_pipe_8h.html">Pipe.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#ac04b770ff043b4b93359ae10abb05fb4">   13</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#ac04b770ff043b4b93359ae10abb05fb4">TEST_CLASS</a>(PipeTest)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        TEST_METHOD(PipeTest1)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="../../d3/d32/classalt_1_1_pipe.html">alt::Pipe</a> pipe;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ad7b3156e21c833d94921a0b57f7563c1">Create</a>());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            CHAR szBuf[256];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            FillMemory(szBuf, <span class="keyword">sizeof</span>(szBuf), <span class="charliteral">&#39;A&#39;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ac3a2447214e634dd65daa7c6765b817a">Write</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            ZeroMemory(szBuf, <span class="keyword">sizeof</span>(szBuf));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Assert::AreEqual&lt;DWORD&gt;(<span class="keyword">sizeof</span>(szBuf), pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ab3af2647ebfc1cddb07e84ad67cfc88b">Peek</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            Assert::AreEqual&lt;DWORD&gt;(<span class="keyword">sizeof</span>(szBuf), pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#a5bed4b1ee42523c54179f9cd6f2896f3">Read</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            Logger::WriteMessage(szBuf);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#a5e50417944e69a0f0df97218d3e0789f">Close</a>());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        TEST_METHOD(PipeTest2)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="../../d3/d32/classalt_1_1_pipe.html">alt::Pipe</a> pipe;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ad7b3156e21c833d94921a0b57f7563c1">Create</a>());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            CHAR szBuf[256];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            ZeroMemory(szBuf, <span class="keyword">sizeof</span>(szBuf));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            Assert::AreEqual&lt;DWORD&gt;(0, pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#ab3af2647ebfc1cddb07e84ad67cfc88b">Peek</a>(szBuf, <span class="keyword">sizeof</span>(szBuf)));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            Assert::IsTrue(pipe.<a class="code" href="../../d3/d32/classalt_1_1_pipe.html#a5e50417944e69a0f0df97218d3e0789f">Close</a>());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_pipe_html_ab3af2647ebfc1cddb07e84ad67cfc88b"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#ab3af2647ebfc1cddb07e84ad67cfc88b">alt::Pipe::Peek</a></div><div class="ttdeci">DWORD Peek(LPVOID lpvBuf, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00034">Pipe.cpp:34</a></div></div>
-<div class="ttc" id="aclassalt_1_1_pipe_html_a5e50417944e69a0f0df97218d3e0789f"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#a5e50417944e69a0f0df97218d3e0789f">alt::Pipe::Close</a></div><div class="ttdeci">BOOL Close()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00060">Pipe.cpp:60</a></div></div>
-<div class="ttc" id="aclassalt_1_1_pipe_html_a5bed4b1ee42523c54179f9cd6f2896f3"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#a5bed4b1ee42523c54179f9cd6f2896f3">alt::Pipe::Read</a></div><div class="ttdeci">DWORD Read(LPVOID lpvBuf, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00044">Pipe.cpp:44</a></div></div>
+<div class="ttc" id="aclassalt_1_1_pipe_html_ab3af2647ebfc1cddb07e84ad67cfc88b"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#ab3af2647ebfc1cddb07e84ad67cfc88b">alt::Pipe::Peek</a></div><div class="ttdeci">DWORD Peek(LPVOID lpvBuf, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00033">Pipe.cpp:33</a></div></div>
+<div class="ttc" id="aclassalt_1_1_pipe_html_a5e50417944e69a0f0df97218d3e0789f"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#a5e50417944e69a0f0df97218d3e0789f">alt::Pipe::Close</a></div><div class="ttdeci">BOOL Close()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00059">Pipe.cpp:59</a></div></div>
+<div class="ttc" id="aclassalt_1_1_pipe_html_a5bed4b1ee42523c54179f9cd6f2896f3"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#a5bed4b1ee42523c54179f9cd6f2896f3">alt::Pipe::Read</a></div><div class="ttdeci">DWORD Read(LPVOID lpvBuf, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00043">Pipe.cpp:43</a></div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="aclassalt_1_1_pipe_html_ad7b3156e21c833d94921a0b57f7563c1"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#ad7b3156e21c833d94921a0b57f7563c1">alt::Pipe::Create</a></div><div class="ttdeci">BOOL Create()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00023">Pipe.cpp:23</a></div></div>
-<div class="ttc" id="aclassalt_1_1_pipe_html"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html">alt::Pipe</a></div><div class="ttdoc">パイプに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc3/_pipe_8h_source.html#l00018">Pipe.h:19</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html_ac04b770ff043b4b93359ae10abb05fb4"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#ac04b770ff043b4b93359ae10abb05fb4">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(PipeTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dac/_pipe_test_8cpp_source.html#l00012">PipeTest.cpp:12</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00010">ArrayTest.cpp:11</a></div></div>
+<div class="ttc" id="aclassalt_1_1_pipe_html_ad7b3156e21c833d94921a0b57f7563c1"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#ad7b3156e21c833d94921a0b57f7563c1">alt::Pipe::Create</a></div><div class="ttdeci">BOOL Create()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00022">Pipe.cpp:22</a></div></div>
+<div class="ttc" id="aclassalt_1_1_pipe_html"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html">alt::Pipe</a></div><div class="ttdoc">パイプに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc3/_pipe_8h_source.html#l00015">Pipe.h:16</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html_ac04b770ff043b4b93359ae10abb05fb4"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#ac04b770ff043b4b93359ae10abb05fb4">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(PipeTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dac/_pipe_test_8cpp_source.html#l00013">PipeTest.cpp:13</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00011">ArrayTest.cpp:12</a></div></div>
 <div class="ttc" id="a_pipe_8h_html"><div class="ttname"><a href="../../d9/dc3/_pipe_8h.html">Pipe.h</a></div><div class="ttdoc">パイプに関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_pipe_html_ac3a2447214e634dd65daa7c6765b817a"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#ac3a2447214e634dd65daa7c6765b817a">alt::Pipe::Write</a></div><div class="ttdeci">BOOL Write(LPVOID lpvBuf, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00052">Pipe.cpp:52</a></div></div>
+<div class="ttc" id="aclassalt_1_1_pipe_html_ac3a2447214e634dd65daa7c6765b817a"><div class="ttname"><a href="../../d3/d32/classalt_1_1_pipe.html#ac3a2447214e634dd65daa7c6765b817a">alt::Pipe::Write</a></div><div class="ttdeci">BOOL Write(LPVOID lpvBuf, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9e/_pipe_8cpp_source.html#l00051">Pipe.cpp:51</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

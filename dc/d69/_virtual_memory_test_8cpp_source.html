@@ -87,91 +87,88 @@ $(document).ready(function(){initNavTree('dc/d69/_virtual_memory_test_8cpp_sourc
 <div class="title">VirtualMemoryTest.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../dc/d69/_virtual_memory_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d78/_virtual_memory_8h.html">VirtualMemory.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e">   12</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e">TEST_CLASS</a>(VirtualMemoryTest)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        TEST_METHOD(VirtualMemoryTest1)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;VirtualMemoryTest1\n&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>* memory = <span class="keyword">new</span> <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            LPVOID lpvMem = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">Alloc</a>(1024 * 1024 * 10);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            Assert::IsNotNull(lpvMem);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            FillMemory(lpvMem, 1024 * 1024 * 10, <span class="charliteral">&#39;A&#39;</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            BOOL ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">Free</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        TEST_METHOD(VirtualMemoryTest2)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;VirtualMemoryTest2\n&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>* memory = <span class="keyword">new</span> <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            BOOL ret;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">Reserve</a>(1024 * 1024 * 10); <span class="comment">// 10MB</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            LPVOID lpvMem = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">Commit</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            Assert::IsNotNull(lpvMem);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            FillMemory(lpvMem, 1024 * 1024 * 10, <span class="charliteral">&#39;A&#39;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">Decommit</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">Release</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            Assert::IsTrue(ret);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<a href="../../dc/d69/_virtual_memory_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d78/_virtual_memory_8h.html">VirtualMemory.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e">   13</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e">TEST_CLASS</a>(VirtualMemoryTest)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        TEST_METHOD(VirtualMemoryTest1)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;VirtualMemoryTest1\n&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>* memory = <span class="keyword">new</span> <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            LPVOID lpvMem = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">Alloc</a>(1024 * 1024 * 10);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            Assert::IsNotNull(lpvMem);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            FillMemory(lpvMem, 1024 * 1024 * 10, <span class="charliteral">&#39;A&#39;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            BOOL ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">Free</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        TEST_METHOD(VirtualMemoryTest2)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;VirtualMemoryTest2\n&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>* memory = <span class="keyword">new</span> <a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            BOOL ret;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">Reserve</a>(1024 * 1024 * 10); <span class="comment">// 10MB</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            LPVOID lpvMem = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">Commit</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            Assert::IsNotNull(lpvMem);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            FillMemory(lpvMem, 1024 * 1024 * 10, <span class="charliteral">&#39;A&#39;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">Decommit</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            ret = memory-&gt;<a class="code" href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">Release</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            Assert::IsTrue(ret);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html_aefd411bbcefe8d017df21be8a539b4ad"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">alt::VirtualMemory::Commit</a></div><div class="ttdeci">LPVOID Commit()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00050">VirtualMemory.cpp:50</a></div></div>
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a84fe46c6b06fe1cfd0f8944e82368e64"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">alt::VirtualMemory::Alloc</a></div><div class="ttdeci">LPVOID Alloc(SIZE_T size)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00023">VirtualMemory.cpp:23</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_aefd411bbcefe8d017df21be8a539b4ad"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#aefd411bbcefe8d017df21be8a539b4ad">alt::VirtualMemory::Commit</a></div><div class="ttdeci">LPVOID Commit()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00055">VirtualMemory.cpp:55</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a84fe46c6b06fe1cfd0f8944e82368e64"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a84fe46c6b06fe1cfd0f8944e82368e64">alt::VirtualMemory::Alloc</a></div><div class="ttdeci">LPVOID Alloc(SIZE_T size)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00028">VirtualMemory.cpp:28</a></div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html_ab86c12d28fa763f223de5183fe464309"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">alt::VirtualMemory::Free</a></div><div class="ttdeci">BOOL Free()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00034">VirtualMemory.cpp:34</a></div></div>
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html_ae086f090dc1bcaf5cdbc8e8079cd6428"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">alt::VirtualMemory::Decommit</a></div><div class="ttdeci">BOOL Decommit()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00065">VirtualMemory.cpp:65</a></div></div>
-<div class="ttc" id="a_virtual_memory_8h_html"><div class="ttname"><a href="../../d0/d78/_virtual_memory_8h.html">VirtualMemory.h</a></div><div class="ttdoc">仮想メモリに関するクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a7a3d4b492bb6405e6ae33783989c30b3"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">alt::VirtualMemory::Reserve</a></div><div class="ttdeci">BOOL Reserve(SIZE_T size)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00042">VirtualMemory.cpp:42</a></div></div>
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a></div><div class="ttdoc">仮想メモリに関するクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d78/_virtual_memory_8h_source.html#l00017">VirtualMemory.h:18</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00010">ArrayTest.cpp:11</a></div></div>
-<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a9bb0f7c14df2d5ab7d9e83f725d72272"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">alt::VirtualMemory::Release</a></div><div class="ttdeci">BOOL Release()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00055">VirtualMemory.cpp:55</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html_a7a68f0a72a78266af1963515e060176e"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(VirtualMemoryTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00012">VirtualMemoryTest.cpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_ab86c12d28fa763f223de5183fe464309"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#ab86c12d28fa763f223de5183fe464309">alt::VirtualMemory::Free</a></div><div class="ttdeci">BOOL Free()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00039">VirtualMemory.cpp:39</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_ae086f090dc1bcaf5cdbc8e8079cd6428"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#ae086f090dc1bcaf5cdbc8e8079cd6428">alt::VirtualMemory::Decommit</a></div><div class="ttdeci">BOOL Decommit()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00070">VirtualMemory.cpp:70</a></div></div>
+<div class="ttc" id="a_virtual_memory_8h_html"><div class="ttname"><a href="../../d0/d78/_virtual_memory_8h.html">VirtualMemory.h</a></div><div class="ttdoc">仮想メモリに関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a7a3d4b492bb6405e6ae33783989c30b3"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a7a3d4b492bb6405e6ae33783989c30b3">alt::VirtualMemory::Reserve</a></div><div class="ttdeci">BOOL Reserve(SIZE_T size)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00047">VirtualMemory.cpp:47</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html">alt::VirtualMemory</a></div><div class="ttdoc">仮想メモリに関するクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d78/_virtual_memory_8h_source.html#l00014">VirtualMemory.h:15</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00011">ArrayTest.cpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_virtual_memory_html_a9bb0f7c14df2d5ab7d9e83f725d72272"><div class="ttname"><a href="../../d9/d1e/classalt_1_1_virtual_memory.html#a9bb0f7c14df2d5ab7d9e83f725d72272">alt::VirtualMemory::Release</a></div><div class="ttdeci">BOOL Release()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8a/_virtual_memory_8cpp_source.html#l00060">VirtualMemory.cpp:60</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html_a7a68f0a72a78266af1963515e060176e"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a7a68f0a72a78266af1963515e060176e">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(VirtualMemoryTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d69/_virtual_memory_test_8cpp_source.html#l00013">VirtualMemoryTest.cpp:13</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

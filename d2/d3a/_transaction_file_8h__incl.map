@@ -1,7 +1,7 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibrary/TransactionFile.h" name="C:/Users/User01/source/repos/Alternate/WindowsLibrary/TransactionFile.h">
-<area shape="rect" id="node1" title="トランザクションNTFSに関するクラス" alt="" coords="627,5,837,61"/>
+<area shape="rect" id="node1" title="トランザクションNTFSに関するAPIを集約したクラス" alt="" coords="627,5,837,61"/>
 <area shape="rect" id="node2" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,184,713,211"/>
-<area shape="rect" id="node16" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="737,184,863,211"/>
+<area shape="rect" id="node16" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="737,184,863,211"/>
 <area shape="rect" id="node17" href="$df/d0c/_file_8h.html" title="ファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="705,109,759,136"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,259,88,285"/>
 <area shape="rect" id="node4" title=" " alt="" coords="113,259,175,285"/>

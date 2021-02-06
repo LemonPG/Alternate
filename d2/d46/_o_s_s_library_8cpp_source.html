@@ -88,52 +88,52 @@ $(document).ready(function(){initNavTree('d2/d46/_o_s_s_library_8cpp_source.html
 </div><!--header-->
 <div class="contents">
 <a href="../../d2/d46/_o_s_s_library_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d27/_o_s_s_library_8h.html">OSSLibrary.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d2/d84/namespaceoss.html">oss</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d2/d46/_o_s_s_library_8cpp.html#acaf499f217efc8325cb9bb6bb9957656">   12</a></span>&#160;BOOL APIENTRY <a class="code" href="../../d2/d46/_o_s_s_library_8cpp.html#acaf499f217efc8325cb9bb6bb9957656">DllMain</a>(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpvReserved)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">switch</span> (ul_reason_for_call)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">case</span> DLL_PROCESS_ATTACH:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_PROCESS_ATTACH.\n&quot;</span>));</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">case</span> DLL_THREAD_ATTACH:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_THREAD_ATTACH.\n&quot;</span>));</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">case</span> DLL_THREAD_DETACH:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_THREAD_DETACH.\n&quot;</span>));</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">case</span> DLL_PROCESS_DETACH:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_PROCESS_DETACH.\n&quot;</span>));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a92d5ceed7111069fea2bdccba38e062b">   36</a></span>&#160;<a class="code" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a92d5ceed7111069fea2bdccba38e062b">OSSLibrary::OSSLibrary</a>()</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a9683310a4b47929baac12f205f752579">   41</a></span>&#160;<a class="code" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a9683310a4b47929baac12f205f752579">OSSLibrary::~OSSLibrary</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d27/_o_s_s_library_8h.html">OSSLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d2/d84/namespaceoss.html">oss</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d2/d46/_o_s_s_library_8cpp.html#acaf499f217efc8325cb9bb6bb9957656">   11</a></span>&#160;BOOL APIENTRY <a class="code" href="../../d2/d46/_o_s_s_library_8cpp.html#acaf499f217efc8325cb9bb6bb9957656">DllMain</a>(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpvReserved)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">switch</span> (ul_reason_for_call)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">case</span> DLL_PROCESS_ATTACH:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_PROCESS_ATTACH.\n&quot;</span>));</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">case</span> DLL_THREAD_ATTACH:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_THREAD_ATTACH.\n&quot;</span>));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">case</span> DLL_THREAD_DETACH:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_THREAD_DETACH.\n&quot;</span>));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">case</span> DLL_PROCESS_DETACH:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            OutputDebugString(_T(<span class="stringliteral">&quot;WindowsLibrary.dll DLL_PROCESS_DETACH.\n&quot;</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a92d5ceed7111069fea2bdccba38e062b">   35</a></span>&#160;<a class="code" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a92d5ceed7111069fea2bdccba38e062b">OSSLibrary::OSSLibrary</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a9683310a4b47929baac12f205f752579">   40</a></span>&#160;<a class="code" href="../../d2/d40/classoss_1_1_o_s_s_library.html#a9683310a4b47929baac12f205f752579">OSSLibrary::~OSSLibrary</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="a_o_s_s_library_8h_html"><div class="ttname"><a href="../../d3/d27/_o_s_s_library_8h.html">OSSLibrary.h</a></div></div>
-<div class="ttc" id="aclassoss_1_1_o_s_s_library_html_a9683310a4b47929baac12f205f752579"><div class="ttname"><a href="../../d2/d40/classoss_1_1_o_s_s_library.html#a9683310a4b47929baac12f205f752579">oss::OSSLibrary::~OSSLibrary</a></div><div class="ttdeci">virtual ~OSSLibrary()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d46/_o_s_s_library_8cpp_source.html#l00041">OSSLibrary.cpp:41</a></div></div>
-<div class="ttc" id="a_o_s_s_library_8cpp_html_acaf499f217efc8325cb9bb6bb9957656"><div class="ttname"><a href="../../d2/d46/_o_s_s_library_8cpp.html#acaf499f217efc8325cb9bb6bb9957656">DllMain</a></div><div class="ttdeci">BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpvReserved)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d46/_o_s_s_library_8cpp_source.html#l00012">OSSLibrary.cpp:12</a></div></div>
-<div class="ttc" id="anamespaceoss_html"><div class="ttname"><a href="../../d2/d84/namespaceoss.html">oss</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d27/_o_s_s_library_8h_source.html#l00012">OSSLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassoss_1_1_o_s_s_library_html_a92d5ceed7111069fea2bdccba38e062b"><div class="ttname"><a href="../../d2/d40/classoss_1_1_o_s_s_library.html#a92d5ceed7111069fea2bdccba38e062b">oss::OSSLibrary::OSSLibrary</a></div><div class="ttdeci">OSSLibrary()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d46/_o_s_s_library_8cpp_source.html#l00036">OSSLibrary.cpp:36</a></div></div>
+<div class="ttc" id="a_o_s_s_library_8h_html"><div class="ttname"><a href="../../d3/d27/_o_s_s_library_8h.html">OSSLibrary.h</a></div><div class="ttdoc">Open Source Software を集約したプロジェクトファイル</div></div>
+<div class="ttc" id="aclassoss_1_1_o_s_s_library_html_a9683310a4b47929baac12f205f752579"><div class="ttname"><a href="../../d2/d40/classoss_1_1_o_s_s_library.html#a9683310a4b47929baac12f205f752579">oss::OSSLibrary::~OSSLibrary</a></div><div class="ttdeci">virtual ~OSSLibrary()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d46/_o_s_s_library_8cpp_source.html#l00040">OSSLibrary.cpp:40</a></div></div>
+<div class="ttc" id="a_o_s_s_library_8cpp_html_acaf499f217efc8325cb9bb6bb9957656"><div class="ttname"><a href="../../d2/d46/_o_s_s_library_8cpp.html#acaf499f217efc8325cb9bb6bb9957656">DllMain</a></div><div class="ttdeci">BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpvReserved)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d46/_o_s_s_library_8cpp_source.html#l00011">OSSLibrary.cpp:11</a></div></div>
+<div class="ttc" id="anamespaceoss_html"><div class="ttname"><a href="../../d2/d84/namespaceoss.html">oss</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d27/_o_s_s_library_8h_source.html#l00011">OSSLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassoss_1_1_o_s_s_library_html_a92d5ceed7111069fea2bdccba38e062b"><div class="ttname"><a href="../../d2/d40/classoss_1_1_o_s_s_library.html#a92d5ceed7111069fea2bdccba38e062b">oss::OSSLibrary::OSSLibrary</a></div><div class="ttdeci">OSSLibrary()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d46/_o_s_s_library_8cpp_source.html#l00035">OSSLibrary.cpp:35</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

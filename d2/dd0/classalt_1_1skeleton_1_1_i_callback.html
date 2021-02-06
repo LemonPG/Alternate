@@ -104,12 +104,12 @@ alt::skeleton::ICallback の継承関係図</div>
 <area shape="rect" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="189,314,344,341"/>
 <area shape="rect" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html" title=" " alt="" coords="424,5,555,47"/>
 <area shape="rect" href="../../db/dc2/classalt_1_1_factory_method_1_1_queue_element.html" title=" " alt="" coords="424,71,555,112"/>
-<area shape="rect" href="../../d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCPクラス性能測定用" alt="" coords="392,137,587,163"/>
-<area shape="rect" href="../../df/d72/class_perf_check_1_1_server_worker.html" title="TCPクラス性能測定用" alt="" coords="405,187,573,214"/>
-<area shape="rect" href="../../d7/de9/class_perf_check_1_1_tcp_client.html" title="TCPクラス性能測定用" alt="" coords="417,238,561,265"/>
-<area shape="rect" href="../../d9/d82/class_perf_check_1_1_tcp_server.html" title="TCPクラス性能測定用" alt="" coords="416,289,563,315"/>
-<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDPクラス性能測定用" alt="" coords="405,339,573,366"/>
-<area shape="rect" href="../../d3/d1b/class_perf_check_1_1_upstream_driver.html" title=" " alt="" coords="400,390,579,417"/>
+<area shape="rect" href="../../d6/d1f/class_perf_check_1_1_downstream_driver.html" title="TCP性能測定用（ダウンストリーム）" alt="" coords="392,137,587,163"/>
+<area shape="rect" href="../../df/d72/class_perf_check_1_1_server_worker.html" title="TCP性能測定用（サーバースレッド）" alt="" coords="405,187,573,214"/>
+<area shape="rect" href="../../d7/de9/class_perf_check_1_1_tcp_client.html" title="TCP性能測定用（クライアント）" alt="" coords="417,238,561,265"/>
+<area shape="rect" href="../../d9/d82/class_perf_check_1_1_tcp_server.html" title="TCP性能測定用（サーバー）" alt="" coords="416,289,563,315"/>
+<area shape="rect" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html" title="UDP性能測定用" alt="" coords="405,339,573,366"/>
+<area shape="rect" href="../../d3/d1b/class_perf_check_1_1_upstream_driver.html" title="TCP性能測定用（アップストリーム）" alt="" coords="400,390,579,417"/>
 <area shape="rect" href="../../dd/dd2/class_windows_library_test_1_1_callback.html" title=" " alt="" coords="420,441,559,483"/>
 <area shape="rect" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html" title="自動リセットイベントテストクラス" alt="" coords="420,507,559,548"/>
 <area shape="rect" href="../../de/d57/class_windows_library_test_1_1_event_test2.html" title="手動リセットイベントテストクラス" alt="" coords="420,572,559,613"/>
@@ -149,7 +149,7 @@ alt::skeleton::ICallback 連携図</div>
 <div class="textblock"><p>Threadクラスのスレッド実行関数を設定します。 </p>
 <dl class="section note"><dt>覚え書き</dt><dd><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a8081c641e1b1eeb812e5458e1e078173">Invoker()</a>は直後にInvoke()を呼び出します。 <a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">Invoke()</a>は純粋仮想関数なので、スレッド実行させたい機能は、 継承先で実装してください。 </dd></dl>
 
-<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00027">27</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a9e821773cc4ef1701f0aa558bfbfd4e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e821773cc4ef1701f0aa558bfbfd4e3">&#9670;&nbsp;</a></span>ICallback()</h2>
@@ -174,9 +174,9 @@ alt::skeleton::ICallback 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00027">27</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00372">PerfCheck::TcpServer::TcpServer()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00368">PerfCheck::TcpServer::TcpServer()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -212,7 +212,7 @@ alt::skeleton::ICallback 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00031">31</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00028">28</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ alt::skeleton::ICallback 連携図</div>
 
 <p><a class="el" href="../../dd/d88/class_windows_library_test_1_1_my_thread.html#a12421864c7c1232f90c1d56cf138b6ef">WindowsLibraryTest::MyThread</a>, <a class="el" href="../../dd/dd2/class_windows_library_test_1_1_callback.html#a3a993da0af639d9d29e36f0d6cd949c4">WindowsLibraryTest::Callback</a>, <a class="el" href="../../de/d57/class_windows_library_test_1_1_event_test2.html#a6c3e2443c541462da4ddf931e2fe9040">WindowsLibraryTest::EventTest2</a>, <a class="el" href="../../dd/d8b/class_windows_library_test_1_1_event_test1.html#a85f97a0232dea824aeb63b553a3c7e99">WindowsLibraryTest::EventTest1</a>, <a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#af8470a61a776700fe354e90c5c0f029c">PerfCheck::UdpController</a>, <a class="el" href="../../d6/d1f/class_perf_check_1_1_downstream_driver.html#add4048500306e4bd3fb03699967ee114">PerfCheck::DownstreamDriver</a>, <a class="el" href="../../d3/d1b/class_perf_check_1_1_upstream_driver.html#afc11efdd3ce081431c5e03de35bb540e">PerfCheck::UpstreamDriver</a>, <a class="el" href="../../d7/de9/class_perf_check_1_1_tcp_client.html#ad4afc1a4930abd7b503c65dd87bb5300">PerfCheck::TcpClient</a>, <a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a3b1d6af61604eae9f1c46684a96ff4ff">PerfCheck::TcpServer</a>, <a class="el" href="../../df/d72/class_perf_check_1_1_server_worker.html#abd1ce20aead7f3ef8a3421db40ce0fb1">PerfCheck::ServerWorker</a>, <a class="el" href="../../db/dc2/classalt_1_1_factory_method_1_1_queue_element.html#abca9112589ef9e67f3825f8bf98d6e4e">alt::FactoryMethod::QueueElement</a>, <a class="el" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html#a7b468353d12f8239b20f67dd3343b509">alt::FactoryMethod::ClockElement</a>で実装されています。</p>
 
-<p class="reference">参照元 <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00035">Invoker()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00032">Invoker()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -298,11 +298,11 @@ alt::skeleton::ICallback 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a> の <a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html#l00032">32</a> 行目に定義があります。</p>
 
 <p class="reference">参照先 <a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a5a23e15aadaccd0d4de288e5bd8ff3d2">Invoke()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00024">alt::Thread::Create()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00023">alt::Thread::Create()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">

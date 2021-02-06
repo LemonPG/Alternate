@@ -87,71 +87,68 @@ $(document).ready(function(){initNavTree('dc/d3d/_logger_test_8cpp_source.html',
 <div class="title">LoggerTest.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../dc/d3d/_logger_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dec/_logger_8h.html">Logger.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d48/_thread_8h.html">Thread.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182">   13</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182">TEST_CLASS</a>(LoggerTest)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        TEST_METHOD(LoggerTest1)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;LoggerTest1\n&quot;</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#ad9f38f9cc2d75a6207f4972427aa74f1">alt::Logger::init</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a> message(_T(<span class="stringliteral">&quot;sample message&quot;</span>));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#a2494e4e92907195918eedafe7a6e61f9">alt::Logger::error</a>(message);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#aac951b48f2527233b6d1694b07de2a3e">alt::Logger::warn</a>(message);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#a2c5dd33d16107ba6fe01629dacb28f15">alt::Logger::info</a>(message);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#a0c869769c89bb589c3100a0ec5146ac2">alt::Logger::debug</a>(message);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#adcbe913f6a127d99a46d9ceb59228248">alt::Logger::trace</a>(message);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<a href="../../dc/d3d/_logger_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dec/_logger_8h.html">Logger.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d48/_thread_8h.html">Thread.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182">   14</a></span>&#160;    <a class="code" href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182">TEST_CLASS</a>(LoggerTest)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        TEST_CLASS_INITIALIZE(ClassInitialize)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        TEST_CLASS_CLEANUP(ClassCleanup)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        TEST_METHOD_INITIALIZE(MethodInitialize)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method initialize.\n&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        TEST_METHOD_CLEANUP(MethodCleanup)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;method cleanup.\n&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        TEST_METHOD(LoggerTest1)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            Logger::WriteMessage(<span class="stringliteral">&quot;LoggerTest1\n&quot;</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#ad9f38f9cc2d75a6207f4972427aa74f1">alt::Logger::init</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a> message(_T(<span class="stringliteral">&quot;sample message&quot;</span>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#a2494e4e92907195918eedafe7a6e61f9">alt::Logger::error</a>(message);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#aac951b48f2527233b6d1694b07de2a3e">alt::Logger::warn</a>(message);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#a2c5dd33d16107ba6fe01629dacb28f15">alt::Logger::info</a>(message);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#a0c869769c89bb589c3100a0ec5146ac2">alt::Logger::debug</a>(message);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="../../d6/d60/classalt_1_1_logger.html#adcbe913f6a127d99a46d9ceb59228248">alt::Logger::trace</a>(message);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_logger_html_aac951b48f2527233b6d1694b07de2a3e"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#aac951b48f2527233b6d1694b07de2a3e">alt::Logger::warn</a></div><div class="ttdeci">static void warn(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00059">Logger.cpp:59</a></div></div>
-<div class="ttc" id="aclassalt_1_1_logger_html_ad9f38f9cc2d75a6207f4972427aa74f1"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#ad9f38f9cc2d75a6207f4972427aa74f1">alt::Logger::init</a></div><div class="ttdeci">static void init()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00040">Logger.cpp:40</a></div></div>
+<div class="ttc" id="aclassalt_1_1_logger_html_aac951b48f2527233b6d1694b07de2a3e"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#aac951b48f2527233b6d1694b07de2a3e">alt::Logger::warn</a></div><div class="ttdeci">static void warn(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00058">Logger.cpp:58</a></div></div>
+<div class="ttc" id="aclassalt_1_1_logger_html_ad9f38f9cc2d75a6207f4972427aa74f1"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#ad9f38f9cc2d75a6207f4972427aa74f1">alt::Logger::init</a></div><div class="ttdeci">static void init()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00039">Logger.cpp:39</a></div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
 <div class="ttc" id="a_logger_8h_html"><div class="ttname"><a href="../../d6/dec/_logger_8h.html">Logger.h</a></div><div class="ttdoc">ログに関するクラス</div></div>
-<div class="ttc" id="anamespace_windows_library_test_html_a0b47b1b777d25734ccaae10ccbd4c182"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(LoggerTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/_logger_test_8cpp_source.html#l00013">LoggerTest.cpp:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1_logger_html_a0c869769c89bb589c3100a0ec5146ac2"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#a0c869769c89bb589c3100a0ec5146ac2">alt::Logger::debug</a></div><div class="ttdeci">static void debug(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00073">Logger.cpp:73</a></div></div>
-<div class="ttc" id="aclassalt_1_1_logger_html_a2c5dd33d16107ba6fe01629dacb28f15"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#a2c5dd33d16107ba6fe01629dacb28f15">alt::Logger::info</a></div><div class="ttdeci">static void info(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00066">Logger.cpp:66</a></div></div>
-<div class="ttc" id="aclassalt_1_1_logger_html_adcbe913f6a127d99a46d9ceb59228248"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#adcbe913f6a127d99a46d9ceb59228248">alt::Logger::trace</a></div><div class="ttdeci">static void trace(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00080">Logger.cpp:80</a></div></div>
-<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00010">ArrayTest.cpp:11</a></div></div>
-<div class="ttc" id="aclassalt_1_1_logger_html_a2494e4e92907195918eedafe7a6e61f9"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#a2494e4e92907195918eedafe7a6e61f9">alt::Logger::error</a></div><div class="ttdeci">static void error(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00052">Logger.cpp:52</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html_a0b47b1b777d25734ccaae10ccbd4c182"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html#a0b47b1b777d25734ccaae10ccbd4c182">WindowsLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(LoggerTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/_logger_test_8cpp_source.html#l00014">LoggerTest.cpp:14</a></div></div>
+<div class="ttc" id="aclassalt_1_1_logger_html_a0c869769c89bb589c3100a0ec5146ac2"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#a0c869769c89bb589c3100a0ec5146ac2">alt::Logger::debug</a></div><div class="ttdeci">static void debug(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00072">Logger.cpp:72</a></div></div>
+<div class="ttc" id="aclassalt_1_1_logger_html_a2c5dd33d16107ba6fe01629dacb28f15"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#a2c5dd33d16107ba6fe01629dacb28f15">alt::Logger::info</a></div><div class="ttdeci">static void info(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00065">Logger.cpp:65</a></div></div>
+<div class="ttc" id="aclassalt_1_1_logger_html_adcbe913f6a127d99a46d9ceb59228248"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#adcbe913f6a127d99a46d9ceb59228248">alt::Logger::trace</a></div><div class="ttdeci">static void trace(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00079">Logger.cpp:79</a></div></div>
+<div class="ttc" id="anamespace_windows_library_test_html"><div class="ttname"><a href="../../db/d5a/namespace_windows_library_test.html">WindowsLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbb/_array_test_8cpp_source.html#l00011">ArrayTest.cpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_logger_html_a2494e4e92907195918eedafe7a6e61f9"><div class="ttname"><a href="../../d6/d60/classalt_1_1_logger.html#a2494e4e92907195918eedafe7a6e61f9">alt::Logger::error</a></div><div class="ttdeci">static void error(TString &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
 <div class="ttc" id="a_thread_8h_html"><div class="ttname"><a href="../../d8/d48/_thread_8h.html">Thread.h</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_t_string_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00019">TString.h:20</a></div></div>
+<div class="ttc" id="aclassalt_1_1_t_string_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00016">TString.h:17</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

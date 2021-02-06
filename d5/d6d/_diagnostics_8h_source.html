@@ -88,31 +88,77 @@ $(document).ready(function(){initNavTree('d5/d6d/_diagnostics_8h_source.html','.
 </div><!--header-->
 <div class="contents">
 <a href="../../d5/d6d/_diagnostics_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html">Diagnostics</a> : <span class="keyword">public</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html">HandleLibrary</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html">Diagnostics</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        BOOL GetProcessMemory(PROCESS_MEMORY_COUNTERS&amp; processMemoryCounters);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        BOOL GetProcessIO(IO_COUNTERS&amp; ioCounters);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        BOOL GetIpStatistics(MIB_IPSTATS&amp; mibIPStats);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d8/d52/classalt_1_1_diagnostics.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html">Diagnostics</a> : <span class="keyword">public</span> <a class="code" href="../../d0/d99/classalt_1_1_handle_library.html">HandleLibrary</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../d8/d52/classalt_1_1_diagnostics.html">Diagnostics</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">//typedef struct _PROCESS_MEMORY_COUNTERS {</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">//  DWORD  cb;                         //! 構造体のサイズ</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//  DWORD  PageFaultCount;             //! ページ・フォールト数</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">//  SIZE_T PeakWorkingSetSize;         //! 最大ワーキングセット(メモリ使用量)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">//  SIZE_T WorkingSetSize;             //! 現在ワーキングセット(最大メモリ使用量)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">//  SIZE_T QuotaPeakPagedPoolUsage;    //! 最大ページプールの使用サイズ(ページプール)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">//  SIZE_T QuotaPagedPoolUsage;        //! 現在ページプールの使用サイズ</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">//  SIZE_T QuotaPeakNonPagedPoolUsage; //! 最大非ページプールの使用サイズ(非ページプール)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">//  SIZE_T QuotaNonPagedPoolUsage;     //! 現在非ページプールの使用サイズ</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">//  SIZE_T PagefileUsage;              //! 現在ページングファイルの使用サイズ(仮想メモリサイズ)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">//  SIZE_T PeakPagefileUsage;          //! 最大ページングファイルの使用サイズ</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">//} PROCESS_MEMORY_COUNTERS, * PPROCESS_MEMORY_COUNTERS;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">//カッコ内はタスクマネージャでの表現です。</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        BOOL GetProcessMemory(PROCESS_MEMORY_COUNTERS&amp; processMemoryCounters);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">//typedef struct _IO_COUNTERS {</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//  ULONGLONG ReadOperationCount;  // I/O読み取り</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">//  ULONGLONG WriteOperationCount; // I/O書き込み</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//  ULONGLONG OtherOperationCount; // I/Oその他</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">//  ULONGLONG ReadTransferCount;   // I/O読み取りバイト数</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//  ULONGLONG WriteTransferCount;  // I/O書き込みバイト数</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//  ULONGLONG OtherTransferCount;  // I/Oその他バイト数</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//} IO_COUNTERS, * PIO_COUNTERS;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        BOOL GetProcessIO(IO_COUNTERS&amp; ioCounters);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//typedef struct _MIB_IPSTATS {</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//  DWORD dwForwarding;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//  DWORD dwDefaultTTL;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//  DWORD dwInReceives;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">//  DWORD dwInHdrErrors;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//  DWORD dwInAddrErrors;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//  DWORD dwForwDatagrams;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">//  DWORD dwInUnknownProtos;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">//  DWORD dwInDiscards;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">//  DWORD dwInDelivers;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//  DWORD dwOutRequests;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//  DWORD dwRoutingDiscards;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">//  DWORD dwOutDiscards;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//  DWORD dwOutNoRoutes;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">//  DWORD dwReasmTimeout;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">//  DWORD dwReasmReqds;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">//  DWORD dwReasmOks;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//  DWORD dwReasmFails;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">//  DWORD dwFragOks;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//  DWORD dwFragFails;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">//  DWORD dwFragCreates;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">//  DWORD dwNumIf;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">//  DWORD dwNumAddr;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">//  DWORD dwNumRoutes;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">//} MIB_IPSTATS, *PMIB_IPSTATS;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        BOOL GetIpStatistics(MIB_IPSTATS&amp; mibIPStats);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_diagnostics_html"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html">alt::Diagnostics</a></div><div class="ttdoc">システム性能に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6d/_diagnostics_8h_source.html#l00017">Diagnostics.h:18</a></div></div>
-<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
-<div class="ttc" id="aclassalt_1_1_handle_library_html"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a></div><div class="ttdoc">HANDLEを扱うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00036">WindowsLibrary.h:37</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
+<div class="ttc" id="aclassalt_1_1_diagnostics_html"><div class="ttname"><a href="../../d8/d52/classalt_1_1_diagnostics.html">alt::Diagnostics</a></div><div class="ttdoc">システム性能に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6d/_diagnostics_8h_source.html#l00014">Diagnostics.h:15</a></div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
+<div class="ttc" id="aclassalt_1_1_handle_library_html"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a></div><div class="ttdoc">HANDLEを扱うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00029">WindowsLibrary.h:30</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約したプロジェクトファイル</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -195,7 +195,7 @@ alt::Console 連携図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>コンソールに関するクラス </p>
 
-<p class="definition"> <a class="el" href="../../d3/d6e/_console_8h_source.html">Console.h</a> の <a class="el" href="../../d3/d6e/_console_8h_source.html#l00094">94</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d3/d6e/_console_8h_source.html">Console.h</a> の <a class="el" href="../../d3/d6e/_console_8h_source.html#l00087">87</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="aba16cfd9f0894eb1312b1bc1155b6646"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba16cfd9f0894eb1312b1bc1155b6646">&#9670;&nbsp;</a></span>Console()</h2>
@@ -214,9 +214,9 @@ alt::Console 連携図</div>
 
 <p>コンストラクタ </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00012">12</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00011">11</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d3/d6e/_console_8h_source.html#l00137">_prevConsoleScreenBufferInfo</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d3/d6e/_console_8h_source.html#l00141">_prevConsoleScreenBufferInfo</a>.</p>
 
 </div>
 </div>
@@ -245,9 +245,9 @@ alt::Console 連携図</div>
 
 <p>デストラクタ </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00018">18</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00017">17</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>, <a class="el" href="../../d3/d6e/_console_8h_source.html#l00137">_prevConsoleScreenBufferInfo</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>, <a class="el" href="../../d3/d6e/_console_8h_source.html#l00141">_prevConsoleScreenBufferInfo</a>.</p>
 
 </div>
 </div>
@@ -269,11 +269,11 @@ alt::Console 連携図</div>
 
 <p>コンソールをクリアします。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00116">116</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00115">115</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00146">GetScreenBufferInfo()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00085">SetCursorPosition()</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00145">GetScreenBufferInfo()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00084">SetCursorPosition()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00059">PerfCheck::PerformanceCheck::Clear()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00057">PerfCheck::PerformanceCheck::Clear()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -314,10 +314,18 @@ alt::Console 連携図</div>
 </div><div class="memdoc">
 
 <p>コンソール出力ウィンドウを作成します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL 実行結果 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>成功 </td></tr>
+    <tr><td class="paramname">FALSE</td><td>失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00023">23</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00022">22</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00040">alt::Logger::init()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00039">alt::Logger::init()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -362,11 +370,11 @@ alt::Console 連携図</div>
 
 <p>コンソールに文字を出力します。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00058">58</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00057">57</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00051">Write()</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00050">Write()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00064">_tmain()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00062">_tmain()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -413,11 +421,11 @@ alt::Console 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00146">146</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00145">145</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00116">Clear()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00028">Init()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00115">Clear()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00027">Init()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -456,12 +464,20 @@ alt::Console 連携図</div>
 </div><div class="memdoc">
 
 <p>Consoleクラスを初期化します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL 実行結果 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>成功 </td></tr>
+    <tr><td class="paramname">FALSE</td><td>失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00028">28</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00027">27</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>, <a class="el" href="../../d3/d6e/_console_8h_source.html#l00137">_prevConsoleScreenBufferInfo</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00146">GetScreenBufferInfo()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00045">SetColor()</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>, <a class="el" href="../../d3/d6e/_console_8h_source.html#l00141">_prevConsoleScreenBufferInfo</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00145">GetScreenBufferInfo()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00044">SetColor()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00064">_tmain()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00040">alt::Logger::init()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00062">_tmain()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00039">alt::Logger::init()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -517,11 +533,11 @@ alt::Console 連携図</div>
 
 <p>バッファサイズを設定します。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00094">94</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00093">93</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00054">PerfCheck::PerformanceCheck::Buffer()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00052">PerfCheck::PerformanceCheck::Buffer()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -563,12 +579,27 @@ alt::Console 連携図</div>
 </div><div class="memdoc">
 
 <p>文字色、背景色を設定します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">foreColor</td><td>文字色 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">backColor</td><td>背景色 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>bool </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>成功 </td></tr>
+    <tr><td class="paramname">false</td><td>失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00045">45</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00044">44</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00028">Init()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00027">Init()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -615,11 +646,11 @@ alt::Console 連携図</div>
 
 <p>出力位置を設定します。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00085">85</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00084">84</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00116">Clear()</a>, <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00044">PerfCheck::PerformanceCheck::Pos()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00115">Clear()</a>, <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00042">PerfCheck::PerformanceCheck::Pos()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -654,7 +685,7 @@ alt::Console 連携図</div>
 
 <p>コンソールタイトルを設定します。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00080">80</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00079">79</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -686,11 +717,11 @@ alt::Console 連携図</div>
 
 <p>ウィンドウサイズを設定します。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00105">105</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00104">104</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00049">PerfCheck::PerformanceCheck::Size()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00047">PerfCheck::PerformanceCheck::Size()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -723,11 +754,11 @@ alt::Console 連携図</div>
 
 <p>コンソールに文字を出力します。 </p>
 
-<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00051">51</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d5/da5/_console_8cpp_source.html">Console.cpp</a> の <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00050">50</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00070">alt::HandleLibrary::_hObject</a>.</p>
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00056">alt::HandleLibrary::_hObject</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00073">alt::Logger::debug()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00052">alt::Logger::error()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00058">Format()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00066">alt::Logger::info()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00012">WindowsLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00080">alt::Logger::trace()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00059">alt::Logger::warn()</a>, <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00039">PerfCheck::PerformanceCheck::Write()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00072">alt::Logger::debug()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00051">alt::Logger::error()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00057">Format()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00065">alt::Logger::info()</a>, <a class="el" href="../../dd/d02/_console_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00079">alt::Logger::trace()</a>, <a class="el" href="../../de/d27/_logger_8cpp_source.html#l00058">alt::Logger::warn()</a>, <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00037">PerfCheck::PerformanceCheck::Write()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -796,9 +827,9 @@ alt::Console 連携図</div>
 
 <p>コンソールウィンドウ出力情報 </p>
 
-<p class="definition"> <a class="el" href="../../d3/d6e/_console_8h_source.html">Console.h</a> の <a class="el" href="../../d3/d6e/_console_8h_source.html#l00137">137</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d3/d6e/_console_8h_source.html">Console.h</a> の <a class="el" href="../../d3/d6e/_console_8h_source.html#l00141">141</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00012">Console()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00018">~Console()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00028">Init()</a>.</p>
+<p class="reference">参照元 <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00011">Console()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00017">~Console()</a>, <a class="el" href="../../d5/da5/_console_8cpp_source.html#l00027">Init()</a>.</p>
 
 </div>
 </div>

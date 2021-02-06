@@ -92,30 +92,40 @@ $(document).ready(function(){initNavTree('de/d3b/classalt_1_1skeleton_1_1_strate
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html" title="Strategy">Strategy</a>  
+ <a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a9462307e80786832aa4e00a27e65c3c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#a9462307e80786832aa4e00a27e65c3c1">Strategy</a> ()</td></tr>
+<tr class="memdesc:a9462307e80786832aa4e00a27e65c3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#a9462307e80786832aa4e00a27e65c3c1">[詳解]</a><br /></td></tr>
 <tr class="separator:a9462307e80786832aa4e00a27e65c3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5740679ffbd1c05193ae1d5915bd15"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#aed5740679ffbd1c05193ae1d5915bd15">~Strategy</a> ()</td></tr>
+<tr class="memdesc:aed5740679ffbd1c05193ae1d5915bd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#aed5740679ffbd1c05193ae1d5915bd15">[詳解]</a><br /></td></tr>
 <tr class="separator:aed5740679ffbd1c05193ae1d5915bd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a1ebf20958692165688df8072cbc05"><td class="memItemLeft" align="right" valign="top">virtual V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#ac8a1ebf20958692165688df8072cbc05">Get</a> (T t)</td></tr>
+<tr class="memdesc:ac8a1ebf20958692165688df8072cbc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">テンプレート引数Tに応じて、テンプレートVを返却します。  <a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#ac8a1ebf20958692165688df8072cbc05">[詳解]</a><br /></td></tr>
 <tr class="separator:ac8a1ebf20958692165688df8072cbc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339735c9fd17741ebeae5e40235d4124"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#a339735c9fd17741ebeae5e40235d4124">Set</a> (T t, V v)</td></tr>
+<tr class="memdesc:a339735c9fd17741ebeae5e40235d4124"><td class="mdescLeft">&#160;</td><td class="mdescRight">テンプレートTをキーとしたテンプレートVを設定します。  <a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#a339735c9fd17741ebeae5e40235d4124">[詳解]</a><br /></td></tr>
 <tr class="separator:a339735c9fd17741ebeae5e40235d4124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
 <tr class="memitem:aa190f337c1ad94d69708e939e6ca2a88"><td class="memItemLeft" align="right" valign="top">std::map&lt; T, V &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#aa190f337c1ad94d69708e939e6ca2a88">_strategy</a></td></tr>
+<tr class="memdesc:aa190f337c1ad94d69708e939e6ca2a88"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#a339735c9fd17741ebeae5e40235d4124" title="テンプレートTをキーとしたテンプレートVを設定します。">Set()</a>で登録されたオブジェクトを管理するマップ  <a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#aa190f337c1ad94d69708e939e6ca2a88">[詳解]</a><br /></td></tr>
 <tr class="separator:aa190f337c1ad94d69708e939e6ca2a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class T, class V&gt;<br />
 class alt::skeleton::Strategy&lt; T, V &gt;</h3>
 
+<p><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html" title="Strategy">Strategy</a> </p>
+<dl class="section note"><dt>覚え書き</dt><dd>テンプレートクラスなのでDLL_DECLSPECは付けません。 </dd></dl>
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00084">84</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00125">125</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a9462307e80786832aa4e00a27e65c3c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9462307e80786832aa4e00a27e65c3c1">&#9670;&nbsp;</a></span>Strategy()</h2>
@@ -142,7 +152,9 @@ template&lt;class T , class V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00087">87</a> 行目に定義があります。</p>
+<p>コンストラクタ </p>
+
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00129">129</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -171,7 +183,9 @@ template&lt;class T , class V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00088">88</a> 行目に定義があります。</p>
+<p>デストラクタ </p>
+
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00132">132</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -202,9 +216,24 @@ template&lt;class T , class V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00090">90</a> 行目に定義があります。</p>
+<p>テンプレート引数Tに応じて、テンプレートVを返却します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>テンプレートT </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>V テンプレートV </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">事前にSet()で設定した、Tに紐付くオブジェクト</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00098">alt::skeleton::Strategy&lt; T, V &gt;::_strategy</a>.</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00138">138</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00149">alt::skeleton::Strategy&lt; T, V &gt;::_strategy</a>.</p>
 
 </div>
 </div>
@@ -244,9 +273,18 @@ template&lt;class T , class V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00095">95</a> 行目に定義があります。</p>
+<p>テンプレートTをキーとしたテンプレートVを設定します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>テンプレートT </td></tr>
+    <tr><td class="paramname">v</td><td>テンプレートV </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">参照先 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00098">alt::skeleton::Strategy&lt; T, V &gt;::_strategy</a>.</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00146">146</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00149">alt::skeleton::Strategy&lt; T, V &gt;::_strategy</a>.</p>
 
 </div>
 </div>
@@ -273,9 +311,11 @@ template&lt;class T , class V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00101">101</a> 行目に定義があります。</p>
+<p><a class="el" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html#a339735c9fd17741ebeae5e40235d4124" title="テンプレートTをキーとしたテンプレートVを設定します。">Set()</a>で登録されたオブジェクトを管理するマップ </p>
 
-<p class="reference">参照元 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00090">alt::skeleton::Strategy&lt; T, V &gt;::Get()</a>, <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00095">alt::skeleton::Strategy&lt; T, V &gt;::Set()</a>.</p>
+<p class="definition"> <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html">DesignPattern.hpp</a> の <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00153">153</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00138">alt::skeleton::Strategy&lt; T, V &gt;::Get()</a>, <a class="el" href="../../d4/d1e/_design_pattern_8hpp_source.html#l00146">alt::skeleton::Strategy&lt; T, V &gt;::Set()</a>.</p>
 
 </div>
 </div>

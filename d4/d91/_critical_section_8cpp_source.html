@@ -88,40 +88,40 @@ $(document).ready(function(){initNavTree('d4/d91/_critical_section_8cpp_source.h
 </div><!--header-->
 <div class="contents">
 <a href="../../d4/d91/_critical_section_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d05/_critical_section_8h.html">CriticalSection.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a7749425577cdeee2d32815e63d96e9ff">   12</a></span>&#160;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a7749425577cdeee2d32815e63d96e9ff">CriticalSection::CriticalSection</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    ::InitializeCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a8f10b99e9550811be81a0ca409171bcc">   17</a></span>&#160;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a8f10b99e9550811be81a0ca409171bcc">CriticalSection::~CriticalSection</a>()</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ::DeleteCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9">   22</a></span>&#160;VOID <a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9">CriticalSection::Enter</a>()</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ::EnterCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd">   27</a></span>&#160;VOID <a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd">CriticalSection::Leave</a>()</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ::LeaveCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d05/_critical_section_8h.html">CriticalSection.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a7749425577cdeee2d32815e63d96e9ff">   11</a></span>&#160;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a7749425577cdeee2d32815e63d96e9ff">CriticalSection::CriticalSection</a>()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ::InitializeCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a8f10b99e9550811be81a0ca409171bcc">   16</a></span>&#160;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a8f10b99e9550811be81a0ca409171bcc">CriticalSection::~CriticalSection</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ::DeleteCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9">   21</a></span>&#160;VOID <a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9">CriticalSection::Enter</a>()</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ::EnterCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd">   26</a></span>&#160;VOID <a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd">CriticalSection::Leave</a>()</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ::LeaveCriticalSection(&amp;<a class="code" href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">_criticalSection</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_critical_section_8h_html"><div class="ttname"><a href="../../df/d05/_critical_section_8h.html">CriticalSection.h</a></div><div class="ttdoc">CriticalSectionに関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_critical_section_html_a8f10b99e9550811be81a0ca409171bcc"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a8f10b99e9550811be81a0ca409171bcc">alt::CriticalSection::~CriticalSection</a></div><div class="ttdeci">virtual ~CriticalSection()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00017">CriticalSection.cpp:17</a></div></div>
-<div class="ttc" id="aclassalt_1_1_critical_section_html_a42b49de9abd5695ffe0018c98bec36fd"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd">alt::CriticalSection::Leave</a></div><div class="ttdeci">VOID Leave()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00027">CriticalSection.cpp:27</a></div></div>
+<div class="ttc" id="aclassalt_1_1_critical_section_html_a8f10b99e9550811be81a0ca409171bcc"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a8f10b99e9550811be81a0ca409171bcc">alt::CriticalSection::~CriticalSection</a></div><div class="ttdeci">virtual ~CriticalSection()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00016">CriticalSection.cpp:16</a></div></div>
+<div class="ttc" id="aclassalt_1_1_critical_section_html_a42b49de9abd5695ffe0018c98bec36fd"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a42b49de9abd5695ffe0018c98bec36fd">alt::CriticalSection::Leave</a></div><div class="ttdeci">VOID Leave()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00026">CriticalSection.cpp:26</a></div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="aclassalt_1_1_critical_section_html_a7749425577cdeee2d32815e63d96e9ff"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a7749425577cdeee2d32815e63d96e9ff">alt::CriticalSection::CriticalSection</a></div><div class="ttdeci">CriticalSection()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00012">CriticalSection.cpp:12</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1_critical_section_html_a39e36c6c4095be76794c133851525ad9"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9">alt::CriticalSection::Enter</a></div><div class="ttdeci">VOID Enter()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00022">CriticalSection.cpp:22</a></div></div>
-<div class="ttc" id="aclassalt_1_1_critical_section_html_a33a14d42b885b2fab33ada549e747f05"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">alt::CriticalSection::_criticalSection</a></div><div class="ttdeci">CRITICAL_SECTION _criticalSection</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d05/_critical_section_8h_source.html#l00028">CriticalSection.h:28</a></div></div>
+<div class="ttc" id="aclassalt_1_1_critical_section_html_a7749425577cdeee2d32815e63d96e9ff"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a7749425577cdeee2d32815e63d96e9ff">alt::CriticalSection::CriticalSection</a></div><div class="ttdeci">CriticalSection()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00011">CriticalSection.cpp:11</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_critical_section_html_a39e36c6c4095be76794c133851525ad9"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a39e36c6c4095be76794c133851525ad9">alt::CriticalSection::Enter</a></div><div class="ttdeci">VOID Enter()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d91/_critical_section_8cpp_source.html#l00021">CriticalSection.cpp:21</a></div></div>
+<div class="ttc" id="aclassalt_1_1_critical_section_html_a33a14d42b885b2fab33ada549e747f05"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html#a33a14d42b885b2fab33ada549e747f05">alt::CriticalSection::_criticalSection</a></div><div class="ttdeci">CRITICAL_SECTION _criticalSection</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d05/_critical_section_8h_source.html#l00025">CriticalSection.h:25</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

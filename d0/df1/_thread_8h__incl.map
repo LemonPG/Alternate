@@ -1,6 +1,6 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibrary/Thread.h" name="C:/Users/User01/source/repos/Alternate/WindowsLibrary/Thread.h">
 <area shape="rect" id="node1" title="スレッドに関するWindowsAPIを集約したクラス" alt="" coords="476,5,687,61"/>
-<area shape="rect" id="node2" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="467,184,592,211"/>
+<area shape="rect" id="node2" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="467,184,592,211"/>
 <area shape="rect" id="node3" href="$d0/df8/_function_pointers_8hpp.html" title="コールバック機能を集約したクラス" alt="" coords="565,109,710,136"/>
 <area shape="rect" id="node4" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,259,713,285"/>
 <area shape="rect" id="node18" href="$df/d15/_windows_library_2pch_8h.html" title="プリコンパイル済みヘッダー ファイルです。" alt="" coords="673,184,727,211"/>

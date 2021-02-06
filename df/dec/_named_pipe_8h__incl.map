@@ -1,7 +1,7 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibrary/NamedPipe.h" name="C:/Users/User01/source/repos/Alternate/WindowsLibrary/NamedPipe.h">
 <area shape="rect" id="node1" title="名前付きパイプに関するWindowsAPIを集約したクラス" alt="" coords="628,5,839,61"/>
 <area shape="rect" id="node2" href="$de/d30/_windows_library_2framework_8h.html" title="このプロジェクトのポーティングに関する情報" alt="" coords="621,109,713,136"/>
-<area shape="rect" id="node16" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="737,109,863,136"/>
+<area shape="rect" id="node16" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="737,109,863,136"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,184,88,211"/>
 <area shape="rect" id="node4" title=" " alt="" coords="113,184,175,211"/>
 <area shape="rect" id="node5" title=" " alt="" coords="200,184,293,211"/>

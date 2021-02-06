@@ -1,5 +1,5 @@
 <map id="alt::MiddleLibrary" name="alt::MiddleLibrary">
-<area shape="rect" id="node1" title="MiddleLibraryソリューションのメインクラス" alt="" coords="13,171,134,197"/>
+<area shape="rect" id="node1" title="MiddleLibraryプロジェクトのメインクラス" alt="" coords="13,171,134,197"/>
 <area shape="rect" id="node2" href="$d2/dd0/classalt_1_1_t_string.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="31,81,116,108"/>
 <area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="5,5,141,32"/>
 </map>

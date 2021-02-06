@@ -87,53 +87,40 @@ $(document).ready(function(){initNavTree('d4/d09/_core_8h_source.html','../../')
 <div class="title">Core.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d4/d09/_core_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/dd3/sqlite3_8h.html">sqlite3.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../da/d84/namespacealt_1_1db.html">    8</a></span>&#160;    <span class="keyword">namespace </span>db</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="comment">// @sa https://www.sqlite.org/cintro.html</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html">   11</a></span>&#160;        <span class="keyword">class </span><a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html">Core</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a4273e8d71ca2168276a414412bcbcbeb">   14</a></span>&#160;            <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a4273e8d71ca2168276a414412bcbcbeb">Core</a>()</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">_lastError</a> = <a class="code" href="../../de/dd3/sqlite3_8h.html#a650d09c7bec7ddadb7c8aa3519dc842c">SQLITE_OK</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a6d77a0b04e6a4e2226ba49424689141f">   19</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a6d77a0b04e6a4e2226ba49424689141f">~Core</a>()</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
+<a href="../../d4/d09/_core_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/dd3/sqlite3_8h.html">sqlite3.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../da/d84/namespacealt_1_1db.html">   13</a></span>&#160;    <span class="keyword">namespace </span>db</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html">   18</a></span>&#160;        <span class="keyword">class </span><a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html">Core</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a4273e8d71ca2168276a414412bcbcbeb">   22</a></span>&#160;            <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a4273e8d71ca2168276a414412bcbcbeb">Core</a>() { <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">_lastError</a> = <a class="code" href="../../de/dd3/sqlite3_8h.html#a650d09c7bec7ddadb7c8aa3519dc842c">SQLITE_OK</a>; }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="comment">// @brief 各関数の戻り値判定共通</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541">   28</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541">getResponse</a>()</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">_lastError</a> != <a class="code" href="../../de/dd3/sqlite3_8h.html#a650d09c7bec7ddadb7c8aa3519dc842c">SQLITE_OK</a> ? false : <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="comment">// @brief SQLite3関数戻り値</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">   34</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">_lastError</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a6d77a0b04e6a4e2226ba49424689141f">   25</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a6d77a0b04e6a4e2226ba49424689141f">~Core</a>() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541">   29</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541">getResponse</a>() { <span class="keywordflow">return</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">_lastError</a> != <a class="code" href="../../de/dd3/sqlite3_8h.html#a650d09c7bec7ddadb7c8aa3519dc842c">SQLITE_OK</a> ? false : <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">   32</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">_lastError</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a04e31c51194083d47ed8bfb0af2fd541"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541">alt::db::Core::getResponse</a></div><div class="ttdeci">bool getResponse()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00028">Core.h:28</a></div></div>
-<div class="ttc" id="aclassalt_1_1db_1_1_core_html"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html">alt::db::Core</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00011">Core.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a04e31c51194083d47ed8bfb0af2fd541"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a04e31c51194083d47ed8bfb0af2fd541">alt::db::Core::getResponse</a></div><div class="ttdeci">bool getResponse()</div><div class="ttdoc">各関数の戻り値判定共通</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00029">Core.h:29</a></div></div>
+<div class="ttc" id="aclassalt_1_1db_1_1_core_html"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html">alt::db::Core</a></div><div class="ttdoc">SqLite3操作クラス(Core)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00018">Core.h:19</a></div></div>
 <div class="ttc" id="asqlite3_8h_html"><div class="ttname"><a href="../../de/dd3/sqlite3_8h.html">sqlite3.h</a></div></div>
-<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a4273e8d71ca2168276a414412bcbcbeb"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a4273e8d71ca2168276a414412bcbcbeb">alt::db::Core::Core</a></div><div class="ttdeci">Core()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00014">Core.h:14</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a1de924f43a4da79caf705b3dafa15c11"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">alt::db::Core::_lastError</a></div><div class="ttdeci">int _lastError</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00034">Core.h:34</a></div></div>
+<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a4273e8d71ca2168276a414412bcbcbeb"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a4273e8d71ca2168276a414412bcbcbeb">alt::db::Core::Core</a></div><div class="ttdeci">Core()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00022">Core.h:22</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a1de924f43a4da79caf705b3dafa15c11"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a1de924f43a4da79caf705b3dafa15c11">alt::db::Core::_lastError</a></div><div class="ttdeci">int _lastError</div><div class="ttdoc">SQLite3関数エラー値</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00032">Core.h:32</a></div></div>
 <div class="ttc" id="asqlite3_8h_html_a650d09c7bec7ddadb7c8aa3519dc842c"><div class="ttname"><a href="../../de/dd3/sqlite3_8h.html#a650d09c7bec7ddadb7c8aa3519dc842c">SQLITE_OK</a></div><div class="ttdeci">#define SQLITE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd3/sqlite3_8h_source.html#l00425">sqlite3.h:425</a></div></div>
-<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a6d77a0b04e6a4e2226ba49424689141f"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a6d77a0b04e6a4e2226ba49424689141f">alt::db::Core::~Core</a></div><div class="ttdeci">virtual ~Core()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00019">Core.h:19</a></div></div>
+<div class="ttc" id="aclassalt_1_1db_1_1_core_html_a6d77a0b04e6a4e2226ba49424689141f"><div class="ttname"><a href="../../dd/d40/classalt_1_1db_1_1_core.html#a6d77a0b04e6a4e2226ba49424689141f">alt::db::Core::~Core</a></div><div class="ttdeci">virtual ~Core()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_core_8h_source.html#l00025">Core.h:25</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

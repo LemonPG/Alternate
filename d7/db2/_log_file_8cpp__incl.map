@@ -20,7 +20,7 @@
 <area shape="rect" id="node20" href="$da/dd4/_file_utility_8h.html" title="ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス" alt="" coords="625,184,711,211"/>
 <area shape="rect" id="node21" href="$de/d15/_t_string_8h.html" title="文字列に関するWindowsAPIを集約したクラス" alt="" coords="708,259,783,285"/>
 <area shape="rect" id="node24" href="$df/d05/_critical_section_8h.html" title="CriticalSectionに関するWindowsAPIを集約したクラス" alt="" coords="916,408,1033,435"/>
-<area shape="rect" id="node19" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約するクラスの基底クラス" alt="" coords="960,483,1085,509"/>
+<area shape="rect" id="node19" href="$d4/d18/_windows_library_8h.html" title="WindowsAPIを集約したプロジェクトファイル" alt="" coords="960,483,1085,509"/>
 <area shape="rect" id="node22" href="$db/d5e/_array_8hpp.html" title="可変配列に関するクラス" alt="" coords="629,333,707,360"/>
 <area shape="rect" id="node23" href="$de/dff/_heap_memory_8h.html" title="ヒープメモリに関するAPIを集約したクラス" alt="" coords="730,408,841,435"/>
 </map>

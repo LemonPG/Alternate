@@ -1,5 +1,5 @@
 <map id="LeakCheck::ObjectHolder::Get" name="LeakCheck::ObjectHolder::Get">
 <area shape="rect" id="node1" title=" " alt="" coords="364,13,563,39"/>
-<area shape="rect" id="node2" href="$dd/dc4/class_leak_check_1_1_array_memory_leak_check.html#a1aabc5188705ff015f0048c05eb947d3" title=" " alt="" coords="115,5,316,47"/>
+<area shape="rect" id="node2" href="$dd/dc4/class_leak_check_1_1_array_memory_leak_check.html#a1aabc5188705ff015f0048c05eb947d3" title="メモリーリーク調査" alt="" coords="115,5,316,47"/>
 <area shape="rect" id="node3" href="$d3/d6e/_memory_leak_check_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f" title=" " alt="" coords="5,13,67,39"/>
 </map>

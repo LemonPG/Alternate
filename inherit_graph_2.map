@@ -1,5 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$dd/d40/classalt_1_1db_1_1_core.html" title=" " alt="" coords="5,31,99,57"/>
-<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html" title=" " alt="" coords="157,5,263,32"/>
-<area shape="rect" id="node3" href="$da/d34/classalt_1_1db_1_1_statement.html" title=" " alt="" coords="147,56,273,83"/>
+<area shape="rect" id="node1" href="$dd/d40/classalt_1_1db_1_1_core.html" title="SqLite3操作クラス(Core)" alt="" coords="5,31,99,57"/>
+<area shape="rect" id="node2" href="$d7/d71/classalt_1_1db_1_1_engine.html" title="SqLite3操作クラス(Engine)" alt="" coords="157,5,263,32"/>
+<area shape="rect" id="node3" href="$da/d34/classalt_1_1db_1_1_statement.html" title="SqLite3操作クラス(Statement)" alt="" coords="147,56,273,83"/>
 </map>

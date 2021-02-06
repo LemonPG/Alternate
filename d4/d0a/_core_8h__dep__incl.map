@@ -1,6 +1,6 @@
 <map id="C:/Users/User01/source/repos/Alternate/DBLibrary/SQLite3/Core.h" name="C:/Users/User01/source/repos/Alternate/DBLibrary/SQLite3/Core.h">
-<area shape="rect" id="node1" title=" " alt="" coords="68,5,243,61"/>
-<area shape="rect" id="node2" href="$de/dcf/_engine_8h.html" title=" " alt="" coords="131,109,305,165"/>
-<area shape="rect" id="node3" href="$de/dd1/_statement_8h.html" title=" " alt="" coords="5,213,180,269"/>
-<area shape="rect" id="node4" href="$d6/d58/_s_q_lite3_test_8cpp.html" title=" " alt="" coords="55,317,255,373"/>
+<area shape="rect" id="node1" title="SqLite3操作クラス(Core)" alt="" coords="68,5,243,61"/>
+<area shape="rect" id="node2" href="$de/dcf/_engine_8h.html" title="SqLite3操作クラス(Engine)" alt="" coords="131,109,305,165"/>
+<area shape="rect" id="node3" href="$de/dd1/_statement_8h.html" title="SqLite3操作クラス(Statement)" alt="" coords="5,213,180,269"/>
+<area shape="rect" id="node4" href="$d6/d58/_s_q_lite3_test_8cpp.html" title="SQLite3に関するAPIを集約したクラスのテストクラス" alt="" coords="55,317,255,373"/>
 </map>

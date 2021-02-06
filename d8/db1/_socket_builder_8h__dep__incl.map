@@ -1,9 +1,9 @@
 <map id="C:/Users/User01/source/repos/Alternate/WindowsLibrary/SocketBuilder.h" name="C:/Users/User01/source/repos/Alternate/WindowsLibrary/SocketBuilder.h">
 <area shape="rect" id="node1" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="363,5,574,61"/>
-<area shape="rect" id="node2" href="$d3/dfb/_t_c_p_performance_check_8h.html" title="TCPクラス性能測定用" alt="" coords="129,109,339,165"/>
-<area shape="rect" id="node5" href="$de/d20/_u_d_p_performance_check_8h.html" title="UDPクラス性能測定用" alt="" coords="363,109,574,165"/>
+<area shape="rect" id="node2" href="$d3/dfb/_t_c_p_performance_check_8h.html" title="TCP性能測定用" alt="" coords="129,109,339,165"/>
+<area shape="rect" id="node5" href="$de/d20/_u_d_p_performance_check_8h.html" title="UDP性能測定用" alt="" coords="363,109,574,165"/>
 <area shape="rect" id="node7" href="$dc/d2c/_socket_builder_8cpp.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="" coords="598,109,809,165"/>
 <area shape="rect" id="node3" href="$d2/d44/_performance_check_8cpp.html" title="性能測定用" alt="" coords="252,213,451,269"/>
-<area shape="rect" id="node4" href="$da/d1b/_t_c_p_performance_check_8cpp.html" title="TCP性能測定用" alt="" coords="5,213,228,269"/>
-<area shape="rect" id="node6" href="$d1/d11/_u_d_p_performance_check_8cpp.html" title="UDP性能測定用" alt="" coords="475,213,700,269"/>
+<area shape="rect" id="node4" href="$da/d1b/_t_c_p_performance_check_8cpp.html" title="TCPクラス性能測定用" alt="" coords="5,213,228,269"/>
+<area shape="rect" id="node6" href="$d1/d11/_u_d_p_performance_check_8cpp.html" title="UDPクラス性能測定用" alt="" coords="475,213,700,269"/>
 </map>

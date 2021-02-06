@@ -1,5 +1,5 @@
 <map id="PerfCheck::UpstreamDriver" name="PerfCheck::UpstreamDriver">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,184,181"/>
+<area shape="rect" id="node1" title="TCP性能測定用（アップストリーム）" alt="" coords="5,155,184,181"/>
 <area shape="rect" id="node2" href="$d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="" coords="17,80,172,107"/>
 <area shape="rect" id="node3" href="$de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="" coords="27,5,163,32"/>
 </map>

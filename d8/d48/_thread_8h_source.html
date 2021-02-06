@@ -88,36 +88,42 @@ $(document).ready(function(){initNavTree('d8/d48/_thread_8h_source.html','../../
 </div><!--header-->
 <div class="contents">
 <a href="../../d8/d48/_thread_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">   18</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">ThreadPriority</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Critical = THREAD_PRIORITY_TIME_CRITICAL,</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">   15</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">ThreadPriority</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        Critical = THREAD_PRIORITY_TIME_CRITICAL,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Highest = THREAD_PRIORITY_HIGHEST,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        AboveNormal = THREAD_PRIORITY_ABOVE_NORMAL,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Normal = THREAD_PRIORITY_NORMAL,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        BelowNormal = THREAD_PRIORITY_BELOW_NORMAL,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        Lowest = THREAD_PRIORITY_LOWEST,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd">Idle</a> = THREAD_PRIORITY_IDLE</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        AboveNormal = THREAD_PRIORITY_ABOVE_NORMAL,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        Normal = THREAD_PRIORITY_NORMAL,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d0/df1/classalt_1_1_thread.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d0/df1/classalt_1_1_thread.html">Thread</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d35/classalt_1_1_waitable_handle_library.html">WaitableHandleLibrary</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">Thread</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">Thread</a>(<a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">skeleton::ICallback</a>* callback);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        BelowNormal = THREAD_PRIORITY_BELOW_NORMAL,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        Lowest = THREAD_PRIORITY_LOWEST,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd">Idle</a> = THREAD_PRIORITY_IDLE</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        BOOL Create(PTHREAD_START_ROUTINE <span class="keyword">function</span> = <span class="keyword">nullptr</span>, LPVOID lpvParam = <span class="keyword">nullptr</span>, DWORD dwCreationFlag = 0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        DWORD Suspend();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        DWORD Resume();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d0/df1/classalt_1_1_thread.html">   41</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code" href="../../d0/df1/classalt_1_1_thread.html">Thread</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d35/classalt_1_1_waitable_handle_library.html">WaitableHandleLibrary</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">Thread</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d0/df1/classalt_1_1_thread.html">Thread</a>(<a class="code" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">skeleton::ICallback</a>* callback);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        BOOL Create(PTHREAD_START_ROUTINE <span class="keyword">function</span> = <span class="keyword">nullptr</span>, LPVOID lpvParam = <span class="keyword">nullptr</span>, DWORD dwCreationFlag = 0);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        DWORD Suspend();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        DWORD Resume();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        BOOL SetPriority(<a class="code" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">ThreadPriority</a> priority);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">protected</span>:</div>
@@ -128,15 +134,15 @@ $(document).ready(function(){initNavTree('d8/d48/_thread_8h_source.html','../../
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_waitable_handle_library_html"><div class="ttname"><a href="../../d1/d35/classalt_1_1_waitable_handle_library.html">alt::WaitableHandleLibrary</a></div><div class="ttdoc">HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00112">WindowsLibrary.h:113</a></div></div>
-<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00018">framework.h:18</a></div></div>
+<div class="ttc" id="aclassalt_1_1_waitable_handle_library_html"><div class="ttname"><a href="../../d1/d35/classalt_1_1_waitable_handle_library.html">alt::WaitableHandleLibrary</a></div><div class="ttdoc">HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00089">WindowsLibrary.h:90</a></div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
 <div class="ttc" id="aclassalt_1_1_thread_html_ad784e9d9edbcc1222a09a6ea8430d778"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html#ad784e9d9edbcc1222a09a6ea8430d778">alt::Thread::_callback</a></div><div class="ttdeci">skeleton::ICallback * _callback</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00077">Thread.h:77</a></div></div>
-<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">alt::ThreadPriority</a></div><div class="ttdeci">ThreadPriority</div><div class="ttdoc">スレッドの優先順位</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00018">Thread.h:19</a></div></div>
-<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00012">DBLibrary.h:13</a></div></div>
-<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd">alt::ThreadPriority::Critical</a></div><div class="ttdeci">@ Critical</div></div>
-<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約するクラスの基底クラス</div></div>
-<div class="ttc" id="aclassalt_1_1_thread_html"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00033">Thread.h:34</a></div></div>
-<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div><div class="ttdoc">Threadクラスのスレッド実行関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00027">FunctionPointers.hpp:28</a></div></div>
+<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">alt::ThreadPriority</a></div><div class="ttdeci">ThreadPriority</div><div class="ttdoc">スレッドの優先順位</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00015">Thread.h:16</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd">alt::ThreadPriority::Critical</a></div><div class="ttdeci">@ Critical</div><div class="ttdoc">クリティカル</div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約したプロジェクトファイル</div></div>
+<div class="ttc" id="aclassalt_1_1_thread_html"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00041">Thread.h:42</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div><div class="ttdoc">Threadクラスのスレッド実行関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00024">FunctionPointers.hpp:25</a></div></div>
 <div class="ttc" id="aclassalt_1_1_thread_html_a590d6d06bc90875e8cf8f401fe91d8d3"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html#a590d6d06bc90875e8cf8f401fe91d8d3">alt::Thread::_threadID</a></div><div class="ttdeci">DWORD _threadID</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00078">Thread.h:78</a></div></div>
 <div class="ttc" id="a_function_pointers_8hpp_html"><div class="ttname"><a href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a></div><div class="ttdoc">コールバック機能を集約したクラス</div></div>
 <!-- start footer part -->

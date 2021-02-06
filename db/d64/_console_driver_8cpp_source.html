@@ -88,189 +88,189 @@ $(document).ready(function(){initNavTree('db/d64/_console_driver_8cpp_source.htm
 </div><!--header-->
 <div class="contents">
 <a href="../../db/d64/_console_driver_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/dff/_console_driver_8h.html">ConsoleDriver.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d1e/_design_pattern_8hpp.html">DesignPattern.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d15/_t_string_8h.html">TString.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d6e/_console_8h.html">Console.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d09/_pipeline_factory_method_8h.html">PipelineFactoryMethod.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d0c/_file_8h.html">File.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/dd4/_file_utility_8h.html">FileUtility.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">   16</a></span>&#160;<a class="code" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html">alt::skeleton::Strategy</a>&lt;<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a>, std::function&lt;void()&gt;&gt; <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">   17</a></span>&#160;<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a> <a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>(MAX_PATH);</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">   18</a></span>&#160;<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a> <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">   20</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f">   28</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f">_tmain</a>(<span class="keywordtype">int</span> argc, TCHAR* argv[])</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;main(%d, TCHAR*) IN.\n&quot;</span>), argc);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (argc == 3)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a> = argv[2];</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        BOOL bCheck = <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a>(<a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (!bCheck)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find config file.\n&quot;</span>));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/dff/_console_driver_8h.html">ConsoleDriver.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d1e/_design_pattern_8hpp.html">DesignPattern.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d15/_t_string_8h.html">TString.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d6e/_console_8h.html">Console.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d09/_pipeline_factory_method_8h.html">PipelineFactoryMethod.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d0c/_file_8h.html">File.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/dd4/_file_utility_8h.html">FileUtility.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">   15</a></span>&#160;<a class="code" href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html">alt::skeleton::Strategy</a>&lt;<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a>, std::function&lt;void()&gt;&gt; <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">   16</a></span>&#160;<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a> <a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>(MAX_PATH);</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">   17</a></span>&#160;<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a> <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">   19</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f">_tmain</a>(<span class="keywordtype">int</span> argc, TCHAR* argv[])</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;main(%d, TCHAR*) IN.\n&quot;</span>), argc);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (argc == 3)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a> = argv[2];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        BOOL bCheck = <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a>(<a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (!bCheck)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find config file.\n&quot;</span>));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        lstrcpy(<a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>(), argv[1]);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        lstrcpy(<a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>(), argv[1]);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (argc == 2)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a> = <a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        BOOL bCheck = <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a>(<a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (!bCheck)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find config file.\n&quot;</span>));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (argc == 2)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a> = <a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        BOOL bCheck = <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a>(<a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (!bCheck)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find config file.\n&quot;</span>));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        lstrcpy(<a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>(), argv[1]);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        lstrcpy(<a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>(), argv[1]);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (argc == 1)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a> = <a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        BOOL bCheck = <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a>(<a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!bCheck)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find config file.\n&quot;</span>));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        DWORD dwRet = ::GetPrivateProfileString(<a class="code" href="../../d8/dff/_console_driver_8h.html#ab3a40c5e798f6c9b31e9ece1a13ddd3c">SECTION_GENERAL</a>, <a class="code" href="../../d8/dff/_console_driver_8h.html#a9713ab50155bb642028496a90f7feefe">KEYWORD_ACTION</a>, <span class="keyword">nullptr</span>, <a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>(), MAX_PATH, <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (dwRet == 0)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find action.\n&quot;</span>));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">auto</span> target = <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a>.Get(<a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>());</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (target)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        target();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        _tprintf(_T(<span class="stringliteral">&quot;Invalid Parameter %s\n&quot;</span>), <a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> 2;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;main(%d, TCHAR*) OUT.\n&quot;</span>), argc);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d8/dff/_console_driver_8h.html#a1e3b6d38df0786ccf7f938d60e386aae">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a>()</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;Init() IN.\n&quot;</span>));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (argc == 1)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a> = <a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        BOOL bCheck = <a class="code" href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a>(<a class="code" href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (!bCheck)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find config file.\n&quot;</span>));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        DWORD dwRet = ::GetPrivateProfileString(<a class="code" href="../../d8/dff/_console_driver_8h.html#ab3a40c5e798f6c9b31e9ece1a13ddd3c">SECTION_GENERAL</a>, <a class="code" href="../../d8/dff/_console_driver_8h.html#a9713ab50155bb642028496a90f7feefe">KEYWORD_ACTION</a>, <span class="keyword">nullptr</span>, <a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>(), MAX_PATH, <a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (dwRet == 0)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            _tprintf(_T(<span class="stringliteral">&quot;Can&#39;t find action.\n&quot;</span>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> target = <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a>.Get(<a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">Ptr</a>());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (target)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        target();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        _tprintf(_T(<span class="stringliteral">&quot;Invalid Parameter %s\n&quot;</span>), <a class="code" href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;main(%d, TCHAR*) OUT.\n&quot;</span>), argc);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../d8/dff/_console_driver_8h.html#a1e3b6d38df0786ccf7f938d60e386aae">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a>()</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;Init() IN.\n&quot;</span>));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a>.Set(<a class="code" href="../../d8/dff/_console_driver_8h.html#a77c535c3c8fb8e694333ce2126597dda">SECTION_PIPELINE_FACTORY</a>, <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824">DrivePipelineFactory</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;Init() OUT.\n&quot;</span>));</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a>.Set(<a class="code" href="../../d8/dff/_console_driver_8h.html#a77c535c3c8fb8e694333ce2126597dda">SECTION_PIPELINE_FACTORY</a>, <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824">DrivePipelineFactory</a>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;Init() OUT.\n&quot;</span>));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../d8/dff/_console_driver_8h.html#a6c9f8fce6824d83d191734d667eee6e9">  107</a></span>&#160;BOOL <a class="code" href="../../db/d64/_console_driver_8cpp.html#a6c9f8fce6824d83d191734d667eee6e9">DrivePipelineFactoryHandler</a>(DWORD dwType)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactoryHandler(%d) IN.\n&quot;</span>), dwType);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    BOOL ret = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    timeEndPeriod(1);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">switch</span> (dwType)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">case</span> 0: <span class="comment">// Ctrl + C</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">case</span> 1: <span class="comment">// Ctrl + Break</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            ret = TRUE; <span class="comment">// 終了させません。</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">case</span> 2: <span class="comment">// Console Close</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">case</span> 3: <span class="comment">// Log off</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">case</span> 4: <span class="comment">// Shut down</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            ret = FALSE; <span class="comment">// 次に委ねます。</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactoryHandler(%d) OUT.\n&quot;</span>), dwType);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d8/dff/_console_driver_8h.html#ac6d706b625232e3efabb4bb544e4a824">  134</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824">DrivePipelineFactory</a>()</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactory() IN.\n&quot;</span>));</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    timeBeginPeriod(1);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">bool</span> ret;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">auto</span> factory = <span class="keyword">new</span> <a class="code" href="../../d5/d5c/classalt_1_1_factory_method_1_1_pipeline_factory_method.html">alt::FactoryMethod::PipelineFactoryMethod</a>();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">auto</span> manager = (<a class="code" href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html">alt::FactoryMethod::ProductManager</a>*)factory-&gt;Buildup();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">auto</span> config = <span class="keyword">new</span> <a class="code" href="../../db/d43/classalt_1_1_factory_method_1_1_config.html">alt::FactoryMethod::Config</a>();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    ret = config-&gt;Load(<a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span> (ret == <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        _tprintf(_T(<span class="stringliteral">&quot;Error:config-&gt;Load()\n&quot;</span>));</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    manager-&gt;Init(config);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a>)</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        manager-&gt;Start();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        Sleep(30000); <span class="comment">// 30秒</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../d8/dff/_console_driver_8h.html#a6c9f8fce6824d83d191734d667eee6e9">  102</a></span>&#160;BOOL <a class="code" href="../../db/d64/_console_driver_8cpp.html#a6c9f8fce6824d83d191734d667eee6e9">DrivePipelineFactoryHandler</a>(DWORD dwType)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactoryHandler(%d) IN.\n&quot;</span>), dwType);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    BOOL ret = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    timeEndPeriod(1);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">switch</span> (dwType)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">case</span> 0: <span class="comment">// Ctrl + C</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">case</span> 1: <span class="comment">// Ctrl + Break</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            ret = TRUE; <span class="comment">// 終了させません。</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">case</span> 2: <span class="comment">// Console Close</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">case</span> 3: <span class="comment">// Log off</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">case</span> 4: <span class="comment">// Shut down</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            ret = FALSE; <span class="comment">// 次に委ねます。</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactoryHandler(%d) OUT.\n&quot;</span>), dwType);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../d8/dff/_console_driver_8h.html#ac6d706b625232e3efabb4bb544e4a824">  129</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824">DrivePipelineFactory</a>()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactory() IN.\n&quot;</span>));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    timeBeginPeriod(1);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">bool</span> ret;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">auto</span> factory = <span class="keyword">new</span> <a class="code" href="../../d5/d5c/classalt_1_1_factory_method_1_1_pipeline_factory_method.html">alt::FactoryMethod::PipelineFactoryMethod</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">auto</span> manager = (<a class="code" href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html">alt::FactoryMethod::ProductManager</a>*)factory-&gt;Buildup();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">auto</span> config = <span class="keyword">new</span> <a class="code" href="../../db/d43/classalt_1_1_factory_method_1_1_config.html">alt::FactoryMethod::Config</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    ret = config-&gt;Load(<a class="code" href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a>.<a class="code" href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">Ctr</a>());</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">if</span> (ret == <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        _tprintf(_T(<span class="stringliteral">&quot;Error:config-&gt;Load()\n&quot;</span>));</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    manager-&gt;Init(config);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        manager-&gt;Start();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        Sleep(30000); <span class="comment">// 30秒</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        manager-&gt;Stop();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        Sleep(3000); <span class="comment">// 3秒</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        manager-&gt;Stop();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    manager-&gt;Exit();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        Sleep(3000); <span class="comment">// 3秒</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    manager-&gt;Exit();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    Sleep(10000); <span class="comment">// 10秒</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactory() OUT.\n&quot;</span>));</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Sleep(10000); <span class="comment">// 10秒</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    _tprintf(_T(<span class="stringliteral">&quot;DrivePipelineFactory() OUT.\n&quot;</span>));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassalt_1_1_file_utility_html_abcd42a8503d69340bbae4ba0bad50e6b"><div class="ttname"><a href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a></div><div class="ttdeci">static BOOL IsExist(LPCTSTR name)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d76/_file_utility_8cpp_source.html#l00037">FileUtility.cpp:37</a></div></div>
+<div class="ttc" id="aclassalt_1_1_file_utility_html_abcd42a8503d69340bbae4ba0bad50e6b"><div class="ttname"><a href="../../d3/d85/classalt_1_1_file_utility.html#abcd42a8503d69340bbae4ba0bad50e6b">alt::FileUtility::IsExist</a></div><div class="ttdeci">static BOOL IsExist(LPCTSTR name)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d76/_file_utility_8cpp_source.html#l00036">FileUtility.cpp:36</a></div></div>
 <div class="ttc" id="a_file_8h_html"><div class="ttname"><a href="../../df/d0c/_file_8h.html">File.h</a></div><div class="ttdoc">ファイルIOに関するWindowsAPIを集約したクラス</div></div>
 <div class="ttc" id="a_pipeline_factory_method_8h_html"><div class="ttname"><a href="../../d9/d09/_pipeline_factory_method_8h.html">PipelineFactoryMethod.h</a></div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_a1e3b6d38df0786ccf7f938d60e386aae"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">ストラテジーの初期化を行います。</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00098">ConsoleDriver.cpp:98</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_a1e3b6d38df0786ccf7f938d60e386aae"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">ストラテジーの初期化を行います。</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00093">ConsoleDriver.cpp:93</a></div></div>
 <div class="ttc" id="a_console_driver_8cpp_html_aefa70fb5a2e7c942ba83513520d90b1e"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#aefa70fb5a2e7c942ba83513520d90b1e">_action</a></div><div class="ttdeci">alt::TString _action(MAX_PATH)</div></div>
-<div class="ttc" id="a_console_driver_8h_html_a9713ab50155bb642028496a90f7feefe"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#a9713ab50155bb642028496a90f7feefe">KEYWORD_ACTION</a></div><div class="ttdeci">#define KEYWORD_ACTION</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00014">ConsoleDriver.h:14</a></div></div>
-<div class="ttc" id="a_console_8h_html"><div class="ttname"><a href="../../d3/d6e/_console_8h.html">Console.h</a></div><div class="ttdoc">コンソールに関するクラス</div></div>
+<div class="ttc" id="a_console_driver_8h_html_a9713ab50155bb642028496a90f7feefe"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#a9713ab50155bb642028496a90f7feefe">KEYWORD_ACTION</a></div><div class="ttdeci">#define KEYWORD_ACTION</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00013">ConsoleDriver.h:13</a></div></div>
+<div class="ttc" id="a_console_8h_html"><div class="ttname"><a href="../../d3/d6e/_console_8h.html">Console.h</a></div><div class="ttdoc">コンソールに関するWindowsAPIを集約したクラス</div></div>
 <div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_a6c9f8fce6824d83d191734d667eee6e9"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a6c9f8fce6824d83d191734d667eee6e9">DrivePipelineFactoryHandler</a></div><div class="ttdeci">BOOL DrivePipelineFactoryHandler(DWORD dwType)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00107">ConsoleDriver.cpp:107</a></div></div>
-<div class="ttc" id="aclassalt_1_1skeleton_1_1_strategy_html"><div class="ttname"><a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html">alt::skeleton::Strategy</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1e/_design_pattern_8hpp_source.html#l00084">DesignPattern.hpp:85</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_a6c9f8fce6824d83d191734d667eee6e9"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a6c9f8fce6824d83d191734d667eee6e9">DrivePipelineFactoryHandler</a></div><div class="ttdeci">BOOL DrivePipelineFactoryHandler(DWORD dwType)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00102">ConsoleDriver.cpp:102</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_strategy_html"><div class="ttname"><a href="../../de/d3b/classalt_1_1skeleton_1_1_strategy.html">alt::skeleton::Strategy</a></div><div class="ttdoc">Strategy</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1e/_design_pattern_8hpp_source.html#l00125">DesignPattern.hpp:126</a></div></div>
 <div class="ttc" id="a_file_utility_8h_html"><div class="ttname"><a href="../../da/dd4/_file_utility_8h.html">FileUtility.h</a></div><div class="ttdoc">ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約したクラス</div></div>
 <div class="ttc" id="aclassalt_1_1_factory_method_1_1_pipeline_factory_method_html"><div class="ttname"><a href="../../d5/d5c/classalt_1_1_factory_method_1_1_pipeline_factory_method.html">alt::FactoryMethod::PipelineFactoryMethod</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d09/_pipeline_factory_method_8h_source.html#l00195">PipelineFactoryMethod.h:196</a></div></div>
-<div class="ttc" id="a_console_driver_8h_html_a42bf63540ee0039a3a23db1b5ec3202b"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a></div><div class="ttdeci">#define CONFIG_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00011">ConsoleDriver.h:11</a></div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_ac0d64a0e508dbc1d99a504c1d4e97a4b"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a></div><div class="ttdeci">alt::skeleton::Strategy&lt; alt::TString, std::function&lt; void()&gt; &gt; _strategy</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00016">ConsoleDriver.cpp:16</a></div></div>
-<div class="ttc" id="a_console_driver_8h_html_ab3a40c5e798f6c9b31e9ece1a13ddd3c"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#ab3a40c5e798f6c9b31e9ece1a13ddd3c">SECTION_GENERAL</a></div><div class="ttdeci">#define SECTION_GENERAL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00013">ConsoleDriver.h:13</a></div></div>
+<div class="ttc" id="a_console_driver_8h_html_a42bf63540ee0039a3a23db1b5ec3202b"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#a42bf63540ee0039a3a23db1b5ec3202b">CONFIG_FILE</a></div><div class="ttdeci">#define CONFIG_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00010">ConsoleDriver.h:10</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_ac0d64a0e508dbc1d99a504c1d4e97a4b"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#ac0d64a0e508dbc1d99a504c1d4e97a4b">_strategy</a></div><div class="ttdeci">alt::skeleton::Strategy&lt; alt::TString, std::function&lt; void()&gt; &gt; _strategy</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00015">ConsoleDriver.cpp:15</a></div></div>
+<div class="ttc" id="a_console_driver_8h_html_ab3a40c5e798f6c9b31e9ece1a13ddd3c"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#ab3a40c5e798f6c9b31e9ece1a13ddd3c">SECTION_GENERAL</a></div><div class="ttdeci">#define SECTION_GENERAL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00012">ConsoleDriver.h:12</a></div></div>
 <div class="ttc" id="a_console_driver_8h_html"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html">ConsoleDriver.h</a></div><div class="ttdoc">Consoleからシステムを起動します。</div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_a990b911919067017ad33fbbc06f6c7d3"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a></div><div class="ttdeci">volatile bool __loopKeep</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00020">ConsoleDriver.cpp:20</a></div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_aa3d685aaa0340b7c09d933e767f28c7f"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f">_tmain</a></div><div class="ttdeci">int _tmain(int argc, TCHAR *argv[])</div><div class="ttdoc">エントリーポイント(メイン関数)です。</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00028">ConsoleDriver.cpp:28</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_a990b911919067017ad33fbbc06f6c7d3"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a990b911919067017ad33fbbc06f6c7d3">__loopKeep</a></div><div class="ttdeci">volatile bool __loopKeep</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00019">ConsoleDriver.cpp:19</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_aa3d685aaa0340b7c09d933e767f28c7f"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#aa3d685aaa0340b7c09d933e767f28c7f">_tmain</a></div><div class="ttdeci">int _tmain(int argc, TCHAR *argv[])</div><div class="ttdoc">エントリーポイント(メイン関数)です。</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00025">ConsoleDriver.cpp:25</a></div></div>
 <div class="ttc" id="aclassalt_1_1_factory_method_1_1_product_manager_html"><div class="ttname"><a href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html">alt::FactoryMethod::ProductManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d09/_pipeline_factory_method_8h_source.html#l00167">PipelineFactoryMethod.h:168</a></div></div>
-<div class="ttc" id="a_design_pattern_8hpp_html"><div class="ttname"><a href="../../d4/d1e/_design_pattern_8hpp.html">DesignPattern.hpp</a></div></div>
+<div class="ttc" id="a_design_pattern_8hpp_html"><div class="ttname"><a href="../../d4/d1e/_design_pattern_8hpp.html">DesignPattern.hpp</a></div><div class="ttdoc">種々のデザインパターンの実装クラス</div></div>
 <div class="ttc" id="a_t_string_8h_html"><div class="ttname"><a href="../../de/d15/_t_string_8h.html">TString.h</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div></div>
-<div class="ttc" id="aclassalt_1_1_t_string_html_a00d8e50ac5f261b9ecd34c77734f428f"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">alt::TString::Ptr</a></div><div class="ttdeci">LPTSTR Ptr() const</div><div class="ttdoc">内部で確保している文字列ポインタを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00045">TString.h:45</a></div></div>
+<div class="ttc" id="aclassalt_1_1_t_string_html_a00d8e50ac5f261b9ecd34c77734f428f"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#a00d8e50ac5f261b9ecd34c77734f428f">alt::TString::Ptr</a></div><div class="ttdeci">LPTSTR Ptr() const</div><div class="ttdoc">内部で確保している文字列ポインタを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00042">TString.h:42</a></div></div>
 <div class="ttc" id="aclassalt_1_1_factory_method_1_1_config_html"><div class="ttname"><a href="../../db/d43/classalt_1_1_factory_method_1_1_config.html">alt::FactoryMethod::Config</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d09/_pipeline_factory_method_8h_source.html#l00041">PipelineFactoryMethod.h:42</a></div></div>
-<div class="ttc" id="aclassalt_1_1_t_string_html_aa4532981a86b4bea83b88bef907c5b7d"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">alt::TString::Ctr</a></div><div class="ttdeci">LPCTSTR Ctr() const</div><div class="ttdoc">内部で確保している文字列ポインタを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00049">TString.h:49</a></div></div>
-<div class="ttc" id="a_console_driver_8h_html_a77c535c3c8fb8e694333ce2126597dda"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#a77c535c3c8fb8e694333ce2126597dda">SECTION_PIPELINE_FACTORY</a></div><div class="ttdeci">#define SECTION_PIPELINE_FACTORY</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00016">ConsoleDriver.h:16</a></div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_a4eb9b6c704555c7aea20db3d329ada1f"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a></div><div class="ttdeci">alt::TString _configFile</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00018">ConsoleDriver.cpp:18</a></div></div>
-<div class="ttc" id="aclassalt_1_1_t_string_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00019">TString.h:20</a></div></div>
-<div class="ttc" id="a_console_driver_8cpp_html_ac6d706b625232e3efabb4bb544e4a824"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824">DrivePipelineFactory</a></div><div class="ttdeci">void DrivePipelineFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00134">ConsoleDriver.cpp:134</a></div></div>
+<div class="ttc" id="aclassalt_1_1_t_string_html_aa4532981a86b4bea83b88bef907c5b7d"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#aa4532981a86b4bea83b88bef907c5b7d">alt::TString::Ctr</a></div><div class="ttdeci">LPCTSTR Ctr() const</div><div class="ttdoc">内部で確保している文字列ポインタを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00046">TString.h:46</a></div></div>
+<div class="ttc" id="a_console_driver_8h_html_a77c535c3c8fb8e694333ce2126597dda"><div class="ttname"><a href="../../d8/dff/_console_driver_8h.html#a77c535c3c8fb8e694333ce2126597dda">SECTION_PIPELINE_FACTORY</a></div><div class="ttdeci">#define SECTION_PIPELINE_FACTORY</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/_console_driver_8h_source.html#l00015">ConsoleDriver.h:15</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_a4eb9b6c704555c7aea20db3d329ada1f"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a4eb9b6c704555c7aea20db3d329ada1f">_configFile</a></div><div class="ttdeci">alt::TString _configFile</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00017">ConsoleDriver.cpp:17</a></div></div>
+<div class="ttc" id="aclassalt_1_1_t_string_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00016">TString.h:17</a></div></div>
+<div class="ttc" id="a_console_driver_8cpp_html_ac6d706b625232e3efabb4bb544e4a824"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#ac6d706b625232e3efabb4bb544e4a824">DrivePipelineFactory</a></div><div class="ttdeci">void DrivePipelineFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00129">ConsoleDriver.cpp:129</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
