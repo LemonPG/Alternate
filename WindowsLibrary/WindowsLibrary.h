@@ -114,7 +114,7 @@ namespace alt
 
 		//! @brief		ソケットが使用されていた場合、クローズします。
 		//! @return		ソケットクローズが成功したか否か。
-		//! @retval		closesockett()の戻り値
+		//! @retval		closesocket()の戻り値
 		//! @retval		成功(0) ソケットではない(WSAENOTSOCK)
 		//! @details	WinSock APIの戻り値はネットで確認
 		virtual int Close();

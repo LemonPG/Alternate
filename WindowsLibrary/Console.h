@@ -106,7 +106,7 @@ namespace alt
 		BOOL Init();
 
 		//! @brief 文字色、背景色を設定します。
-		//! @param[in]	foreCorlo 文字色
+		//! @param[in] foreColor 文字色
 		//! @param[in] backColor 背景色
 		//! @return bool
 		//! @retval true 成功
